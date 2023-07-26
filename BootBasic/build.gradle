@@ -34,8 +34,7 @@ dependencies {
 	//버전 속성을 명시하지 않으면 최신버전으로 넣거나 기본으로 설정된 스프링 부트 버전으로 넣어주거나.
 	//둘 중 하나로 넣어주게 된다.
 	
-	//버전명시를 제외하면, 자동으로 버전을 맞추게 된다.
-	
+	//버전명시를 제외하면, 자동으로 버전을 맞추게 된다.	
 	//JSP를 뷰로 사용하려면
 //	implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.78'
 //	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body  th:fragment="함수명(section1)"> <!--원래 frag에 이름넣었는데 함수를 넣을 수 있다.-->
+
+	<header>
+		header
+	</header>
+
+	<!-- 매개변수 명을 참조받는다. -->
+	<section>
+		<th:block th:replace="${section1}"></th:block>	
+		
+	</section>
+	
+	<footer>
+		footer..
+	</footer>
+
+</body>
+</html>

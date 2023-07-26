@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	
+	<h3>이 화면에 진입할 때 SimpleVO를 이용하여 화면처리를 합니다.</h3>
+	<p>
+		회원정보확인 링크에는 quiz_result01?키=값 형태로
+		회원번호, 이름(성 + 이름)을 넘겨주세요
+
+		아래 class="container" 부분만 layout03 템플릿에 전달 될 수 있도록 처리하세요
+	</p>
+
+<th:block th:replace="~{/include/layout03 :: 함수명( ~{:: .container } ) }">
+	
+	<div  class="container" >
+		번호: [[${vo.sno}]] <br/>
+		이름: [[${vo.first + vo.last}]] <br/>
+		날짜: [[${vo.regdate}]]
+		
+		<!-- 예전엔?로 적었다면 이제는 (키=값)형태로 넣어줘야한다.-->
+		
+		<a th:href="@{/view/quiz_result01(sno=${vo.sno}, name=${vo.first + vo.last} ) }"></a>
+	</div>
+</th:block>
+
+
+</html>
