@@ -5,6 +5,72 @@
 <title>Insert title here</title>
 </head>
 <body>
-	hello
+	
+	타임리프 뷰
+	
+	<button id="getData">get방식</button>
+	
+	<button id="getJSON">post방식</button>
+	
+	<button id="getFetch">get</button>
+	<button id="getInfo">post</button>
+	
+	<script id="getData">
+		///////////
+		let getData = document.getElementById("getData");
+		getData.onclick = () => {
+		
+			fetch("/getData?sno=1&first=hong")
+			.then( response => response.json() )
+			.then( t => console.log(t));
+		}
+		////////////////////////////
+		let getJSON = document.getElementById("getJSON");
+		getJSON.onclick = () => {
+			
+			fetch("/getJSON", {
+				method : "post",
+				headers : {
+					"Content-Type" : "application/json"
+				},
+				body : JSON.stringify({ "sno": "1", "first": "lee", "last": "moongchi" })
+								
+			})
+			.then(response => response.json() )
+			.then( t => console.log(t));		
+			
+		}
+		
+		
+		
+		
+		/////////////실습문제 get ///////////////
+		let a = document.getElementById("getFetch");
+		a.onclick = () => { //이 안에서 요청 보내기
+			
+			fetch("http://localhost:8181/api/v1/getData/1/hong")
+			.then( ( response  => response.json() )
+			.then( t => console.log(t) )
+			)
+		}
+		
+		////////////실습문제 post////////////////
+		let b = document.getElementById("getInfo");
+		b.onclick = () => {
+			
+			fetch("http://localhost:8181/api/v1/getInfo" , {
+				
+				method : "post",
+				headers : {"Content-Type" : "application/json"}, //보내는 타입의 명시
+				body : JSON.stringify({"num" : "1", "name": "mong"})
+			})
+			.then(  response  => response.json() )
+			.then( t => console.log(t) )
+					
+		}
+				
+		
+	</script>
+	
 </body>
 </html>

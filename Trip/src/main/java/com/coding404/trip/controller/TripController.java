@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-//@RequestMapping("/trip")
+@RequestMapping("/trip")
 public class TripController {
 
 	@RequestMapping("/main")
@@ -14,11 +14,8 @@ public class TripController {
 	}	
 	
 	@GetMapping("/notice_list")
-	public String noticeList() {
-		
-		String writer = "admin";
-		
-		
+	public String noticeList() {		
+		//String writer = "admin";		
 		return "trip/notice_list";
 	}
 }
