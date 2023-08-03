@@ -170,7 +170,7 @@ public class RestBasicController {
 	 * 받을 수 있는 restAPI 생성하기
 	 */
 	
-	
+	@CrossOrigin("*")
 	@GetMapping("/api/v1/getData/{num}/{name}")
 	public ResponseEntity<SimpleVO> getFetch(@PathVariable("num") int num, @PathVariable("name") String name) {
 		System.out.println(num);

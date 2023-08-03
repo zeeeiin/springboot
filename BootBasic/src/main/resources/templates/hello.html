@@ -49,9 +49,9 @@
 		a.onclick = () => { //이 안에서 요청 보내기
 			
 			fetch("http://localhost:8181/api/v1/getData/1/hong")
-			.then( ( response  => response.json() )
+			.then( response  => response.json() )
 			.then( t => console.log(t) )
-			)
+			
 		}
 		
 		////////////실습문제 post////////////////
@@ -64,7 +64,7 @@
 				headers : {"Content-Type" : "application/json"}, //보내는 타입의 명시
 				body : JSON.stringify({"num" : "1", "name": "mong"})
 			})
-			.then(  response  => response.json() )
+			.then( response  => response.json() )
 			.then( t => console.log(t) )
 					
 		}
