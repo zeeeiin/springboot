@@ -2,8 +2,10 @@ package com.simple.basic.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.validation.Valid;
+
+import com.simple.basic.command.MemoVO;
+import com.simple.basic.memo.service.MemoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -16,8 +18,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.simple.basic.command.MemoVO;
-import com.simple.basic.memo.service.MemoService;
 
 @Controller
 @RequestMapping("/memo")

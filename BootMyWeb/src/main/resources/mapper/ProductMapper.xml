@@ -31,6 +31,43 @@
 			   #{prod_category}			
 				)
 	</insert>
+	
+	<!--  
+		selectKey는 insert, update, delete 필요한 키값을 조회해서 가져오는 기능.
+		selectKey
+		
+		insert를 하기 전에 실행 or insert르 한 후에 실행
+		order="BEFORE" order="AFTER"
+		
+		keyProperty
+		vo객체를 전달할 때, select한 결과를 맵핑할 setter메소드명이 들어가야한다.
+			
+		resultType
+		select한 결과에 대한 반환 타입
+	
+	-->	
+	
+	
+	<insert id="productFileRegist">
+	
+		<selectKey order="BEFORE" keyProperty="prod_id" resultType="int">
+			select max(prod_id) as prod_id from product where prod_writer = #{prod_writer}
+		
+		</selectKey>
+		insert into product_upload(filename,
+								   filepath,
+								   uuid,
+								   prod_id,
+								   prod_writer)
+		values(#{filename},
+			   #{filepath},
+			   #{uuid},
+			   #{prod_id},
+			   #{prod_writer})
+		
+	</insert>
+	
+	
 	<!-- select * 
 		from product 
 		where prod_writer = #{writer}; -->
@@ -157,6 +194,13 @@
 		and category_detail_parent_lv = #{category_detail_lv}
 	
 	</select>
+		
+	<!-- 이미지데이터 가져오기 -->	
+	<select id="getAjaxImg" resultType="ProductUploadVO">
+		select * from product_upload where prod_id = #{prod_id}		
+	</select>
+	
+	
 	
 	
 </mapper>
