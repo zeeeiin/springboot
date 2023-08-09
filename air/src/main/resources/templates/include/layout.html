@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="setContent(content)">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="EUC-KR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>main</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    
+   <!-- <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}" />-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+	<!--<link rel="stylesheet" type="text/css" th:href="@{/css/side.css}" />-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/swiper.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/reserv_check.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/reserv_result.css}" />
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script th:src="@{/js/jquery-1.12.1.min.js}"></script>
+	<script th:src="@{/js/jquery-ui.min.js}"></script>
+	<script th:src="@{/js/style.js}"></script>
+	
+	<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+	<script th:src="@{/js/jquery.js}"></script>
+	
+    <script th:src="@{/js/swiper.js}"></script>
+
+	
+	<script>
+      
+      $(document).ready(function(){
+        $(".menuBtn").click(function(){
+          $(".sideBox").toggleClass("open");
+          $(".closeBtn").toggleClass("hidden");
+        });
+
+        $(".closeBtn").click( function() {
+          $(".sideBox").removeClass("open");
+          $(this).addClass("hidden");
+        });
+      });
+  
+    </script>
+	
+</head>
+
+
+<body>
+	
+	<!-- 큰 박스 -->
+	<div class="wrap">
+	
+		<!-- header  -->
+	    <div class="header">
+	    	<div class="header_title">
+	             <h3>땡처리닷컴</h3>
+	         </div>
+	
+            <!--<div class="header_menu">
+				                <a href="#">
+				                    <span class="menu"></span>                    
+				                </a>
+				         		 <button class="menu" type="button">메뉴</button>  
+		    	<a href="#">
+		    		<span class="menuBtn">버튼</span>
+		   		</a>		   
+           	</div>-->
+	            
+	    </div>
+	
+		<!--<div class="sideBox">  side 큰 박스  
+		
+			<span class="closeBtn">X</span> 
+		     
+		     side 상단     
+		    <div class="side_top">         
+            	<div class="title">
+              		<span>땡처리닷컴</span>
+            	</div>
+        	</div>  
+        	
+        	<div class="side_menuBox">  side 중앙 메뉴 박스 
+        	
+	            <div class="side_title">
+	                <h3>메뉴 바로가기</h3>
+	            </div>
+
+	            <div class="side_menu_nav">
+	
+	                <ul class="side_menuList">
+	                    <li class="side_icon">
+	                        <a href="">
+	                          <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateExair.png}" alt=""></span>  
+	                          <h4>해외항공</h4>
+	                        </a>
+	                    </li>
+	                    <li class="side_icon">
+	                      <a href="">
+	                        <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateInair.png}" alt=""></span>  
+	                        <h4>국내항공</h4>
+	                      </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateExhotel.png}" alt=""></span>  
+	                      <h4>해외호텔</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateInhotel.png}" alt=""></span>  
+	                      <h4>국내숙박</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_catePack (1).png}" alt=""></span>  
+	                      <h4>해외패키지</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_catePack.png}" alt=""></span>  
+	                      <h4>자유여행</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateRentcar (1).png}" alt=""></span>  
+	                      <h4>해외렌트카</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateRentcar.png}" alt=""></span>  
+	                      <h4>제주도 렌트카</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateTicket.png}" alt=""></span>  
+	                      <h4>제주할인입장권</h4>
+	                    </a>
+	                  </li>
+	                  <li class="side_icon">
+	                    <a href="">
+	                      <span  class="iconimage"><image th:src="@{/image/ico_menuSty3_cateExair.png}" alt=""></span>  
+	                      <h4>여행자보험</h4>
+	                    </a>
+	                  </li>                    
+	                </ul>
+	            </div>
+	            
+	         side 하단 박스1	
+	       	<div class="side_board">  side 하단 게시판 
+	              
+	            <div class="board">
+	              <a href="">
+	                <span>공지사항</span>
+	              </a>
+	            </div>
+	            <div class="board">
+	              <a href="">
+	                <span>자주 묻는 질문</span>
+	              </a>
+	            </div>
+	            <div class="board">
+	              <a href="">
+	                <span>이벤트</span>
+	              </a>
+	            </div>
+	            <div class="board">
+	              <a href="">
+	                <span>알리미신청</span>
+	              </a>
+	            </div>
+			</div>
+	            
+	        	<div class="side_bottom">  side 하단 박스2
+	                <div class="callcenter">땡처리닷컴 상담문의</div>
+	                <div class="callnum">02-3705-8833</div>
+	                <div class="calltime">오전 9시 ~ 오후 6시 (주말/공휴일 휴무)</div>
+	            </div>
+	            
+	        </div>  side_menuBox end 
+	
+     	</div> -->  	
+	
+<div th:replace="${content}"></div>
+		 
+	 <div class="footer">
+        <footer>
+            <div class="bottom-wrap">
+				
+                <ul>
+                    <li class="bottom_title">(주)땡처리닷컴</li>
+                </ul>
+                
+                <ul class="bottom_txt">
+                    <li>대표 : 편진웅, 신명근, 이진</li>
+                    <li>사업자등록번호 104-81-61287</li>
+                    <li>관광사업등록번호 국외 제2001-25호</li>
+                    <li>통신판매업등록번호 제 03283호</li>                           
+                    <li>서울시 중구 정동길 35 (두비빌딩 501호)</li>
+                    <li>Copyright ⓒ 2005-2019 (주)땡처리닷컴 All rights reserved.</li>
+                </ul>                
+            </div>
+        </footer>
+     </div>
+</body>
+</th:block>
+</html>

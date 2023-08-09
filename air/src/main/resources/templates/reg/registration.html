@@ -1,0 +1,3377 @@
+<!DOCTYPE html>
+<html>
+
+	<title>탑승객 정보입력</title>
+
+	<meta charset="UTF-8" />
+	<meta charset="EUC-KR" />
+	<!--공통 -->
+	<!--<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/loading.css}" />-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/registration.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/jquery-ui.min.css}" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script th:src="@{/js/jquery-1.12.1.min.js}"></script>
+	<script th:src="@{/js/jquery-ui.min.js}"></script>
+	<script th:src="@{/js/style.js}"></script>
+
+	<!--모달css-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}" />
+
+	<head>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="/image/favicon.ico">
+		<meta name="title" content="제주항공권 - 땡처리닷컴">
+		<meta name="description" content="대한민국 대표 여행플랫폼">
+		<meta name="keyword"
+			content="제주도항공권, 제주항공권, 제주항공, 제주항공권특가, 제주도항공권특가, 제주도항공권땡처리, 제주항공권예매, 국내항공권예약, 제주도비행기표, 제주도땡처리항공권, 국내선항공권예약, 제주도비행기, 제주도비행기예약, 땡처리항공권, 제주도비행기특가, 제주항공, 제주도항공, 제주도할인항공권, 제주도항공권가격비교">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="제주항공권 - 땡처리닷컴">
+		<meta property="og:description" content="대한민국 대표 여행플랫폼">
+		<meta property="og:image" content="/image/OpenGraphLogo.png">
+		<meta property="og:url" content="http://m.ttang.com/">
+		<title>땡처리닷컴 &gt; 국내항공</title>
+
+		<script src="https://connect.facebook.net/signals/config/1650048995237007?v=2.9.121&amp;r=stable"
+			async=""></script>
+		<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+		<script async="" src="//www.google-analytics.com/analytics.js"></script>
+		<script type="text/javascript">
+			var V_SCRIPT_VERSION = "20191220";
+			var IMAGE_DOMAIN = "http://images.ttang.com";
+			var v_072_domain_name = window.location.protocol + "//mappair.ttang.com";
+		</script>
+		<link type="text/css" rel="stylesheet" href="/css/font.css?v=20191220">
+		<link type="text/css" rel="stylesheet" href="/css/import.css?v=20191220">
+		<link type="text/css" rel="stylesheet" href="/css/jquery/swiper1.css?v=20191220">
+		<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="/css/includeSite/TMV2.css?v=20191220">
+	</head>
+
+	<body class="TMv2_body airdoBody">
+		<div class="TMv2_skip">
+			<a href="#TMv2_contents">contents</a>
+		</div>
+		<div id="TMv2_wrapper" class="TMv2_wrapper">
+			<script type="text/javascript" src="/common/header.do?isNoHeaderAgent="></script>
+			<div class="TMv2_headerWrap">
+				<script type="text/javascript" src="//mm.ttang.com/asset/js/export/header.js"></script>
+				<link type="text/css" rel="stylesheet" href="http://mm.ttang.com/asset/css/font.css?v=20180830">
+				<link type="text/css" rel="stylesheet" href="http://mm.ttang.com/asset/css/import.css?v=20180830">
+				<link type="text/css" rel="stylesheet" href="http://mm.ttang.com/asset/js/plugin/jquery-1.11.1.min.js">
+				<link type="text/css" rel="stylesheet"
+					href="http://mm.ttang.com/asset/js/plugin/jquery.bpopup-0.11.0.min.js">
+	<!--			<script type="text/javascript" src="http://mm.ttang.com/asset/js/jquery-utils.js?v=20180830"></script>
+				<script language="javascript" src="http://mm.ttang.com/common/headerMap.do"></script>
+				<header id="TMv2_header" class="TMv2_header">
+					<div class="abWrap topMenu"> <a href="javascript:;" class="abL" onclick="history.back();"
+							id="id_header_history_back"><span
+								class="ico_noTxt icoSet_headerMenu ico_back">뒤로가기</span></a>
+						<h1 class="tit shortCut">탑승객 정보 입력</h1>
+						<div class="abR"> <a href="#none" class="abR1"><span
+									class="ico_noTxt icoSet_headerMenu ico_menu">메뉴</span></a> </div>-->
+					</div>
+				</header>
+				<script
+					type="text/javascript">function __072_PROTOCOL_REPLACE(domain, to_protocol, is_change) {if (!is_change) return domain; var ret_value = domain; switch (to_protocol) {case "http": ret_value = ret_value.replace("https://", "http://"); break; case "https": ret_value = ret_value.replace("http://", "https://"); break;}	return ret_value;}</script>
+			</div>
+			<div class="TMv2_header_shadow"></div>
+			<script type="text/javascript" src="//mm.ttang.com/asset/js/export/header_navi.js"></script>
+			<script language="javascript" src="http://mm.ttang.com/common/headerNavi.do"></script>
+			<div class="TMv2_nav" id="TMv2_nav" style="display:none;">
+				<div class="innerWrap tyTotal">
+					<div class="scrContWrap">
+						<div class="navTop">
+							<div class="util_MV2 logout"> <a href="http://mm.ttang.com/index.html"
+									class="ico_noTxt home">home</a>
+								<p class="txt">로그인 해주세요</p>
+								<script type="text/javascript" src="https://mm.ttang.com/common/count/alarm.do"
+									charset="utf-8"></script><a href="http://mm.ttang.com/etc/alarm/list.do"
+									class="ico_noTxt alarm ">setting</a> <a
+									href="https://mm.ttang.com/member/setting.do" class="ico_noTxt setting">setting</a>
+								<div class="btn"><a
+										href="https://mm.ttang.com/member/login.do?fwd=aHR0cDovL21kb21haXIudHRhbmcuY29tLw=="
+										class="log">로그인 및 예약확인</a></div>
+							</div>
+						</div>
+						<div class="navCont vMV2">
+							<div class="bdrWrap">
+								<h3 class="def mt0">메뉴 바로가기</h3>
+								<ul class="menuList3 n3">
+									<li> <a href="http://mm.ttang.com/ttangair/index.do" class="cateExair"> <span
+												class="txt">해외항공</span> </a> </li>
+									<li> <a href="http://mdomair.ttang.com/inair/index.do" class="cateInair"> <span
+												class="txt">국내항공</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/exhotel/main.do" class="cateExhotel"> <span
+												class="txt">해외호텔</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/inhotel/main.do" class="cateInhotel"> <span
+												class="txt">국내숙박</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/product/pkg/index.do" class="catePack"> <span
+												class="txt"> <span class="wrapspan">해외패키지</span> </span> </a> </li>
+									<li> <a href="http://mm.ttang.com/product/free/index.do" class="catePack"> <span
+												class="txt"> <span class="wrapspan">자유여행</span> </span> </a> </li>
+									<li> <a href="http://mrentcar.ttang.com/exrentcar/index.do" class="cateRentcar">
+											<span class="txt">해외 렌트카</span> </a> </li>
+									<li> <a href="http://mrentcar.ttang.com/rentcar/index.do" class="cateRentcar"> <span
+												class="txt">제주도 렌트카</span> </a> </li>
+									<li> <a href="http://mpasstour.ttang.com/passtour/index.do" class="cateTicket">
+											<span class="txt">제주할인입장권</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/help/insurance/index.do" class="cateExair"> <span
+												class="txt">여행자보험</span> </a> </li>
+								</ul>
+							</div>
+							<div class="bdrWrap pd0">
+								<ul class="menuList2 tySm">
+									<li><a href="http://mm.ttang.com/help/notice/list.do"><span>공지사항</span></a></li>
+									<li><a href="http://mm.ttang.com/help/faq/list.do"><span>자주 묻는 질문</span></a></li>
+									<li><a href="http://mm.ttang.com/etc/event/list.do"><span>기획전/이벤트</span></a></li>
+									<li><a href="https://mm.ttang.com/etc/reqmail/view.do"><span>알리미신청</span></a></li>
+								</ul>
+							</div>
+							<div class="bdrWrap">
+								<div class="menuTxt">
+									<p class="tit">땡처리닷컴 상담문의</p>
+									<p class="tel"><a href="tel:02-3705-8833"><strong
+												class="fc_red">02-3705-8833</strong></a></p>
+									<p class="text">오전 9시~오후 6시(주말/공휴일 휴무)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <a href="#none" class="close ico_noTxt" id="navClose">close</a>
+			</div>
+			<div class="dimmedLayer nav" style="display:none;"></div>
+			<script src="http://mm.ttang.com/asset/js/dev/common/pub_navi.js"></script>
+			<section class="TMv2_section" id="TMv2_section">
+
+				<form id="inairForm" name="inairForm" method="post">
+					<input type="hidden" id="departure"
+						value="{&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;airlineCodeShare&quot;:&quot;&quot;,&quot;depAirportName&quot;:&quot;김포&quot;,&quot;arrAirportName&quot;:&quot;제주&quot;,&quot;depAirport&quot;:&quot;GMP&quot;,&quot;arrAirport&quot;:&quot;CJU&quot;,&quot;depDate&quot;:&quot;2023-08-10&quot;,&quot;depTime&quot;:&quot;06:10&quot;,&quot;arrTime&quot;:&quot;07:20&quot;,&quot;adultCnt&quot;:1,&quot;childCnt&quot;:0,&quot;infantCnt&quot;:0,&quot;flightNumber&quot;:&quot;8937&quot;,&quot;availSeatCount&quot;:9,&quot;fareClass&quot;:&quot;S&quot;,&quot;fareAmount&quot;:48000,&quot;fareFuel&quot;:6600,&quot;fareTax&quot;:4000,&quot;svcCharge&quot;:1000,&quot;pmdata&quot;:&quot;eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==&quot;,&quot;fareTotalAmount&quot;:59600}">
+					<input type="hidden" id="arrival"
+						value="{&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;airlineCodeShare&quot;:&quot;&quot;,&quot;depAirportName&quot;:&quot;제주&quot;,&quot;arrAirportName&quot;:&quot;김포&quot;,&quot;depAirport&quot;:&quot;CJU&quot;,&quot;arrAirport&quot;:&quot;GMP&quot;,&quot;depDate&quot;:&quot;2023-08-13&quot;,&quot;depTime&quot;:&quot;06:30&quot;,&quot;arrTime&quot;:&quot;07:40&quot;,&quot;adultCnt&quot;:1,&quot;childCnt&quot;:0,&quot;infantCnt&quot;:0,&quot;flightNumber&quot;:&quot;8900&quot;,&quot;availSeatCount&quot;:9,&quot;fareClass&quot;:&quot;S&quot;,&quot;fareAmount&quot;:48000,&quot;fareFuel&quot;:6600,&quot;fareTax&quot;:4000,&quot;svcCharge&quot;:1000,&quot;pmdata&quot;:&quot;eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==&quot;,&quot;fareTotalAmount&quot;:59600}">
+					<input type="hidden" id="depDiscounts"
+						value="{&quot;addDiscounts&quot;:[],&quot;adultDiscounts&quot;:[{&quot;code&quot;:&quot;AA&quot;,&quot;desc&quot;:&quot;성인&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IkFBIiwiZGUiOiLshLHsnbgiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;},{&quot;code&quot;:&quot;P1&quot;,&quot;desc&quot;:&quot;장애인 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IlAxIiwiZGUiOiLsnqXslaDsnbgg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;},{&quot;code&quot;:&quot;P2&quot;,&quot;desc&quot;:&quot;1-3급 장애인 동반보호자 1인 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IlAyIiwiZGUiOiIxLTPquIkg7J6l7JWg7J24IOuPmeuwmOuztO2YuOyekCAx7J24IOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=&quot;},{&quot;code&quot;:&quot;N3&quot;,&quot;desc&quot;:&quot;고엽제후유증 환자 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6Ik4zIiwiZGUiOiLqs6Dsl73soJztm4TsnKDspp0g7ZmY7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=&quot;},{&quot;code&quot;:&quot;N1&quot;,&quot;desc&quot;:&quot;국가유공상이자/518민주유공부상자 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6Ik4xIiwiZGUiOiLqta3qsIDsnKDqs7Xsg4HsnbTsnpAvNTE466+87KO87Jyg6rO167aA7IOB7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=&quot;},{&quot;code&quot;:&quot;PI&quot;,&quot;desc&quot;:&quot;기초생활수급자 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IlBJIiwiZGUiOiLquLDstIjsg53tmZzsiJjquInsnpAg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;}],&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;childDiscounts&quot;:[{&quot;code&quot;:&quot;CQ&quot;,&quot;desc&quot;:&quot;소아 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IkNRIiwiZGUiOiLshozslYQg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;}],&quot;infantDiscounts&quot;:[{&quot;code&quot;:&quot;IF&quot;,&quot;desc&quot;:&quot;유아(만 2세 미만)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IklGIiwiZGUiOiLsnKDslYQo66eMIDLshLgg66+466eMKSIsImV4MSI6IiIsImV4MiI6IiJ9&quot;}],&quot;segKind&quot;:1}">
+					<input type="hidden" id="arrDiscounts"
+						value="{&quot;addDiscounts&quot;:[],&quot;adultDiscounts&quot;:[{&quot;code&quot;:&quot;AA&quot;,&quot;desc&quot;:&quot;성인&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IkFBIiwiZGUiOiLshLHsnbgiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;},{&quot;code&quot;:&quot;P1&quot;,&quot;desc&quot;:&quot;장애인 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IlAxIiwiZGUiOiLsnqXslaDsnbgg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;},{&quot;code&quot;:&quot;P2&quot;,&quot;desc&quot;:&quot;1-3급 장애인 동반보호자 1인 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IlAyIiwiZGUiOiIxLTPquIkg7J6l7JWg7J24IOuPmeuwmOuztO2YuOyekCAx7J24IOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=&quot;},{&quot;code&quot;:&quot;N3&quot;,&quot;desc&quot;:&quot;고엽제후유증 환자 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6Ik4zIiwiZGUiOiLqs6Dsl73soJztm4TsnKDspp0g7ZmY7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=&quot;},{&quot;code&quot;:&quot;N1&quot;,&quot;desc&quot;:&quot;국가유공상이자/518민주유공부상자 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6Ik4xIiwiZGUiOiLqta3qsIDsnKDqs7Xsg4HsnbTsnpAvNTE466+87KO87Jyg6rO167aA7IOB7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=&quot;},{&quot;code&quot;:&quot;PI&quot;,&quot;desc&quot;:&quot;기초생활수급자 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IlBJIiwiZGUiOiLquLDstIjsg53tmZzsiJjquInsnpAg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;}],&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;childDiscounts&quot;:[{&quot;code&quot;:&quot;CQ&quot;,&quot;desc&quot;:&quot;소아 공항세할인(50%)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IkNRIiwiZGUiOiLshozslYQg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==&quot;}],&quot;infantDiscounts&quot;:[{&quot;code&quot;:&quot;IF&quot;,&quot;desc&quot;:&quot;유아(만 2세 미만)&quot;,&quot;extra1&quot;:&quot;&quot;,&quot;extra2&quot;:&quot;&quot;,&quot;pmDiscount&quot;:&quot;eyJjZCI6IklGIiwiZGUiOiLsnKDslYQo66eMIDLshLgg66+466eMKSIsImV4MSI6IiIsImV4MiI6IiJ9&quot;}],&quot;segKind&quot;:2}">
+					<input type="hidden" id="booking">
+					<input type="hidden" id="authType">
+					<input type="hidden" name="remark">
+					<input type="hidden" name="memberSysId" value="NOM20230807a7825">
+					<input type="hidden" name="depAirport" value="GMP">
+					<input type="hidden" name="arrAirport" value="CJU">
+					<input type="hidden" name="tripType" value="RT">
+					<input type="hidden" name="channel" value="MB">
+					<input type="hidden" id="chk_dep_date" name="chk_dep_date" value="2023-08-13">
+					<input type="hidden" id="depAirlineCode" value="OZ">
+					<input type="hidden" id="arrAirlineCode" value="OZ">
+					<input type="hidden" id="depTokenId" name="depTokenId" value="">
+					<input type="hidden" id="arrTokenId" name="arrTokenId" value="">
+					<input type="hidden" id="depAirlineCodeShare" value="">
+					<input type="hidden" id="arrAirlineCodeShare" value="">
+
+
+					<div id="TMv2_contents" class="TMv2_contents bottomFix">
+						<div class="wrapDef">
+							<h3 class="def">탑승객 정보<!-- 탑승객 정보 --></h3>
+							<p class="def topPr">
+								<strong>예약 후 탑승객 이름은 <span class="fc_red">변경 불가</span>하며 변경을 원하실 경우, <span
+										class="fc_red">취소 후 새로 예약을 진행</span>하셔야 합니다.</strong><br>탑승객 이름과 신분증 상의 이름이
+								다를 경우 탑승이 거절됩니다. <!-- <strong>예약 후 탑승객 이름은 <span class="fc_red">변경 불가</span>하며 변경을 원하실 경우, <span class="fc_red">취소 후 새로 예약을 진행</span>하셔야 합니다.</strong><br>
+			탑승객 이름과 신분증 상의 이름이 다를 경우 탑승이 거절됩니다. -->
+							</p>
+							<ul class="listDef d3 bgDot mt12">
+								<li>
+									소아(24개월 이상~13세 미만) 및 유아(24개월 미만) 요금은 출발일 기준입니다. <br>도착일 기준으로 만 13세 이상인 소아와 만 2세가
+									넘는 유아는 추가 차액이 발생할 수 있습니다. <!-- 소아(24개월 이상~13세 미만) 및 유아(24개월 미만) 요금은 출발일 기준입니다. <br>
+				도착일 기준으로 만 13세 이상인 소아와 만 2세가 넘는 유아는 추가 차액이 발생할 수 있습니다. -->
+								</li>
+								<li>
+									모든 항공운임은 개인 신분 할인(제주도민, 소아, 경로, 장애인 등)과 중복 적용이 되지 않습니다. <br>잘못 적용 시 발생되는 차액금은
+									고객님이 부담하셔야 합니다. <!-- 모든 항공운임은 개인 신분 할인(제주도민, 소아, 경로, 장애인 등)과 중복 적용이 되지 않습니다. <br>
+				잘못 적용 시 발생되는 차액금은 고객님이 부담하셔야 합니다. -->
+								</li>
+								<li>
+									성인은 신분증(또는 운전면허증), 외국인(여권), 소아/유아는 생년월일(등본, 가족관계증명서, 건강보험증, 여권) 확인 서류를 지참하셔야
+									합니다.
+									<!-- 성인은 신분증(또는 운전면허증), 외국인(여권), 소아/유아는 생년월일(등본, 가족관계증명서, 건강보험증, 여권) 확인 서류를 지참하셔야 합니다. -->
+								</li>
+								<li>
+									개인 신분 할인 대상자인 경우 군인(휴가증), 장애인(복지카드), 제주도민(제주도 명시된 신분증 또는 제외 제주도민증) 등 확인증을 지참하셔야
+									합니다.
+									<!-- 개인 신분 할인 대상자인 경우 군인(휴가증), 장애인(복지카드), 제주도민(제주도 명시된 신분증 또는 제외 제주도민증) 등 확인증을 지참하셔야 합니다. -->
+								</li>
+								<li><strong><span class="fc_red">동명이인의 경우 인터넷으로 동시 예약이 불가능 하오니, 각 탑승자 별로 예약을 진행해 주시기
+											바랍니다. 동시 예약을 하고자 하시는 분은 각 항공사를 통해 예약바랍니다. </span></strong></li>
+
+								<li><strong class="fc_red">아시아나, 진에어의 경우, </strong>취소시 <strong class="fc_blue">결제시점이
+									아닌</strong> <strong class="fc_red">예약시점</strong>에 따라 <strong
+									class="fc_red">항공사수수료가 적용</strong>됩니다. (<strong class="fc_red">예약시점 : 결제 전 명단
+									입력시간</strong> / 결제시점 : 실제 카드 결제시간)</li>
+							</ul>
+							</br>
+							<!--<ul class="formSetTy2 rourndSet titW_130 mt10" id="reserverInfo">-->
+								<li class="titIn">
+									<h4 class="def">예약번호</h4>
+									<div class="formWrap inp">
+										<span class="wrap"><input type="text" name="resNumber" class="trans"
+												maxlength="30" readonly="readonly" value="1234"
+												style="background-color: white;">
+										</span>
+									</div>
+								</li>
+								<li class="titIn">
+									<h4 class="def">전체이름<!-- 성 --></h4>
+									<div class="formWrap inp">
+										<span class="wrap">
+											<input type="text" name="fullName" class="trans" maxlength="30" title="성, 이름" placeholder="(예: 홍길동)" value=""></span>
+									</div>
+								</li>
+								<li class="titIn">
+									<h4 class="def">생년월일<!-- 생년월일 --></h4>
+									<div class="formWrap brthMix">
+										<span class="wrap"><input type="number"
+												name="paxList[0][birthday]" class="trans" maxlength="8"
+												pattern="[0-9]*" title="생년월일"
+												placeholder="(예: 20001234)" value=""></span>
+										<div class="wrapGender tabSty1 js">
+											<input type="hidden" name="paxList[0][paxType]" value="A">
+											<input type="hidden" name="paxList[0][gender]">
+											<ul class="">
+												<li><a href="#none"><span
+															class="wp">남<!-- 남 --></span></a></li>
+												<!-- .on -->
+												<li><a href="#none"><span
+															class="wp">여<!-- 여 --></span></a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="titIn">
+									<h4 class="def">휴대폰번호<!-- 휴대폰번호 --></h4>
+									<div class="formWrap inp">
+										<input type="hidden" name="phone">
+										<span class="wrap"><input type="number" id="mobile" name="mobile" class="trans"
+												maxlength="11" pattern="[0-9]*" title="휴대폰번호"
+												placeholder="(예: 01012345678)"></span>
+									</div>
+								</li>
+								<li class="titIn">
+									<h4 class="def">이메일<!-- 이메일 --></h4>
+									<div class="formWrap inp">
+										<span class="wrap"><input type="email" name="email" class="trans" title="이메일"
+												placeholder="(예: your@email.com)"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="wrapDef fit">
+							<div class="fitInner">
+							</div>
+
+							<div class="listToggle sty1 mt15">
+								<ul class="listPassanger" id="passengerInfo">
+									<li class="on valid adult"><!-- .on -->
+										<a href="#none" class="tit link">
+											<div>
+												<span class="txt">성인1<!-- 성인 1 --></span>
+												<span class="ico_noTxt icoSet_listToggle bgArr">close</span>
+											</div>
+										</a>
+										<div class="cont" style="display:block">
+											<ul class="formSetTy2 titW_95">
+												<li class="titIn">
+													
+												</li>
+												<li>
+													<h4 class="def departureTitle">가는편: 아시아나항공<span class="fn">(김포 →
+															제주)</span></h4>
+													<div class="formWrap sel2">
+														<span class="wrap">
+															<select name="paxList[0][pmDiscount1]"
+																title="Select discount" class="def adultDiscount1">
+																<option
+																	value="eyJjZCI6IkFBIiwiZGUiOiLshLHsnbgiLCJleDEiOiIiLCJleDIiOiIifQ==">
+																	성인</option>
+																<option
+																	value="eyJjZCI6IlAxIiwiZGUiOiLsnqXslaDsnbgg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==">
+																	장애인 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6IlAyIiwiZGUiOiIxLTPquIkg7J6l7JWg7J24IOuPmeuwmOuztO2YuOyekCAx7J24IOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=">
+																	1-3급 장애인 동반보호자 1인 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6Ik4zIiwiZGUiOiLqs6Dsl73soJztm4TsnKDspp0g7ZmY7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=">
+																	고엽제후유증 환자 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6Ik4xIiwiZGUiOiLqta3qsIDsnKDqs7Xsg4HsnbTsnpAvNTE466+87KO87Jyg6rO167aA7IOB7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=">
+																	국가유공상이자/518민주유공부상자 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6IlBJIiwiZGUiOiLquLDstIjsg53tmZzsiJjquInsnpAg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==">
+																	기초생활수급자 공항세할인(50%)</option>
+															</select>
+														</span>
+														<!-- 마일리지 추후적용 
+									<span class="wrap">
+										<input type="text" class="def" title="항공사 마일리지 번호" placeholder="항공사 마일리지 번호">
+									</span>			
+									-->
+													</div>
+												</li>
+												<li>
+													<h4 class="def arrivalTitle">오는편: 아시아나항공<span class="fn">(제주 →
+															김포)</span></h4>
+													<div class="formWrap sel2">
+														<span class="wrap">
+															<select name="paxList[0][pmDiscount2]"
+																title="Select discount" class="def adultDiscount2">
+																<option
+																	value="eyJjZCI6IkFBIiwiZGUiOiLshLHsnbgiLCJleDEiOiIiLCJleDIiOiIifQ==">
+																	성인</option>
+																<option
+																	value="eyJjZCI6IlAxIiwiZGUiOiLsnqXslaDsnbgg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==">
+																	장애인 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6IlAyIiwiZGUiOiIxLTPquIkg7J6l7JWg7J24IOuPmeuwmOuztO2YuOyekCAx7J24IOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=">
+																	1-3급 장애인 동반보호자 1인 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6Ik4zIiwiZGUiOiLqs6Dsl73soJztm4TsnKDspp0g7ZmY7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=">
+																	고엽제후유증 환자 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6Ik4xIiwiZGUiOiLqta3qsIDsnKDqs7Xsg4HsnbTsnpAvNTE466+87KO87Jyg6rO167aA7IOB7J6QIOqzte2VreyEuO2VoOyduCg1MCUpIiwiZXgxIjoiIiwiZXgyIjoiIn0=">
+																	국가유공상이자/518민주유공부상자 공항세할인(50%)</option>
+																<option
+																	value="eyJjZCI6IlBJIiwiZGUiOiLquLDstIjsg53tmZzsiJjquInsnpAg6rO17ZWt7IS47ZWg7J24KDUwJSkiLCJleDEiOiIiLCJleDIiOiIifQ==">
+																	기초생활수급자 공항세할인(50%)</option>
+															</select>
+														</span>
+														<!-- 마일리지 추후적용 
+									<span class="wrap">
+										<input type="text" class="def" title="항공사 마일리지 번호" placeholder="항공사 마일리지 번호">
+									</span>
+									 -->
+													</div>
+												</li>
+
+												<li class="titIn mt0">
+													<h4 class="def">국적<!-- 국적 --></h4>
+													<div class="formWrap sel">
+														<span class="wrap">
+															<select name="paxList[0][nationality]" title="country"
+																class="def">
+																<option value="BVT">BOUVET ISLAND</option>
+																<option value="IOT">BRITISH INDIAN..</option>
+																<option value="FXX">FRANCE METROPOL..</option>
+																<option value="ATF">FRENCH SOUTHERN..</option>
+																<option value="HMD">HEARD AND MC..</option>
+																<option value="MYT">MAYOTTE </option>
+																<option value="PCN">PITCAIRN </option>
+																<option value="SGS">SOUTH GEORGIA..</option>
+																<option value="SJM">SVALBARD..</option>
+																<option value="TKL">TOKELAU </option>
+																<option value="GHA">가나 </option>
+																<option value="GAB">가봉 </option>
+																<option value="GUY">가이아나 </option>
+																<option value="GMB">감비아 </option>
+																<option value="GLP">과델루페 </option>
+																<option value="GTM">과테말라 </option>
+																<option value="GUM">괌 </option>
+																<option value="GRD">그레나다 </option>
+																<option value="GRC">그리스 </option>
+																<option value="GRL">그린란드 </option>
+																<option value="GIN">기니 </option>
+																<option value="GNB">기니비사우 </option>
+																<option value="NAM">나미비아 </option>
+																<option value="NRU">나우루 </option>
+																<option value="NGA">나이지리아 </option>
+																<option value="ZAF">남아프리카공화국 </option>
+																<option value="NLD">네덜란드 </option>
+																<option value="KNA">네비스 </option>
+																<option value="NPL">네팔 </option>
+																<option value="NOR">노르웨이 </option>
+																<option value="NFK">노퍽아일랜드 </option>
+																<option value="NZL">뉴질랜드 </option>
+																<option value="NCL">뉴칼레도니아 </option>
+																<option value="NIU">니웨 </option>
+																<option value="NER">니제르 </option>
+																<option value="NIC">니카라과 </option>
+																<option value="TWN">대만 </option>
+																<option value="DNK">덴마크 </option>
+																<option value="DMA">도미니카 </option>
+																<option value="DOM">도미니카공화국 </option>
+																<option value="DEU">독일 </option>
+																<option value="TLS">동 티모르 </option>
+																<option value="TLS">동티모르 </option>
+																<option value="LAO">라오스 </option>
+																<option value="LBR">라이베리아 </option>
+																<option value="LVA">라트비아 </option>
+																<option value="RUS">러시아연방 </option>
+																<option value="LBR">레바논 </option>
+																<option value="LSO">레소토 </option>
+																<option value="ROU">루마니아 </option>
+																<option value="LUX">룩셈부르크 </option>
+																<option value="RWA">르완다 </option>
+																<option value="LBY">리비아 </option>
+																<option value="REU">리유니온 </option>
+																<option value="LTU">리투아니아 </option>
+																<option value="LIE">리히텐쉬타인 </option>
+																<option value="MDG">마다가스카르 </option>
+																<option value="MTQ">마르티니크 </option>
+																<option value="ANT">마르틴네덜란드령 </option>
+																<option value="MHL">마셜군도 </option>
+																<option value="FSM">마이크로네시아 </option>
+																<option value="MAC">마카오 </option>
+																<option value="MKD">마케도니아 </option>
+																<option value="MWI">말라위 </option>
+																<option value="MYS">말레이시아 </option>
+																<option value="MLI">말리 </option>
+																<option value="MLT">말타 </option>
+																<option value="MEX">멕시코 </option>
+																<option value="MCO">모나코 </option>
+																<option value="MAR">모로코 </option>
+																<option value="MUS">모리셔스 </option>
+																<option value="MRT">모리타니 </option>
+																<option value="MOZ">모잠비크 </option>
+																<option value="MSR">몬체라트 </option>
+																<option value="MDA">몰도바공화국 </option>
+																<option value="MDV">몰디브 </option>
+																<option value="MNG">몽골 </option>
+																<option value="USA">미국 </option>
+																<option value="MMR">미얀마 </option>
+																<option value="VUT">바누아투 </option>
+																<option value="BHR">바레인 </option>
+																<option value="BRB">바바도스 </option>
+																<option value="VAT">바티칸시티 </option>
+																<option value="BHS">바하마 </option>
+																<option value="BGD">방글라데시 </option>
+																<option value="BMU">버뮤다 </option>
+																<option value="BEN">베냉 </option>
+																<option value="VEN">베네수엘라 </option>
+																<option value="VNM">베트남 </option>
+																<option value="BEL">벨기에 </option>
+																<option value="BLR">벨로루시 </option>
+																<option value="BLZ">벨리제 </option>
+																<option value="BIH">보스니아헤르체고 </option>
+																<option value="BWA">보츠와나 </option>
+																<option value="BOL">볼리비아 </option>
+																<option value="BDI">부룬디 </option>
+																<option value="BFA">부르키나파소 </option>
+																<option value="BTN">부탄 </option>
+																<option value="MNP">북마리아나제도 </option>
+																<option value="PRK">북한 </option>
+																<option value="BGR">불가리아 </option>
+																<option value="BRA">브라질 </option>
+																<option value="BRN">브루나이 </option>
+																<option value="VGB">브리티시 버진아일랜드 </option>
+																<option value="STP">사오토메프린시페 </option>
+																<option value="SAU">사우디아라비아 </option>
+																<option value="CYP">사이프러스 </option>
+																<option value="SMR">산마리노 </option>
+																<option value="WSM">서사모아 </option>
+																<option value="ESH">서사하라 </option>
+																<option value="SEN">세네갈 </option>
+																<option value="SER">세르비아 </option>
+																<option value="SYC">세이셸 </option>
+																<option value="LCA">세인트루시아 </option>
+																<option value="VCT">세인트빈센트 </option>
+																<option value="SOM">소말리아 </option>
+																<option value="SLB">솔로몬군도 </option>
+																<option value="SDN">수단 </option>
+																<option value="SUR">수리남 </option>
+																<option value="LKA">스리랑카 </option>
+																<option value="SWZ">스와질랜드 </option>
+																<option value="SWE">스웨덴 </option>
+																<option value="CHE">스위스 </option>
+																<option value="SPM">스트피에레 미렌 </option>
+																<option value="ESP">스페인 </option>
+																<option value="SVK">슬로바키아 </option>
+																<option value="SVN">슬로베니아 </option>
+																<option value="SYR">시리아 </option>
+																<option value="SLE">시에라 리온 </option>
+																<option value="SGP">싱가포르 </option>
+																<option value="ARE">아랍에미리트 </option>
+																<option value="ABW">아루바 </option>
+																<option value="ARG">아르헨티나 </option>
+																<option value="ASM">아메리칸사모아 </option>
+																<option value="SHN">아센션 이스난드 </option>
+																<option value="ISL">아이슬란드 </option>
+																<option value="IRL">아일랜드공화국 </option>
+																<option value="AZE">아제르바이잔 </option>
+																<option value="AFG">아프가니스탄 </option>
+																<option value="AND">안도라 </option>
+																<option value="ATA">안타르티카 </option>
+																<option value="ATG">안티구아 </option>
+																<option value="ARM">알메니아 </option>
+																<option value="ALB">알바니아 </option>
+																<option value="DZA">알제리 </option>
+																<option value="AGO">앙골라 </option>
+																<option value="AIA">앙길라 </option>
+																<option value="ETH">에디오피아 </option>
+																<option value="ERI">에리트레아 </option>
+																<option value="EST">에스토니아 </option>
+																<option value="ECU">에콰도르 </option>
+																<option value="SLV">엘살바도르 </option>
+																<option value="GBR">영국 </option>
+																<option value="YEM">예멘 </option>
+																<option value="OMN">오만 </option>
+																<option value="AUT">오스트리아 </option>
+																<option value="HND">온두라스 </option>
+																<option value="JOR">요르단 </option>
+																<option value="UGA">우간다 </option>
+																<option value="URY">우루과이 </option>
+																<option value="UZB">우즈베키스탄 </option>
+																<option value="UKR">우크라이나 </option>
+																<option value="YUG">유고 </option>
+																<option value="UMI">유에스 마이너 아일</option>
+																<option value="VIR">유에스 버진아일</option>
+																<option value="IRQ">이라크 </option>
+																<option value="IRN">이란 </option>
+																<option value="ISR">이스라엘 </option>
+																<option value="EGY">이집트 </option>
+																<option value="ITA">이탈리아 </option>
+																<option value="IND">인도 </option>
+																<option value="IDN">인도네시아 </option>
+																<option value="JPN">일본 </option>
+																<option value="JAM">자메이카 </option>
+																<option value="ZMB">잠비아 </option>
+																<option value="GNQ">적도기니공화국 </option>
+																<option value="GEO">조지아 </option>
+																<option value="CHN">중국 </option>
+																<option value="CAF">중앙아프리카공화국 </option>
+																<option value="DJI">지부티 </option>
+																<option value="GIB">지브롤터 </option>
+																<option value="ZWE">짐바브웨 </option>
+																<option value="TCD">차드 </option>
+																<option value="CZE">체코 </option>
+																<option value="CHL">칠레 </option>
+																<option value="CMR">카메룬 </option>
+																<option value="CPV">카보베르데 </option>
+																<option value="KAZ">카자흐스탄 </option>
+																<option value="QAT">카타르 </option>
+																<option value="KHM">캄보디아 </option>
+																<option value="CAN">캐나다 </option>
+																<option value="KEN">케냐 </option>
+																<option value="CYM">케이만 </option>
+																<option value="COM">코모로스 </option>
+																<option value="CRI">코스타리카 </option>
+																<option value="CCK">코코스섬 </option>
+																<option value="CIV">코트디브와르 </option>
+																<option value="COL">콜롬비아 </option>
+																<option value="COG">콩고 </option>
+																<option value="COD">콩고(자이레) </option>
+																<option value="CUB">쿠바 </option>
+																<option value="KWT">쿠웨이트 </option>
+																<option value="COK">쿡아일랜드 </option>
+																<option value="HRV">크로아티아 </option>
+																<option value="CXR">크리스마스섬 </option>
+																<option value="KGZ">키리기스스탄 </option>
+																<option value="KIR">키리바시 </option>
+																<option value="TJK">타지키스탄 </option>
+																<option value="TZA">탄자니아 </option>
+																<option value="THA">태국 </option>
+																<option value="TCA">터크스앤 카이코스</option>
+																<option value="TUR">터키 </option>
+																<option value="TGO">토고 </option>
+																<option value="TON">통가 </option>
+																<option value="TKM">투르크메니스탄 </option>
+																<option value="TUV">투발루 </option>
+																<option value="TUN">튀니지 </option>
+																<option value="TTO">트리니다드토바고 </option>
+																<option value="PAN">파나마 </option>
+																<option value="PRY">파라과이 </option>
+																<option value="PAK">파키스탄 </option>
+																<option value="PNG">파푸아뉴기니 </option>
+																<option value="PLW">팔라우 </option>
+																<option value="PSE">팔레스타인 자치구 </option>
+																<option value="FRO">페로스제도 </option>
+																<option value="PER">페루 </option>
+																<option value="PRT">포르투갈 </option>
+																<option value="FLK">포크랜드 </option>
+																<option value="POL">폴란드 </option>
+																<option value="PYF">폴리네시아(프랑스령) </option>
+																<option value="PRI">푸에르토리코 </option>
+																<option value="FRA">프랑스 </option>
+																<option value="GUF">프랑스령 기아나 </option>
+																<option value="FJI">피지 </option>
+																<option value="FIN">핀란드 </option>
+																<option value="PHL">필리핀 </option>
+																<option value="HTI">하이티 </option>
+																<option value="KOR" selected="selected">한국 </option>
+																<option value="HUN">헝가리 </option>
+																<option value="AUS">호주 </option>
+																<option value="HKG">홍콩 </option>
+																<option value="WLF">후투나 </option>
+															</select>
+														</span>
+													</div>
+												</li>
+
+											</ul><!-- // 탑승객1  -->
+											<p class="comment indent_star_d3 mt10">※ 내국인의 경우, 신분증상의 성명, 외국인의 경우, 여권상의
+												영문명으로 기입해주세요.</p>
+											<p class="comment indent_star_d3">※ 할인코드 선택시 항공사 예약 후, 선택한 할인코드운임으로 적용됩니다.
+												결제전에 금액을 꼭 확인해주세요.</p>
+											<p class="comment indent_star_d3">※ 19년 7월 이후 복지카드 발급자는 중증/경증으로 발급되어 변경 기준
+												적용, 이전 발급된 복지카드 이용자는 기준 기준 적용</p>
+											<p class="comment indent_star_d3">※ 공동운항 항공편은 할인코드를 사용할 수 없습니다.</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<script>
+								/* 성별 > toggle */
+								$('.brthMix .tabSty1.js a').click(function (e) {
+									e.preventDefault();
+									var itemWrap = $(this).parent();
+									$(itemWrap).parent().find('li').removeClass('on');
+									$(this).parent().addClass('on');
+									if ($(this).closest('ul').find('li').index(itemWrap) == 0) {
+										$(this).closest('.wrapGender').find('input:last').val('M');
+									} else {
+										$(this).closest('.wrapGender').find('input:last').val('F');
+									}
+								});
+
+								/* 탑승객 정보 > list toggle */
+								$('.listPassanger a.link').click(function (e) {
+									e.preventDefault();
+									var itemWrap = $(this).parent();
+									$(itemWrap).find('.cont').slideToggle();
+									$(itemWrap).toggleClass('on');
+								});
+							</script>
+						</div>
+
+						<div class="wrapDef" id="addDiscountInfo" style="display:none;">
+							<h3 class="def">추가 할인 선택<!-- 추가 할인 선택 --></h3>
+							<p class="def topPr">
+								추가 할인 적용은 전체 탑승객에 일괄 적용되므로, <span class="fc_red">비적용 대상자는 별도로 예약을 진행</span>해 주시기 바랍니다.
+								<!-- <strong>추가 할인 적용은 전체 탑승객에 일괄 적용되므로, <span class="fc_red">비적용 대상자는 별도로 예약을 진행</span>해 주시기 바랍니다. </strong> -->
+							</p>
+							<ul class="listDef d3 bgDot mt12">
+								<li>
+									제주도민 또는 재외도민/명예도민 적용 대상 여부를 반드시 확인하시기 바랍니다.
+									<!-- 제주도민 또는 재외도민/명예도민 적용 대상 여부를 반드시 확인하시기 바랍니다. -->
+								</li>
+								<li class="bgNo ptb07">
+									<div class="btn_area n2 pd ">
+										<span class="btnWrap"><button type="button" class="btn styC c_dgray"
+												onclick="MAIN('discount001');return false;">제주도민
+												할인<!-- 제주도민 할인 --></button></span>
+										<span class="btnWrap"><button type="button" class="btn styC c_dgray"
+												onclick="MAIN('discount002');return false;">제외/명예도민
+												할인<!-- 제외/명예도민 할인 --></button></span>
+									</div>
+								</li>
+								<li>
+									개인 신분 할인 오적용 시 발생되는 차액금은 고객님이 부담하셔야 합니다.<br>또한 신분 선택 오적용 후 재 발권 시 환불 수수료도 적용됩니다. <!-- 개인 신분 할인 오적용 시 발생되는 차액금은 고객님이 부담하셔야 합니다.<br>
+				또한 신분 선택 오적용 후 재 발권 시 환불 수수료도 적용됩니다. -->
+								</li>
+							</ul>
+							<div class="colorboxGraySq pd15 mt20">
+								<ul class="formSetTy2">
+									<li style="display:none;">
+										<h4 class="def">&nbsp;<!-- 가는편: 진에어<span class="fn">(김포 → 제주)</span> --></h4>
+										<div class="formWrap sel">
+											<span class="wrap">
+												<select id="depAddDiscount" title="할인선택" class="def" required="">
+													<option value="" selected="">할인선택<!-- 할인선택 --></option>
+												</select>
+											</span>
+										</div>
+									</li>
+									<li style="display:none;">
+										<h4 class="def">&nbsp;<!-- 오는편: 아시아나<span class="fn">(제주  → 제주)</span> --></h4>
+										<div class="formWrap sel">
+											<span class="wrap">
+												<select id="arrAddDiscount" title="할인선택" class="def" required="">
+													<option value="" selected="">할인선택<!-- 할인선택 --></option>
+												</select>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="wrapDef fit">
+							<div class="fitInner">
+								<h3 class="def">이용규정 동의<!-- 이용규정 동의 --></h3>
+								<p class="def topPr">
+									아래 규정을 확인 하신 후 동의를 해주셔야 예약이 가능합니다.<br><strong class="fc_red">예약변경/취소/환불 규정, 요금규정 및
+										결제정보, 일반규정</strong>은 각 항공사 규정입니다. <!-- 아래 규정을 확인 하신 후 동의를 해주셔야 예약이 가능합니다.<br>
+				<strong class="fc_red">예약변경/취소/환불 규정, 요금규정 및 결제정보, 일반규정</strong>은 각 항공사 규정입니다. -->
+								</p>
+							</div>
+
+							<div class="ac mt15">
+								<span class="btnWrap">
+									<button type="button" class="btn styD c_rgray bgL_arrDn" id="btn_policyAll"><span
+											class="bg">모든 약관에 동의<!-- 모든 약관에 동의 --></span></button>
+									<!-- <button class="btn styD c_rgray bgL_arrDn on"><span class="bg">모든 약관에 동의</span></button> -->
+								</span>
+								<script>
+									/* 약관동의 > 모든약관동의 */
+									$('#btn_policyAll').click(function (e) {
+										e.preventDefault();
+										var self = $(this);
+										self.toggleClass('on');
+										$('.listPolicyForm input:checkbox').each(function () {
+											$(this).prop('checked', self.hasClass('on')).trigger('change');
+										});
+									});
+								</script>
+							</div>
+
+							<div class="listToggle sty1 mt20">
+								<ul class="listPolicyForm ezform" id="agreementInfo">
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id07" class="ez-hide"></div>
+												<label for="chk_id07"><span class="txt">[필수]만 14세 이상 이용
+														동의</span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+												
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+									</li>
+
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id01" class="ez-hide"></div>
+												<label for="chk_id01"><span class="txt">항공권 예약시
+														주의사항<!-- 항공권 예약시 주의사항 --></span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+										<div class="cont" style="display:none">
+											<div class="aircancelruleCont">
+												<h5 class="def logoimg">
+													<img class="logo" src="/css/image/OZ.png" alt="항공사 로고">
+													<span class="txt">아시아나항공 예약시 주의사항</span>
+												</h5>
+
+												<ul class="listDef d2 bgDot">
+													<li>아시아나 할인석 예약시 신분할인(아동,경로,도민,장애 등) <strong class="fc_red">중복할인
+															불가합니다.</strong></li>
+													<li><strong class="fc_blue">신분할인</strong>을 선택하여 발권한 항공권은 탑승수속 시
+														<strong class="fc_blue">관련 증빙 서류</strong>를 제시해주셔야 합니다.
+													</li>
+													<li>아시아나 소아 예매시 반드시 소아선택 유무를 확인하시고 구매해주시길 바랍니다. <strong
+															class="fc_red">(성인-&gt;소아 변경불가)</strong></li>
+													<li>아시아나 마일리지 적립율은 일반석(100%) 할인석(70%) 특가석(적립불가)입니다.</li>
+													<li>아시아나 일반석/할인석/특가석은 판매운임과 취소수수료가 상이하며 탑승하는 좌석의 차이는 없습니다.</li>
+													<li>아시아나 <strong class="fc_blue">김포&lt;-&gt;부산, 부산&lt;-&gt;제주,
+															대구&lt;-&gt;제주 노선</strong>은 <strong class="fc_red">에어부산
+															항공사</strong>와 공동운항됩니다. </li>
+													<li>에어부산 공동운항편 이용시 아시아나항공편 신분할인율 적용이 상이합니다. </li>
+													<li><strong class="fc_blue">공동운항편과 실제 에어부산 탑승권</strong>과의 <strong
+															class="fc_red">차액 환불은 불가</strong>합니다. </li>
+													<li>아시아나 항공 결제 당일 <strong class="fc_red">취소건은 환불로 접수되며 카드사 영업일 기준으로
+															5~7일 기간이 소요</strong>됩니다. </li>
+													<li>아시아나 에어부산 공동운항편은 탑승 <strong class="fc_red">2일전 까지만 사이트상 취소가
+															가능합니다.</strong></li>
+													<li><strong class="fc_blue">상담원을 통하여 유선상 결제한 항공권</strong>은 <strong
+															class="fc_red">당일 취소불가</strong>한 점 주의바랍니다.</li>
+													<li>해당 항공사에 대한 취소수수료는 구매전 <strong class="fc_red">규정동의란에 취소/환불규정을
+															필독</strong>바랍니다.</li>
+													<li>항공 예약/결제 후 마이페이지를 통해서 항공 티켓번호 확인을 해주시기 바랍니다. <strong
+															class="fc_red">미확인으로 인해 발생되는 문제는 책임을 지지 않습니다.</strong></li>
+													<li><strong class="fc_blue">여행사 법인카드, 여행사 임직원카드는 사용불가하며, 문제발생시 법적인
+															책임소지가 따릅니다.</strong></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id02" class="ez-hide"></div>
+												<label for="chk_id02"><span class="txt">일반규정<!-- 일반규정 --></span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+										<div class="cont" style="display:none">
+											<!-- 땡처리닷컴 > 국내항공 > 일반규정  -->
+											<h5 class="def">1. 항공권 수령방법</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>국내선항공권은 전자티켓으로 별도의 항공권이 발행되지 않습니다.</li>
+												<li>출발 1시간 전 예약하신 항공사 카운터에서 신분증을 제시하시고 항공사 예약번호를 말씀하시면 항공권을 수령하실 수 있습니다.
+													<br> (신분증 지참 / 미지참시 탑승이 불가합니다.)
+												</li>
+												<li>항공권 수령은 출발 30분 전에 마감됩니다.<br>
+													성인: 신분증(주민등록증, 운전면허증, 여권 중 택1)<br>
+													학생 : 할인폐지, 학생증,주민등록증,여권중 택1<br>
+													소아, 유아 : 가족관계증명서, 의료보험증 여권 중 택1<br>
+													외국인 : 여권, 외국인등록증 중 택1<br>
+													경로우대: 신분증(주민등록증, 운전면허증, 여권 중 택1)<br>
+													제주도민: 신분증(주민등록증, 운전면허증, 현주소 제주도 명시<br>
+													군인: 휴가증<br>
+													국가유공자, 독립유공자, 국가유공상이자: 국가보훈처 발행 유공자증/유족증<br>
+													장애인: 시/군/구청장 발행 복지카드
+												</li>
+												<li>각 항공사별 할인 대상 조건은 상이합니다. 예약 시 확인 바랍니다.</li>
+											</ul>
+
+											<h5 class="def">2. 예약시 유의사항</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>예약자와 탑승자가 상이할 경우 탑승자의 연락 가능한 전화번호와 이메일을 기입해 주시기 바랍니다. 연락처 오류로 인해 차후
+													문제가 발생할 수 있으니 주의하시기 바랍니다.</li>
+												<li>탑승자명을 잘못 입력할 경우 탑승이 거절되니, 반드시 신분증상의 정확한 실탑승자명을 입력하기 바랍니다.</li>
+												<li>탑승자 이름입력은 내국인인 경우 신분증상의 한글명, 외국인 경우 여권상의 영문명 또는 외국인등록증의 명을 입력해주시길
+													바랍니다.</li>
+												<li>유아의 경우 별도의 좌석이 없습니다. 보호자 1인당 1명만 예약진행이 가능합니다.</li>
+												<li>임산부 고객의 경우 항공사마다 탑승기준이 상이하오니, 해당항공사로 문의하시기 바랍니다.</li>
+												<li>반려동물의 경우, 항공사별 탑승가능수가 상이하오니, 해당항공사로 문의바랍니다.</li>
+											</ul>
+
+											<h5 class="def">3. 예약내역 확인</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>국내선 마이페이지에서 예약 및 결제내역을 확인할 수 있습니다.</li>
+												<li>카드승인문자가 전송되었어도 정상발권 안되었을 경우가 있으니, 반드시 마이페이지에서 티켓번호 확인부탁드립니다.</li>
+												<li>땡처리닷컴에서 구매한 항공권은 항공사 홈페이지에서 예약조회가 안될 수도 있습니다.(해당항공사 고객센터 확인가능)</li>
+												<li>땡처리닷컴에서 구매후 항공사로 예약변경한 항공권은 항공사와 연동이 안되므로, 취소 하실 경우 유선으로 문의주시기 바랍니다.
+												</li>
+												<li>항공사별 소아 비동반 서비스가 상이하여, 소아만 이용이 불가 할 수 있습니다. 해당항공사로 문의바랍니다.</li>
+												<li>비행기지연, 결항된 스케줄은 당사 홈페이지 스케줄조회 시 확인이 안될수 있으며, 출발시간 임박건은 항공사에서 별도의
+													안내문자가 발송되지 않을수 있습니다.</li>
+											</ul>
+
+
+
+											<h5 class="def">4. 항공사별 유의사항</h5>
+											<div style="padding-left:10px" class="mt10">
+												<p class="def d2">1) 대한항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>출발 48시간전까지 대한항공 국내선 고객센터(<span
+															class="telnocolor">1588-2001</span>) 또는 대한항공 홈페이지에서 좌석배정
+														가능합니다.</li>
+													<li>단, 대한항공 홈페이지 이용시 예약기록에 스카이패스 회원번호가 반영되어 있어야 합니다.</li>
+													<li>대한항공 50%이상 할인받은 티켓의 경우 마일리지 등록이 불가합니다.</li>
+												</ul>
+
+												<p class="def d2 mt08">2) 아시아나항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>아시아나항공 51%이상 할인받은 티켓의 경우 마일리지 등록이 불가합니다.(특가석)</li>
+													<li>아시아나항공의 경우, 일부노선이 에어부산 공동운항되며, 예약시 확인부탁드립니다.</li>
+													<li>아시아나항공 예약고객중 에어부산 공동운항편을 이용하시는 경우 웹사이트에서 마일리지 적립이 불가하오니, 공항에서
+														탑승권 수령시 마일리지를 등록하셔야 합니다.</li>
+												</ul>
+
+												<p class="def mt08 d2">3) 제주항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>제주항공은 비행기 1대당 유아예약이 15명으로 제한되어 있습니다. 사전에 미리 꼭 유아 예약하시길 바랍니다.
+													</li>
+													<li>제주항공 발권후 제주항공 홈페이지에서 별도의 비용지불후 유료 사전 좌석배정이 가능합니다.<br>(제주항공 홈페이지
+														&gt;&gt; 서비스안내 &gt;&gt; 부가서비스 &gt;&gt; 사전좌석구매)</li>
+													<li>2019년 11월 4일 부터 카운터에서 항공권 발급 시, 소정의 수수료가 부과 될 수 있으니, 모바일 탑승권이나,
+														키오스크로 탑승권 무료 발급 받으시길 바라며, 상세 안내는 항공사 홈페이지를 참고 부탁드립니다.</li>
+												</ul>
+
+
+												<p class="def d2 mt08">4) 진에어</p>
+												<ul class="listDef d2 bgDot">
+													<li>좌석의 경우, 출발 24시간 전 모바일체크인을 통한 좌석지정 또는 당일 공항에서 배정됩니다. </li>
+													<li>유류사전 좌석 원할 경우, 진에어 고객센터(<span
+															class="telnocolor">1600-6200</span>)를 통하여 별도 비용 지불후 받으실 수
+														있습니다.</li>
+												</ul>
+
+												<p class="def d2 mt08">5) 티웨이항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>티웨이항공은 비행기 1대당 유아예약이 10명으로 제한되어 있습니다. 사전에 미리 꼭 유아 예약하시길 바랍니다.
+													</li>
+													<li>결제후 출발 2일전까지 항공사 고객센터(<span
+															class="telnocolor">1688-8686</span>)을 통하여 별도 비용 지불후 사전좌석배정
+														받으실 수 있습니다.</li>
+												</ul>
+
+												<p class="def d2 mt08">6) 이스타항공</p>
+												<ul class="listDef d2 bgDot">
+													<li><span class="fc_blue1">이스타항공은 운임에 따라 위탁수하물 15KG 이 유료 제공됩니다.
+															(초특가석 특가석/ 국내선 1KG 당 2,000원)</span></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id03" class="ez-hide"></div>
+												<label for="chk_id03"><span class="txt">요금규정 및
+														결제정보<!-- 요금규정 및 결제정보 --></span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+										<div class="cont" style="display:none">
+											<!-- 땡처리닷컴 > 국내항공 > 요금규정 및 결제정보 -->
+											<h5 class="def">1. 요금규정</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>개인신분할인은 할인석과 이중 할인이 적용되지 않습니다. 개인신분할인을 원하실 경우 정상가(일반석)로 예약 후 할인 적용
+													부탁드립니다.</li>
+												<li>개인신분할인 오류 적용시 발생하는 차액금은 고객님이 부담하셔야 합니다. </li>
+												<li>개인신분할인 중 동반보호자 및 유가족 할인은 동반 1인만 할인 가능합니다.</li>
+												<li>탑승이 완료된 후에는 소급 환불이 불가능합니다.</li>
+											</ul>
+
+											<h5 class="def">2. TAX 및 유류할증료</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>TAX 및 유류할증료는 환율변동 및 항공사 사정에 따라 공지없이 변경될 수 있습니다.</li>
+												<li>국내선 유류할증료는 발권일 기준으로 적용되며, 발권후 탑승시점에 변경(인상 또는 인하)되어도 추가징수 또는 환급하지
+													않습니다.</li>
+											</ul>
+
+											<h5 class="def">3. 발권업무 대행수수료</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>발권업무 대행수수료는 "이니시스" 를 통해 항공권 금액과 별도로 추가 승인됩니다.</li>
+												<li>편도 기준 항공권요금 1회, 발권업무 대행수수료 1회 총 2번의 카드 승인이 있습니다.</li>
+												<li>발권업무 대행수수료가 정상 결제되었을 경우, 항공권 취소시 이 금액은 환불되지 않습니다.</li>
+												<li>결제당일취소 시에만 전액환불 가능. [당일취소 기준 : 결제당일 23시59분 까지 취소 시 발권업무 대행수수료 전액환불]
+												</li>
+											</ul>
+
+											<h5 class="def">4. 결제방법</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>땡처리닷컴 국내항공의 모든 결제는 편도로 이루어져 있습니다. 왕복으로 예약하셨다 해도 예약번호별로 출발편/리턴편 각각
+													결제해야 합니다.</li>
+												<li>실시간항공권 결제승인은 땡처리닷컴이 아닌 해당항공사로 결제됩니다.</li>
+												<li>항공사별 무이자할부 여부는 각 카드사나 해당항공사로 문의하시기 바랍니다.</li>
+												<li>모든 국내항공권은 신용카드 및 체크카드로만 결제가 가능합니다. 현금결제는 불가능합니다.</li>
+												<li>해당항공사로 직접 결제되므로, 유선상 결제가 불가능합니다. 인터넷으로만 결제를 진행해 주세요.</li>
+												<li>발권후 결제수단 변경(결제카드 변경)은 불가능합니다.</li>
+												<li>신용카드 할부구매는 5만원 이상 결제 시 선택가능합니다.</li>
+												<li>신용카드 인증 또는 결제시 발생한 오류는 해당카드사로 문의해 주세요.</li>
+											</ul>
+
+											<h5 class="def">5. 결제시한</h5>
+											<ul class="listDef d2 bgDot mt10">
+												<li>국내항공은 예약과 동시에 결제하셔야 합니다. 즉시결제하지 않을 경우 발권오류가 발생할 수 있으며, 이에 대한 책임은
+													땡처리닷컴에서 지지 않습니다.</li>
+											</ul>
+
+											<h5 class="def">6. 항공사별 유의사항</h5>
+
+											<div style="padding-left:10px" class="mt10">
+												<p class="def d2">1) 대한항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>대한항공 결제시 신용카드 도용 및 부정사용 방지를 위해 여행사 법인카드 및 여행사 임직원카드는 결제가 불가능합니다.
+													</li>
+													<li>대한항공 특별할인운임은 예약율에 따라 운임이 변경될 수 있습니다.</li>
+												</ul>
+
+												<p class="def d2 mt08">2) 진에어</p>
+												<ul class="listDef d2 bgDot">
+													<li>진에어 추가할인 선택시 전체인원 일괄적용되므로, 비적용 대상자는 각각 별도로 예약 진행해 주세요.</li>
+												</ul>
+												<p class="def d2 mt08">3) 아시아나항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>아시아나항공의 김포-부산, 제주-부산 노선은 에어부산 공동운항편입니다. 아시아나 항공 마일리지 적립이 가능하며,
+														에어부산 항공기로 탑승합니다.</li>
+													<li>에어부산 공동운항편의 수속카운터는 에어부산 항공카운터이며, 공동운항편의 경우 에어부산과 운임 할인율이 상이할 수
+														있습니다.</li>
+													<li>아시아나항공으로 예약후 에어부산 공동운항 이용시 운임차액은 환불 불가능합니다.</li>
+												</ul>
+												<p class="def d2 mt08">4) 이스타항공</p>
+												<ul class="listDef d2 bgDot">
+													<li>제주도민할인, 재외/명예제주도도민할인 운임으로 예약을 원할 경우, 이스트항공 홈페이지에서만 예약가능합니다.</li>
+													<li>땡처리닷컴 홈페이지에서는 해당 할인운임의 예약을 진행할 수 없습니다.</li>
+													<li>초특가석/특가석 예약후 위탁수하물을 이용할 경우 1KG당 2,000원이 부과되오니 참고바랍니다.</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id04" class="ez-hide"></div>
+												<label for="chk_id04"><span
+														class="txt">취소/환불규정<!-- 취소/환불규정 --></span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+										<div class="cont" style="display:none">
+											<h4 class="def mt0">아시아나항공<span class="f15 fn">/ 1인 편도(결제일 기준)</span></h4>
+											<div class="aircancelruleCont">
+												<!-- 아시아나항공 환불정책 -->
+												<h4 class="def mt10">2022.10.20 (목) 이후 (1인 편도, 발권일 기준)</h4>
+												<p class="tit1">[일반석/비지니스석]</p>
+												<ul class="listDef d2 bgDot">
+													<li>예약시점 당일 취소: <span class="fb fc_red"><strong>무료</strong></span>
+													</li>
+													<li>구매 다음날~항공기 출발 20분전 취소: <strong>3,000원</strong></li>
+													<li>항공기 출발 20분전 이후 취소: <strong>10,000원</strong></li>
+												</ul>
+												<p class="tit1">[할인석]</p>
+												<ul class="listDef d2 bgDot">
+													<li>예약시점 당일 취소: <span class="fb fc_red"><strong>무료</strong></span>
+													</li>
+													<li>구매 다음날~항공기 출발 20분전 취소: <strong>7,000원</strong></li>
+													<li>항공기 출발 20분전 이후 취소: <strong>10,000원</strong></li>
+												</ul>
+												<p class="tit1">[특가석]</p>
+												<ul class="listDef d2 bgDot">
+													<li>예약시점 당일 취소: <span class="fb fc_red"><strong>무료</strong></span>
+													</li>
+													<li>구매 다음날~항공기 출발 20분전 취소: <strong>9,000원</strong></li>
+													<li>항공기 출발 20분전 이후 취소: <strong>10,000원</strong></li>
+												</ul>
+
+												<h4 class="def mt10">2022.10.20 (목) 이전 (1인 편도, 발권일 기준)</h4>
+												<p class="tit1">[일반석/비지니스석]</p>
+												<ul class="listDef d2 bgDot">
+													<li>예약시점 당일 취소: <span class="fb fc_red"><strong>무료</strong></span>
+													</li>
+													<li>구매 다음날~항공기 출발 이전 취소: <strong>2,000원</strong></li>
+													<li>항공기 출발 이후 취소: <strong>8,000원</strong></li>
+												</ul>
+												<p class="tit1">[할인석]</p>
+												<ul class="listDef d2 bgDot">
+													<li>예약시점 당일 취소: <span class="fb fc_red"><strong>무료</strong></span>
+													</li>
+													<li>구매 다음날~항공기 출발 이전 취소: <strong>5,000원</strong></li>
+													<li>항공기 출발 이후 취소: <strong>8,000원</strong></li>
+												</ul>
+												<p class="tit1">[특가석]</p>
+												<ul class="listDef d2 bgDot">
+													<li>예약시점 당일 취소: <span class="fb fc_red"><strong>무료</strong></span>
+													</li>
+													<li>구매 다음날~항공기 출발 이전 취소: <strong>8,000원</strong></li>
+													<li>항공기 출발 이후 취소: <strong>8,000원</strong></li>
+												</ul>
+												<div class="devLine">
+													<ul class="listDef d3 bgDash">
+														<!-- 171124 변경전  
+			<li>아시아나 홈페이지에서 취소 시 탑승 20분까지 가능합니다.</li>
+			<li>아시아나 에어부산 공통 운항편은 탑승 2일전까지 홈페이지에서 취소가 가능합니다.</li>
+			<li>결제 당일 예약을 홈페이지 외에서 취소할 경우, 수수료가 부과됩니다.</li>
+			-->
+														<li><strong>아시아나 에어부산 공동운항편은 탑승 2일전까지만 사이트상 취소가 가능합니다.</strong>
+															이 점 양해 부탁드립니다. </li>
+														<li><strong>아시아나 항공의 경우 결제당일 예약일정을 사이트 외 취소할 경우 수수료가
+																부과됩니다.</strong></li>
+														<li>결제 당일 취소건은 카드환불로 접수되며 카드사 영업일 기준 5~7일 기간이 소요됩니다. </li>
+													</ul>
+												</div>
+												<p>※ 사전좌석지정, 체크인한 항공권은 사이트에서 취소불가하니 항공사로 문의바랍니다.</p>
+												<p class="serviceTime">※업무시간 외(휴일/주말) 문의: 1588-8000</p>
+											</div>
+											<div class="aircancelruleCont pt05">
+												<div class="devLine">
+													<ul class="listDef d3 bgDash">
+														<li>왕복 취소 시 가는편/오는편 각각 취소요청을 해주셔야 합니다.</li>
+														<li>
+															구매하신 항공권은 일자/시간/인원 부분취소, 추가, 항공사 변경은 불가하여 취소 후 재 예약하셔야
+															합니다.<br>
+															취소 후 재 예약 시 항공편이 마감될 수 있으니 주의 바랍니다.
+														</li>
+														<li>
+															천재지변에 의한 취소나 항공사 사정으로 인하여 운항 취소 및 지연 건은 유선상으로 취소 바랍니다.<br>
+															온라인 취소 시 자동으로 취소수수료가 부과되며, 부과된 수수료에 대해서는 절대 환불되지 않습니다.<br>
+															또한 왕복 항공권 이용 시 이용하는 항공사가 다를 경우 결항되지 않은 편에 대해서는 취소 수수료가
+															부과됩니다.
+														</li>
+													</ul>
+												</div>
+												<div class="indent_star_d2 mt10">
+													<p class="def d2"><strong>※전 항공사 항공권 취소 시 환불이 완료되는 시점으로 환불 수수료가
+															부과됩니다.</strong></p>
+													<p class="comment indent_ex_d3 mt05">예) 당일 결제 항공권을 자정 직전 취소 진행하여 환불
+														완료 시점이 익일로 처리시에는 해당 항공사 취소 수수료 규정으로 수수료가 적용됩니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id05" class="ez-hide"></div>
+												<label for="chk_id05"><span class="txt">개인정보 수집 및
+														이용<!-- 개인정보 수집 및 이용 --></span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+										<div class="cont" style="display:none">
+											<div class="includeHtml f15">
+												<!-- 땡처리닷컴 > 국내항공 > 예약하기 > 개인정보 수집 및 이용  -->
+												<div class="includeHtml">
+													<div class="lyrtxt defmargin">
+														<p>㈜땡처리닷컴(이하 '회사')은 고객의 개인정보보호와 정보주체자의 권익보장을 위해 최선의 노력을 다하고
+															있습니다. 회사는 『개인정보보호법』 관련조항과 『정보통신망 이용촉진 및 정보보호에 관한 법률』의 기준에 따라
+															'개인정보처리방침'을 수립하여 이를 준수하고 있습니다. 고객의 개인정보가 어떠한 목적과 절차로 수집,이용되고
+															있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 다음과 같이 알려드립니다. 본 개인정보처리방침을
+															개정하는 경우에는 회사 웹사이트를 통하여 사전에 고지 하겠습니다.</p>
+
+														<h3>1. 개인정보 수집 및 이용목적</h3>
+														<p>회사는 여행상품의 예약 및 여행관련 서비스 제공 등의 업무처리를 위하여 고객으로부터 최소한의 필수정보를
+															수집하며, 제공한 모든 개인정보는 별도의 동의가 없는 한 해당목적 이외의 다른 목적으로 사용하지 않습니다.
+															회사는 개인정보의 수집항목, 이용목적, 용도 등이 변경될 경우 사전 고지하며, 고객의 동의를 구할 것입니다.
+															회사는 수집한 개인정보를 다음의 목적을 위하여 사용합니다.</p>
+														<ul class="indentUlKr">
+															<li>가. 서비스 제공에 관한 계약 이행 및 서비스 제공을 따른 요금정산 <br> 여행상품 예약,
+																여행자보험 가입, 항공권/호텔 등의 예약 및 출입국 정보확인, 예약내역의 확인 및 상담, 컨텐츠
+																제공, 여행서비스 이용 시 회원의 우대, 구매 및 요금 결제, 물품배송 또는 청구지 등 발송,
+																본인인증 및 금융서비스, 구매 및 요금결제 등</li>
+															<li>나. 회원관리 <br>회원제서비스 이용을 위한 본인확인, 개인식별, 불량회원의 부정 이용 방지와
+																비인가 사용 방지, 가입 의사 확인, 이용 및 이용횟수 제한, 연령확인, 만 14세 미만 아동
+																개인정보 수집 시 법정 대리인 동의여부 확인, 분쟁조정을 위한 기록보존, 불만처리 등 민원처리,
+																고지사항 전달 등 </li>
+															<li>다. 마케팅 및 광고에 활용 <br>신규서비스 개발 및 특화, 인구통계학적 특성에 따른 서비스 제공
+																및 광고 게재, 당사 및 제휴사 상품안내, 이벤트 등 광고성 정보전달, 회원의 서비스 이용에 대한
+																통계, 회원 대상 각종 마케팅 활동 </li>
+														</ul>
+
+
+														<h3>2. 개인정보 수집 항목 및 수집방법</h3>
+														<p>
+															회사는 적법한 절차와 법적기준에 의거하여 고객의 개인정보를 수집하고 있으며, 고객의 서비스이용에 필요한
+															최소한의 정보만을 수집하고 있습니다. 정통망법으로 규제하는 개인정보보호제도에 의거하여, 고객의 주민번호는
+															수집.이용을 제한하고 있습니다.
+															<br>회사는 고객의 인권을 침해할 우려가 있는 민감한 개인정보항목 (인종, 종교, 사상, 정치적 성향,
+															건강상태, 성생활정보 등)은 수집하지 않습니다.
+															<br>상세 개인정보 수집 항목, 용도, 보유 및 이용기간은 아래 [표1], [표2]와 같습니다.
+														</p>
+
+														<p>[표1] 회원가입시 <br></p>
+														<div class="includeTblWrap">
+															<table class="innerTable privacy_table"
+																style="min-width:700px;">
+																<colgroup>
+																	<col style="width:10%">
+																	<col style="width:40%">
+																	<col style="width:25%">
+																	<col style="width:25%">
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th>구분</th>
+																		<th>개인정보내역</th>
+																		<th>용도</th>
+																		<th>보유 및 이용기간</th>
+																	</tr>
+																	<tr>
+																		<td>필수정보</td>
+																		<td>아이디(e-mail), 성명, 연락처(휴대전화번호)</td>
+																		<td>회원 서비스 제공 및 본인인증</td>
+																		<td>회원탈퇴시까지</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+
+														<p>[표2] 여행상품 예약시 <br></p>
+														<div class="includeTblWrap">
+															<table class="innerTable privacy_table"
+																style="min-width:700px;">
+																<colgroup>
+																	<col style="width:40%">
+																	<col style="width:30%">
+																	<col style="width:30%">
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th>개인정보 항목</th>
+																		<th>용도</th>
+																		<th>보유 및 이용기간</th>
+																	</tr>
+																	<tr>
+																		<td>예약자 : 성명, 연락처, e-mai<br>
+																			여행자 : 성명(국문/영문),여권/비자 소지여부</td>
+																		<td>여행상품 예약 및 상담/출국가능 여부 파악</td>
+																		<td>출발후 5년까지<br>
+																			미결제 취소정보 : 예약취소일로부터 1개월</td>
+																	</tr>
+																	<tr>
+																		<td>이용자의 성명,신용카드번호,유효기간,계약자와의 관계</td>
+																		<td>대금결제/정산</td>
+																		<td>사용후 즉시폐기</td>
+																	</tr>
+																	<tr>
+																		<td>이용자의 성명,생년월일,성별,여권번호</td>
+																		<td>여행자보험 가입(해외여행상품)</td>
+																		<td>사용후 즉시폐기</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+
+														<h3>자동생성정보</h3>
+														<p>
+															개인정보 수집 및 이용목적 : 서비스이용, 고객상담, 부정이용확인 및 방지, 분석 및 통계<br>
+															개인정보의 종류 : 쿠키, 서비스 이용기록(로그인 일시, IP주소, 부정이용등), 기기정보(기기고유식별자 및
+															OS버전)<br>
+															개인정보의 보유 및 이용기간 : 관계법령에 의한 개인정보 보유기간 또는 삭제후 3개월
+														</p>
+
+														<h3>3. 개인정보의 이용 및 보유기간</h3>
+														<p>
+															1) 개인정보 이용기한<br>
+															고객님의 개인정보는 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기됩니다. 단, 관계법령의 규정에
+															의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정기간 동안 회원 정보를 보관
+															합니다.
+														</p>
+
+														<ul class="indentNumUl">
+															<li>가. 계약 또는 청약철회 등에 관한 기록: 5년 (전자상거래등에서의 소비자보호에 관한 법률)</li>
+															<li>나. 대금결제 및 재화 등의 공급에 관한 기록: 5년 (전자상거래등에서의 소비자보호에 관한 법률)
+															</li>
+															<li>다. 소비자의 불만 또는 분쟁처리에 관한 기록: 3년 (전자상거래등에서의 소비자보호에 관한 법률)
+															</li>
+														</ul>
+														<p>
+															2)개인정보 유효기간 제도 준행<br>
+															가. 회사는 개인정보 유효기간제도를 준행하며, 해당 정보통신 서비스를 1년 동안 이용하지 않은 이용자의
+															개인정보를 보호하기 위하여 파기 등의 필요한 조치를 취하여 개인정보의 오, 남용 및 유출을 방지하고
+															있습니다.
+															<br>나. 회사는 1년 의 유효기간 만료가 도래하기 30일 전까지, 회사의 보안규정 및 지침에 따라
+															이용자의 개인정보항목이 파기 되거나 보관이 필요 할 경우 관련 법령에 따라 안전하게 분리 저장, 관리되는
+															사실을 고지합니다.
+														</p>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<div class="txtWrap">
+												<div><input type="checkbox"
+														title="Check in agreement" id="chk_id06" class="ez-hide"></div>
+												<label for="chk_id06"><span class="txt">개인정보 제3자
+														제공<!-- 개인정보 제3자 제공 --></span></label>
+												<span class="ico_noTxt icoSet_req">Required</span>
+											</div>
+											<a href="#none" class="ico_noTxt icoSet_listToggle bgArr link">close</a>
+										</div>
+										<div class="cont" style="display:none">
+											<div class="includeHtml f15">
+												<!-- 땡처리닷컴 > 국내항공 > 예약하기 > 개인정보 제3자 제공  -->
+												<div class="lyWrap full fixBtn" style="display:none;"
+													id="layer_airlist">
+													<div class="scrContWrap">
+														<div class="lyHeaderWrap">
+															<h2>항공사목록</h2>
+															<a href="#none;" class="ico_noTxt icoSet_layer bClose"
+																title="close">close</a>
+														</div>
+														<div class="lyContWrap">
+															<div class="wrapDef">
+																<table class="privacy_table">
+																	<tbody>
+																		<tr>
+																			<th colspan="3">2015.09.07 업데이트시점 영업거래처 기준
+																			</th>
+																		</tr>
+																		<tr>
+																			<td>순번</td>
+																			<td>업체명</td>
+																			<td>업체구분</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td>대한항공</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>아시아나항공</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>3</td>
+																			<td>에어부산</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>4</td>
+																			<td>진에어</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>5</td>
+																			<td>제주항공</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>6</td>
+																			<td>티웨이항공</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>7</td>
+																			<td>에어서울</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>7</td>
+																			<td>플라이강원</td>
+																			<td>항공사</td>
+																		</tr>
+																		<tr>
+																			<td>8</td>
+																			<td>에어로케이</td>
+																			<td>항공사</td>
+																		</tr>
+																	</tbody>
+																</table>
+
+
+															</div>
+														</div>
+													</div>
+													<div class="lyFooterWrap">
+														<div class="btn_area n1">
+															<span class="btnWrap"><button
+																	class="btn styB c_rgray bClose">닫기</button></span>
+														</div>
+													</div>
+												</div>
+												<div class="lyWrap full fixBtn" style="display:none;"
+													id="layer_hotellist">
+													<div class="scrContWrap">
+														<div class="lyHeaderWrap">
+															<h2>공급사목록</h2>
+															<a href="#none;" class="ico_noTxt icoSet_layer bClose"
+																title="close">close</a>
+														</div>
+														<div class="lyContWrap">
+															<div class="wrapDef">
+																<table class="privacy_table">
+																	<tbody>
+																		<tr>
+																			<th colspan="3">2023.01.04 업데이트시점 영업거래처 기준
+																			</th>
+																		</tr>
+																		<tr>
+																			<td>순번</td>
+																			<td>업체명</td>
+																			<td>업체구분</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td>RTS</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>IRC</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																		<tr>
+																			<td>3</td>
+																			<td>HS트래블</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																		<tr>
+																			<td>4</td>
+																			<td>RMG</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																		<tr>
+																			<td>5</td>
+																			<td>트래블노트</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																		<tr>
+																			<td>6</td>
+																			<td>호텔베즈</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																		<tr>
+																			<td>7</td>
+																			<td>GTA</td>
+																			<td>호텔공급사</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="lyFooterWrap">
+														<div class="btn_area n1">
+															<span class="btnWrap"><button
+																	class="btn styB c_rgray bClose">닫기</button></span>
+														</div>
+													</div>
+												</div>
+												<div class="lyWrap full fixBtn" style="display:none;"
+													id="layer_packlist">
+													<div class="scrContWrap">
+														<div class="lyHeaderWrap">
+															<h2>업체목록</h2>
+															<a href="#none;" class="ico_noTxt icoSet_layer bClose"
+																title="close">close</a>
+														</div>
+														<div class="lyContWrap">
+															<div class="wrapDef">
+																<table class="privacy_table">
+																	<tbody>
+																		<tr>
+																			<th colspan="3">2015.09.07 업데이트시점 영업거래처 기준
+																			</th>
+																		</tr>
+																		<tr>
+																			<td>순번</td>
+																			<td>업체명</td>
+																			<td>업체구분</td>
+																		</tr>
+																		<tr>
+																			<td>1</td>
+																			<td>하나투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>모두투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>3</td>
+																			<td>롯데관광</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>4</td>
+																			<td>자유투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>5</td>
+																			<td>한진관광</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>6</td>
+																			<td>여행박사</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>7</td>
+																			<td>KRT</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>8</td>
+																			<td>레드캡투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>9</td>
+																			<td>노랑풍선</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>10</td>
+																			<td>보물섬투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>11</td>
+																			<td>온누리투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>12</td>
+																			<td>비코티에스</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>13</td>
+																			<td>SG투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>14</td>
+																			<td>롯데JTB</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>15</td>
+																			<td>인터파크투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>16</td>
+																			<td>온라인투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>17</td>
+																			<td>투어이친</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>18</td>
+																			<td>참좋은여행사</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>19</td>
+																			<td>더좋은여행사</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>20</td>
+																			<td>세일여행사</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>21</td>
+																			<td>삽자루투어</td>
+																			<td>여행사</td>
+																		</tr>
+																		<tr>
+																			<td>22</td>
+																			<td>더좋은여행사</td>
+																			<td>온필</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="lyFooterWrap">
+														<div class="btn_area n1">
+															<span class="btnWrap"><button
+																	class="btn styB c_rgray bClose">닫기</button></span>
+														</div>
+													</div>
+												</div>
+
+												<div class="lyWrap full fixBtn" style="display:none;"
+													id="layer_rentcarlist">
+													<div class="scrContWrap">
+														<div class="lyHeaderWrap">
+															<h2>렌터카 업체목록</h2>
+															<a href="#none;" class="ico_noTxt icoSet_layer bClose"
+																title="close">close</a>
+														</div>
+														<div class="lyContWrap">
+															<div class="wrapDef">
+																<table class="privacy_table">
+																	<tbody>
+																		<tr>
+																			<th colspan="2">2023.01.04 업데이트시점 영업거래처 기준
+																			</th>
+																		</tr>
+																		<tr>
+																			<td>업체명</td>
+																			<td>업체구분</td>
+																		</tr>
+																		<tr>
+																			<td>쿠폰트리</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주패스렌터카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>무지개렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>썬렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>오케이렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주공항렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주로렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주사랑렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>조아렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>패밀리렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>가자제주렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>굿모닝렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>녹원렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>더세븐렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>디렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>땡큐제주렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>라인렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>레드캡렌터카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>레인보우모빌리티</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>레츠고렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>로그인렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>매일렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>메트로렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>무지개렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>발리렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>보고타렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>블루렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>삼성렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>샐리렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>수렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>스마일렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>스마트렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>신동아렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>썬렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>씨유렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>아리랑렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>알프스렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>예스렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>오라렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>오렌지렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>용두암렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>인터파크렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>자유렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주공항렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주다움렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주드림렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주로렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주마음렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주명품렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주사랑렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주아산렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주평화렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주현대렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주EV전기렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주OK렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>조아렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>좋은렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>탐라렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>특별한렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>패밀리렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>퍼스트렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+
+																		<tr>
+																			<td>퍼시픽렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>한국렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>한라렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>한라산렌트카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>한불모터스</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																		<tr>
+																			<td>한진렌터카</td>
+																			<td>렌터카공급사</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="lyFooterWrap">
+														<div class="btn_area n1">
+															<span class="btnWrap"><button
+																	class="btn styB c_rgray bClose">닫기</button></span>
+														</div>
+													</div>
+												</div>
+
+												<div class="lyWrap full fixBtn" style="display:none;"
+													id="layer_passlist">
+													<div class="scrContWrap">
+														<div class="lyHeaderWrap">
+															<h2>패스/입장권 업체목록</h2>
+															<a href="#none;" class="ico_noTxt icoSet_layer bClose"
+																title="close">close</a>
+														</div>
+														<div class="lyContWrap">
+															<div class="wrapDef">
+																<table class="privacy_table">
+																	<tbody>
+																		<tr>
+																			<th colspan="2">2023.01.04 업데이트시점 영업거래처 기준
+																			</th>
+																		</tr>
+																		<tr>
+																			<td>업체명</td>
+																			<td>업체구분</td>
+																		</tr>
+																		<tr>
+																			<td>쿠폰트리</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>점보빌리지(코끼리랜드)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>그랑블루요트</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>다희연</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>카멜리아 힐</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>산바다atv체험장</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>휴애리자연생태공원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>서광승마장</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주워터월드(waterworld)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>캐릭월드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>방림원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>차귀도태양배낚시</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주민속촌</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>노리매</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>알프스승마장포니</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>새녘박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>산방산유람선</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>테지움사파리뮤지엄(TESEUM) </td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>조랑말카트&amp;승마</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>올레크루즈</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>베니스랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>쇼킹</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주서커스월드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>번개과학체험관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>우도잠수함</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>산방산탄산온천</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>월정레저</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>피오디코리아 (sos박물관)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>세계자동차제주박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>아쿠아플라넷제주</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>이상한나라의 엘리스</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주유리의성</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주항공우주박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>(주)제주잠수함관광(마라도잠수함)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>송악카트체험장</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>씨워커코리아</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>퍼시픽랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>조은승마장</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>타이(Thai)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>김녕요트투어</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주유리박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>송악 왕발통</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>메이즈랜드미로공원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주공룡랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>씽씽왕발통</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주허브동산</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>석부작테마공원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>에스케이핀크스 주식회사 (디아넥스)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>펀테마파크</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주제트보트(중문) 주식회사</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>아트그룹스테이지원 (삼바두브라질)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>탐라신화공원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>서귀포유람선</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주레포츠랜드 주식회사</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>박물관은 살아있다</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>김녕미로공원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>수목원테마파크</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>월드제트</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주마린리조트(우도유람선)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주바다체험장(비치랜드)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>중문카트</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>일출랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>트릭아트뮤지엄(trickart)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>(주)한림공원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>동부레저</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주미니미니랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>(주)에코랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>서귀포잠수함</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>중문해양레저(제주해양레저)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>전쟁역사 박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>아프리카박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>더마파크</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>러브랜드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주바다체험장</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>로케디오월드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>난타</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>신화레져 </td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>다빈치뮤지엄</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>휴아로마스킨케어</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>황금륭버거</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>돔레져</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>중문승마공원(중문 컨벤션)</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>상효원</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>제주토이파크</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>메이더호텔</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>세리카트월드</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																		<tr>
+																			<td>건강과성박물관</td>
+																			<td>입장권공급사</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="lyFooterWrap">
+														<div class="btn_area n1">
+															<span class="btnWrap"><button
+																	class="btn styB c_rgray bClose">닫기</button></span>
+														</div>
+													</div>
+												</div>
+												<div class="includeHtml">
+													<div class="lyrtxt defmargin">
+														<h3>4. 개인정보 제3자 제공에 관한 사항 </h3>
+														<p>
+															회사는 회원고객의 동의가 있거나 관련 법령의 규정에 의한 경우를 제외하고 어떠한 경우에도 '개인정보의 수집
+															및 이용목적' 에서 고지한 범위를 넘어서거나, 해당되는 회원 서비스 영역과 무관한 타 기업/기관에 제공하거나
+															이용하지 않습니다. 단, 고객 서비스 수행에 직접적으로 관계되는 업체에 한해서 제한적인 조건으로 개인정보가
+															제공되며 내용은 다음과 같습니다.
+															<br>당사와 제휴된 업체(하나투어,모두투어등 국내외여행사)와 고객이 직접 제공(예약)하는 비자,
+															여행자보험을 제외하고 당사에서 직접 개인정보를 제공하지 않습니다.
+														</p>
+
+
+														<div class="includeTblWrap">
+															<table class="innerTable privacy_table"
+																style="min-width:800px">
+																<colgroup>
+																	<col style="width:10%">
+																	<col style="width:25%">
+																	<col style="width:40%">
+																	<col style="width:25%">
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th>서비스영역</th>
+																		<th>제공받는자</th>
+																		<th>개인정보항목</th>
+																		<th>개인정보이용목적</th>
+																	</tr>
+																	<tr>
+																		<td>항공 / 해운 / 운송</td>
+																		<td>대한항공, 아시아나 항공 및 국내외 항공사, 해운회사<a
+																				href="javascript:;"
+																				onclick="$('#layer_airlist').bPopup({});">[전체보기]</a>
+																		</td>
+																		<td>영문명,생년월일,성별,연락처(이메일/휴대폰)여권정보(영문명,여권번호,여권만료일)항공사
+																			마일리지정보</td>
+																		<td>항공권 및 기타운송업체예약 출국가능여부 파악</td>
+																	</tr>
+																	<tr>
+																		<td>숙박</td>
+																		<td>국내외호텔(숙박)을 제공하는 업체<a href="javascript:;"
+																				onclick="$('#layer_hotellist').bPopup({});">
+																				[전체보기]</a></td>
+																		<td>성명(국문/영문), 연락처</td>
+																		<td>숙박예약 진행 / 확인</td>
+																	</tr>
+																	<tr>
+																		<td>카드/가상계좌 결제</td>
+																		<td>이니시스</td>
+																		<td>성명, 생년월일, 성별, 가상계좌번호, 결제정보</td>
+																		<td>가상계좌인증, 카드결제</td>
+																	</tr>
+
+																	<tr>
+																		<td>렌터카예약 / 상담 </td>
+																		<td>쿠폰트리, 제주패스렌터카등 렌터카를 제공하는 업체 <a
+																				href="javascript:;"
+																				onclick="$('#layer_rentcarlist').bPopup({});">[전체보기]</a>
+																		</td>
+																		<td>한글명,생년월일,핸드폰번호</td>
+																		<td>렌터카 상담, 렌터카 예약 진행/확인</td>
+																	</tr>
+																	<tr>
+																		<td>패스/입장권 예약 / 상담 </td>
+																		<td>쿠폰트리, 점보빌리지등 패스/입장권 제공하는 업체 <a
+																				href="javascript:;"
+																				onclick="$('#layer_passlist').bPopup({});">[전체보기]</a>
+																		</td>
+																		<td>한글명,핸드폰번호</td>
+																		<td>패스/입장권 상담, 패스/입장권 예약 진행/확인</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<p>
+															<b>▶동의거부권</b><br>
+															개인정보 주체자는 개인정보수집, 이용에 대한 동의를 거부할 권리가 있습니다. 동의를 거부할경우 원활한
+															예약서비스 수행이 불가함을 알려드립니다.
+														</p>
+
+														<p class="indentStar">* 보유 및 이용기간 : 이용목적에 따른 개인정보 제공시부터 이용목적 달성
+															및 관계법령에 따른 보관기간까지 보관 후 지체없이 파기(제휴업체는 제휴계약 기간 종료시 까지 )</p>
+														<p>다음의 경우에는 예외적으로 고객의 동의없이 개인정보를 제공할 수 있습니다.</p>
+														<ul class="indentStarUl">
+															<li>- 형사소송법, 금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률,
+																지방세법, 소비자보호법, 한국은행법, 등 관계법령에 의하여 수사상의 목적으로 관계기관으로부터 요구가
+																있는 경우</li>
+															<li>- 통계작성 학술연구나 시장조사를 위하여 특정 개인을 식별할 수 없는 형태로 광고주, 협력사나
+																연구단체 등에 제공하는 경우</li>
+															<li>- 문화관광부 인증 우수상품에 관한 해당 관련기관의 요청이 있는 경우</li>
+															<li>- 서비스 제공에 따른 요금정산을 위하여 필요한 경우</li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<script>
+									/* 약관동의 > list toggle */
+									$('.listPolicyForm .link').click(function (e) {
+										e.preventDefault();
+										var itemPriv = $(this).parent().parent();
+										if ($(itemPriv).hasClass('on') == !true) {
+											$('.listPolicyForm > li').removeClass('on');
+											$(itemPriv).addClass('on');
+											$('.listPolicyForm .cont').slideUp();
+											$('.listPolicyForm li.on .cont').slideDown();
+										}
+										else {
+											$('.listPolicyForm > li').removeClass('on');
+											$('.listPolicyForm .cont').slideUp();
+										}
+									});
+								</script>
+							</div>
+						</div>
+
+						<script type="text/javascript" src="/js/jquery.ezmark.js"></script>
+						<script type="text/javascript">
+							$(window).ready(function () {
+								$('.ezform input').ezMark();
+							});
+						</script>
+
+						<div class="btn_area n1 btmFix">
+							<span class="btnWrap"><button type="button" class="btn styB c_dgray"
+									onclick="MAIN('confirm');return false;">확인<!-- 확인 --></button></span>
+						</div>
+					</div><!-- contents -->
+				</form>
+				<form id="searchForm" name="searchForm" method="get">
+					<input type="hidden" name="queryString" id="queryString"
+						value="{&quot;depAirport&quot;:&quot;GMP&quot;,&quot;arrAirport&quot;:&quot;CJU&quot;,&quot;tripType&quot;:&quot;RT&quot;,&quot;seg1&quot;:{&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;depDate&quot;:&quot;2023-08-10&quot;,&quot;pmdata&quot;:&quot;eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==&quot;,&quot;token&quot;:&quot;&quot;},&quot;seg2&quot;:{&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;depDate&quot;:&quot;2023-08-13&quot;,&quot;pmdata&quot;:&quot;eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==&quot;,&quot;token&quot;:&quot;&quot;}}">
+				</form>
+
+				<script type="text/javascript">
+					var inairMap = {
+						'KE': '대한항공',			//대한항공
+						'OZ': '아시아나항공',			//아시아나항공
+						'BX': '에어부산',			//에어부산
+						'RS': '에어서울',			//에어서울
+						'LJ': '진에어',			//진에어
+						'7C': '제주항공',			//제주항공
+						'ZE': '이스타항공',			//이스타항공
+						'TW': '티웨이항공',			//티웨이항공
+						'3P': '에어필립',
+						'KX': '코리아 익스프레스 에어',	//코리아 익스프레스 에어
+						'4V': '플라이강원'	//플라이강원
+					};
+					var weekend = [
+						'일',
+						'월',
+						'화',
+						'수',
+						'목',
+						'금',
+						'토',
+					];
+					var fareClassMap = {
+						'Y': '일반석',	//일반석
+						'C': '비지니스석',	//비지니스석
+						'E': '할인석',		//할인석
+						'P': '플러스석',			//플러스석
+						'S': '특가석',		//특가
+						'PT': '프로모션석'		//PROMOTION SEAT
+					};
+					var v_dep_alert = "", v_arr_alert = "";
+
+					//* 화면이 최초 로드될 때 호출되는 함수 *//
+					$(document).ready(function () {
+						MAIN("init");
+					});
+
+					//* MAIN 기본 함수 *//
+					function MAIN(args, event) {
+						if (!ISVALID(args)) return;
+
+						switch (args) {
+							case "init":
+								//항공권 타이틀
+								$("h1.tit").text('탑승객 정보 입력');
+								//인풋박스 넘버타입
+								$('input[type=number]').keyup(function () {
+									var self = $(this);
+									if (self.attr('maxlength')) {
+										if (self.val().length >= self.attr('maxlength')) {
+											self.val(self.val().substring(0, self.attr('maxlength')));
+										}
+									}
+								});
+								//예약자 정보
+								if ("072" == '') {
+									var memberName = '',
+										memberHpNO = '',
+										memberEmailAddr = '';
+									if (memberName.length > 1) {
+										$('input[name=lastName]').val(memberName.substring(0, 1)).addClass('on');
+										$('input[name=firstName]').val(memberName.substring(1)).addClass('on');
+									}
+									if (memberHpNO.length > 1) {
+										var arrHpNo = memberHpNO.split('-');
+										$('input[name=mobile]').val(memberHpNO.replace(/-/gi, ''));
+									}
+									if (memberEmailAddr.length > 1) {
+										$('input[name=email]').val(memberEmailAddr);
+									}
+								}
+								//가는편
+								SETDATA('departure');
+								//오는편
+								SETDATA('arrival');
+
+								if ($('#depAirlineCode').val() == "7C" || $('#arrAirlineCode').val() == "7C") {
+									SETDATA('tokenId');
+									MAIN('token');
+								}
+
+								//요금할인
+								SETDATA('discount');
+								//pmdata 조회
+								MAIN('pmdata');
+
+								MAIN('alert');
+								break;
+
+							case "alert":
+								var alertMsg = "";
+								if (v_dep_alert == "Y" && v_arr_alert == "Y") {
+									alertMsg = "가는편/오는편 항공권은 무료수화물이 불포함인 항공권입니다.\n자세한 사항은 예약시 유의사항을 참조해 주세요.";
+								} else if (v_dep_alert == "Y") {
+									alertMsg = "가는편 항공권은 무료수화물이 불포함인 항공권입니다.\n자세한 사항은 예약시 유의사항을 참조해 주세요.";
+								} else if (v_arr_alert == "Y") {
+									alertMsg = "오는편 항공권은 무료수화물이 불포함인 항공권입니다.\n자세한 사항은 예약시 유의사항을 참조해 주세요.";
+								}
+								if (alertMsg != "") {
+									alert(alertMsg);
+								}
+								break;
+
+							case "token":
+								objInfo.jqueryAjax.init();
+								objInfo.jqueryAjax.async = false;
+								objInfo.jqueryAjax.url = "./tokenAct.do";
+								objInfo.jqueryAjax.formName = $('#searchForm').serialize();
+								objInfo.jqueryAjax.dataType = "xml"; //json or xml
+								objInfo.jqueryAjax.callback = args;
+								objInfo.jqueryAjax.send("POST");
+								break;
+							case "pmdata":
+								var departure = $.parseJSON($('#departure').val());
+								var queryString = {
+									pmdata: departure.pmdata
+								};
+								//Ajax Call
+								objInfo.jqueryAjax.init();
+								objInfo.jqueryAjax.async = true;
+								objInfo.jqueryAjax.url = "./search/decodePmdataAct.do";
+								objInfo.jqueryAjax.formName = 'queryString=' + JSON.stringify(queryString);
+								objInfo.jqueryAjax.dataType = "xml"; //json or xml
+								objInfo.jqueryAjax.callback = args;
+								objInfo.jqueryAjax.send("POST");
+								break;
+							case "discount":
+								objInfo.jqueryLoading.search(true);
+								//Ajax Call
+								objInfo.jqueryAjax.init();
+								objInfo.jqueryAjax.async = true;
+								objInfo.jqueryAjax.url = "./search/discountAct.do";
+								objInfo.jqueryAjax.formName = $('#searchForm').serialize();
+								objInfo.jqueryAjax.dataType = "xml"; //json or xml
+								objInfo.jqueryAjax.callback = args;
+								objInfo.jqueryAjax.send("POST");
+								break;
+							case "discount001":
+								objInfo.jqueryPopup.open('./popup/discount001.do', {position: ['auto', 'auto']});
+								break;
+							case "discount002":
+								objInfo.jqueryPopup.open('./popup/discount002.do', {position: ['auto', 'auto']});
+								break;
+							case "fareDetail":
+								var queryString = $.parseJSON($('#' + event).val());
+								queryString.fareType = event;
+								queryString.pmdata = encodeURIComponent(queryString.pmdata);
+								//objInfo.jqueryPopup.open('./popup/searchDetail.do?queryString='+JSON.stringify(queryString));
+								$('#queryString').val(JSON.stringify(queryString));
+								$.post("./popup/searchDetail.do", $('#searchForm').serialize()).done(function (data) {
+									var defaults = {
+										onClose: function () {
+											$('.layerLoadWrap').attr('style', '').empty();
+										}
+									};
+									$('.layerLoadWrap').html(data).bPopup(defaults);
+								});
+								break;
+							case "confirm":
+								objInfo.jqueryPopup.open('/inair/popup/confirm.do', {position: ['auto', 'auto']});
+								break;
+							case "reserve":
+								SETDATA('reserve');
+								var queryString = {
+									departure: $.parseJSON($('#departure').val()),
+									arrival: 'RT' == 'RT' ? $.parseJSON($('#arrival').val()) : '',
+									booking: $.parseJSON($('#booking').val()),
+									tripType: 'RT',
+									authType: $('#authType').val()
+								};
+								$('#queryString').val(JSON.stringify(queryString));
+								$('#searchForm').attr('method', 'post');
+								$('#searchForm').attr('action', './booking.do');
+								$('#searchForm').submit();
+								break;
+							default:
+								alert("Invalid CALL!");
+								break;
+						}
+					}
+					//* validation 체크하기 위한 함수 *//
+					function ISVALID(args) {
+						switch (args) {
+							case "confirm":
+								var result = true;
+
+								//예약자 정보
+								if ($.trim($('input[name=fullName]').val()) == "") {
+									alert("예약자 이름을 입력해 주세요.");
+									$('input[name=fullName]').focus();
+									result = false;
+									return false;
+								}
+								if ($.trim($('input[name=mobile]').val()) == "") {
+									alert("예약자 휴대폰번호을 입력해 주세요.\n예약정보는 카카오알림톡이나 장문문자로 전송되니 정확히 입력해주세요.");
+									$('input[name=mobile]').focus();
+									result = false;
+									return false;
+								} else {
+									if (USR_CHECK_CP($.trim($('input[name=mobile]').val())) == false) {
+										$('input[name=mobile]').focus();
+										result = false;
+										return false;
+									}
+								}
+								if ($.trim($('input[name=email]').val()) == "") {
+									alert("예약자 이메일주소를 입력해 주세요.");
+									$('input[name=email]').focus();
+									result = false;
+									return false;
+								} else {
+									if (USR_CHECK_EMAIL($.trim($('input[name=email]').val())) == false) {
+										$('input[name=mobile]').focus();
+										result = false;
+										return false;
+									}
+								}
+
+								if ($.trim($('input[name=email]').val()) == "your@nate.com") {
+									alert("해당이메일은 사용불가능한 이메일주소입니다.");
+									result = false;
+									return false;
+								}
+
+								if (result == false) {
+									return false;
+								}
+
+								//탑승객 정보
+								$('#passengerInfo').find('input').each(function () {
+									var self = $(this);
+
+									if (self.attr('name').indexOf('fullName') >= 0 && $.trim(self.val()) == "") {
+										alert("탑승객 성을 입력해 주세요.");
+										self.focus();
+										result = false;
+										return false;
+									}
+									var v_last_name = "";
+									var v_first_name = "";
+									if (self.attr('name').indexOf('fullName') >= 0) {
+										v_last_name = self.val();
+									}
+									var k_name = v_last_name + v_first_name;
+									var pattern4 = /[^\w\sㄱ-힣0-9 ]/g;
+									if (pattern4.test(k_name) == true) {
+										alert("탑승객명에 특수문자를 사용할 수 없습니다.");
+										result = false;
+										return false;
+									}
+
+									if (self.attr('name').indexOf('birthday') >= 0) {
+										if ($.trim(self.val()) == "") {
+											alert("탑승객 생년월일을 입력해 주세요.");
+											self.focus();
+											result = false;
+											return false;
+										} else {
+											var inputY = self.val().substring(0, 4),
+												inputM = self.val().substring(4, 6),
+												inputD = self.val().substring(6);
+
+											var birthday = new Date(Number(inputY), Number(inputM) - 1, Number(inputD));
+											var birthY = birthday.getFullYear(),
+												birthM = birthday.getMonth() + 1,
+												birthD = birthday.getDate();
+
+											if (Number(inputY) != birthY || Number(inputM) != birthM || Number(inputD) != birthD) {
+												alert("탑승객 생년월일을 올바르게 입력해 주세요.\n19801215 와 같은 방법으로 입력하면 됩니다.");
+												self.focus();
+												result = false;
+												return false;
+											}
+											var depDate = document.getElementById("chk_dep_date").value.split('-');
+											var compareDay = new Date(Number(depDate[0]), Number(depDate[1]) - 1, Number(depDate[2]));
+											var years = compareDay.getFullYear() - birthday.getFullYear();
+											birthday.setFullYear(compareDay.getFullYear());
+											if (compareDay < birthday) {
+												years--;
+											}
+
+											if (self.closest('.valid').hasClass('adult')) {
+												if (years < 13) {
+													alert('성인은 만 13세 이상입니다.');
+													self.focus();
+													result = false;
+													return false;
+												}
+
+												if (years > 99) {
+													alert("생년월일을 확인해주세요.");
+													self.focus();
+													result = false;
+													return false;
+												}
+											}
+											else if (self.closest('.valid').hasClass('child')) {
+												if (years >= 13 || years < 2) {
+													alert('소아는 만 2~13세 미만입니다.');
+													self.focus();
+													result = false;
+													return false;
+												}
+											}
+											else if (self.closest('.valid').hasClass('infant')) {
+												if (years >= 2) {
+													alert('유아는 2세 미만입니다.');
+													self.focus();
+													result = false;
+													return false;
+												}
+											}
+										}
+									}
+
+									if (self.attr('name').indexOf('gender') >= 0 && $.trim(self.val()) == "") {
+										alert("탑승객 성별(남/녀구분)을 선택해 주세요.");
+										self.focus();
+										result = false;
+										return false;
+									}
+								});
+
+								if (($('#depAirlineCode').val() == "7C" || $('#arrAirlineCode').val() == "7C") && result == true) {
+									var total_cnt = Number('1') + Number('0') + Number('0');
+									for (var kk = 0; kk < total_cnt; kk++) {
+										var k_name = $('#lastName_' + kk).val() + $('#firstName_' + kk).val();
+										var pattern2 = /[a-zA-Z]/; //영어
+										var pattern3 = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; //한글
+
+										var engInsFlag = pattern2.test(k_name);
+										var korInsFlag = pattern3.test(k_name);
+
+										if (engInsFlag == true && korInsFlag == true) {
+											alert("탑승객명은 영문과 한글을 혼용해서 사용할 수 없습니다.\n한글명을 입력하거나 여권상의 영문명을 입력해 주세요.");
+											$('#lastName_' + kk).focus();
+											result = false;
+											return false;
+										}
+
+										if (korInsFlag == true) {
+											if ($('#lastName_' + kk).val().length > 2) {
+												alert("제주항공의 경우 탑승객 성은 한글로 2자리까지만 입력할 수 있습니다.");
+												$('#lastName_' + kk).focus();
+												result = false;
+												return false;
+											}
+
+											if (k_name.length > 5) {
+												alert("제주항공의 경우 탑승객 성과 이름은 한글로 5자리까지만 입력할 수 있습니다.");
+												$('#lastName_' + kk).focus();
+												result = false;
+												return false;
+											}
+										}
+
+										if (engInsFlag == true) {
+											if ($('#lastName_' + kk).val().length > 32) {
+												alert("제주항공의 경우 탑승객 성은 영문로 32자리까지만 입력할 수 있습니다.");
+												$('#lastName_' + kk).focus();
+												result = false;
+												return false;
+											}
+
+											if (k_name.length > 64) {
+												alert("제주항공의 경우 탑승객 성과 이름은 영문으로 64자리까지만 입력할 수 있습니다.");
+												$('#lastName_' + kk).focus();
+												result = false;
+												return false;
+											}
+										}
+									}
+								}
+
+								if (result == false) {
+									return false;
+								}
+								$('input[name=phone]').val($('input[name=mobile]').val());
+
+								//이용규정 동의
+								$('#agreementInfo').find('input').each(function () {
+									var self = $(this);
+									if (self.is(':checked') == false) {
+										$('body').animate({scrollTop: self.closest('.wrapDef').position().top - $('#TMv2_header').height() + 5}, function () {
+											alert('이용규정에 동의해 주세요.');
+										});
+										result = false;
+										return false;
+									}
+								});
+								if (result == false) {
+									return false;
+								}
+								return true;
+							default:
+								break;
+						}
+
+						return true;
+					}
+					/**
+					* 새창을 띄우거나 외부로 데이터를 보내기 위한 함수
+					*/
+					function SETDATA(argTran, data) {
+						//* 이동 화면으로 보낼 DATA SET *//
+						var objmsg = new Object();
+						objmsg.tran = argTran;
+						switch (objmsg.tran) {
+							case "departure":
+								var queryString = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}');
+								$('#departure').val(JSON.stringify(queryString.departure));
+								$('#queryString').val($('#departure').val());
+
+								var request = queryString.departure;
+								$('#depSearchInfo').empty();
+
+								if (request.airlineCode == "ZE" && request.fareClass == "S") v_dep_alert = "Y";
+								//if(request.airlineCode=="RS" && (request.fareClass=="S" || request.fareClass=="PT"))		v_dep_alert="Y";    		
+								var html = '', v_dep_free_baggage = "1인당 15KG";
+								if (v_dep_alert == "Y") v_dep_free_baggage = "제공안함";
+								if (request.airlineCode == "KE" || request.airlineCode == "OZ") v_dep_free_baggage = "1인당 20KG";
+								if (request.airlineCode == "KE" || request.airlineCode == "OZ" || request.airlineCode == "TW" || request.airlineCode == "7C") {
+									if (request.fareClass == "C") v_dep_free_baggage = "1인당 30KG";
+								}
+
+								html += '<div class="airScdInfo">';
+								html += '	<p><strong>' + fareClassMap[request.fareClass] + ' / <span class="fc_blue">무료위탁수화물 : ' + v_dep_free_baggage + '</span></strong></p>';
+								html += '	<div class="wrap1">';
+								html += '		<p class="aptTit">';
+								html += '			<img class="logo" src="/image/' + request.airlineCode + '.png" alt="' + inairMap[request.airlineCode] + '">';
+								html += '			<span class="txt">' + inairMap[request.airlineCode] + ' ' + request.airlineCode + ('' + request.flightNumber).replace(request.airlineCode, '') + '</span>';
+								html += '		</p>';
+								html += '		<p class="aptDate">';
+								html += '			<span class="txt">' + request.depDate.replace(/-/gi, '.') + '(' + weekend[new Date(request.depDate.replace(/-/gi, '/')).getDay()] + ')</span>';
+								html += '		</p>';
+								html += '	</div>';
+								if (request.airlineCodeShare && request.airlineCodeShare.length > 0) {
+									html += '<p class="aptShare">(공동운항/실제수속및탑승 : ' + inairMap[request.airlineCodeShare] + ')</p>';
+									$('#depAirlineCodeShare').val(request.airlineCodeShare);
+								}
+								html += '	<div class="wrap2 blueTag">';
+								html += '		<span class="abtPos1">' + request.depAirportName + '<strong> ' + request.depTime + '</strong></span>';
+								html += '		<span class="abtPos2">' + request.arrAirportName + '<strong> ' + request.arrTime + '</strong></span>';
+								html += '		<span class="wayTag depart">가는편</span>';
+								html += '	</div>';
+								html += '	<div class="wrapBtm">';
+								html += '		<a href="#none" class="btn_airfare" onclick="MAIN(\'fareDetail\', \'departure\');">요금상세 </a>';
+								html += '		<span class="subtxt">총 요금(편도)</span>';
+								html += '		<span class="priceWrap total">' + '<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(request.fareTotalAmount)) + '</span>';
+								html += '	</div>';
+								html += '</div>';
+								$('#depSearchInfo').append(html);
+								document.getElementById("chk_dep_date").value = request.depDate;
+
+								$('.departureTitle').each(function () {
+									$(this).html('가는편: ' + inairMap[request.airlineCode] + '<span class="fn">(' + request.depAirportName + ' → ' + request.arrAirportName + ')</span>');
+								});
+
+								$('#depAirlineCode').val(request.airlineCode);
+								break;
+							case "arrival":
+								if ('RT' != 'RT') {
+									$('#arrSearchInfo').remove();
+									return false;
+								}
+
+								var queryString = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}');
+								$('#arrival').val(JSON.stringify(queryString.arrival));
+								$('#queryString').val($('#arrival').val());
+
+								var request = queryString.arrival;
+								$('#arrSearchInfo').empty();
+								if (request.airlineCode == "ZE" && request.fareClass == "S") v_arr_alert = "Y";
+								//if(request.airlineCode=="RS" && (request.fareClass=="S" || request.fareClass=="PT"))		v_arr_alert="Y";    		
+								var html = '', v_arr_free_baggage = "1인당 15KG";
+								if (v_arr_alert == "Y") v_arr_free_baggage = "제공안함";
+								if (request.airlineCode == "KE" || request.airlineCode == "OZ") v_arr_free_baggage = "1인당 20KG";
+								if (request.airlineCode == "KE" || request.airlineCode == "OZ" || request.airlineCode == "TW" || request.airlineCode == "7C") {
+									if (request.fareClass == "C") v_arr_free_baggage = "1인당 30KG";
+								}
+
+								html += '<div class="airScdInfo">';
+								html += '	<p><strong>' + fareClassMap[request.fareClass] + ' / <span class="fc_blue">무료위탁수화물 : ' + v_arr_free_baggage + '</span></strong></p>';
+								html += '	<div class="wrap1">';
+								html += '		<p class="aptTit">';
+								html += '			<img class="logo" src="/image/' + request.airlineCode + '.png" alt="' + inairMap[request.airlineCode] + '">';
+								html += '			<span class="txt">' + inairMap[request.airlineCode] + ' ' + request.airlineCode + ('' + request.flightNumber).replace(request.airlineCode, '') + '</span>';
+								html += '		</p>';
+								html += '		<p class="aptDate">';
+								html += '			<span class="txt">' + request.depDate.replace(/-/gi, '.') + '(' + weekend[new Date(request.depDate.replace(/-/gi, '/')).getDay()] + ')</span>';
+								html += '		</p>';
+								html += '	</div>';
+								if (request.airlineCodeShare && request.airlineCodeShare.length > 0) {
+									html += '<p class="aptShare">(공동운항/실제수속및탑승 : ' + inairMap[request.airlineCodeShare] + ')</p>';
+									$('#arrAirlineCodeShare').val(request.airlineCodeShare);
+								}
+								html += '	<div class="wrap2 blueTag">';
+								html += '		<span class="abtPos1">' + request.depAirportName + '<strong> ' + request.depTime + '</strong></span>';
+								html += '		<span class="abtPos2">' + request.arrAirportName + '<strong> ' + request.arrTime + '</strong></span>';
+								html += '		<span class="wayTag return">오는편</span>';
+								html += '	</div>';
+								html += '	<div class="wrapBtm">';
+								html += '		<a href="#none" class="btn_airfare" onclick="MAIN(\'fareDetail\', \'arrival\');">요금상세 </a>';
+								html += '		<span class="subtxt">총 요금(편도)</span>';
+								html += '		<span class="priceWrap total">' + '<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(request.fareTotalAmount)) + '</span>';
+								html += '	</div>';
+								html += '</div>';
+								$('#arrSearchInfo').append(html);
+
+								document.getElementById("chk_dep_date").value = request.depDate;
+
+								$('.arrivalTitle').each(function () {
+									$(this).html('오는편: ' + inairMap[request.airlineCode] + '<span class="fn">(' + request.depAirportName + ' → ' + request.arrAirportName + ')</span>');
+								});
+
+								$('#arrAirlineCode').val(request.airlineCode);
+								break;
+							case "discount":
+								var queryString = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}');
+								var departure = queryString.departure,
+									arrival = queryString.arrival,
+									depSeq = {},
+									arrSeq = {};
+								if (departure) {
+									depSeq.airlineCode = departure.airlineCode;
+									depSeq.depDate = departure.depDate;
+									depSeq.pmdata = departure.pmdata;
+									depSeq.token = $('#depTokenId').val();
+								}
+								if (arrival) {
+									arrSeq.airlineCode = arrival.airlineCode;
+									arrSeq.depDate = arrival.depDate;
+									arrSeq.pmdata = arrival.pmdata;
+									arrSeq.token = $('#arrTokenId').val();
+								}
+								var data = {
+									depAirport: departure.depAirport,
+									arrAirport: departure.arrAirport,
+									tripType: queryString.tripType,
+									seg1: depSeq,
+									seg2: arrSeq
+								};
+								$('#queryString').val(JSON.stringify(data));
+								break;
+							case "reserve":
+								var data = $('#inairForm').serializeObject();
+								var queryString = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}');
+								var departure = queryString.departure,
+									arrival = queryString.arrival,
+									depSeq = {},
+									arrSeq = {};
+								if (departure) {
+									depSeq.airlineCode = departure.airlineCode;
+									depSeq.depDate = departure.depDate;
+									depSeq.pmdata = departure.pmdata;
+									depSeq.pmAddDiscount = $('#depAddDiscount option:selected').val();
+									depSeq.token = $('#depTokenId').val();
+								}
+								if (arrival) {
+									arrSeq.airlineCode = arrival.airlineCode;
+									arrSeq.depDate = arrival.depDate;
+									arrSeq.pmdata = arrival.pmdata;
+									arrSeq.pmAddDiscount = $('#arrAddDiscount option:selected').val();
+									arrSeq.token = $('#arrTokenId').val();
+								}
+								data.seg1 = depSeq;
+								data.seg2 = arrSeq;
+								var mobile = data.mobile,
+									phone = data.phone;
+								data.mobile = mobile.replace(/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/, '$1-$2-$3');
+								data.phone = phone.replace(/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/, '$1-$2-$3');
+								$.each(data.paxList, function (index, list) {
+									var birthday = list.birthday;
+									list.birthday = birthday.replace(/([0-9]{4})([0-9]{2})([0-9]{2})/, '$1-$2-$3');
+								});
+								$('#booking').val(JSON.stringify(data));
+								break;
+							case "parseXML":
+								var xmldata = data;
+								var rphead = new Array();
+								rphead[0] = new Array();
+								rphead[0]["error"] = $(xmldata).find("HEAD").find("error").text();
+								rphead[0]["message"] = $(xmldata).find("HEAD").find("message").text();
+								var rpdata = new Array();
+								{
+									$(xmldata).find("RECORD").each(function (index) {
+										rpdata[index] = new Array();
+										$(this).children().each(function (j) {
+											rpdata[index][this.tagName] = $(this).text();
+										});
+									});
+								}
+								var resultData = new Array();
+								resultData[0] = rphead;
+								resultData[1] = rpdata;
+
+								return resultData;
+								break;
+
+							case "tokenId":
+								var queryString = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}');
+								var departure = queryString.departure,
+									arrival = queryString.arrival,
+									depSeq = {},
+									arrSeq = {};
+								depSeq.airlineCode = departure.airlineCode;
+								depSeq.depAirport = departure.depAirport;
+								depSeq.arrAirport = departure.arrAirport;
+								depSeq.depDate = departure.depDate;
+								depSeq.pmdata = departure.pmdata;
+
+								if ('RT' == 'RT') {
+									arrSeq.airlineCode = arrival.airlineCode;
+									arrSeq.depAirport = arrival.depAirport;
+									arrSeq.arrAirport = arrival.arrAirport;
+									arrSeq.depDate = arrival.depDate;
+									arrSeq.pmdata = arrival.pmdata;
+								} else {
+									arrSeq = null;
+								}
+								var data = {
+									adultCnt: departure.adultCnt,
+									childCnt: departure.childCnt,
+									infantCnt: departure.infantCnt,
+									seg1: depSeq,
+									seg2: arrSeq
+								};
+								$('#queryString').val(JSON.stringify(data));
+								break;
+							default:
+								break;
+						}
+					}
+					/**
+					* 외부에서 데이터를 받아서 처리하는 함수
+					*/
+					function GETDATA(objmsg) {
+						var d = document.data;
+
+						switch (objmsg.tran) {
+							default:
+								alert("Invalid CALL!");;
+								return false;
+								break;
+						}
+					}
+					//* AJAX 호출후 메소트 호출 *//
+					function AJAX_CALLBACK(method, resultData) {
+						var arrHeadData = resultData[0];
+						var arrResultData = resultData[1];
+
+						var isError = arrHeadData[0]["error"];
+						if (isError == true || isError == "true") {
+							alert(arrHeadData[0]["message"]);
+							objInfo.jqueryLoading.search(false);
+							return;
+						}
+
+						switch (method) {
+							case "pmdata":
+								if (arrResultData.length > 0) {
+									if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+										var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+										var request = data.request,
+											response = data.response;
+
+										var isInventory = response.extra1.indexOf('INVENTORY');
+										//요금할인 조회
+										MAIN('discount', isInventory);
+									} else {
+										alert(arrResultData[0]["MESSAGE"]);
+									}
+								}
+								break;
+
+							case "token":
+								if (arrResultData.length > 0) {
+									if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+										var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+										var request = data.request,
+											response = data.response;
+										if ($('#depAirlineCode').val() == "7C") {
+											$('#depTokenId').val(response.seg1.token);
+											if (response.seg1.token == "") {
+												alert("죄송합니다.\n해당 제주항공 운임이 마감되어 다른운임으로 예약진행해 주세요.");
+												history.back();
+												return false;
+												break;
+											}
+										}
+										if ('RT' == 'RT') {
+											if ($('#arrAirlineCode').val() == "7C") {
+												$('#arrTokenId').val(response.seg2.token);
+												if (response.seg2.token == "") {
+													alert("죄송합니다.\n해당 제주항공 운임이 마감되어 다른운임으로 예약진행해 주세요.");
+													history.back();
+													return false;
+													break;
+												}
+											}
+										}
+									} else {
+										alert(arrResultData[0]["MESSAGE"]);
+									}
+								}
+								break;
+							case "discount":
+								if (arrResultData.length > 0) {
+									if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+										var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+										var request = data.request,
+											response = data.response;
+
+										$('#depDiscounts').val(JSON.stringify(response.seg1));
+										//가는편 할인선택
+										$('.adultDiscount1').each(function () {
+											var that = $(this);
+											$.each(response.seg1.adultDiscounts, function (index, list) {
+												that.append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+											});
+										});
+										$('.childDiscount1').each(function () {
+											var that = $(this);
+											$.each(response.seg1.childDiscounts, function (index, list) {
+												that.append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+											});
+										});
+										$('.infantDiscount1').each(function () {
+											var that = $(this);
+											$.each(response.seg1.infantDiscounts, function (index, list) {
+												that.append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+											});
+										});
+										//오는편 할인선택
+										if ('RT' == 'RT') {
+											$('#arrDiscounts').val(JSON.stringify(response.seg2));
+											$('.adultDiscount2').each(function () {
+												var that = $(this);
+												$.each(response.seg2.adultDiscounts, function (index, list) {
+													that.append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+												});
+											});
+											$('.childDiscount2').each(function () {
+												var that = $(this);
+												$.each(response.seg2.childDiscounts, function (index, list) {
+													that.append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+												});
+											});
+											$('.infantDiscount2').each(function () {
+												var that = $(this);
+												$.each(response.seg2.infantDiscounts, function (index, list) {
+													that.append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+												});
+											});
+										}
+										//추가 할인 선택 
+										if (response.seg1.addDiscounts.length > 0) {
+											var departure = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}').departure;
+											var addDiscountInfo = $('#addDiscountInfo .formSetTy2 li').first();
+											addDiscountInfo.find('h4').html('가는편: ' + inairMap[departure.airlineCode] + '<span class="fn">(' + departure.depAirportName + ' → ' + departure.arrAirportName + ')</span>');
+											$.each(response.seg1.addDiscounts, function (index, list) {
+												$('#depAddDiscount').append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+											});
+											$('#addDiscountInfo').show();
+											$('#depAddDiscount').closest('li').show();
+										}
+										if ('RT' == 'RT') {
+											if (response.seg2.addDiscounts.length > 0) {
+												var arrival = $.parseJSON('{"departure":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"김포","arrAirportName":"제주","depAirport":"GMP","arrAirport":"CJU","depDate":"2023-08-10","depTime":"06:10","arrTime":"07:20","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8937","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MzciLCJjbHMiOiJXIiwiZHQiOiIwNjoxMCIsImF0IjoiMDc6MjAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"arrival":{"airlineCode":"OZ","airlineCodeShare":"","depAirportName":"제주","arrAirportName":"김포","depAirport":"CJU","arrAirport":"GMP","depDate":"2023-08-13","depTime":"06:30","arrTime":"07:40","adultCnt":1,"childCnt":0,"infantCnt":0,"flightNumber":"8900","availSeatCount":9,"fareClass":"S","fareAmount":48000,"fareFuel":6600,"fareTax":4000,"svcCharge":1000,"pmdata":"eyJmbiI6Ijg5MDAiLCJjbHMiOiJXIiwiZHQiOiIwNjozMCIsImF0IjoiMDc6NDAiLCJmdCI6IiIsInNjIjo5LCJjYyI6IktSVyIsImFmYSI6NDgwMDAsImNmYSI6NDgwMDAsImlmYSI6MCwiYWZ0Ijo0MDAwLCJjZnQiOjIwMDAsImlmdCI6MCwiYWZmIjo2NjAwLCJjZmYiOjY2MDAsImlmZiI6MCwiYXNjIjoxMDAwLCJjc2MiOjEwMDAsImlzYyI6MCwiZXgxIjoiIiwiZXgyIjoiIiwiYWR0IjowLCJjaGQiOjAsImluZiI6MCwicG0iOiIifQ==","fareTotalAmount":59600},"tripType":"RT"}').arrival;
+												var addDiscountInfo = $('#addDiscountInfo .formSetTy2 li').last();
+												addDiscountInfo.find('h4').html('오는편: ' + inairMap[arrival.airlineCode] + '<span class="fn">(' + arrival.depAirportName + ' → ' + arrival.arrAirportName + ')</span>');
+												$.each(response.seg2.addDiscounts, function (index, list) {
+													$('#arrAddDiscount').append('<option value="' + list.pmDiscount + '">' + list.desc + '</option>');
+												});
+												$('#addDiscountInfo').show();
+												$('#arrAddDiscount').closest('li').show();
+											}
+										}
+										//한국버전일때만 할인표시
+										if ('ko' != 'ko') {
+											$('.adultDiscount1').each(function () {$(this).closest('li').hide();});
+											$('.childDiscount1').each(function () {$(this).closest('li').hide();});
+											$('.infantDiscount1').each(function () {$(this).closest('li').hide();});
+											$('.adultDiscount2').each(function () {$(this).closest('li').hide();});
+											$('.childDiscount2').each(function () {$(this).closest('li').hide();});
+											$('.infantDiscount2').each(function () {$(this).closest('li').hide();});
+											$('#addDiscountInfo').hide();
+										}
+									} else {
+										alert(arrResultData[0]["MESSAGE"]);
+									}
+								}
+								objInfo.jqueryLoading.search(false);
+								break;
+							default:
+								alert("Invalid CALL!");
+								break;
+						}
+					}
+					function SEARCH_CALLBACK(method, resultData) {
+						var arrHeadData = resultData[0];
+						var arrResultData = resultData[1];
+
+						var isError = arrHeadData[0]["error"];
+						if (isError == true || isError == "true") {
+							alert(arrHeadData[0]["message"]);
+							return;
+						}
+
+						switch (method) {
+							case "departure":
+								if (arrResultData.length > 0) {
+									if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+										var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+										var request = data.request,
+											response = data.response;
+										$('#depSearchInfo').empty();
+										var html = '';
+										html += '<div class="airScdInfo">';
+										html += '	<div class="wrap1">';
+										html += '		<p class="aptTit">';
+										html += '			<img class="logo" src="/image/' + request.airlineCode + '.png" alt="' + inairMap[request.airlineCode] + '">';
+										html += '			<span class="txt">' + inairMap[request.airlineCode] + ' ' + request.airlineCode + response.flightNumber.replace(request.airlineCode, '') + '</span>';
+										html += '		</p>';
+										html += '		<p class="aptDate">';
+										html += '			<span class="txt">' + request.depDate.replace(/-/gi, '.') + '(' + weekend[new Date(request.depDate.replace(/-/gi, '/')).getDay()] + ')</span>';
+										html += '		</p>';
+										html += '	</div>';
+										html += '	<div class="wrap2 blueTag">';
+										html += '		<span class="abtPos1">' + response.depAirportName + '<strong> ' + response.depTime + '</strong></span>';
+										html += '		<span class="abtPos2">' + response.arrAirportName + '<strong> ' + response.arrTime + '</strong></span>';
+										html += '		<span class="wayTag depart">가는편</span>';
+										html += '	</div>';
+										html += '</div>';
+										$('#depSearchInfo').append(html);
+									} else {
+										alert(arrResultData[0]["MESSAGE"]);
+									}
+								}
+								break;
+							case "arrival":
+								if (arrResultData.length > 0) {
+									if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+										var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+										var request = data.request,
+											response = data.response;
+										$('#arrSearchInfo').empty();
+										var html = '';
+										html += '<div class="airScdInfo">';
+										html += '	<div class="wrap1">';
+										html += '		<p class="aptTit">';
+										html += '			<img class="logo" src="/image/' + request.airlineCode + '.png" alt="' + inairMap[request.airlineCode] + '">';
+										html += '			<span class="txt">' + inairMap[request.airlineCode] + ' ' + request.airlineCode + response.flightNumber.replace(request.airlineCode, '') + '</span>';
+										html += '		</p>';
+										html += '		<p class="aptDate">';
+										html += '			<span class="txt">' + request.depDate.replace(/-/gi, '.') + '(' + weekend[new Date(request.depDate.replace(/-/gi, '/')).getDay()] + ')</span>';
+										html += '		</p>';
+										html += '	</div>';
+										html += '	<div class="wrap2 blueTag">';
+										html += '		<span class="abtPos1">' + response.depAirportName + '<strong> ' + response.depTime + '</strong></span>';
+										html += '		<span class="abtPos2">' + response.arrAirportName + '<strong> ' + response.arrTime + '</strong></span>';
+										html += '		<span class="wayTag depart">가는편</span>';
+										html += '	</div>';
+										html += '</div>';
+										$('#arrSearchInfo').append(html);
+									} else {
+										alert(arrResultData[0]["MESSAGE"]);
+									}
+								}
+								break;
+							default:
+								alert("Invalid CALL!");
+								break;
+						}
+					}
+					/**
+					 * 이메일 주소 체크
+					 */
+					function USR_CHECK_EMAIL(v_email) {
+						var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+						if (pattern.test(v_email) == false) {
+							alert('이메일 주소가 유효하지 않습니다');
+							return false;
+						} else {
+							if (v_email.indexOf("..") > 0) {
+								alert('이메일 주소가 유효하지 않습니다');
+								return false;
+							} else {
+								return true;
+							}
+						}
+					}
+
+					/**
+					 * 핸드폰번호 체크
+					 */
+					function USR_CHECK_CP(v_hpno) {
+						if (v_hpno.length > 11 || v_hpno.length < 10) {
+							alert('휴대폰번호를 확인해주세요.');
+							return false;
+						}
+
+						return true;
+					}
+				</script>
+
+				<script>
+					var V_GOOGLE_TAG_ID = "mappair";
+					if (document.location.href.indexOf("mdomair.ttang.com") > 0) V_GOOGLE_TAG_ID = "mdomair";
+				</script>
+				<script>
+					(function (i, s, o, g, r, a, m) {i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+					ga('create', ("mappair" == V_GOOGLE_TAG_ID) ? "UA-115744964-1" : "UA-144023094-1", 'auto');
+					ga('send', 'pageview');
+				</script>
+				
+			</section>
+		</div>
+		<div class="layerLoadWrap"></div>
+		<div class="layerLoadWrap3"></div>
+		<script type="text/javascript" src="/common/menu.do"></script>
+		<div class="TMv2_nav" id="TMv2_nav" style="display:none;">
+			<div class="innerWrap tyTotal">
+				<div class="scrContWrap">
+					<div class="navTop">
+						<div class="util"> <a href="//mdomair.ttang.com/main/index.do" class="ico_noTxt home">home</a>
+							<a href="//mdomair.ttang.com/member/login.do" class="log">로그인 및 예약확인</a> <a
+								href="//mdomair.ttang.com/mypage/member/setting.do"
+								class="ico_noTxt setting">setting</a>
+						</div>
+						<div class="welcome">회원/비회원 로그인해 주세요!</div>
+						<div class="menuSty1 num">
+							<ul class="n1">
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+					</div>
+					<div class="navCont">
+						<ul class="menuList1">
+							<li><a href="//mdomair.ttang.com/inair/index.do" class="cateAir"><span>항공권</span></a></li>
+							<li><a href="//mdomair.ttang.com/inhotel/main.do" class="cateHotel"><span>국내숙박</span></a>
+							</li>
+							<li><a href="http://mapprentcar.ttang.com/rentcar/index.do"
+									class="cateRentcar"><span>렌터카</span></a></li>
+							<li><a href="http://mapppasstour.ttang.com/index.jsp"
+									class="cateTicket"><span>티켓&amp;입장권</span></a></li>
+						</ul>
+						<div class="menuBtn1">
+							<div class="btn_area n1 pd"> <span class="btnWrap n1"><a
+										href="//mdomair.ttang.com/help/bbs/faqList.do"
+										class="btn styD c_rgrayLine"><strong>자주 묻는 질문</strong></a></span> <span
+									class="btnWrap n2 "><a href="//mdomair.ttang.com/etc/event/list.do"
+										class="btn styD c_red"><strong>기획전/이벤트</strong></a></span>
+								<!-- <span class="btnWrap n2"><a href="/help/inair/qnaList.do" class="btn styD c_rgrayLine"><strong>1:1 문의</strong></a></span> -->
+							</div>
+						</div>
+						<div class="menuTxt Addr">
+							<p class="tit">땡처리닷컴 상담문의</p>
+							<p class="tel"><a href="tel:02-3705-8833"><strong class="fc_red">02-3705-8833</strong></a>
+							</p>
+							<p class="text">오전 9시~오후 6시(주말/공휴일 휴무)</p>
+						</div>
+						<div class="logo"> <img src="" alt="땡처리닷컴"> </div>
+					</div>
+				</div>
+			</div> <a href="#none" class="close ico_noTxt" id="navClose">close</a>
+		</div>
+		<div class="dimmedLayer nav" style="display:none;"></div>
+		<script src="/js/pub_navi.js"></script>
+		<script type="text/javascript" src="/js/pub_comm.js?v=20191220"></script>
+		<script type="text/javascript" src="/js/jquery.bpopup-0.11.0.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-utils.js?v=20191220"></script>
+		<script type="text/javascript" src="/js/jquery.serialize-object.min.js"></script>
+
+		<script type="text/javascript">
+			var isNoHeaderAgent = '';
+			if (isNoHeaderAgent == "true") {
+				function setHeight() {
+					var body = document.body, html = document.documentElement;
+					var height = Math.max(body.scrollHeight, body.offsetHeight,
+						html.clientHeight, html.scrollHeight, html.offsetHeight);
+					parent.postMessage({"FrameHeight": height}, "*");
+				}
+				window.onload = setHeight();
+				setInterval(setHeight, 500);
+			}
+
+		</script>
+
+
+	</body>
+
+</html>

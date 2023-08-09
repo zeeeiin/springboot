@@ -1,0 +1,216 @@
+
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+}
+
+*{ padding: 0; margin: 0; }
+ul, li { list-style: none; } 
+*{ margin: 0 auto; }
+
+body{ font-family: 'Noto Sans KR', sans-serif;}
+
+.header {
+    width: 100%;
+    height: 60px;
+    /* background-color: rgb(88, 166, 255); */
+    /* background-image: linear-gradient(to bottom, rgb(55, 145, 248), white); */
+}
+
+.header_title > h3 {   
+	font-size: 22px;
+    font-weight: 700; 
+    text-align: center;
+     color: rgb(7, 77, 138);
+    float: left;
+   	padding-left: 20px;
+    line-height: 60px;     
+    margin-bottom: 0;
+}
+.header_menu{
+    float: right;   
+    /* position: absolute; */
+    bottom: 0.3rem;
+    right: 1rem;
+    pointer-events: auto;
+    box-sizing: border-box;
+}
+/*.menu{
+    display: block;
+    overflow: hidden;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(0, 1, 85);
+    font-weight: 700;
+     background-color: white; 
+    background: url(/img/drawer-trigger.svg) center center/44px 44px no-repeat;
+    background-size: 40px 40px;
+}*/
+
+.menuBtn {
+  cursor: pointer;
+  position: absolute;
+  /*top: 20px;*/
+  right: 0px; 
+  
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  width: 4.4rem;
+  height: 4.4rem;
+  border: 0;
+  background: url(/image/drawer-trigger.svg) center center/44px 44px no-repeat;
+  background-size: 38px 38px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right:20px;
+  /* color: white; */
+  cursor: pointer;
+}
+
+.sideBox.open .closeBtn {
+  left: auto; /* .open 클래스가 추가되면 왼쪽에 위치하지 않음 */
+  right: 20px; /* .open 클래스가 추가되면 오른쪽에 위치 */
+  color: white;
+}
+
+.sideBox {  
+  /* position: relative; */
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: -90%; /* 사이드바가 오른쪽으로 숨긴 상태 */
+  width: 90%;
+ /* height: 900px;*/
+  background-color: white;
+  transition: right 0.3s ease; /* 애니메이션을 위한 트랜지션 설정 */
+  z-index: 9999;
+}
+
+/* 사이드바가 나타날 때 오른쪽으로 이동하는 스타일 */
+.sideBox.open {
+  right: 0;
+}
+
+.side_top {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: rgb(18, 66, 155);
+  box-sizing: border-box;
+}
+
+.title {
+ /* padding-top: 30px;*/
+  padding-left: 30px;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.side_menuBox {
+  box-sizing: border-box;
+}
+.side_title {
+  width: 100%;
+  height: 60px;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+.side_title > h3 {
+  /*margin: 20px;*/
+  padding-top: 15px;
+  padding-left: 30px;
+  
+}
+
+.side_menu_nav {
+  /*height: 900px;*/
+ /* margin-top: 30px;*/  
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.side_menuList {
+  list-style: none;
+  padding-top: 15px;
+  padding-left: 20px;  
+  display: block;
+  background-color: white;
+}
+.side_menuList > ul {
+  overflow: hidden;
+  display: flex;    
+  box-sizing: border-box;
+}
+.side_icon {
+  display: flex;
+  float: left;
+  align-items: center;
+  width: 30%;
+  margin: 15px;
+}
+
+.iconimg > img {
+  display: block;
+  background-image: no-repeat center 0px;
+ /* background-size: 20px 20px;*/
+  /*height: 100px;*/
+
+}
+.side_icon > a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(8, 7, 90);
+}
+
+.side_board {
+  width: 100%;  
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.board {	
+  padding-left: 20px;
+  display: block;
+  width: 100%;
+  /*height: 50px;*/
+  line-height: 50px;
+  border: 1px solid rgb(221, 221, 221);
+}
+.board > a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(8, 7, 90);
+}
+
+.side_bottom { 	
+  margin-top: 15px;
+  padding-left: 20px; 
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  box-sizing: border-box; 
+}
+
+.callcenter {
+  font-size: large;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 5px;
+}
+.callnum {
+  font-size: larger;
+  color: red;
+  margin-bottom: 5px;
+}
+.calltime {
+  color: rgb(143, 143, 143);
+}

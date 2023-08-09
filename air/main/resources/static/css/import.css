@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* *************************************************************
+ 땡처리닷컴 > 모바일 > 국내항공 > css import | import.css
+************************************************************** */
+@import 'base.css';
+@import 'layout.css';
+@import 'style.css';
+@import 'contents.css';
+@import 'layer.css';
+@import 'event.css';
+/* @import 'lang.css'; 다국어 적용시 주석 해제 */
+/* @import './includeSite/@example.css'; */

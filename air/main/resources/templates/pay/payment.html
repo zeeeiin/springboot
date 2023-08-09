@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="setContent(content)">
+
+	<title>탑승객 정보입력</title>
+
+	<meta charset="UTF-8" />
+	<meta charset="EUC-KR" />
+	<!--공통 -->
+	<!--<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/loading.css}" />-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/registration.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/jquery-ui.min.css}" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script th:src="@{/js/jquery-1.12.1.min.js}"></script>
+	<script th:src="@{/js/jquery-ui.min.js}"></script>
+	<script th:src="@{/js/style.js}"></script>
+
+	<!--모달css-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/modal.css}" />
+
+
+	<head>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="/image/logo/favicon.ico">
+		<meta name="title" content="제주항공권 - 땡처리닷컴">
+		<meta name="description" content="대한민국 대표 여행플랫폼">
+		<meta name="keyword"
+			content="제주도항공권, 제주항공권, 제주항공, 제주항공권특가, 제주도항공권특가, 제주도항공권땡처리, 제주항공권예매, 국내항공권예약, 제주도비행기표, 제주도땡처리항공권, 국내선항공권예약, 제주도비행기, 제주도비행기예약, 땡처리항공권, 제주도비행기특가, 제주항공, 제주도항공, 제주도할인항공권, 제주도항공권가격비교">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="제주항공권 - 땡처리닷컴">
+		<meta property="og:description" content="대한민국 대표 여행플랫폼">
+		<meta property="og:image" content="/image/OpenGraphLogo.png">
+		<meta property="og:url" content="http://m.ttang.com/">
+		<title>땡처리닷컴 &gt; 국내항공</title>
+
+		<script src="https://connect.facebook.net/signals/config/1650048995237007?v=2.9.121&amp;r=c2" async=""></script>
+		<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+		<script async="" src="//www.google-analytics.com/analytics.js"></script>
+		<script type="text/javascript">
+			var V_SCRIPT_VERSION = "20191220";
+			var IMAGE_DOMAIN = "http://images.ttang.com";
+			var v_072_domain_name = window.location.protocol + "//mappair.ttang.com";
+		</script>
+		<link type="text/css" rel="stylesheet" href="/asset/css/font.css?v=20191220">
+		<link type="text/css" rel="stylesheet" href="/asset/css/import.css?v=20191220">
+		<link type="text/css" rel="stylesheet" href="/asset/css/jquery/swiper.css?v=20191220">
+		<script type="text/javascript" src="/asset/js/plugin/jquery-1.11.1.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="/asset/css/includeSite/TMV2.css?v=20191220">
+	</head>
+
+	<body class="TMv2_body airdoBody">
+		<div class="TMv2_skip">
+			<a href="#TMv2_contents">contents</a>
+		</div>
+		<div id="TMv2_wrapper" class="TMv2_wrapper">
+			<script type="text/javascript" src="/common/header.do?isNoHeaderAgent="></script>
+			<div class="TMv2_headerWrap">
+				<script type="text/javascript" src="//mm.ttang.com/asset/js/export/header.js"></script>
+				<link type="text/css" rel="stylesheet" href="http://mm.ttang.com/asset/css/font.css?v=20180830">
+				<link type="text/css" rel="stylesheet" href="http://mm.ttang.com/asset/css/import.css?v=20180830">
+				<link type="text/css" rel="stylesheet" href="http://mm.ttang.com/asset/js/plugin/jquery-1.11.1.min.js">
+				<link type="text/css" rel="stylesheet"
+					href="http://mm.ttang.com/asset/js/plugin/jquery.bpopup-0.11.0.min.js">
+				<!--<script type="text/javascript" src="http://mm.ttang.com/asset/js/jquery-utils.js?v=20180830"></script>
+				<script language="javascript" src="http://mm.ttang.com/common/headerMap.do"></script>
+				<header id="TMv2_header" class="TMv2_header">
+					<div class="abWrap topMenu"> <a href="javascript:;" class="abL" onclick="history.back();"
+							id="id_header_history_back"><span
+								class="ico_noTxt icoSet_headerMenu ico_back">뒤로가기</span></a>
+						<h1 class="tit shortCut">항공권 결제</h1>
+						<div class="abR"> <a href="#none" class="abR1"><span
+									class="ico_noTxt icoSet_headerMenu ico_menu">메뉴</span></a> </div>
+					</div>
+				</header>-->
+				<script
+					type="text/javascript">function __072_PROTOCOL_REPLACE(domain, to_protocol, is_change) {if (!is_change) return domain; var ret_value = domain; switch (to_protocol) {case "http": ret_value = ret_value.replace("https://", "http://"); break; case "https": ret_value = ret_value.replace("http://", "https://"); break;}	return ret_value;}</script>
+			</div>
+			<div class="TMv2_header_shadow"></div>
+			<script type="text/javascript" src="//mm.ttang.com/asset/js/export/header_navi.js"></script>
+			<script language="javascript" src="http://mm.ttang.com/common/headerNavi.do"></script>
+			<div class="TMv2_nav" id="TMv2_nav" style="left: 100%;">
+				<div class="innerWrap tyTotal">
+					<div class="scrContWrap">
+						<div class="navTop">
+							<div class="util_MV2 logout"> <a href="http://mm.ttang.com/index.html"
+									class="ico_noTxt home">home</a>
+								<p class="txt">로그인 해주세요</p>
+								<script type="text/javascript" src="https://mm.ttang.com/common/count/alarm.do"
+									charset="utf-8"></script><a href="http://mm.ttang.com/etc/alarm/list.do"
+									class="ico_noTxt alarm ">setting</a> <a
+									href="https://mm.ttang.com/member/setting.do" class="ico_noTxt setting">setting</a>
+								<div class="btn"><a
+										href="https://mm.ttang.com/member/login.do?fwd=aHR0cDovL21kb21haXIudHRhbmcuY29tLw=="
+										class="log">로그인 및 예약확인</a></div>
+							</div>
+						</div>
+						<div class="navCont vMV2">
+							<div class="bdrWrap">
+								<h3 class="def mt0">메뉴 바로가기</h3>
+								<ul class="menuList3 n3">
+									<li> <a href="http://mm.ttang.com/ttangair/index.do" class="cateExair"> <span
+												class="txt">해외항공</span> </a> </li>
+									<li> <a href="http://mdomair.ttang.com/inair/index.do" class="cateInair"> <span
+												class="txt">국내항공</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/exhotel/main.do" class="cateExhotel"> <span
+												class="txt">해외호텔</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/inhotel/main.do" class="cateInhotel"> <span
+												class="txt">국내숙박</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/product/pkg/index.do" class="catePack"> <span
+												class="txt"> <span class="wrapspan">해외패키지</span> </span> </a> </li>
+									<li> <a href="http://mm.ttang.com/product/free/index.do" class="catePack"> <span
+												class="txt"> <span class="wrapspan">자유여행</span> </span> </a> </li>
+									<li> <a href="http://mrentcar.ttang.com/exrentcar/index.do" class="cateRentcar">
+											<span class="txt">해외 렌트카</span> </a> </li>
+									<li> <a href="http://mrentcar.ttang.com/rentcar/index.do" class="cateRentcar"> <span
+												class="txt">제주도 렌트카</span> </a> </li>
+									<li> <a href="http://mpasstour.ttang.com/passtour/index.do" class="cateTicket">
+											<span class="txt">제주할인입장권</span> </a> </li>
+									<li> <a href="http://mm.ttang.com/help/insurance/index.do" class="cateExair"> <span
+												class="txt">여행자보험</span> </a> </li>
+								</ul>
+							</div>
+							<div class="bdrWrap pd0">
+								<ul class="menuList2 tySm">
+									<li><a href="http://mm.ttang.com/help/notice/list.do"><span>공지사항</span></a></li>
+									<li><a href="http://mm.ttang.com/help/faq/list.do"><span>자주 묻는 질문</span></a></li>
+									<li><a href="http://mm.ttang.com/etc/event/list.do"><span>기획전/이벤트</span></a></li>
+									<li><a href="https://mm.ttang.com/etc/reqmail/view.do"><span>알리미신청</span></a></li>
+								</ul>
+							</div>
+							<div class="bdrWrap">
+								<div class="menuTxt">
+									<p class="tit">땡처리닷컴 상담문의</p>
+									<p class="tel"><a href="tel:02-3705-8833"><strong
+												class="fc_red">02-3705-8833</strong></a></p>
+									<p class="text">오전 9시~오후 6시(주말/공휴일 휴무)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <a href="#none" class="close ico_noTxt" id="navClose">close</a>
+			</div>
+			<div class="dimmedLayer nav" style="display: none;"></div>
+			<script src="http://mm.ttang.com/asset/js/dev/common/pub_navi.js"></script>
+			<section class="TMv2_section" id="TMv2_section">
+
+				<form id="inairForm" name="inairForm" method="post">
+					<input type="hidden" id="departure"
+						value="{&quot;adultCnt&quot;:1,&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;airlineCodeShare&quot;:&quot;&quot;,&quot;arrAirportCode&quot;:&quot;CJU&quot;,&quot;arrAirportName&quot;:&quot;제주&quot;,&quot;arrDate&quot;:&quot;2023-08-10&quot;,&quot;arrTime&quot;:&quot;07:20&quot;,&quot;cancelPaxList&quot;:[],&quot;childCnt&quot;:0,&quot;depAirportCode&quot;:&quot;GMP&quot;,&quot;depAirportName&quot;:&quot;김포&quot;,&quot;depDate&quot;:&quot;2023-08-10&quot;,&quot;depTime&quot;:&quot;06:10&quot;,&quot;fareClass&quot;:&quot;E&quot;,&quot;fareRuleList&quot;:[],&quot;flightNumber&quot;:&quot;8937&quot;,&quot;infantCnt&quot;:0,&quot;inventoryYn&quot;:&quot;N&quot;,&quot;paxList&quot;:[{&quot;birthday&quot;:&quot;1960-04-12&quot;,&quot;cxlDt&quot;:&quot;&quot;,&quot;discountCode&quot;:&quot;AA&quot;,&quot;discountDesc&quot;:&quot;성인&quot;,&quot;fareAmount&quot;:72000,&quot;fareFuel&quot;:6600,&quot;fareTax&quot;:4000,&quot;gender&quot;:&quot;M&quot;,&quot;name&quot;:&quot;홍길동&quot;,&quot;paxType&quot;:&quot;A&quot;,&quot;status&quot;:&quot;OK&quot;,&quot;supPaxId&quot;:&quot;1&quot;,&quot;svcCharge&quot;:1000,&quot;ticket&quot;:&quot;&quot;}],&quot;payDeadline&quot;:&quot;2023-08-07 10:54&quot;,&quot;pnr&quot;:&quot;525HVG&quot;,&quot;possibleCancelKind&quot;:&quot;A&quot;,&quot;rsvStatusCode&quot;:&quot;RC&quot;,&quot;segKind&quot;:1,&quot;supPnr&quot;:&quot;12345622#525HVG&quot;}">
+					<input type="hidden" id="arrival"
+						value="{&quot;adultCnt&quot;:1,&quot;airlineCode&quot;:&quot;OZ&quot;,&quot;airlineCodeShare&quot;:&quot;&quot;,&quot;arrAirportCode&quot;:&quot;GMP&quot;,&quot;arrAirportName&quot;:&quot;김포&quot;,&quot;arrDate&quot;:&quot;2023-08-12&quot;,&quot;arrTime&quot;:&quot;07:50&quot;,&quot;cancelPaxList&quot;:[],&quot;childCnt&quot;:0,&quot;depAirportCode&quot;:&quot;CJU&quot;,&quot;depAirportName&quot;:&quot;제주&quot;,&quot;depDate&quot;:&quot;2023-08-12&quot;,&quot;depTime&quot;:&quot;06:40&quot;,&quot;fareClass&quot;:&quot;C&quot;,&quot;fareRuleList&quot;:[],&quot;flightNumber&quot;:&quot;8902&quot;,&quot;infantCnt&quot;:0,&quot;inventoryYn&quot;:&quot;N&quot;,&quot;paxList&quot;:[{&quot;birthday&quot;:&quot;1960-04-12&quot;,&quot;cxlDt&quot;:&quot;&quot;,&quot;discountCode&quot;:&quot;AA&quot;,&quot;discountDesc&quot;:&quot;성인&quot;,&quot;fareAmount&quot;:157000,&quot;fareFuel&quot;:6600,&quot;fareTax&quot;:4000,&quot;gender&quot;:&quot;M&quot;,&quot;name&quot;:&quot;홍길동&quot;,&quot;paxType&quot;:&quot;A&quot;,&quot;status&quot;:&quot;OK&quot;,&quot;supPaxId&quot;:&quot;1&quot;,&quot;svcCharge&quot;:1000,&quot;ticket&quot;:&quot;&quot;}],&quot;payDeadline&quot;:&quot;2023-08-08 19:00&quot;,&quot;pnr&quot;:&quot;526TJ8&quot;,&quot;possibleCancelKind&quot;:&quot;A&quot;,&quot;rsvStatusCode&quot;:&quot;RC&quot;,&quot;segKind&quot;:2,&quot;supPnr&quot;:&quot;12345631#526TJ8&quot;}">
+					<input type="hidden" id="depPnr">
+					<input type="hidden" id="arrPnr">
+					<input type="hidden" id="tripType" value="RT">
+					<input type="hidden" id="onlyDepAirTotalAmount" value="82600">
+					<input type="hidden" id="onlyArrAirTotalAmount" value="167600">
+				</form>
+
+				<div id="TMv2_contents" class="TMv2_contents bottomFix">
+					<div class="wrapDef fit mt0">
+						<div class="colorbox_notice cGray" style="height: 138px;">
+							<ul class="listDef d1 bgDot">
+								<li>반드시 <strong class="fc_red">즉시 결제하여야 예약이
+										완료</strong>됩니다.<!-- 반드시  <strong class="fc_red">즉시 결제하여야 예약이 완료</strong>됩니다. -->
+								</li>
+								<li>각 편도 구간 별로 예약 및 결제가 진행됩니다.<!-- 각 편도 구간 별로 예약 및 결제가 진행됩니다. --></li>
+								<li>같은 항공사 왕복 예약 시에도 가는편/오는편 별도로 결제하셔야
+									합니다.<!-- 같은 항공사 왕복 예약 시에도 가는편/오는편 별도로 결제하셔야 합니다. --></li>
+								<li>항공사별 무이자할부 여부는 각 카드사나 해당 항공사로 개별 확인하시기
+									바랍니다.<!-- 항공사별 무이자할부 여부는 각 카드사나 해당 항공사로 개별 확인하시기 바랍니다. --></li>
+							</ul>
+							<div class="btmBg"><a href="#none" class="ico_noTxt btnClose" id="btnNoticeBox">Close</a>
+							</div>
+							<script type="text/javascript" src="/asset/js/plugin/jquery.easing.1.3.js"></script>
+							<script>
+								$('#btnNoticeBox').click(function () {
+									var noticeBox = $(this).parent().parent();
+									var noticeBoxH = $(this).parent().parent().find('.listDef').height();
+									if ($(noticeBox).hasClass('on') == !true) {
+										$(noticeBox).animate({height: '5px'}, {duration: 400, specialEasing: {height: 'easeInCirc'}});
+										$(noticeBox).addClass('on');
+									}
+									else {
+										$(noticeBox).animate({height: noticeBoxH}, {duration: 400, specialEasing: {height: 'easeInCirc'}});
+										$(noticeBox).removeClass('on');
+									}
+								});
+							</script>
+						</div>
+					</div>
+
+					<!-- 가는편 -->
+					<div class="tabCont" id="tabCont01">
+						<div class="wrapDef">
+							<ul class="listDef d3 bgDot mt12">
+								<li>항공일정은 정부인가 조건이며, 항공사의 부득이한 사유 및 기상 악화 등으로 사전예고 없이 변경 될 수 있습니다. (모든 조건은 항공사
+									규정입니다)<!-- 항공일정은 정부인가 조건이며, 항공사의 부득이한 사유 및 기상 악화 등으로 사전예고 없이 변경 될 수 있습니다. (모든 조건은 항공사 규정입니다) -->
+								</li>
+								<li>결제마감시한까지 결제를 하지 않으시면 예약이 자동 취소 됩니다. (예약과 동시
+									구매)<!-- 즉시 결제를 하지 않으시면 예약이 자동 취소 됩니다. (예약과 동시 구매) --></li>
+								<li>매일 23시50분 ~ 00시 10분까지는 항공사 및 카드사별 점검시간이므로 결제가 정상진행 되지 않을 수도
+									있습니다.<!-- 매일 23시 50분 ~ 00시 10분까지는 항공사 및 카드사별 점검시간이므로 결제가 정상진행 되지 않을 수도 있습니다. -->
+								</li>
+								<li>결제후 예약정보(예약번호등)는 알림톡(또는 장문문자)으로 발송되니, 결제후 예약정보를 받지 못한 경우에는 땡처리닷컴으로
+									문의해주세요.<!-- 결제후 예약정보(예약번호등)는 알림톡(또는 장문문자)으로 발송되니, 결제후 예약정보를 받지 못한 경우에는 땡처리닷컴으로 문의해주세요. -->
+								</li>
+
+
+
+							</ul>
+						</div>
+
+						<div class="wrapDef" id="depPaymentInfo">
+							<h3 class="def">결제금액<!-- 결제금액 --></h3>
+							<div class="tblAWrap tbl_col">
+								<table class="tblA">
+									<caption>결제금액</caption>
+									<colgroup>
+										<col style="width:135px">
+										<col style="width:*">
+									</colgroup>
+									<tbody>
+										<tr class="frstBg">
+											<th scope="row"></th>
+											<td class="txt ar"></td>
+										</tr>
+										<tr>
+											<th scope="row">총 요금<!-- 총 요금 --></th>
+											<td class="txt ar">
+												<p class="priceWrap"><span class="price">83,600</span>원</p>
+											</td>
+										</tr>
+										<!-- <tr>
+							<th scope="row">할인금액할인금액</th>
+							<td class="txt ar">
+								<p class="priceWrap sale"><span class="price">-2,000</span>원</p>
+								<p class="subTxt">소아(만2세~만13세)할인</p>
+							</td>
+						</tr> -->
+										<tr>
+											<th scope="row">최종 결제금액<!-- 최종 결제금액 --></th>
+											<td class="txt ar">
+												<p class="priceWrap total" id="PCPayTotal"><span
+														class="price">83,600</span>원</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">결제 마감시한<!-- 결제마감시한 --></th>
+											<td class="txt ar">
+												<p class="priceWrap"><span
+														class="price">즉시결제(10분이내)</span><!-- 2017.11.29 10:11 --></p>
+											</td>
+										</tr>
+										<tr class="lastBg">
+											<th scope="row"></th>
+											<td class="txt"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+
+
+						<div class="wrapDef">
+							<h3 class="def">결제방법
+								<span class="fc_red">(신용/체크카드만 결제가능, 기명 법인카드는 개인을 선택)</span>
+								<!-- 결제방법 -->
+							</h3>
+
+							<div class="tabSty1 js js_pay topBox"><!-- js_pay는 결제정보입력란을 여/닫는 용도로만 사용했습니다.(삭제무방) -->
+								<ul class="n3 txt">
+									<li class="on"><a href="#none" class="card"><span
+												class="wp">신용카드<!-- 신용카드 --></span></a></li>
+								</ul>
+							</div>
+							<div class="pay_cardWrap" style="display:block;">
+								<ul class="formSetTy2 mt17">
+									<li>
+										<h4 class="def">카드구분<!-- 카드구분 --></h4>
+										<div class="formWrap tab">
+											<div class="tabSty1 js topBox">
+												<ul class="n3 txt" id="payCardCheckKind">
+													<li data-cardcheckkind="P" class="on"><a href="#none"><span
+																class="wp">개인<!-- 개인 --></span></a></li>
+													<li data-cardcheckkind="C"><a href="#none"><span
+																class="wp">법인<!-- 법인 --></span></a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<h4 class="def">할부기간<!-- 할부기간 --></h4>
+										<div class="formWrap sel">
+											<select title="할부기간" class="def" id="payInstallment">
+												<option value="00" selected="selected">일시불<!-- 일시불 --></option>
+												<option value="02">2개월<!-- 2개월 --></option>
+												<option value="03">3개월<!-- 3개월 --></option>
+												<option value="04">4개월<!-- 4개월 --></option>
+												<option value="05">5개월<!-- 5개월 --></option>
+												<option value="06">6개월<!-- 6개월 --></option>
+												<option value="07">7개월<!-- 7개월 --></option>
+												<option value="08">8개월<!-- 8개월 --></option>
+												<option value="09">9개월<!-- 9개월 --></option>
+												<option value="10">10개월<!-- 10개월 --></option>
+												<option value="11">11개월<!-- 11개월 --></option>
+												<option value="12">12개월<!-- 12개월 --></option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<h4 class="def">카드번호<!-- 카드번호 --></h4>
+										<div class="formWrap inp n4">
+											<input type="hidden" id="payCardNo">
+											<span class="wrap"><input type="number" id="payCardNo1" class="def"
+													maxlength="4" pattern="[0-9]*" title="카드번호"></span>
+											<span class="wrap"><input type="number" id="payCardNo2" class="def"
+													maxlength="4" pattern="[0-9]*" title="카드번호"></span>
+											<span class="wrap"><input type="number" id="payCardNo3" class="def"
+													maxlength="4" pattern="[0-9]*" title="카드번호"></span>
+											<span class="wrap"><input type="password" id="payCardNo4" class="def"
+													maxlength="4" title="카드번호"></span>
+										</div>
+									</li>
+									<li>
+										<h4 class="def">유효기간<!-- 유효기간 --></h4>
+										<div class="formWrap cardExpiry">
+											<span class="wrap">
+												<select title="유효기간" id="payExpireMonth" class="def" required="">
+													<option value="" selected="selected" disabled="" hidden="">
+														월<!-- 월 --></option>
+													<option value="01">01</option>
+													<option value="02">02</option>
+													<option value="03">03</option>
+													<option value="04">04</option>
+													<option value="05">05</option>
+													<option value="06">06</option>
+													<option value="07">07</option>
+													<option value="08">08</option>
+													<option value="09">09</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+											</span>
+											<span class="wrap txt symbol">/</span>
+											<span class="wrap">
+												<select title="유효기간" id="payExpireYear" class="def" required="">
+													<option value="" selected="selected" disabled="" hidden="">
+														년도<!-- 년도 --></option>
+													<option value="23">2023</option>
+													<option value="24">2024</option>
+													<option value="25">2025</option>
+													<option value="26">2026</option>
+													<option value="27">2027</option>
+													<option value="28">2028</option>
+													<option value="29">2029</option>
+													<option value="30">2030</option>
+													<option value="31">2031</option>
+													<option value="32">2032</option>
+												</select>
+											</span>
+										</div>
+									</li>
+									<li>
+										<h4 class="def">카드비밀번호<!-- 카드비밀번호 --></h4>
+										<div class="formWrap inp cardPW">
+											<span class="wrap inp"><input type="password" id="payCardPassword"
+													class="def" maxlength="2" title="앞 2자리" placeholder="앞 2자리"></span>
+											<span class="wrap txt symbol">**</span>
+										</div>
+
+									</li>
+									<li>
+										<h4 class="def">소유주이름<!-- 소유주이름 --></h4>
+										<div class="formWrap inp ownerName">
+											<span class="wrap"><input type="text" id="payHolderLastName" class="def"
+													maxlength="30" title="성" placeholder="성"></span>
+											<span class="wrap"><input type="text" id="payHolderFirstName" class="def"
+													maxlength="30" title="이름" placeholder="이름"></span>
+										</div>
+									</li>
+									<li>
+										<h4 class="def">카드소유주 생년월일<!-- 생년월일 --></h4>
+										<div class="formWrap inp">
+											<span class="wrap"><input type="number" id="payCardCheck_birthday"
+													class="def payCardCheck" maxlength="6" pattern="[0-9]*"
+													title="카드소유주 생년월일" placeholder="예) 801231"></span>
+										</div>
+									</li>
+									<li style="display:none;">
+										<h4 class="def">사업자번호<!-- 사업자번호 --></h4>
+										<div class="formWrap inp">
+											<span class="wrap"><input type="text" id="payCardCheck_bizno"
+													class="def payCardCheck" maxlength="10" pattern="[0-9]*"
+													title="사업자번호" placeholder="예) 123-45-67890"></span>
+										</div>
+									</li>
+								</ul>
+								<form id="inairPayForm" name="inairPayForm" method="post">
+									<input type="hidden" id="payMethod" name="payMethod" value="NONE">
+									<input type="hidden" id="bookingNo" name="bookingNo" value="T2308071705172">
+									<input type="hidden" id="pnr" name="pnr" value="">
+									<input type="hidden" id="cardNo" name="cardNo" value="">
+									<input type="hidden" id="expireYear" name="expireYear" value="">
+									<input type="hidden" id="expireMonth" name="expireMonth" value="">
+									<input type="hidden" id="installment" name="installment" value="">
+									<input type="hidden" id="authType" name="authType" value="NONE">
+									<input type="hidden" id="cardCheckKind" name="cardCheckKind" value="">
+									<input type="hidden" id="cardCheck" name="cardCheck" value="">
+									<input type="hidden" id="cardPassword" name="cardPassword" value="">
+									<input type="hidden" id="holderLastName" name="holderLastName" value="">
+									<input type="hidden" id="holderFirstName" name="holderFirstName" value="">
+									<input type="hidden" id="vendorCode" name="vendorCode" value="">
+								</form>
+							</div><!-- // pay_cardWrap -->
+						</div>
+
+						<div id="id_payment_form"></div>
+
+						<script type="text/javascript" src="/js/aes.js"></script>
+						<script type="text/javascript" src="/js/pbkdf2.js"></script>
+						<script type="text/javascript" src="/js/aesUtil.js"></script>
+						<script type="text/javascript" src="/js/jquery.base64.js"></script>
+
+						<script type="text/javascript">
+							var isPaymentCall = false;
+							//* 화면이 최초 로드될 때 호출되는 함수 *//
+							$(document).ready(function () {
+								PAY_MAIN("init");
+							});
+
+							//* MAIN 기본 함수 *//
+							function PAY_MAIN(args, event) {
+								if (!PAY_ISVALID(args)) return;
+
+								switch (args) {
+									case "init":
+										//카드구분
+										$('#payCardCheckKind a').click(function () {
+											var index = $('#payCardCheckKind a').index($(this));
+											$('.payCardCheck').each(function () {
+												$(this).closest('li').hide();
+											});
+											$('.payCardCheck').eq(index).closest('li').show();
+										});
+										//인풋박스 넘버타입
+										$('input[type=number]').keyup(function () {
+											var self = $(this);
+											if (self.attr('maxlength')) {
+												if (self.val().length >= self.attr('maxlength')) {
+													self.val(self.val().substring(0, self.attr('maxlength')));
+												}
+											}
+										});
+										//결제카드
+										if ('OZ' == 'ZE' || 'OZ' == 'LJ' || 'OZ' == 'RS') {
+											PAY_MAIN("card");
+										}
+										//결제방법
+										PAY_MAIN("search");
+
+										if ($('#daGubun').val() == "A") {
+											PAY_SETDATA('cardEnc');
+										}
+
+										break;
+									case "card":
+										//Ajax Call
+										$.post("/paymethod/eastar/cardAct.do", 'airlineCode=OZ', function (data) {
+											PAY_AJAX_CALLBACK(args, PAY_SETDATA('parseXML', data));
+										});
+										break;
+									case "search":
+										//Ajax Call
+										var queryString = $.parseJSON('{"bookingNo":"T2308071705172","arrival":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"GMP","arrAirportName":"김포","arrDate":"2023-08-12","arrTime":"07:50","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"CJU","depAirportName":"제주","depDate":"2023-08-12","depTime":"06:40","fareClass":"C","fareRuleList":[],"flightNumber":"8902","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":157000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-08 19:00","pnr":"526TJ8","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":2.0,"supPnr":"12345631#526TJ8"},"departure":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"CJU","arrAirportName":"제주","arrDate":"2023-08-10","arrTime":"07:20","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"GMP","depAirportName":"김포","depDate":"2023-08-10","depTime":"06:10","fareClass":"E","fareRuleList":[],"flightNumber":"8937","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":72000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-07 10:54","pnr":"525HVG","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":1.0,"supPnr":"12345622#525HVG"},"tripType":"RT","authType":"","payDeadline":"2023-08-07 10:25","lang":"ko"}');
+										$.post("./payment/formAct.do", 'bookingNo=' + queryString.bookingNo, function (data) {
+											PAY_AJAX_CALLBACK(args, PAY_SETDATA('parseXML', data));
+										});
+										break;
+									case "payment":
+										if (isPaymentCall == false) {
+											PAY_MAIN('pay' + 'departure');
+										}
+										break;
+									case "paydeparture":
+										//개인정보(암호화)						
+										objEncrypt.ttangAES.init();
+
+										var p_kind = "";
+										if ($('#payCardCheckKind li.on').data('cardcheckkind') == 'P') {
+											p_kind = "P"
+										} else {
+											p_kind = "C"
+										}
+										var payVendorCode = "";
+										if ($('#payVendorCode').length > 0) {
+											payVendorCode = $('#payVendorCode').val();
+										}
+										var v_holder_name = "";
+										if ('OZ' == 'OZ' || 'OZ' == 'LJ' || 'OZ' == 'RS' || 'OZ' == 'ZE') {
+											v_holder_name = encodeURIComponent($('#payHolderLastName').val() + "^" + $('#payHolderFirstName').val());
+										}
+
+										var payCardCheck = $('.payCardCheck').eq($('#payCardCheckKind li').index($('#payCardCheckKind li.on'))).val();
+										var enc_info = "" + payVendorCode + "|" + p_kind + "|" + $('#payInstallment').val();
+										enc_info += "|" + $('#payCardNo1').val() + "|" + $('#payCardNo2').val() + "|" + $('#payCardNo3').val() + "|" + $('#payCardNo4').val();
+										enc_info += "|" + $('#payExpireYear').val() + "|" + $('#payExpireMonth').val() + "|" + payCardCheck + "|" + $('#payCardPassword').val();
+										enc_info += "|" + v_holder_name;
+
+										$('#iv').val(objEncrypt.ttangAES.iv);
+										$('#salt').val(objEncrypt.ttangAES.salt);
+
+										enc_info = objEncrypt.ttangAES.encrypt($.base64.encode(enc_info));
+										$('#encInfo').val(enc_info);
+
+										//Ajax loading start
+										isPaymentCall = true;
+										objInfo.jqueryLoading.search(true, '항공권을 결제하는 중입니다.<br>잠시만 기다려주세요.<br>최대 1분-2분정도 소요되니 결제가 완료될때까지 잠시만 더 기다려주세요.');
+										//Ajax Call
+										var queryString = $.parseJSON('{"bookingNo":"T2308071705172","arrival":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"GMP","arrAirportName":"김포","arrDate":"2023-08-12","arrTime":"07:50","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"CJU","depAirportName":"제주","depDate":"2023-08-12","depTime":"06:40","fareClass":"C","fareRuleList":[],"flightNumber":"8902","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":157000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-08 19:00","pnr":"526TJ8","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":2.0,"supPnr":"12345631#526TJ8"},"departure":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"CJU","arrAirportName":"제주","arrDate":"2023-08-10","arrTime":"07:20","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"GMP","depAirportName":"김포","depDate":"2023-08-10","depTime":"06:10","fareClass":"E","fareRuleList":[],"flightNumber":"8937","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":72000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-07 10:54","pnr":"525HVG","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":1.0,"supPnr":"12345622#525HVG"},"tripType":"RT","authType":"","payDeadline":"2023-08-07 10:25","lang":"ko"}');
+										PAY_SETDATA("payment", queryString.departure.pnr);
+										$.post("./payment/payAct.do", $('#searchForm').serialize(), function (data) {
+											PAY_AJAX_CALLBACK(args, PAY_SETDATA('parseXML', data));
+											isPaymentCall = false;
+										});
+										break;
+									case "payarrival":
+										//Ajax loading start
+										isPaymentCall = true;
+										objInfo.jqueryLoading.search(true, '항공권을 결제하는 중입니다.<br>잠시만 기다려주세요.<br>최대 1분-2분정도 소요되니 결제가 완료될때까지 잠시만 더 기다려주세요.');
+										//Ajax Call
+										var queryString = $.parseJSON('{"bookingNo":"T2308071705172","arrival":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"GMP","arrAirportName":"김포","arrDate":"2023-08-12","arrTime":"07:50","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"CJU","depAirportName":"제주","depDate":"2023-08-12","depTime":"06:40","fareClass":"C","fareRuleList":[],"flightNumber":"8902","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":157000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-08 19:00","pnr":"526TJ8","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":2.0,"supPnr":"12345631#526TJ8"},"departure":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"CJU","arrAirportName":"제주","arrDate":"2023-08-10","arrTime":"07:20","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"GMP","depAirportName":"김포","depDate":"2023-08-10","depTime":"06:10","fareClass":"E","fareRuleList":[],"flightNumber":"8937","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":72000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-07 10:54","pnr":"525HVG","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":1.0,"supPnr":"12345622#525HVG"},"tripType":"RT","authType":"","payDeadline":"2023-08-07 10:25","lang":"ko"}');
+										PAY_SETDATA("payment", queryString.arrival.pnr);
+										$.post("./payment/payAct.do", $('#searchForm').serialize(), function (data) {
+											PAY_AJAX_CALLBACK(args, PAY_SETDATA('parseXML', data));
+											isPaymentCall = false;
+										});
+										break;
+									case "location":
+										var queryString = $.parseJSON('{"bookingNo":"T2308071705172","arrival":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"GMP","arrAirportName":"김포","arrDate":"2023-08-12","arrTime":"07:50","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"CJU","depAirportName":"제주","depDate":"2023-08-12","depTime":"06:40","fareClass":"C","fareRuleList":[],"flightNumber":"8902","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":157000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-08 19:00","pnr":"526TJ8","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":2.0,"supPnr":"12345631#526TJ8"},"departure":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"CJU","arrAirportName":"제주","arrDate":"2023-08-10","arrTime":"07:20","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"GMP","depAirportName":"김포","depDate":"2023-08-10","depTime":"06:10","fareClass":"E","fareRuleList":[],"flightNumber":"8937","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":72000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-07 10:54","pnr":"525HVG","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":1.0,"supPnr":"12345622#525HVG"},"tripType":"RT","authType":"","payDeadline":"2023-08-07 10:25","lang":"ko"}');
+										var paramString = {
+											bookingNo: queryString.bookingNo,
+											tripType: queryString.tripType
+										};
+										$('#queryString').val(JSON.stringify(paramString));
+										$('#searchForm').attr('action', './' + event + '.do');
+										$('#searchForm').submit();
+										break;
+									default:
+										alert("Invalid CALL!");
+										break;
+								}
+							}
+							//* validation 체크하기 위한 함수 *//
+							function PAY_ISVALID(args) {
+								switch (args) {
+									case "payment":
+										//카드구분
+										var cardcheckkind = $('#payCardCheckKind li.on').data('cardcheckkind');
+										if (cardcheckkind == "") {
+											alert('카드구분을 선택해주세요.');	//카드구분을 선택해주세요.
+											return false;
+										}
+
+										//카드종류
+										if ('OZ' == 'ZE' || 'OZ' == 'LJ' || 'OZ' == 'RS') {
+											if ($.trim($('#payVendorCode').val()) == '') {
+												alert('카드종류를 선택해주세요.');
+												return false;
+											}
+										}
+
+										//카드번호
+										if ($.trim($('#payCardNo1').val()) == '') {
+											alert("카드번호를 입력해 주세요.");
+											$('#payCardNo1').focus();
+											return false;
+										} else {
+											if ($.trim($('#payCardNo1').val()).length < 3 || $.trim($('#payCardNo1').val()).length > 4) {
+												alert("카드번호를 올바르게 입력해 주세요.");
+												$('#payCardNo1').focus();
+												return false;
+											}
+										}
+										if ($.trim($('#payCardNo2').val()) == '') {
+											alert("카드번호를 입력해 주세요.");
+											$('#payCardNo2').focus();
+											return false;
+										} else {
+											if ($.trim($('#payCardNo2').val()).length < 3 || $.trim($('#payCardNo2').val()).length > 4) {
+												alert("카드번호를 올바르게 입력해 주세요.");
+												$('#payCardNo2').focus();
+												return false;
+											}
+										}
+										if ($.trim($('#payCardNo3').val()) == '') {
+											alert("카드번호를 입력해 주세요.");
+											$('#payCardNo3').focus();
+											return false;
+										} else {
+											if ($.trim($('#payCardNo3').val()).length < 3 || $.trim($('#payCardNo3').val()).length > 4) {
+												alert("카드번호를 올바르게 입력해 주세요.");
+												$('#payCardNo3').focus();
+												return false;
+											}
+										}
+										if ($.trim($('#payCardNo4').val()) == '') {
+											alert("카드번호를 입력해 주세요.");
+											$('#payCardNo4').focus();
+											return false;
+										} else {
+											if ($.trim($('#payCardNo4').val()).length < 3 || $.trim($('#payCardNo4').val()).length > 4) {
+												alert("카드번호를 올바르게 입력해 주세요.");
+												$('#payCardNo4').focus();
+												return false;
+											}
+										}
+
+										//유효기간
+										if ($.trim($('#payExpireMonth').val()) == '') {
+											alert("카드유효기간 월을 선택해 주세요.");
+											$('#payExpireMonth').focus();
+											return false;
+										}
+										if ($.trim($('#payExpireYear').val()) == '') {
+											alert("카드유효기간 년도를 선택해 주세요.");
+											$('#payExpireYear').focus();
+											return false;
+										}
+
+										//카드비밀번호  	
+										if ($.trim($('#payCardPassword').val()) == '') {
+											alert("카드비밀번호 앞2자리를 입력해 주세요.");
+											$('#payCardPassword').focus();
+											return false;
+										} else {
+											if ($.trim($('#payCardPassword').val()).length != 2) {
+												alert("카드비밀번호 앞2자리를 입력해 주세요.");
+												$('#payCardPassword').focus();
+												return false;
+											}
+										}
+
+										if ('OZ' == 'OZ' || 'OZ' == 'LJ' || 'OZ' == 'RS' || 'OZ' == 'ZE') {
+											if ($.trim($('#payHolderLastName').val()) == '') {
+												alert("카드소유주 성을 입력해 주세요.");
+												$('#payHolderLastName').focus();
+												return false;
+											}
+											if ($.trim($('#payHolderFirstName').val()) == '') {
+												alert("카드소유주 이름을 입력해 주세요.");
+												$('#payHolderFirstName').focus();
+												return false;
+											}
+
+											var reg_hanengnum = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|\*]+$/;
+											if (!reg_hanengnum.test($.trim($('#payHolderLastName').val()))) {
+												alert("카드소유주 성은 한글,영문,숫자만 입력할 수 있습니다.");
+												$('#payHolderLastName').focus();
+												return false;
+											}
+											if (!reg_hanengnum.test($.trim($('#payHolderFirstName').val()))) {
+												alert("카드소유주 이름은 한글,영문,숫자만 입력할 수 있습니다.");
+												$('#payHolderFirstName').focus();
+												return false;
+											}
+
+										}
+
+										//생년월일사업자번호
+										if (cardcheckkind == "P") {
+											if ($.trim($('#payCardCheck_birthday').val()) == '') {
+												alert("카드소유주 생년월일을 입력해 주세요.");
+												$('#payCardCheck_birthday').focus();
+												return false;
+											} else {
+												if ($.trim($('#payCardCheck_birthday').val()).length != 6) {
+													alert("카드소유주 생년월일 6자리를 입력해 주세요.");
+													$('#payCardCheck_birthday').focus();
+													return false;
+												}
+											}
+										} else if (cardcheckkind == "C") {
+											if ($.trim($('#payCardCheck_bizno').val()) == '') {
+												alert("법인카드 사업자번호를 입력해 주세요.");
+												$('#payCardCheck_bizno').focus();
+												return false;
+											} else {
+												if ($.trim($('#payCardCheck_bizno').val()).length != 10 && $.trim($('#payCardCheck_bizno').val()).length != 12) {
+													alert("법인카드 사업자번호를 10자리 또는 12자리로 입력해 주세요.");
+													$('#payCardCheck_bizno').focus();
+													return false;
+												}
+											}
+										}
+
+										//결제 전 확인사항
+										if ($('#agreementInfo001').is(':checked') == false) {
+											alert('결제 진행에 동의해주세요.');
+											return false;
+										}
+										break;
+									case "paydeparture":
+										//할부기간
+										if ($('#payInstallment option:selected').val() != '00') {
+											var depPayTotalAmount = Number($('#onlyDepAirTotalAmount').val());
+											if (depPayTotalAmount < 50000) {
+												alert('카드 할부는 발권대행수수료를 뺀 금액이 5만원 이상만 이용하실 수 있습니다.');
+												objInfo.jqueryLoading.search(false);
+												return false;
+											}
+										}
+										break;
+									case "payarrival":
+										//할부기간
+										if ($('#payInstallment option:selected').val() != '00') {
+											var depPayTotalAmount = Number($('#onlyArrAirTotalAmount').val());
+											if (depPayTotalAmount < 50000) {
+												alert('카드 할부는 발권대행수수료를 뺀 금액이 5만원 이상만 이용하실 수 있습니다.');
+												objInfo.jqueryLoading.search(false);
+												return false;
+											}
+										}
+										break;
+									default:
+										break;
+								}
+								return true;
+							}
+							//* 새창을 띄우거나 외부로 데이터를 보내기 위한 함수 *//
+							function PAY_SETDATA(argTran, data) {
+								var objmsg = new Object();
+								objmsg.tran = argTran;
+
+								switch (objmsg.tran) {
+									case "payment":
+										var self = $('#inairPayForm');
+										self.find('#pnr').val(data);
+										self.find('#cardNo').val($('#payCardNo1').val() + $('#payCardNo2').val() + $('#payCardNo3').val() + $('#payCardNo4').val());
+										self.find('#expireYear').val($('#payExpireYear option:selected').val());
+										self.find('#expireMonth').val($('#payExpireMonth option:selected').val());
+										self.find('#installment').val($('#payInstallment option:selected').val());
+										self.find('#cardCheckKind').val($('#payCardCheckKind li.on').data('cardcheckkind'));
+										self.find('#cardCheck').val($('.payCardCheck').eq($('#payCardCheckKind li').index($('#payCardCheckKind li.on'))).val());
+										self.find('#cardPassword').val($('#payCardPassword').val());
+										self.find('#holderLastName').val($('#payHolderLastName').val());
+										self.find('#holderFirstName').val($('#payHolderFirstName').val());
+										self.find('#vendorCode').val($('#payVendorCode option:selected').val() || '');
+										var data = {
+											bookingNo: self.find('#bookingNo').val(),
+											pnr: self.find('#pnr').val(),
+											cardNo: self.find('#cardNo').val(),
+											expireYear: self.find('#expireYear').val(),
+											expireMonth: self.find('#expireMonth').val(),
+											installment: self.find('#installment').val(),
+											authInfo: {
+												authType: self.find('#authType').val(),
+												cardCheckKind: self.find('#cardCheckKind').val(),
+												cardCheck: self.find('#cardCheck').val(),
+												cardPassword: self.find('#cardPassword').val(),
+												holderLastName: self.find('#holderLastName').val(),
+												holderFirstName: self.find('#holderFirstName').val(),
+												vendorCode: self.find('#vendorCode').val(),
+												reqAmt: $('#totalFareAmount').val(),
+											}
+										}
+										$('#queryString').val(JSON.stringify(data));
+										break;
+									case "parseXML":
+										var xmldata = data;
+										var rphead = new Array();
+										rphead[0] = new Array();
+										rphead[0]["error"] = $(xmldata).find("HEAD").find("error").text();
+										rphead[0]["message"] = $(xmldata).find("HEAD").find("message").text();
+										var rpdata = new Array();
+										{
+											$(xmldata).find("RECORD").each(function (index) {
+												rpdata[index] = new Array();
+												$(this).children().each(function (j) {
+													rpdata[index][this.tagName] = $(this).text();
+												});
+											});
+										}
+										var resultData = new Array();
+										resultData[0] = rphead;
+										resultData[1] = rpdata;
+
+										return resultData;
+										break;
+									case "cardEnc":
+										var encInfo = '';
+										var arrEnc = $.base64.decode(encInfo).split('|');
+										if (arrEnc.length > 2) {
+											var card_kind = arrEnc[1];
+											if (card_kind != "") {
+												/*
+											if(card_kind == 'P') {
+												$('#payCardCheck').closest('tr').find('th:first').text('생년월일');
+												$('#payCardCheck').attr('placeholder', '예)880101');
+											} else {
+												$('#payCardCheck').closest('tr').find('th:first').text('사업자 등록번호');
+												$('#payCardCheck').attr('placeholder', '예)1234567890');
+											}	
+											*/
+											}
+											$('#payInstallment').val(arrEnc[2])
+											$('#payCardNo1').val(arrEnc[3]);
+											$('#payCardNo2').val(arrEnc[4]);
+											$('#payCardNo3').val(arrEnc[5]);
+											$('#payCardNo4').val(arrEnc[6]);
+											$('#payExpireYear').val(arrEnc[7]);
+											$('#payExpireMonth').val(arrEnc[8]);
+											$('#payCardCheck').val(arrEnc[9]);
+											$('.payCardCheck').eq($('#payCardCheckKind li').index($('#payCardCheckKind li.on'))).val(arrEnc[9]);
+											$('#payCardPassword').val(arrEnc[10]);
+											if ('OZ' == 'OZ' || 'OZ' == 'LJ' || 'OZ' == 'RS') {
+												var arrHolderName = decodeURIComponent(arrEnc[11]).split('^');
+												if (arrHolderName.length > 0) {
+													$('#payHolderLastName').val(arrHolderName[0]);
+													$('#payHolderFirstName').val(arrHolderName[1]);
+												}
+											}
+										}
+										break;
+									default:
+										break;
+								}
+							}
+							//* AJAX 호출후 메소트 호출 *//
+							function PAY_AJAX_CALLBACK(method, resultData) {
+								var arrHeadData = resultData[0];
+								var arrResultData = resultData[1];
+
+								var isError = arrHeadData[0]["error"];
+								if (isError == true || isError == "true") {
+									alert(arrHeadData[0]["message"]);
+									objInfo.jqueryLoading.search(false);
+									return;
+								}
+
+								switch (method) {
+									case "card":
+										if (arrResultData.length > 0) {
+											var data = arrResultData[0],
+												cardList = $.parseJSON(data.PG_CARD);
+
+											var self = $('#payVendorCode');
+											$.each(cardList, function (index, list) {
+												self.append('<option value="' + list.cardCode + '">' + list.cardName + '</option>');
+											});
+										} else {
+											alert("Invalid CALL!");
+										}
+										break;
+									case "search":
+										if (arrResultData.length > 0) {
+											var data = arrResultData[0];
+											$('.pay_cardWrap').append(data.PG_FORM);
+										} else {
+											alert("Invalid CALL!");
+										}
+										break;
+									case "paydeparture":
+										if (arrResultData.length > 0) {
+											if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+												var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+												var status = data.status,
+													response = data.response;
+												if (status.code == 'OK') {
+													if (response.status == 'OK') {
+														var queryString = $.parseJSON('{"bookingNo":"T2308071705172","arrival":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"GMP","arrAirportName":"김포","arrDate":"2023-08-12","arrTime":"07:50","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"CJU","depAirportName":"제주","depDate":"2023-08-12","depTime":"06:40","fareClass":"C","fareRuleList":[],"flightNumber":"8902","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":157000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-08 19:00","pnr":"526TJ8","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":2.0,"supPnr":"12345631#526TJ8"},"departure":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"CJU","arrAirportName":"제주","arrDate":"2023-08-10","arrTime":"07:20","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"GMP","depAirportName":"김포","depDate":"2023-08-10","depTime":"06:10","fareClass":"E","fareRuleList":[],"flightNumber":"8937","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":72000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-07 10:54","pnr":"525HVG","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":1.0,"supPnr":"12345622#525HVG"},"tripType":"RT","authType":"","payDeadline":"2023-08-07 10:25","lang":"ko"}');
+														if (queryString.tripType == 'RT') {
+															if (queryString.departure.airlineCode == queryString.arrival.airlineCode) {
+																//alert('가는편이 결제되었습니다.\n동일항공사예약으로 오는편 결제진행됩니다.\n잠시만 더 기다려 주세요.');
+																//PAY_MAIN('payarrival');
+																alert('가는편이 결제되었습니다.\n오는편 결제화면으로 넘어갑니다.');
+																PAY_MAIN('location', 'payarrival');
+															} else {
+																alert('가는편이 결제되었습니다.\n오는편 결제화면으로 넘어갑니다.');
+																PAY_MAIN('location', 'payarrival');
+															}
+														} else {
+															PAY_MAIN('location', 'complete');
+														}
+														return false;
+													} else {
+														alert(response.desc);
+													}
+												} else {
+													alert(status.desc);
+												}
+											} else {
+												alert(arrResultData[0]["MESSAGE"]);
+											}
+										}
+										objInfo.jqueryLoading.search(false);
+										break;
+									case "payarrival":
+										if (arrResultData.length > 0) {
+											if ("SUCCESS" == arrResultData[0]["RESULT"]) {
+												var data = $.parseJSON(arrResultData[0]["MESSAGE"]);
+												var status = data.status,
+													response = data.response;
+												if (status.code == 'OK') {
+													if (response.status == 'OK') {
+														alert('결제가 완료되었습니다.');
+														PAY_MAIN('location', 'complete');
+														return false;
+													} else {
+														alert(response.desc);
+													}
+												} else {
+													alert(status.desc);
+												}
+											} else {
+												alert(arrResultData[0]["MESSAGE"]);
+											}
+										}
+										objInfo.jqueryLoading.search(false);
+										break;
+									default:
+										alert("Invalid CALL!");
+										break;
+								}
+							}
+
+							var cardNo1 = $("#payCardNo1");
+							var cardNo2 = $("#payCardNo2");
+							var cardNo3 = $("#payCardNo3");
+							var cardNo4 = $("#payCardNo4");
+
+							cardNo1.on("keyup", function () {
+								if ($(this).val().length == 4) {
+									cardNo2.focus();
+								}
+							});
+							cardNo2.on("keyup", function () {
+								if ($(this).val().length == 4) {
+									cardNo3.focus();
+								}
+							});
+							cardNo3.on("keyup", function () {
+								if ($(this).val().length == 4) {
+									cardNo4.focus();
+								}
+							});
+						</script>
+
+						<div class="wrapDef">
+							<h3 class="def mt0">결제 전 확인사항<!-- 결제 전 확인사항 --></h3>
+							<div class="noticeBox1 topBox">
+								<ul class="list">
+									<li><a href="#none" onclick="MAIN('info001'); return false;">취소 및 환불 시 항공사별 수수료
+											안내<!-- 취소 및 환불 시 항공사별 수수료 안내 --></a></li>
+									<li><a href="#none" onclick="MAIN('info002'); return false;">항공권 수령 및
+											결제방법<!-- 항공권 결제규정 --></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="wrapDef">
+							<div class="ezform">
+								<p class="formLeft btmAgree">
+								<div class="ez-checkbox"><input type="checkbox" title="Check in agreement"
+										id="agreementInfo001" class="ez-hide"></div>
+								<label for="agreementInfo001">위의 모든 사항을 확인했으며, 결제 진행에
+									동의합니다.<!-- 위의 모든 사항을 확인했으며, 결제 진행에 동의합니다. --></label>
+								</p>
+							</div>
+							<!-- 왕복A > 가는편에만 출력 -->
+							<p class="def mt08"><strong class="fc_red"><!-- 가는편 결제 후 오는편 결제가 별도로 진행됩니다. --></strong></p>
+						</div>
+					</div>
+					<!-- // 가는편 -->
+
+
+					<script type="text/javascript" src="/js/jquery.ezmark.js"></script>
+					<script type="text/javascript">
+						$(window).ready(function () {
+							$('.ezform input').ezMark();
+						});
+					</script>
+
+					<div class="btn_area n2 btmFix" id="tabCont_Btn01">
+						<span class="btnWrap"><button class="btn styB c_rgray"
+								onclick="MAIN('main'); return false;">취소<!-- 취소 --></button></span>
+						<span class="btnWrap"><button class="btn styB c_dgray"
+								onclick="MAIN('payment'); return false;">결제<!-- 결제 --></button></span>
+					</div>
+
+					<div class="btn_area n1 btmFix" id="tabCont_Btn02" style="display:none;">
+						<span class="btnWrap"><button class="btn styB c_dgray">결제<!-- 결제 --></button></span>
+					</div>
+
+				</div><!-- contents -->
+
+				<form id="searchForm" name="searchForm" method="get">
+					<input type="hidden" name="queryString" id="queryString">
+					<input type="hidden" name="totalFareAmount" id="totalFareAmount" value="83600">
+					<input type="hidden" name="daGubun" id="daGubun" value="D">
+					<input type="hidden" name="encInfo" id="encInfo">
+					<input type="hidden" name="iv" id="iv">
+					<input type="hidden" name="salt" id="salt">
+				</form>
+
+				<script type="text/javascript">
+					var inairMap = {
+						'KE': '대한항공',			//대한항공
+						'OZ': '아시아나항공',			//아시아나항공
+						'BX': '에어부산',			//에어부산
+						'RS': '에어서울',			//에어서울
+						'LJ': '진에어',			//진에어
+						'7C': '제주항공',			//제주항공
+						'ZE': '이스타항공',			//이스타항공
+						'TW': '티웨이항공',			//티웨이항공
+						'3P': '에어필립',				//에어필립
+						'KX': '코리아 익스프레스 에어',	//코리아 익스프레스 에어
+						'4V': '플라이강원'	//플라이강원
+					};
+					var fareClassMap = {
+						'Y': '일반석',	//일반석
+						'C': '비지니스석',	//비지니스석
+						'E': '할인석',	//할인석
+						'P': '플러스석',			//플러스석
+						'S': '특가석',		//특가
+						'PT': '프로모션석'		//PROMOTION SEAT
+					};
+					var weekend = [
+						'일',
+						'월',
+						'화',
+						'수',
+						'목',
+						'금',
+						'토',
+					];
+					var airportMap = {
+						'GMP': '김포',
+						'KUV': '군산',
+						'KWJ': '광주',
+						'TAE': '대구',
+						'PUS': '부산',
+						'RSU': '여수',
+						'ICN': '인천',
+						'WJU': '원주',
+						'USN': '울산',
+						'CJU': '제주',
+						'HIN': '진주',
+						'CJJ': '청주',
+						'KPO': '포항',
+						'MWX': '무안',
+						'YNY': '양양'
+					};
+
+					//* 화면이 최초 로드될 때 호출되는 함수 *//
+					$(document).ready(function () {
+						MAIN("init");
+					});
+
+					//* MAIN 기본 함수 *//
+					function MAIN(args, event) {
+						if (!ISVALID(args)) return;
+
+						switch (args) {
+							case "init":
+								//항공권 타이틀
+								$("h1.tit").text('항공권 결제');
+								//예약상세
+								SETDATA('search');
+								break;
+							case "departure":
+								var self = $(event);
+								if (self.hasClass('on')) {
+									return false;
+								}
+								var queryString = {
+									bookingNo: 'T2308071705172',
+									lang: 'ko',
+									reqAmt: $('#totalFareAmount').val()
+								};
+								$('#queryString').val(JSON.stringify(queryString));
+								$('#searchForm').attr('action', './paydeparture.do');
+								$('#searchForm').submit();
+								break;
+							case "arrival":
+								var self = $(event);
+								if (self.hasClass('on')) {
+									return false;
+								}
+								var queryString = {
+									bookingNo: 'T2308071705172',
+									lang: 'ko',
+									reqAmt: $('#totalFareAmount').val()
+								};
+								$('#queryString').val(JSON.stringify(queryString));
+								$('#searchForm').attr('action', './payarrival.do');
+								$('#searchForm').submit();
+								break;
+							case "detail":
+								var queryString = {
+									bookingNo: 'T2308071705172',
+									lang: 'ko',
+									fareType: event
+								};
+								objInfo.jqueryPopup.open('./popup/fareDetail.do?queryString=' + JSON.stringify(queryString));
+								break;
+							case "info001":
+								objInfo.jqueryPopup.open('./popup/info001.do');
+								break;
+							case "info002":
+								objInfo.jqueryPopup.open('./popup/info002.do');
+								break;
+							case "payment":
+								PAY_MAIN('payment');
+								break;
+							case "main":
+								window.location.href = './index.do';
+								break;
+							default:
+								alert("Invalid CALL!");
+								return false;
+								break;
+						}
+					}
+					//* validation 체크하기 위한 함수 *//
+					/**
+					* 새창을 띄우거나 외부로 데이터를 보내기 위한 함수
+					*/
+					function SETDATA(argTran, event) {
+						//* 이동 화면으로 보낼 DATA SET *//
+						var objmsg = new Object();
+						objmsg.tran = argTran;
+						switch (objmsg.tran) {
+							case "search":
+								var queryString = $.parseJSON('{"bookingNo":"T2308071705172","arrival":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"GMP","arrAirportName":"김포","arrDate":"2023-08-12","arrTime":"07:50","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"CJU","depAirportName":"제주","depDate":"2023-08-12","depTime":"06:40","fareClass":"C","fareRuleList":[],"flightNumber":"8902","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":157000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-08 19:00","pnr":"526TJ8","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":2.0,"supPnr":"12345631#526TJ8"},"departure":{"adultCnt":1.0,"airlineCode":"OZ","airlineCodeShare":"","arrAirportCode":"CJU","arrAirportName":"제주","arrDate":"2023-08-10","arrTime":"07:20","cancelPaxList":[],"childCnt":0.0,"depAirportCode":"GMP","depAirportName":"김포","depDate":"2023-08-10","depTime":"06:10","fareClass":"E","fareRuleList":[],"flightNumber":"8937","infantCnt":0.0,"inventoryYn":"N","paxList":[{"birthday":"1960-04-12","cxlDt":"","discountCode":"AA","discountDesc":"성인","fareAmount":72000.0,"fareFuel":6600.0,"fareTax":4000.0,"gender":"M","name":"홍길동","paxType":"A","status":"OK","supPaxId":"1","svcCharge":1000.0,"ticket":""}],"payDeadline":"2023-08-07 10:54","pnr":"525HVG","possibleCancelKind":"A","rsvStatusCode":"RC","segKind":1.0,"supPnr":"12345622#525HVG"},"tripType":"RT","authType":"","payDeadline":"2023-08-07 10:25","lang":"ko"}');
+								var departure = queryString.departure;
+								var arrival = queryString.arrival;
+								$('#departure').val(JSON.stringify(departure));
+								$('#arrival').val(JSON.stringify(arrival));
+
+								var depTotalAmount = 0, arrTotalAmount = 0;
+								var onlyDepAirTotalAmount = 0;
+								if (departure) {
+									$.each(departure.paxList, function (index, list) {
+										var totalAmount = list.fareAmount + list.fareFuel + list.fareTax + list.svcCharge;
+										depTotalAmount += totalAmount;
+										onlyDepAirTotalAmount += list.fareAmount + list.fareFuel + list.fareTax;
+									});
+
+									var optDate = $('#depReserveInfo').prev().find('.optDate');
+									var convDate = optDate.text().replace(/\(.*\)/gi, '(' + weekend[new Date(optDate.data('date').replace(/-/gi, '/')).getDay()] + ')');
+									optDate.text(convDate);
+									$('#onlyDepAirTotalAmount').val(onlyDepAirTotalAmount);
+
+									$('#depReserveInfo').empty();
+									var request = departure;
+									var html = '';
+									html += '<div class="wrap1">';
+									html += '	<p class="aptTit">';
+									html += '		<img class="logo" src="/images/airlinelogo_do/' + request.airlineCode + '.png" alt="' + inairMap[request.airlineCode] + '">';
+									html += '		<span class="txt">' + inairMap[request.airlineCode] + ' ' + request.airlineCode + ('' + request.flightNumber).replace(request.airlineCode, '') + '</span>';
+									if (request.airlineCodeShare != "") {
+										html += '		<br><span class="txt">(공동운항/실제수속및탑승 : ' + inairMap[request.airlineCodeShare] + ')</span>';
+									}
+									html += '	</p>';
+									html += '	<p class="aptSeat">';
+									html += '		<span class="txt">' + fareClassMap[request.fareClass] + '</span>';
+									html += '	</p>';
+									html += '</div>';
+									html += '<div class="wrap2">';
+									html += '	<span class="abtPos1">' + airportMap[request.depAirportCode] + '<strong> ' + request.depTime + '</strong></span>';
+									html += '	<span class="abtPos2">' + airportMap[request.arrAirportCode] + '<strong> ' + request.arrTime + '</strong></span>';
+									html += '</div>';
+									html += '<div class="wrapBtm">';
+									html += '	<span class="priceTit">총 요금(편도)</span>';
+									html += '	<span class="priceWrap total" id="depPayTotalAmount" data-amount="' + depTotalAmount + '">' + '<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(depTotalAmount)) + '</span>';
+									html += '</div>';
+									$('#depReserveInfo').append(html);
+
+									var payment = $('#depPaymentInfo');
+
+									if ('RT' == 'RT1' && departure.airlineCode == arrival.airlineCode && 'N' != "Y") {
+										if (departure.airlineCode == 'OZ' || departure.airlineCode == '7C' || departure.airlineCode == 'LJ' || departure.airlineCode == 'BX' || departure.airlineCode == 'ZE' || departure.airlineCode == 'KE' || departure.airlineCode == 'RS') {
+											$.each(arrival.paxList, function (index, list) {
+												var totalAmount = list.fareAmount + list.fareFuel + list.fareTax + list.svcCharge;
+												depTotalAmount += totalAmount;
+											});
+										}
+										payment.find('.priceWrap').first().html('<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(depTotalAmount)));
+										payment.find('.priceWrap').eq(1).html('<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(depTotalAmount)));
+									} else {
+										payment.find('.priceWrap').first().html('<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(depTotalAmount)));
+										payment.find('.priceWrap').eq(1).html('<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(depTotalAmount)));
+									}
+									$('#totalFareAmount').val(depTotalAmount);
+
+									//payment.find('.priceWrap').last().html('<span class="price">2023.08.07 10:25</span>');
+								}
+								var onlyArrAirTotalAmount = 0;
+								if (arrival) {
+									$.each(arrival.paxList, function (index, list) {
+										var totalAmount = list.fareAmount + list.fareFuel + list.fareTax + list.svcCharge;
+										arrTotalAmount += totalAmount;
+										onlyArrAirTotalAmount += list.fareAmount + list.fareFuel + list.fareTax;
+									});
+
+									$('#onlyArrAirTotalAmount').val(onlyArrAirTotalAmount);
+
+									var optDate = $('#arrReserveInfo').prev().find('.optDate');
+									if (optDate.length > 0) {
+										var convDate = optDate.text().replace(/\(.*\)/gi, '(' + weekend[new Date(optDate.data('date').replace(/-/gi, '/')).getDay()] + ')');
+										optDate.text(convDate);
+									}
+
+									$('#arrReserveInfo').empty();
+									var request = arrival;
+									var html = '';
+									html += '<div class="wrap1">';
+									html += '	<p class="aptTit">';
+									html += '		<img class="logo" src="/images/airlinelogo_do/' + request.airlineCode + '.png" alt="' + inairMap[request.airlineCode] + '">';
+									html += '		<span class="txt">' + inairMap[request.airlineCode] + ' ' + request.airlineCode + ('' + request.flightNumber).replace(request.airlineCode, '') + '</span>';
+									if (request.airlineCodeShare != "") {
+										html += '		<br><span class="txt">(공동운항/실제수속및탑승 : ' + inairMap[request.airlineCodeShare] + ')</span>';
+									}
+									html += '	</p>';
+									html += '	<p class="aptSeat">';
+									html += '		<span class="txt">' + fareClassMap[request.fareClass] + '</span>';
+									html += '	</p>';
+									html += '</div>';
+									html += '<div class="wrap2">';
+									html += '	<span class="abtPos1">' + airportMap[request.depAirportCode] + '<strong> ' + request.depTime + '</strong></span>';
+									html += '	<span class="abtPos2">' + airportMap[request.arrAirportCode] + '<strong> ' + request.arrTime + '</strong></span>';
+									html += '</div>';
+									html += '<div class="wrapBtm">';
+									html += '	<span class="priceTit">총 요금(편도)</span>';
+									html += '	<span class="priceWrap total" id="arrPayTotalAmount" data-amount="' + arrTotalAmount + '">' + '<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(arrTotalAmount)) + '</span>';
+									html += '</div>';
+									$('#arrReserveInfo').append(html);
+
+									var payment = $('#arrPaymentInfo');
+									payment.find('.priceWrap').first().html('<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(arrTotalAmount)));
+									payment.find('.priceWrap').eq(1).html('<span class="price">{0}</span>원'.replace('{0}', objInfo.jqueryCommon.numberWithCommas(arrTotalAmount)));
+									//payment.find('.priceWrap').last().html('<span class="price">2023.08.07 10:25</span>');
+								}
+								break;
+							default:
+								break;
+						}
+					}
+					/**
+					* 외부에서 데이터를 받아서 처리하는 함수
+					*/
+					function GETDATA(objmsg) {
+						var d = document.data;
+
+						switch (objmsg.tran) {
+							default:
+								alert("Invalid CALL!");;
+								return false;
+								break;
+						}
+					}
+					//* AJAX 호출후 메소트 호출 *//
+					function AJAX_CALLBACK(method, resultData) {
+						var arrHeadData = resultData[0];
+						var arrResultData = resultData[1];
+
+						var isError = arrHeadData[0]["error"];
+						if (isError == true || isError == "true") {
+							alert(arrHeadData[0]["message"]);
+							objInfo.jqueryLoading.search(false);
+							return;
+						}
+
+						switch (method) {
+							default:
+								alert("Invalid CALL!");
+								break;
+						}
+					}
+				</script>
+				<script type="text/javascript">
+					function USR_RMD_GENERATE() {
+						//ajax call
+						$.ajax({
+							url: "/rmd/generate.do"
+							, type: "GET"
+							, async: true
+							, dataType: "text"
+							, data: {
+								schRsvNo: "T2308071705172"
+							}
+							, contentType: "application/x-www-form-urlencoded; charset=UTF-8"
+							, beforeSend: function () { } //통신을 시작할때 처리
+							//통신성공시 처리
+							, success: function (resdata) { }
+							, complete: function () { } //통신이 완료된 후 처리
+							, error: function (request, status, error) { } //통신에러발생시 처리
+						});
+					}
+					USR_RMD_GENERATE();
+				</script>
+
+				<script>
+					var V_GOOGLE_TAG_ID = "mappair";
+					if (document.location.href.indexOf("mdomair.ttang.com") > 0) V_GOOGLE_TAG_ID = "mdomair";
+				</script>
+				<script>
+					(function (i, s, o, g, r, a, m) {i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+					ga('create', ("mappair" == V_GOOGLE_TAG_ID) ? "UA-115744964-1" : "UA-144023094-1", 'auto');
+					ga('send', 'pageview');
+				</script>
+				<script>
+					var V_GOOGLE_ID_GA4 = ("mappair" == V_GOOGLE_TAG_ID) ? "G-8MNXZJTP5C" : "G-RLFW7SW0S7";
+					document.write('<' + 'script async src="https://www.googletagmanager.com/gtag/js?id=' + V_GOOGLE_ID_GA4 + '"'+'><'+'/script'+'>');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", V_GOOGLE_ID_GA4);
+</script>
+				<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RLFW7SW0S7"></script>
+				<script>
+!function (f, b, e, v, n, t, s) {
+		if (f.fbq) return; n = f.fbq = function () {
+			n.callMethod ?
+			n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+		n.queue = []; t = b.createElement(e); t.async = !0;
+		t.src = v; s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+					fbq('init', '1650048995237007');
+					fbq('track', '국내항공:메인');
+				</script>
+				<noscript><img height="1" width="1" style="display:none"
+						src="https://www.facebook.com/tr?id=1650048995237007&ev=국내항공:메인&noscript=1" /></noscript>
+				<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+				<script type="text/javascript">
+					if (!wcs_add) var wcs_add = {};
+					wcs_add["wa"] = "s_93a67f957ff";
+					if (!_nasa) var _nasa = {};
+					wcs.inflow("ttang.com");
+					wcs_do(_nasa);
+				</script>
+			</section>
+		</div>
+		<div class="layerLoadWrap"></div>
+		<div class="layerLoadWrap3"></div>
+		<script type="text/javascript" src="/common/menu.do"></script>
+		<div class="TMv2_nav" id="TMv2_nav" style="display:none;">
+			<div class="innerWrap tyTotal">
+				<div class="scrContWrap">
+					<div class="navTop">
+						<div class="util"> <a href="//mdomair.ttang.com/main/index.do" class="ico_noTxt home">home</a>
+							<a href="//mdomair.ttang.com/member/login.do" class="log">로그인 및 예약확인</a> <a
+								href="//mdomair.ttang.com/mypage/member/setting.do"
+								class="ico_noTxt setting">setting</a> </div>
+						<div class="welcome">회원/비회원 로그인해 주세요!</div>
+						<div class="menuSty1 num">
+							<ul class="n1">
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+					</div>
+					<div class="navCont">
+						<ul class="menuList1">
+							<li><a href="//mdomair.ttang.com/inair/index.do" class="cateAir"><span>항공권</span></a></li>
+							<li><a href="//mdomair.ttang.com/inhotel/main.do" class="cateHotel"><span>국내숙박</span></a>
+							</li>
+							<li><a href="http://mapprentcar.ttang.com/rentcar/index.do"
+									class="cateRentcar"><span>렌터카</span></a></li>
+							<li><a href="http://mapppasstour.ttang.com/index.jsp"
+									class="cateTicket"><span>티켓&amp;입장권</span></a></li>
+						</ul>
+						<div class="menuBtn1">
+							<div class="btn_area n1 pd"> <span class="btnWrap n1"><a
+										href="//mdomair.ttang.com/help/bbs/faqList.do"
+										class="btn styD c_rgrayLine"><strong>자주 묻는 질문</strong></a></span> <span
+									class="btnWrap n2 "><a href="//mdomair.ttang.com/etc/event/list.do"
+										class="btn styD c_red"><strong>기획전/이벤트</strong></a></span>
+								<!-- <span class="btnWrap n2"><a href="/help/inair/qnaList.do" class="btn styD c_rgrayLine"><strong>1:1 문의</strong></a></span> -->
+							</div>
+						</div>
+						<div class="menuTxt Addr">
+							<p class="tit">땡처리닷컴 상담문의</p>
+							<p class="tel"><a href="tel:02-3705-8833"><strong class="fc_red">02-3705-8833</strong></a>
+							</p>
+							<p class="text">오전 9시~오후 6시(주말/공휴일 휴무)</p>
+						</div>
+						<div class="logo"> <img src="//mm.ttang.com/images/common/logo/menuFootLogo.png" alt="땡처리닷컴"
+								style="filter: invert(0);"> </div>
+					</div>
+				</div>
+			</div> <a href="#none" class="close ico_noTxt" id="navClose">close</a>
+		</div>
+		<div class="dimmedLayer nav" style="display: none;"></div>
+		<script src="/js/pub_navi.js"></script>
+		<script type="text/javascript" src="/js/pub_comm.js?v=20191220"></script>
+		<script type="text/javascript" src="/js/jquery.bpopup-0.11.0.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-utils.js?v=20191220"></script>
+		<script type="text/javascript" src="/js/jquery.serialize-object.min.js"></script>
+
+		<script type="text/javascript">
+			var isNoHeaderAgent = '';
+			if (isNoHeaderAgent == "true") {
+				function setHeight() {
+					var body = document.body, html = document.documentElement;
+					var height = Math.max(body.scrollHeight, body.offsetHeight,
+						html.clientHeight, html.scrollHeight, html.offsetHeight);
+					parent.postMessage({"FrameHeight": height}, "*");
+				}
+				window.onload = setHeight();
+				setInterval(setHeight, 500);
+			}
+		</script>
+
+
+	</body>

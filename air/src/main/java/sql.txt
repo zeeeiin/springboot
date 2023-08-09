@@ -1,0 +1,86 @@
+CREATE TABLE AIRPLANE (
+	
+    AIR_ID INT PRIMARY KEY AUTO_INCREMENT,
+	AIRLINES VARCHAR(30) NULL,
+    FLIGHT_NUM VARCHAR(30)	NOT NULL,
+	DEPARTURE_AIRPORT VARCHAR(30) NULL,
+	ARRIVAL_AIRPORT	VARCHAR(30)	NULL,
+	DEPARTURE_TIME VARCHAR(30) NULL,
+	ARRIVAL_TIME VARCHAR(30) NULL,
+	FLIGHT_DATE	VARCHAR(30)	NULL,
+	START_DATE DATE NULL,
+	END_DATE DATE NULL,
+    SEAT INT NULL,
+    PRICE INT NULL
+);
+
+전체 데이터 수 1110
+
+update airplane set seat = floor(rand()*20+1) where air_id between 1 and 1110;
+
+update project04.airplane set seat = seat - 1 where air_id = 1; 티켓 구매시 DB티켓 감소
+update project04.airplane set seat = seat + 1 where air_id = 1; 티켓 취소시 DB티켓 증가
+
+#제주공항 : CJU 
+#대구공항 : TAE 
+#광주공항 : KWJ 
+#여수공항 : RSU 
+#청주공항 : CJJ
+#김포공항 : GMP 
+#김해공항 : PUS 
+#울산공항 : USN 
+#양양공항 : YNY 
+#무안공항 : MWX 
+#군산공항 : KUV 
+#원주공항 : WJU
+#포항공항 : KPO
+#진주공항 : HIN
+#인천공항 : ICN
+
+var inairMap = {
+	'KE''KAL': '대한항공',			//대한항공
+	'OZ''AAR': '아시아나항공',			//아시아나항공
+	'BX''ABL': '에어부산',			//에어부산
+	'RS''ASV': '에어서울',			//에어서울
+	'LJ''JNA': '진에어',			//진에어
+	'7C''JJA': '제주항공',			//제주항공
+	'ZE''ESR': '이스타항공',			//이스타항공
+	'TW''TWB': '티웨이항공',			//티웨이항공
+	'3P''APV': '에어필립',				//에어필립
+	'KX''KEA': '코리아 익스프레스 에어',	//코리아 익스프레스 에어
+	'4V''FGW': '플라이강원'	//플라이강원
+};
+var fareClassMap = {
+	'Y': '일반석',	//일반석
+	'C': '비지니스석',	//비지니스석
+	'E': '할인석',	//할인석
+	'P': '플러스석',			//플러스석
+	'S': '특가석',		//특가
+	'PT': '프로모션석'		//PROMOTION SEAT
+};
+var weekend = [
+	'일',
+	'월',
+	'화',
+	'수',
+	'목',
+	'금',
+	'토',
+	];
+var airportMap = {
+	'GMP': '김포',
+	'KUV': '군산',
+	'KWJ': '광주',
+	'TAE': '대구',
+	'PUS': '부산',
+	'RSU': '여수',
+	'ICN': '인천',
+	'WJU': '원주',
+	'USN': '울산',
+	'CJU': '제주',
+	'HIN': '진주',
+	'CJJ': '청주',
+	'KPO': '포항',
+	'MWX': '무안',
+	'YNY': '양양'
+	}

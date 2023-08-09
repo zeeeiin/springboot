@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* **************************
+	외부사이트 연동시 유의사항 :
+	- header내 z-index는 5000~6000 사이 
+	- header를 덮는 메뉴의 z-index는 6000~6999 사이							
+**************************** */
+
+/* **************************** 
+	setting : header가 흰색 여백인 경우 라인이 없으면 스크롤되었을 때 컨텐츠의 배경색과 섞여버립니다. 라인이 없을 경우 추가해야합니다.
+	header height : 48px
+	header-bottom에 border가 없는 경우 + 1 : 49px
+**************************** */
+
+/* header */
+.TMv2_headerWrap {height:49px;}
+.TMv2_header_shadow {height:49px;}
+.rentcarBody .srch_result .srchContTop {top:49px;}
+
+
+/* footer */
+.TMv2_body .footer .info .list {}
+.TMv2_body .footer .info .list span{width:125px;}
+.footer .info .list span:first-child {width:125px;}
+
+
+
+
+
+/* list */
+.listToggle.sty1 .airCancelRule .tit span {font-size:17px; font-weight:bold;line-height:20px;vertical-align:middle;}
+.listToggle.sty1 .airCancelRule img {vertical-align:middle;}

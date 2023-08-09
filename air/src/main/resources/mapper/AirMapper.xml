@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.team04.air.mapper.AirMapper">
+  <!-- 리스트를 가져오기 위한 예시문 -->
+  	<!--  
+  	<select id="getCategory" resultType="CategoryVO">
+  		select *
+  		from  
+  		where category_lv = 1
+  	</select>
+  	
+  	<select id="getCategoryChild" resultType="CategoryVO">
+  		select *
+  		from product_category
+  		where group_id = #{group_id} 
+  		and category_parent_lv = #{category_lv}
+  		and category_detail_parent_lv = #{category_detail_lv}
+  	</select>
+  	-->
+  	<select id="getList" resultType="AirVO">
+  		select * from project04.airplane
+  		
+  		where 1=1
+  		 
+  		<if test="cri.searchAirline != '' and cri.searchAirline != null ">
+  		and airlines like concat('%', #{cri.searchAirline}, '%')
+  		</if>
+  		<if test="cri.searchFlight_Date != '' and cri.searchFlight_Date != null ">
+		and flight_date like concat('%', #{cri.searchFlight_Date}, '%')
+		</if>
+		<if test="cri.startDate != '' and cri.startDate != null ">
+		<![CDATA[ and start_date <= #{cri.startDate} ]]>
+		</if>
+		<if test="cri.endDate != '' and cri.endDate != null ">
+		<![CDATA[ and end_date >= #{cri.endDate} ]]>
+		</if>
+		
+		order by 
+  		
+  		<if test="cri.searchPrice == 'asc' ">
+  			price asc, 
+  		</if>
+  		<if test="cri.searchPrice == 'desc' ">
+  			price desc,
+  		</if>
+  		air_id desc
+  		limit #{cri.pageStart}, #{cri.amount}
+		
+  		
+  	</select>
+  	
+  	<select id="getTotal" resultType="int">
+  		select count(*) as total from project04.airplane
+  	</select>
+  </mapper>

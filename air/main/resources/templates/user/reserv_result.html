@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약확인</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" th:href="@{/css/home.css}"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/side.css">
+
+  <link rel="stylesheet" href="css/reservation.css">
+  <script src="js/jquery.js"></script>
+
+  <link rel="stylesheet" href="css/reserv_result.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <script src="js/swiper.js"></script>
+-->
+
+
+<th:block th:replace="~{./include/layout :: setContent( ~{:: .wrap } ) }">
+
+  
+  <div class="wrap">
+
+    <div class="chkBox">
+
+      <div class="checktitle"><!-- 확인 title -->
+        <span>나의 여행</span>
+      </div>
+
+
+      <div><!-- 예약내역박스 -->
+
+        <div class="chkselbox"> <!-- 예약내역 선택 js-->
+          <a href="">
+            <span>국내항공 예약내역</span>
+          </a>
+
+          <div class="chk_cate">
+            <ul>
+              <li>
+                <a href="">
+                  <span>국내항공 예약내역</span>
+                </a>                
+              </li>
+              <li>
+                <a href="">
+                  <span>해외항공 예약내역</span>
+                </a>
+              </li>
+              <li>국내숙박 예약내역</li>
+              <li>해외호텔 예약내역</li>
+              <li>해외패키지/자유여행 예약내역</li>
+              <li>제주 할인입장권예약내역</li>
+              <li>해외 렌트카 예약내역</li>
+              <li>제주도 렌트카 예약내역</li>
+              <li>해외 여행자보험 예약내역</li>
+            </ul>
+          </div>
+
+        </div> 
+
+        <div class="reserv_info"> <!-- 설명 -->
+          <div>
+            ※ 예약내역이 확인되지 않는 경우, 고객센터로 문의주시기 바랍니다.
+          </div>
+        </div>
+
+        <div class="reserv_box">
+          <div class="reserv_title">
+            <h3>국내항공 예약내역</h3>
+          </div>
+
+          <div>
+            <!-- 인원 및 요금정보 -->
+          </div>
+        </div>
+        
+        <div class="reserv_list"> <!--  -->
+          <div>
+            <ul>
+              <li  class="reserv_detail">예약번호</li><!--[[${Non_MemberVO.reservation_num}]]-->
+              <li  class="reserv_data" th:text="${Non_MemberVO.reservation_num}">[[${Non_MemberVO.reservation_num}]]</li>
+              <li  class="reserv_detail">이름</li><!--[[${Non_MemberVO.name}]]-->
+              <li  class="reserv_data" th:text="${Non_MemberVO.name}">[[${Non_MemberVO.name}]]</li>
+              <!-- <li class="reserv_detail">출발지</li>
+              <li  class="reserv_data" th:text="${domesticVO.departure}"></li>
+              <li  class="reserv_detail">도착지</li>
+              <li  class="reserv_data" th:text="${domesticVO.arrival}"></li>-->
+              <li  class="reserv_detail">연락처</li><!--[[${Non_MemberVO.phoneNum}]]-->
+              <li  class="reserv_data" th:text="${Non_MemberVO.phoneNum}">[[${Non_MemberVO.phoneNum}]]</li>
+              <li  class="reserv_detail">이메일</li><!--[[${Non_MemberVO.email}]]-->
+              <li  class="reserv_data" th:text="${Non_MemberVO.email}">[[${Non_MemberVO.email}]]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 확인버튼 : 홈으로 이동 -->
+      <div class="check">              
+        <span>
+          <button type="button" class="checkBtn">확인</button>
+        </span>
+        
+      </div>
+      
+      </div>
+
+      
+  </div> <!-- wrap end -->
+
+
+</th:block>
+
+<script>
+      
+    $(document).ready(function(){
+      $(".menuBtn").click(function(){
+        $(".sideBox").toggleClass("open");
+        $(".closeBtn").toggleClass("hidden");
+      });
+
+      $(".closeBtn").click( function() {
+        $(".sideBox").removeClass("open");
+        $(this).addClass("hidden");
+      });
+    });
+
+</script>
+  
+</html>

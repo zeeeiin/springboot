@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+/* *************************************************************
+ 땡처리닷컴 > 모바일 > 국내항공 > 레이어 | layer.css
+************************************************************** */
+
+/* 레이어 : 사용 */
+.lyContWrap.lyc_calender {/* 항공 > 일정선택 */}
+.lyContWrap.lyc_exairScedule {}
+.scrContWrap.lyc_map2 .lyContWrap {padding-bottom:0}
+.scrContWrap.lyc_map2 .srch_result {padding:0}
+.scrContWrap.lyc_map2 .srch_result .listResult li.hotelA {border-top:none;}
+
+/* 하단출력 미니팝업 */
+.popupBtm {position:fixed;bottom:0;left:0;width:100%;z-index:500;}
+
+/* 국내호텔 > 오늘밤 > 도시선택 */
+.scrContWrap.lyc_map2 {}
+.scrContWrap.lyc_searchCity {background:#f2f2f2 url(/images/common/colorchip/c_ffffff_9x9.png) repeat-y left 0; background-size:120px 1px;}
+.scrContWrap.lyc_searchCity .lyHeaderWrap {background:#ffffff;}
+.scrContWrap.lyc_searchCity .lyContWrap {padding-bottom:0}
+.lySearchCityCont {position:relative;background:#f2f2f2;line-height:25px;}
+.lySearchCityCont > ul {/* width:120px; */width:100%;}
+.lySearchCityCont .cate1 a {display:block;background:#fff;width:60px;padding:5px 30px;}
+.lySearchCityCont .cateWrap:first-child .cate1 a {padding-top:10px;}
+.lySearchCityCont .cateWrap.on .cate1 a {background:#f2f2f2;font-weight:bold;color:#d559aa;}
+.lySearchCityCont .cate2 {position:absolute;top:0px;left:120px;height:100%;background:#f2f2f2;z-index:100;overflow-y:auto;}
+.lySearchCityCont .cate2.fix {position:fixed;top:49px;}
+.lySearchCityCont .cate2 ul li:first-child {padding-top:10px;}
+.lySearchCityCont .cate2 ul li:last-child {padding-bottom:10px;}
+.lySearchCityCont .cate2 a {display:block;padding:5px 30px;width:100%;box-sizing:border-box;}
+.lySearchCityCont .cate2 a.on {font-weight:bold;color:#d559aa;}
+.lySearchCityCont .scrHjs {overflow-y:auto;}
+
+/* 미리보기 > 작업용 */
+.bpopupPreview {text-align:center; padding:120px 0;}
+.bpopupPreview .btn_area {padding:0 50px}
+
+
+/* 출발/도착 도시선택 박스 */
+.listBoxWrap.sty1 {background:#eaeaea;border:1px solid #eaeaea;}
+.listBoxWrap.sty1 ul.menu {overflow:hidden;margin-top:-1px;margin-left:-1px}
+.listBoxWrap.sty1 .menu li {float:left;width:25%;}
+.listBoxWrap.sty1 .menu li a {display:block;line-height:20px;text-align:center;background:#fff;padding:10px 0px;border-left:1px solid #eaeaea;border-top:1px solid #eaeaea;}
+.listBoxWrap.sty1 .menu li a.disa {color:#bababa;}
+.listBoxWrap.sty1 .menu li a.on {position:relative;background:#f56765;color:#fff;}
+.listBoxWrap.sty1 .menu li a.on span {display:block;position:absolute;top:-1px;left:-1px;width:100%;height:100%;border:1px solid #f56765;background: transparent;}
+.listBoxWrap.sty1 .menu.n2 li {width:50%;}
+.listBoxWrap.sty1 .menu.n3 li {width:33%;}
+.listBoxWrap.sty1 .menu.n3 li:nth-child(3n-1) {width:34%;}
+.listBoxWrap.sty1 .menu.n4 li {width:25%;}
+
+/* 일정선택 */
+.calendar_wrap {/* position:relative; */}
+/* .lyc_calender .calendar_wrap .titPixWrap {position:absolute;top:0px;left:0;width:100%;} */
+.lyc_calender .calendar_wrap .titPixWrap {position:relative;position: -webkit-sticky;position: sticky;left:0;width:100%;/* height:128px; *//* top:48px; */top:0px;margin-top:-49px;}
+.lyc_calender .calendar_wrap .titPixWrap:before, 
+.lyc_calender .calendar_wrap .titPixWrap::before {content:'';display:block;position:relative;width:100%;height:48px;background:#fff;z-index:1000;}
+
+.lyc_calender .calendar_cont.oneway {/* padding-top:111px; */}
+.lyc_calender .calendar_cont.oneway,
+.lyc_calender .calendar_cont.return,
+.lyc_calender .calendar_cont.line2 {/* padding-top:128px; */}
+.calendar_wrap .choiceDateInfo {position:relative;background-color:#1777cb;}
+.calendar_wrap .choiceDateInfo li {box-sizing:border-box;text-align:center;}
+.calendar_wrap .choiceDateInfo li span.tit{font-size:/* 14px */0.875em;}
+.calendar_wrap .choiceDateInfo li span {display:inline-block;color:#fff;line-height:18px;}
+.calendar_wrap .choiceDateInfo li span.date {font-weight:bold;margin-top:5px;}
+.calendar_wrap .choiceDateInfo li span.date.disa {color:#6ea0d9;}
+.calendar_wrap .choiceDateInfo /* .ico_noTxt */.bg {display:block;position:absolute;top:0;left:50%;margin-left:-15px;width:30px;height:100%;background: url(/images/contents/layer_calender_headericon.png) no-repeat center center; background-size:30px auto;}
+
+.calendar_wrap .choiceDateInfo.return li{float:left;width:50%;padding:7px 0 9px 0;}
+.calendar_wrap .choiceDateInfo.return li:first-child{padding-right:15px;}
+.calendar_wrap .choiceDateInfo.return li:last-child{padding-left:15px;}
+.calendar_wrap .choiceDateInfo.return li span {display:block;}
+.calendar_wrap .choiceDateInfo.return ul {overflow:hidden;}
+
+.calendar_wrap .choiceDateInfo.oneway li,
+.calendar_wrap .choiceDateInfo.line2 li {padding:0px 20px;text-align:left;height:58px;}
+.calendar_wrap .choiceDateInfo.oneway li,
+.calendar_wrap .choiceDateInfo.line2 li{display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center;word-wrap:break-word;}
+.calendar_wrap .choiceDateInfo.oneway li span {line-height:20px;}
+.calendar_wrap .choiceDateInfo.oneway li span.tit {padding-left:24px;background:url(/images/contents/ly_calender_titbg_01.png) no-repeat left center; background-size:18px 18px;}
+.calendar_wrap .choiceDateInfo.oneway li span.date {margin-top:0;margin-left:10px;padding-left:10px;background:url(/images/common/colorchip/c_ffffff_3x39.png) no-repeat left center; background-size:1px 13px;}
+.calendar_wrap .choiceDateInfo.line2 li span.date {display:inline-block;margin-top:0}
+.calendar_wrap .choiceDateInfo.line2 li span.date span{padding-right:5px;line-height:21px;}
+
+.calendar_wrap .cal7 {overflow:hidden;}
+.calendar_wrap .cal7 li {float:left;width:14.2%;}
+.calendar_wrap .cal7 li.sun,
+.calendar_wrap .cal7 li.sat {width:14.5%;}
+.calendar_wrap .cal7 li.sun,
+.calendar_wrap .cal7 li.sun a {color:#f56764;}
+.calendar_wrap .cal7 li.sat,
+.calendar_wrap .cal7 li.sat a {color:#1777cb;}
+.calendar_wrap .cal7 li.holiday,
+.calendar_wrap .cal7 li.holiday a {color:#f56764;}
+.calendar_wrap .cal7 li a {display:block;font-weight:bold;}
+.calendar_wrap .cal7 li a.disa {color:#bababa !important;}
+.calendar_wrap .cal7 li a.today {background:url(/images/contents/layer_calender_bg_today.png) no-repeat center center; background-size:40px 40px;}
+.calendar_wrap .cal7 li a.ing {background:#ffe9e9;}
+.calendar_wrap .cal7 li a.start,
+.calendar_wrap .cal7 li a.end,
+.calendar_wrap .cal7 li a.start.end {color:#fff !important;background:url(/images/contents/layer_calender_bg_choice.png) no-repeat center center; background-size:auto 40px;}
+.calendar_wrap .cal7 li a.start.ing {background-image:url(/images/contents/layer_calender_bg_start.png);}
+.calendar_wrap .cal7 li a.end.ing {background-image:url(/images/contents/layer_calender_bg_end.png);}
+.calendar_wrap .cal7 li a.empty {}
+@media only screen and (max-width : 340px){
+	.calendar_wrap .cal_date li a {height:38px;line-height:38px;}
+	.calendar_wrap .cal7 li a {background-size:auto 38px !important;}
+}
+.calendar_wrap .monthWrap {margin-bottom:30px;}
+.calendar_wrap .monthWrap:last-child {margin-bottom:0}
+.calendar_wrap .cal_month {background-color:#f2f2f2;padding:0 20px;font-weight:bold;text-align:center;border-bottom:1px solid #eaeaea;}
+.calendar_wrap .cal_month span {line-height:30px;}
+.calendar_wrap .cal_month .yr {font-size:/* 15px */0.938em;}
+.calendar_wrap .cal_month .mn {font-size:/* 19px */1.188em;}
+.calendar_wrap .cal_week {padding:2px 20px 5px 20px;background-color:#f7f7f7;border-bottom:1px solid #1777cb;}
+.calendar_wrap .cal_week li {text-align:center;font-size:/* 13px */0.813em;font-weight:bold;line-height:20px;}
+.calendar_wrap .cal_date {padding:0 20px;}
+.calendar_wrap .cal_date li {text-align:center;}
+.calendar_wrap .cal_date li {margin-top:10px;}
+.calendar_wrap .cal_date li a {height:40px;line-height:40px;}
+.calendar_wrap .titPixWrap .cal_month {/* 180719 */position:relative;padding-top:12px;background-color:#f7f7f7;border-bottom:none;}
+
+/* 달력 + 가격 */
+.lyc_priceCalendar .calendar_wrap .cal_date li a {line-height:20px;padding-top:5px;}
+.lyc_priceCalendar .calendar_wrap .cal_date li a span{display:block;font-size:10px;line-height:15px;font-weight:normal;}
+
+/* 달력레이어 > 카테고리 컬러 */
+.airdoBody .calendar_wrap .choiceDateInfo {background-color:#1777cb;}
+.airdoBody .calendar_wrap .choiceDateInfo .ico_noTxt.bg {background-image:url(/images/contents/layer_calender_headericon.png);}
+.airdoBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#6ea0d9;}
+.airdoBody .calendar_wrap .cal7 li.sat, 
+.airdoBody .calendar_wrap .cal7 li.sat a {color: #1777cb;}
+.airdoBody .calendar_wrap .cal_week{border-bottom: 1px solid #1777cb;}
+.rentcarBody .calendar_wrap .choiceDateInfo {background-color:#35a8b1;}
+.rentcarBody .calendar_wrap .choiceDateInfo .ico_noTxt.bg {background-image:url(/images/contents/layer_calender_headericon_rentcar.png);}
+.rentcarBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#a5d7dc;}
+.rentcarBody .calendar_wrap .cal7 li.sat, 
+.rentcarBody .calendar_wrap .cal7 li.sat a {color: #35a8b1;}
+.rentcarBody .calendar_wrap .cal_week{border-bottom: 1px solid #35a8b1;}
+.passBody .calendar_wrap .choiceDateInfo {background-color:#ff9b26;}
+.passBody .calendar_wrap .choiceDateInfo .ico_noTxt.bg {}
+.passBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#ffe4c4;}
+.passBody .calendar_wrap .cal7 li.sat, 
+.passBody .calendar_wrap .cal7 li.sat a {color: #ff9b26;}
+.passBody .calendar_wrap .cal_week{border-bottom: 1px solid #ff9b26;}
+.passBody .calendar_wrap .choiceDateInfo.oneway li {text-align:center;/* padding-top:4px;padding-bottom:11px; */padding-top:9px;padding-bottom:14px;}
+
+.hotelBody .calendar_wrap .choiceDateInfo {background-color:#d559aa;}
+.hotelBody .calendar_wrap .choiceDateInfo .bg {background-image:url(/images/contents/layer_calender_headericon_inhotel.png);}
+.hotelBody .calendar_wrap .choiceDateInfo .bg {width:42px;font-size:15px;font-weight:bold;color:#d559aa;padding:20px 2px 0;box-sizing:border-box;text-align:center;background-size:42px auto;}
+.hotelBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#f099d2;}
+.hotelBody .calendar_wrap .cal7 li.sat, 
+.hotelBody .calendar_wrap .cal7 li.sat a {color: #d559aa;}
+.hotelBody .calendar_wrap .cal_week{border-bottom: 1px solid #d559aa;}
+
+.packBody .calendar_wrap .choiceDateInfo {background-color:#00b348;}
+.packBody .calendar_wrap .choiceDateInfo .bg {background-image:url(/images/contents/layer_calender_headericon_inhotel.png);}
+.packBody .calendar_wrap .choiceDateInfo .bg {width:42px;font-size:15px;font-weight:bold;color:#d559aa;padding:20px 2px 0;box-sizing:border-box;text-align:center;background-size:42px auto;}
+.packBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#98d7aa;}
+.packBody .calendar_wrap .cal7 li.sat, 
+.packBody .calendar_wrap .cal7 li.sat a {color:#00b348;}
+.packBody .calendar_wrap .cal_week{border-bottom: 1px solid #00b348;}
+
+.freeBody .calendar_wrap .choiceDateInfo {background-color:#77c300;}
+.freeBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#a7eb3c;}
+.freeBody .calendar_wrap .cal7 li.sat, 
+.freeBody .calendar_wrap .cal7 li.sat a {color:#77c300;}
+.freeBody .calendar_wrap .cal_week {border-bottom-color:#77c300;}
+
+.etcinsuBody .calendar_wrap .choiceDateInfo {background-color:#7260e0;}
+.etcinsuBody .calendar_wrap .choiceDateInfo li span.date.disa {color:#b3a6ff;}
+.etcinsuBody .calendar_wrap .cal7 li.sat, 
+.etcinsuBody .calendar_wrap .cal7 li.sat a {/* color:#00b348; */}
+.etcinsuBody .calendar_wrap .cal_week{/* border-bottom: 1px solid #00b348; */}
+
+/* 패키지 > 다른출발일선택 달력 */
+.calendar_wrap.calTy2 .cal_month {padding-top:5px;min-height:31px;}
+.calendar_wrap.calTy2 .cal_month .mon_btn {position:absolute;top:0px;height:40px;line-height:40px;}
+.calendar_wrap.calTy2 .cal_month .mon_btn.mon_before {left:20px;padding-left:20px;background:url(/images/contents/arrTy01_L.png) no-repeat left center; background-size:9px auto;}
+.calendar_wrap.calTy2 .cal_month .mon_btn.mon_next {right:20px;padding-right:20px;background:url(/images/contents/arrTy01_R.png) no-repeat right center; background-size:9px auto;}
+.calendar_wrap.calTy2 .cal_week {padding-top:10px;}
+.calendar_wrap.calTy2 .monthWrap {min-height:200px !important;}
+.calendar_wrap.calTy2 .loading {min-height:200px !important;}
+body.packBody .calendar_wrap.calTy2 .titPixWrap .cal_month .yr, 
+body.packBody .calendar_wrap.calTy2 .titPixWrap .cal_month .mn {color:#00b348;} 
+body.packBody .calendar_wrap.calTy2 .cal7 li a.today {background-image:url(/images/contents/layer_calender_bg_today_pack.png)}
+body.freeBody .calendar_wrap.calTy2 .titPixWrap .cal_month .yr, 
+body.freeBody .calendar_wrap.calTy2 .titPixWrap .cal_month .mn {color:#77c300;}
+body.packBody .calendar_wrap.calTy2 .cal7 li a.today {background-image:url(/images/contents/layer_calender_bg_today_free.png)}
+
+/* 달력 > 상단 고정  */
+.lyWrap.topFix {/* overflow:hidden; */}
+.lyWrap.topFix .scrContWrap {/* position:static; */}
+.lyWrap.topFix .scrContWrap .lyContWrap {/* position:static; */}
+.lyWrap.topFix .calendar_wrap .titPixWrap{position:fixed;top:0px;z-index:10001}
+.lyWrap.topFix .calendar_wrap .choiceDateInfo {/* background:yellow */}
+.lyWrap.topFix .calendar_wrap .titPixWrap .cal_month {padding-top:1px;}
+.lyWrap.topFix .calendar_cont {padding-top:112px;}
+
+/*  장소검색 레이어 */
+.rentcarBody .srch.styLayer {background:#35a8b1;}
+.passBody .srch.styLayer {background:#ff9b26;}
+.hotelBody .srch.styLayer {background:#d559aa;}
+.packBody .srch.styLayer {background:#00b348;}
+.freeBody .srch.styLayer {background:#77c300;}
+.etcinsuBody .srch.styLayer {background:#7260e0;}
+.srch.styLayer {position:relative;background:#1777cb;padding:15px 20px 15px 20px;}
+.srch.styLayer input.trans {width:100%;line-height:45px;}
+.srch.styLayer input.def {border:none;line-height:25px;padding:10px 35px 10px 40px;font-weight:bold;box-sizing:border-box;background:#fff url(/images/contents/searchTy1_search.png) no-repeat 10px center; background-size:23px 23px;}
+.srch.styLayer .btnSrch {position:absolute;top:15px;right:0;width:0px;height:0px;}
+.srch.styLayer .btnDel {width:40px;right:20px;}
+
+.lyc_searchCity .srchLyList .noresult.txt {font-size: 19px; padding-top: 192px;line-height:26px;text-align: center; background: url(/images/contents/noresult_rsvlist_all.png) no-repeat center 80px; background-size: auto 90px;}
+.lyc_searchCity .srchLyList {padding:18px 20px;}
+.lyc_searchCity .srchLyList .wrap {margin-top:25px;}
+.lyc_searchCity .srchLyList .wrap:first-child {margin-top:0px;}
+.lyc_searchCity .srchLyList .wrap h4 {background:#f2f2f2;font-size:17px; font-weight:bold;color:#191919;line-height:40px;padding:0 15px;}
+.lyc_searchCity .srchLyList .wrap .def {}
+.lyc_searchCity .srchLyList .wrap h5.def {margin-top:22px;font-size:16px;background:#fff;font-weight:bold;color:#191919;padding:0 20px;}
+.lyc_searchCity .srchLyList .wrap h5.def + .listWrap {padding-top:13px}
+.lyc_searchCity .srchLyList .wrap ul {padding:0px 15px 0 15px;}
+.lyc_searchCity .srchLyList .wrap li {border-bottom:1px solid #eaeaea;}
+.lyc_searchCity .srchLyList .wrap li a {display:block;font-size:15px; color:#191919;padding:14px 0;}
+.lyc_searchCity .srchLyList .wrap li a .subtxt {font-size:14px;color:#6e6e6e;margin-top:2px;}
+.lyc_searchCity .srchLyListCurrent a {display:block;border-bottom:1px solid #d8d8d8;color:#191919;font-size:15px;line-height:51px;}
+.lyc_searchCity .srchLyListCurrent a {padding-left:45px;background:url(/images/contents/ico_location.png) no-repeat 20px center; background-size:17px 22px;}
+.rentcarBody .lyc_searchCity .srchLyListCurrent a {background-image:url(/images/contents/ico_location_rentcar.png) }
+.hotelBody .lyc_searchCity .srchLyListCurrent a {background-image:url(/images/contents/ico_location_inhotel.png) }
+/* 해외항공 > 다름.  */
+.lyc_searchCity .srchLyList.exair {padding:0}
+.lyc_searchCity .srchLyList.exair .wrap {margin-top:10px;}
+.lyc_searchCity .srchLyList.exair .wrap:first-child {margin-top:0}
+.lyc_searchCity .srchLyList.exair .wrap h4,
+.lyc_searchCity .srchLyList.exair .wrap ul {padding-left:20px;padding-right:20px;}
+.lyc_searchCity .srchLyList.exair .wrap li {border-top:1px solid #eaeaea;border-bottom:none;}
+.lyc_searchCity .srchLyList.exair .wrap li:first-child {border-top:none;}
+.lyc_searchCity .srchLyList.exair .wrap li a {font-size:13px;}
+.lyc_searchCity .srchLyList.exair .wrap li a .cityinfo .kor{font-size:15px;font-weight:bold;}
+.lyc_searchCity .srchLyList.exair .wrap li a .cityinfo .eng{}
+.lyc_searchCity .srchLyList.exair .wrap li a .airptinfo {margin-top:3px;color:#6e6e6e}
+.lyc_searchCity .srchLyList.exair .wrap li a .airptinfo .shortcut{font-weight:bold; padding-right:6px;background:url(/images/common/colorchip/c_d8d8d8_3x3.png) no-repeat right center; background-size:1px 13px;}
+.lyc_searchCity .srchLyList.exair .wrap .before li a .airptinfo{color: #1777cb;}
+.lyc_searchCity .srchLyList.toggleTy1 {padding:0}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap {margin-top:3px;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap:first-child {margin-top:0}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap h4 {padding:0}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap h4 a {display:block;padding-left:20px;padding-right:20px; background:url(/images/contents/listTog_sty1_down.png) no-repeat center right;background-size:auto 9px;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap.on h4 a {background-image:url(/images/contents/listTog_sty1_up.png);}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap {padding:25px 20px;overflow:hidden;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap ul {overflow:hidden;padding:0;margin-top:-3px;margin-left:-3px;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap ul li {float:left;padding-top:3px;padding-left:3px;width:33.3%;box-sizing:border-box;border-bottom:none}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap ul li:nth-child(3n-1) {width:33.4%;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap ul li a {display:block;border:1px solid #eaeaea;text-align:center;line-height:18px;min-height:38px;padding:0;display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center;word-wrap:break-word;} 
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap2 {padding:10px 10px 10px 20px;overflow:hidden;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap2 ul {overflow:hidden;padding:0;margin-left:-10px;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap2 ul li {float:left;display:inline-block;border-bottom:none;}
+.lyc_searchCity .srchLyList.toggleTy1 .wrap .listWrap2 ul li a {padding:5px 10px;background:url(/images/common/colorchip/c_d8d8d8_3x3.png) no-repeat right center; background-size:1px 13px;} 
+@media only screen and (max-width : 340px){
+	.srch.styLayer {padding-left:15px; padding-right:15px;}
+	.srch.styLayer .btnDel {right:15px;width:30px;}
+	.srch.styLayer input.def {padding-right:25px}	
+}
+
+ /* 사진레이어 */
+ .lyc_photoA .photoWrap {text-align:center;}
+ .lyc_map .photoWrap {text-align:center;}
+ .lyc_map2 .mapGuideMent {background:#f2f2f2;padding:5px 10px;font-size:12px;color:#f56765;line-height:15px;border-top:5px solid #eaeaea;}
+ 
+/* 메뉴 lnb 레이어 */
+.lyWrap.sty_lnbMenu {background:transparent !important;}
+.lyWrap.sty_lnbMenu .lyHeaderWrap .bClose {top:18px;right: 8px;margin-top:0px;background-image:url(/images/contents/ico_layer_bClose_fff.png);}
+.lyWrap.sty_lnbMenu .lyHeaderWrap {border-bottom:none;padding:0 50px;line-height:auto;}
+.lyWrap.sty_lnbMenu .lyHeaderWrap h2 {padding:63px 0 14px 0;color:#ffffff;font-size:19px;font-weight:bold;text-align:center;background:url(/images/common/colorchip/c_ffffff_9x9.png) no-repeat center bottom; background-size:30px 2px;}
+.lyWrap.sty_lnbMenu .menuList .menu {margin-top:20px;}
+.lyWrap.sty_lnbMenu .menuList .menu li {}
+.lyWrap.sty_lnbMenu .menuList .menu li a {display:block;color:#6e6e6e;font-size:17px;font-weight:bold;text-align:center;}
+.lyWrap.sty_lnbMenu .menuList .menu li span {display:inline-block;line-height:36px;padding:0 30px;}
+.lyWrap.sty_lnbMenu .menuList .menu li a.on {color:#1777cb;}
+.lyWrap.sty_lnbMenu .menuList .menu li a.on span {background:url(/images/common/header/lnbmenu_on.png) no-repeat right center; background-size:21px 13px;}
+
+.colorboxGrayR {padding:15px;background:#f2f2f2;border-radius:3px;}
+.colorboxGrayR > .boxTit {font-size:15px;font-weight:bold;}
+.colorboxGrayR .listDef.d3 {margin-top:11px;}
+
+/* 아이디찾기 > 결과  */
+.colorboxGrayR.type1 {padding:25px 15px;text-align:center;border:1px solid #d8d8d8;}
+.colorboxGrayR.type1 p {color:#1777cb;font-weight:bold;font-size:19px;}
+.colorboxGraySq {padding:25px 20px;background:#f2f2f2;}
+.colorboxGraySq.pdTy1 {/* default */}
+.colorboxGraySq.pdTy2 {padding:15px;}
+
+/* 렌터카 > 이용후기 */
+.fixTopItem.reviewRentcar {height:120px;}
+.fixTopItem.reviewRentcar .cReview.cRentcar {position:fixed; top:49px;left:0;width:100%;height:120px;box-sizing:border-box;z-index:2000;}
+.colorboxGraySq.cReview {padding:15px 10px;}
+.colorboxGraySq.cReview p {text-align:center;}
+.colorboxGraySq.cReview p.tit {font-size:15px;color:#fff;margin-top:-4px;line-height:22px;}
+.colorboxGraySq.cReview .btn_area {margin-top:10px;text-align:center;}
+.colorboxGraySq.cReview .btn_area .btn {display:inline-block;width:auto;}
+.colorboxGraySq.cReview.cRentcar {background:#35a8b1}
+
+/* 호텔 > */
+.colorboxGraySq.cHotel.noticeBox {background:#d559aa;padding:10px 20px;}
+.colorboxGraySq.cHotel.noticeBox .noticeTxt {font-size:14px;line-height:20px;}
+.colorboxGraySq.cHotel.noticeBox .noticeTxt a.tooltipBtn {display:block;color:#fff;padding-left:26px;background: url(/images/contents/ico_noticebox_02.png) no-repeat left center; background-size:20px 20px;}
+
+/* 패키지  > */
+.colorboxGraySq.cPack.titBox {background:#00b348;padding:10px 20px;color:#fff;}
+.colorboxGraySq.cFree.titBox {background-color:#77c300;}
+.colorboxGraySq.cPack.titBox .tit {margin-top:3px;font-size:17px;}
+.colorboxGraySq.cPack.titBox .txt {margin-top:7px;font-size:14px;line-height:19px;}
+.colorboxGraySq.cPack.cFree.titBox {background-color:#77c300;}
+.colorboxGraySq.cPack.noticeBox {background:#d559aa;padding:10px 20px;}
+.colorboxGraySq.cPack.noticeBox .noticeTxt {font-size:14px;line-height:20px;}
+.colorboxGraySq.cPack.noticeBox .noticeTxt a.tooltipBtn {display:block;color:#fff;padding-left:26px;background: url(/images/contents/ico_noticebox_02.png) no-repeat left center; background-size:20px 20px;}
+
+/* 여행자보험 */
+.colorboxGraySq.cInsu.noticeBox {background:#7260e0;padding:13px 20px;color:#fff;}
+.colorboxGraySq.cInsu.noticeBox li {position:relative;margin-top:5px;line-height:20px;}
+.colorboxGraySq.cInsu.noticeBox li:first-child {margin-top:0px;}
+.colorboxGraySq.cInsu.noticeBox li .tit{position:absolute;top:0;left:0;font-sizE:14px;}
+.colorboxGraySq.cInsu.noticeBox li .txt {}
+.colorboxGraySq.cInsu.noticeBox li .subTxt {font-sizE:14px;}
+.colorboxGraySq.cInsu.noticeBox .wd4 li {padding-left:70px;}
+.colorboxGraySq.cInsu.noticeBox .wd4 li .tit {width:70px;}
+
+/* 고객센터 안내 */
+.colorboxGraySq.csInfobox {/* padding:15px 10px */padding:15px 20px}
+.colorboxGraySq.csInfobox p {text-align:center;}
+.colorboxGraySq.csInfobox p.tit {font-size:15px;color:#191919;margin-top:-2px;}
+.colorboxGraySq.csInfobox p.subTit {font-size:14px;color:#6e6e6e;margin-top:5px;}
+.colorboxGraySq.csInfobox p.text {font-size:14px;color:#6e6e6e;margin-top:10px;line-height:20px;margin-bottom:-2px;}
+.colorboxGraySq.csInfobox ul.listDef {text-align:left;}
+.colorboxGraySq.csInfobox .btn_area {margin-top:15px;text-align:center;}
+.colorboxGraySq.csInfobox .btn_area .btn {display:inline-block;width:auto;}
+
+/* 쿠폰리스트 박스  */
+.colorboxGraySq.couponbox {padding:15px 20px 25px 20px;min-height:170px;}
+.colorboxGraySq.couponbox p.subTit {margin-top:8px;text-align:center;font-size:16px;}
+.colorboxGraySq.couponbox .list {margin-top:20px;}
+.colorboxGraySq.couponbox .list > li {/* margin-top:15px; */margin-top:27px;}
+.colorboxGraySq.couponbox .list > li:first-child {margin-top:0px;}
+.colorboxGraySq.couponbox .list a {display:block;}
+.colorboxGraySq.couponbox .noresult {margin-top:30px;padding-top:100px;font-weight:bold;background:url(/images/common/loading/noListTy1_coupon.png) no-repeat center top; background-size:80px 80px;}
+
+/* 알림박스  */
+/* 쿠폰리스트 박스 */
+.colorboxGraySq.alarmBox {padding:15px 20px 25px 20px;min-height:170px;}
+.colorboxGraySq.alarmBox p.subTit {margin-top:8px;text-align:center;font-size:16px;}
+.colorboxGraySq.alarmBox .list {}
+.colorboxGraySq.alarmBox a {display:block;}
+.colorboxGraySq.alarmBox .list li {margin-top:10px;}
+.colorboxGraySq.alarmBox .list li:first-child {margin-top:0px;}
+.colorboxGraySq.alarmBox .noresult {margin-top:30px;padding-top:100px;font-weight:bold;background:url(/images/common/loading/noListTy1_alram.png) no-repeat center top; background-size:80px 80px;}
+.colorboxGraySq.alarmBox li {position:relative;}
+.colorboxGraySq.alarmBox li .btn_rmv {position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2000;background:url(/images/contents/api_zipcode_close.png) no-repeat center center; background-size:20px 20px;}
+.colorboxGraySq.alarmBox li .btn_rmv + a .tit {padding-right:30px;}
+.alarmStyle {background:#fff;border:1px solid #d8d8d8;border-radius:5px;line-height:20px;padding:10px 15px;}
+.alarmStyle .tit {color:#5587cb;font-size:15px;font-weight:bold;}
+.alarmStyle .txt {margin-top:3px;}
+.alarmStyle .date {margin-top:3px;text-align:right;color:#6e6e6e;font-size:14px;}
+
+/* 안내박스 */
+.colorboxGraySq.noticebox {padding:15px}
+.colorboxGraySq.noticebox ul {margin-top:10px;}
+
+/* 결제 + 셀렉트 */
+.colorboxGraySq.pay_cardWrap {margin-top:10px;padding-top:0}
+.colorboxGraySq.pay_cardWrap .listOption {border-top:none;border-bottom:none;}
+.colorboxGraySq.pay_cardWrap .comment {margin-top:10px; }
+
+/* bgcolor > outer  */
+.wrapDef .bgExtention {position:relative;padding-left:0 !important; padding-right:0 !important;background:#f2f2f2;}
+.wrapDef .bgExtention::before, .wrapDef .bgExtention:before {content:'';position:absolute;top:0px;width:20px;height:100%;background:#f2f2f2;z-index:1000;left:-20px;}
+.wrapDef .bgExtention::after, .wrapDef .bgExtention:after {content:'';position:absolute;top:0px;width:20px;height:100%;background:#f2f2f2;z-index:1000;right:-20px;}
+
+.bgExtention.bgC1,
+.bgExtention.bgC1::before, 
+.bgExtention.bgC1:before ,
+.bgExtention.bgC1::after, 
+.bgExtention.bgC1:after {/* default color : #f2f2f2; */}
+.bgExtention.bgC2,
+.bgExtention.bgC2::before, 
+.bgExtention.bgC2:before ,
+.bgExtention.bgC2::after, 
+.bgExtention.bgC2:after {background:#eaeaea;}
+
+/* blue box */
+.colorboxBlueHR {margin-bottom:10px;padding:0px;background:#1777cb;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 3px 5px #8a8a8a;}
+.colorboxBlueHR .qnaList {padding:22px 0 25px 0;}
+.colorboxBlueHR .qnaList ul {overflow:hidden;}
+.colorboxBlueHR .qnaList ul li {float:left;text-align:center;color:#fff;background:url(/images/common/colorchip/c_6ea0d9_3x3.png) repeat-y left center; background-size:1px 1px;}
+.colorboxBlueHR .qnaList ul li:first-child {background:none;} 
+.colorboxBlueHR .qnaList ul li .menu {color:#fff;display:block;}
+.colorboxBlueHR .qnaList ul li strong {display:block;font-size:19px;}
+.colorboxBlueHR .qnaList ul li span {display:block;font-size:15px;margin-top:10px;}
+.colorboxBlueHR .qnaList ul.n3 li {width:33%;}
+.colorboxBlueHR .qnaList ul.n3 li:nth-child(3n-1) {width:34%;}
+
+/* 운임규정 및 안내동의 */
+.lyAgreeFare .tit {padding:23px 30px 12px 20px;overflow:hidden;}
+.lyAgreeFare .tit span, 
+.lyAgreeFare .tit img {display:inline-block;float:left;font-size:15px;line-height:20px;vertical-align:middle;}
+.lyAgreeFare .tit .logo {display:inline-block;height:20px;margin-left:10px;margin-right:5px;}
+.lyAgreeFare .tit span.way {font-size:17px;}
+.lyAgreeFare .tit p.clp {clear:both;padding-top:6px;font-size:15px;}
+.lyAgreeFare .cont {background:#f2f2f2;padding:25px 20px;border-top:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8; }
+.lyAgreeFare .cont .def + .listDef,
+.lyAgreeFare .cont .def + p.def {margin-top:8px;}
+
+body.airdoBody .lyAgreeFare .tit .logo {}
+body.exairBody .lyAgreeFare .tit .logo {margin-left:0}
+body.exairBody .lyAgreeFare .tit span {font-size:14px;}
+
+/* 국내항공 > 운임규정 및 안내동의 > PC데이터 그대로 사용 */ 
+.lyAgreeFare .pcDataSynch {}
+.lyAgreeFare h5 + .def.d2 {font-size:15px;line-height:22px;margin-top:10px;}
+
+/* 해외항공 > 상세일정 */
+.lyContWrap.lyc_exairScedule {padding-top:0} 
+.lyContWrap.lyc_exairScedule .srch_result {padding-top:0;padding-bottom:0;} 
+.lyContWrap.lyc_exairScedule .srch_result .listResult li.exair1.bgWt {}
+.lyContWrap.lyc_exairScedule .tabStyLine2 {background:#fff;border-top:10px solid #eaeaea;padding-top:20px;margin-top:0} 
+/* .lyContWrap.lyc_exairScedule .exairStep2Cont .tabCont {background:#f2f2f2;padding:10px 20px;} */
+
+/* 해외항공 요금규정 */
+h3.def + dl.layout_fareRules {margin-top:15px;}
+dl.layout_fareRules > dt {font-weight:bold;margin-top:10px; padding-left: 8px; background: url(/images/common/colorchip/dot_191919_9x9.png) no-repeat left 8px; background-size: 3px 3px;}
+dl.layout_fareRules > dd {font-size:14px;padding:5px 10px 0px 10px;line-height:21px;}

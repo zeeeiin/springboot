@@ -1,0 +1,105 @@
+.icoSet_headerMenu {
+    height: 48px;
+    background: url(/images/icon_header_menu.png) no-repeat 0 0;
+    background-size: 48px 150px;
+}
+
+.TMv2_header .topMenu h1 {
+    text-align: center;
+    font-size: /* 57px */1.188em;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.TMv2_header .topMenu h1 {
+    padding: 0 60px;
+}
+
+.colorbox_notice {
+    position: relative;
+    padding: 22px 20px 20px 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background: #444a5a;
+}
+
+.colorbox_notice.cGray {
+    background: #444a5a;
+}
+
+.colorbox_notice.on .btnClose {
+    background-image: url(images/cont_colorbox_close_02.png);
+}
+
+.colorbox_notice .btnClose {
+    background: url(images/cont_colorbox_close_01.png) no-repeat center center;
+    background-size: 30px 30px;
+}
+
+.airdo .airScdInfo .wrap1 .aptTit img {
+    height: 20px;
+    margin-right: 2px;
+}
+
+.ticketSty .ticketHead span.member {
+    padding-left: 26px;
+    background: url(images/ico_srchContTop_member.png) no-repeat left center;
+    background-size: 21px 21px;
+}
+
+.ticketSty .ticketHead {
+    position: relative;
+    background: #1777cb;
+    padding: 0 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.wrapDef {
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+.tabStyLine2 ul li a {
+    font-size: 18px;
+    padding: 0 2px;
+    padding-bottom: 16px;
+    color: #191919;
+    background: url(/images/c_d8d8d8_9x9.png) repeat-x center bottom;
+    background-size: 3px 3px;
+}
+
+.tabStyLine2 ul li a.on {
+    color: #1777cb;
+    background-image: url(images/c_1777cb_9x9.png);
+}
+
+.btn.c_dgray, .btn.c_dgray * {
+    background: #444a5a;
+    color: #fefefe;
+}
+
+.btn.c_rgray, .btn.c_rgray * {
+    background: #72747b;
+    color: #ffffff;
+}
+
+.btn.styB {
+    font-size: 19px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.btn_area .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.listToggle.sty1 .listPolicyForm li .tit .ez-checkbox {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

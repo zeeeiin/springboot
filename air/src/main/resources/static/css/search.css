@@ -1,0 +1,70 @@
+
+
+.head_wrap{
+  min-height: 48px;
+  position: relative;
+
+}
+
+#search_head{
+  width: 100%;
+  height: 500px;
+  color: blue;
+}
+
+.goback{
+  top: 0;
+  left: 7px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: absolute;
+}
+
+
+
+.head_wrap > h1 {
+  color: black;
+  margin: 0;
+  font-size: /* 57px */1.188em;
+  line-height: 48px;
+  padding: 0 60px;
+  z-index: 100;
+}
+
+.search_menu{
+  text-align: right;
+  top: 0;
+  right: 12px;
+  display: block;
+  overflow: hidden;
+  width: 80px;
+  height: 48px;
+  position: absolute;
+}
+
+.TMv2_header .img{
+  width: 48px;
+  height: 48px;
+  z-index: 1;
+}
+
+.header_btn{
+  z-index: 100;
+}
+
+/* header */
+.TMv2_headerWrap {height:49px;}
+.TMv2_header_shadow {height:49px;}
+
+
+/* footer */
+
+.TMv2_body .footer .info .list span{width:125px;}
+.footer .info .list span:first-child {width:125px;}
+
+
+
+/* list */
+.listToggle.sty1 .airCancelRule .tit span {font-size:17px; font-weight:bold;line-height:20px;vertical-align:middle;}
+.listToggle.sty1 .airCancelRule img {vertical-align:middle;}
