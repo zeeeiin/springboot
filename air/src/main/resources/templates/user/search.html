@@ -1,25 +1,23 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">	
+<html xmlns:th="http://www.thymeleaf.org">
+	
 
 
-<th:block th:replace="~{./include/basicLayout :: setContent( ~{:: .wrap } ) }">
+<th:block th:replace="~{./include/basicLayout1 :: setContent( ~{:: .wrap } ) }">
 	<div class="wrap">
 		<div class="warp_inner">
-			
-			 <div class="main_img"></div>			
-            
+
 			<!-- left_menu end -->
 			<div class="right_content">
-				
 				<div class="midiaq">
-					<div class="page_title">항공편 검색</div>
+					<div class="page_title">검색</div>
 
 					<form name="searchForm" action="search" method="get" >
 
 					<input type="hidden" name="page"  value="1" >
 					<!-- ${pageVO.amount} -->
 					<input type="hidden" name="amount" th:value="${pageVO.amount}">
-				
+					
 					<div class="search_block flfull">
 						
 						<div class="fl">
@@ -38,17 +36,16 @@
 							</div>
 							
 							<div>
-								<span class="search_th">추천순 정렬</span>
-								<select class="sortSelect" name="searchPrice">
+								<span class="search_th">판매가 정렬</span>
+								<select class="" name="searchPrice">
 									<!-- th:selected="${pageVO.cri.searchPrice == 'none' }  ${pageVO.cri.searchPrice == 'asc' }  ${pageVO.cri.searchPrice == 'desc' } -->
 									<option value="none" th:selected="${pageVO.cri.searchPrice == 'none' }" >정렬방식</option>
-									<!--<option value="desc"  th:selected="${pageVO.cri.searchPrice == 'desc' }">추천순</option>-->
-									<option value="asc-searchDeparture_time" th:selected="${pageVO.cri.searchDeparture_time == 'asc' }">출발시간순</option>
-									<option value="asc-searchArrival_time" th:selected="${pageVO.cri.searchArrival_time == 'asc' }">도착시간순</option>
-									<option value="asc-searchPrice" th:selected="${pageVO.cri.searchPrice == 'asc' }">최저요금순</option>
+									<option value="asc"  th:selected="${pageVO.cri.searchPrice == 'asc' }">낮은순</option>
+									<option value="desc" th:selected="${pageVO.cri.searchPrice == 'desc' }">높은순</option>
 									
 								</select>
 							</div>
+
 							<!-- 2row -->
 							<div class="pdt15"></div>
 							<div>
@@ -70,16 +67,15 @@
 						<div class="fr">
 							<div class="search_btn_area">
 								<a href="#" class="normal_btn purplebtn" id="searchBtn">검색</a>
-								<!--<a href="#" class="normal_btn purplebtn02">등록</a>-->
+								<a href="#" class="normal_btn purplebtn02">등록</a>
 							</div>
 						</div>
 					</div>
-					
 
 					<div class="full_collum collum">
 						<ul>
 							<li class="collum_tit">
-								<h2>항공편 상세 정보</h2>
+								<h2>상품 관리</h2>
 
 								<select class="" onchange="handleChange()">
 									<option value="10"  th:selected="${pageVO.amount == 10}">10개 보기</option>
@@ -90,6 +86,7 @@
 								<span class="showtoggle minus" style="color: rgb(255, 255, 255);"></span>
 								<ul>
 									<li>
+										
 										<table cellpadding="0" cellspacing="0" class="col_14" width="100%;">
 											<tr>
 												<th>순서</th>
@@ -127,27 +124,30 @@
 												<td>[[${ vo.end_date }]]</td>
 												<td>[[${vo.seat}]]</td>
 												<td>[[${vo.price}]]원</td>
-												<td>	
-				                                   <a title="예약하기" th:href="@{registration(air_id=${vo.air_id}) }">예약하기</a>
-													<!--<input type="checkbox" name="reservation" th:field="*{list}" th:value="${vo.air_id }" class="form-check-input" onchange="toggleLabel(this)">
-													<label th:for="${'reservation-' + status.count}" class="form-check-label" th:classappend="${'selected-' + status.count}">선택</label>
-													-->
+												<td>
+													<a title="예약하기" th:href="@{registration(air_id=${vo.air_id}) }">예약하기</a>
 												</td>
 											</tr>
-											<script th:inline="javascript">
-												function toggleLabel(checkbox) {
-													var labelID = checkbox.getAttribute('th:value');
-													var labelElement = document.querySelector('[for="' + labelID + '"]');
-													
-													if(checkbox.checked){
-														labelElement.classList.add('selected');
-													} else{
-														labelElement.classList.remove('selected');
-													}
-												}
-											</script>
+											
+											
 										</table>
-
+										<!--
+										<input type="checkbox" name="pay" th:field="*{list}" th:value="${vo.air_id }" class="form-check-input" onchange="toggleLabel(this)" >
+													
+													<label th:for="${vo.air_id}" class="form-check-label">선택</label>
+										<script th:inline="javascript">
+	function toggleLabel(checkbox) {
+		var labelId = checkbox.value;
+		var labelElement = document.querySelector('label[for="' + labelId + '"]');
+		console.log(labelId+"sel");																									
+													
+		if(checkbox.checked){
+			labelElement.classList.add('selected');
+		} else{
+			labelElement.classList.remove('selected');
+		}
+	}
+</script>-->
 													
 
 										<!-- 
@@ -251,9 +251,14 @@
 	</div><!-- end wrap -->
 </th:block>
 
+
+
+
+
 <script src="../js/modal.js"></script>
 
-	
+
+
 <script th:inline="javascript">
 	
 	var msg = '[[${msg}]]';
@@ -270,30 +275,6 @@
 		document.searchForm.submit(); //폼태그 서브밋
 	}
 	
-	
-	//정렬방식
-	$(document).ready(function() {
-		$("#searchBtn").click(function() {
-			var sortValue = $(".sortSelect").val();
-			
-			$.ajax({
-				url: "/",
-				method: "GET",
-				data: { sortValue: selectedValue },
-				contentType: "application/json", //보낼데이터형식			
-				success : function(response) {
-					console.log(data);
-				},
-				error: function(error){
-					console.error("Error: ", error);
-				}				
-			});		
-		});
-	});
-	
-	
-	
-	
 	//검색버튼
 	var searchBtn = document.getElementById("searchBtn");
 	searchBtn.onclick = function() {
@@ -306,51 +287,26 @@
 	
 	
 <script th:inline="javascript">
-	//모달창에 이미지 처리하기
-	//비동기적으로 파일데이터를 가져옴
-	//air_id요청을 보내서 데이터베이스 조회
-	//callback으로 데이터를 받고
-	//img태그를 동적으로 생성.
-	$(".modalOn").click(function() {
-		
+	$(".On").click(function() {
+		console.log(1232134);
+		$(".selected").each(function(){
+			var add = getElementById
+				console.log(checkbox.value);
+				})
 		//air_id가 필요
-		var pk = $(event.target).closest("td").next().html();
-		
+		var pk = 1;
 		$.ajax({
-			url: "../getAjaxImg",
+			url: "/payForm",
 			type: "post",
 			contentType: "application/json", //보낼데이터형식
 			data : JSON.stringify( {air_id: pk} ),
 			success : function(data) {
-				console.log(data);
 				
-				
-				
-				var arr = ['a', 'b', 'c'];
-				
-				var str = "";
-				for(var i = 0; i < data.length; i++ ) {
+				$(".selected").each(function(){
 					
-					str += '<div class="left">';
-					str += '<span>추가이미지</span>';
-					str += '<label class="upload-display" for="' + arr[i] + '_file">';
-					str += '<span class="upload-thumb-wrap">';
-					str += '<img class="upload-thumb" src="../display?filename='+ data[i].filename + '&filepath=' + data[i].filepath + '&uuid=' + data[i].uuid +'">';
-					str += '</span>';
-					str += '</label>';
-					str += '<input class="upload-name" value="파일선택" disabled="disabled">';
-					str += '<input type="file" name="file" id="' + arr[i] + '_file" class="upload-hidden">';
-					str += '<input type="hidden" value="'+ data[i].upload_no +'">';
-					str += '<input type="hidden" value="">';
-					str += '<button type="button" class="normal_btn" style="display: block;">삭제</button>';
-					str += '</div>';				
-					
-				}
+				console.log(456789);
+				})
 				
-				$(".filebox").html(str);
-				
-				modalOn(); //이미지 처리 후 모달on 오픈
-				//modal.js에서 확인 -19번째 줄
 				
 				
 				

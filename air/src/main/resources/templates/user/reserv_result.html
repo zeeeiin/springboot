@@ -1,8 +1,33 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<!--<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약확인</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" th:href="@{/css/home.css}"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/side.css">
+
+  <link rel="stylesheet" href="css/reservation.css">
+  <script src="js/jquery.js"></script>
+
+  <link rel="stylesheet" href="css/reserv_result.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <script src="js/swiper.js"></script>
+-->
 
 
 <th:block th:replace="~{./include/basicLayout :: setContent( ~{:: .wrap } ) }">
+
   
   <div class="wrap">
 
@@ -52,7 +77,7 @@
 
         <div class="reserv_box">
           <div class="reserv_title">
-            <h3>국내항공 예약내역 상세정보</h3>
+            <h3>국내항공 예약내역</h3>
           </div>
 
           <div>
@@ -63,18 +88,17 @@
         <div class="reserv_list"> <!--  -->
           <div>
             <ul>
-              <li  class="reserv_detail">예약번호</li>
-              <li  class="reserv_data" th:text="${vo.reservation_num}"></li>
-              <li  class="reserv_detail">이름</li>
-              <li  class="reserv_data" th:text="${vo.nonmember_name}"></li>
-              
-              
-                           
+		    <li  class="reserv_detail">예약번호</li>
+              <li  class="reserv_data" th:text="${vo.resNum}"></li>
+              <li  class="reserv_detail">성</li>
+              <li  class="reserv_data" th:text="${vo.lastName}"></li>
+               <li  class="reserv_detail">이름</li>
+              <li  class="reserv_data" th:text="${vo.firstName}"></li>                     
               <li  class="reserv_detail">이메일</li>
-              <li  class="reserv_data" th:text="${vo.nonmember_email}"></li>
+              <li  class="reserv_data" th:text="${vo.email}"></li>
               <li  class="reserv_detail">연락처</li>
-              <li  class="reserv_data" th:text="${vo.nonmember_phoneNum}"></li>
-              
+              <li  class="reserv_data" th:text="${vo.mobile}"></li>
+
             </ul>
           </div>
         </div>
@@ -83,7 +107,7 @@
       <!-- 확인버튼 : 홈으로 이동 -->
       <div class="check">              
         <span>
-          <button type="button" class="btn">확인</button>
+          <button type="button" class="checkBtn">확인</button>
         </span>
         
       </div>

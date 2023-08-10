@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+}
+
+*{ padding: 0; margin: 0; }
+ul, li { list-style: none; } 
+*{ margin: 0 auto; }
+
+body{ font-family: 'Noto Sans KR', sans-serif;}
+
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 30;
+    top: 75px;
+    left: 0;
+    background-color: #263238;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    padding-top: 50px;
+}
+.sidenav > li > a {
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    width: 200px;
+    /*글씨고정 */
+}
+.sidenav > li > a:hover {
+    color: #f1f1f1;
+    background-color: #00acac;
+}
+.sidenav a:active {
+    color: #f1f1f1;
+    background-color: #00acac;
+}
+.sidenav .sub_menu {margin-left: 25px; display: none; }
+.sidenav .sub_menu li a {color: #fff; display: block; width: 150px; padding: 8px 10px 8px 10px; }
+.sidenav .sub_menu li a:hover {background-color: #2196F3;}
+.sidenav .sub_menu li a.on {background-color: #2196F3;}
+.sidenav .sub_menu_toggle > a.sub_menu_select,
+a.sub_menu_select {color: #f1f1f1; background-color: #00acac;}
+
+
+.leftside {
+    margin-left: 200px;
+}
+.menuBtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    left: 0;
+    top: 75px;
+    z-index: 40;
+    display: inline-block;
+    background-color: #263238;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .sidenav {
+                width: 0px;
+            }
+
+            .leftside {
+                margin-left: 0;
+            }
+
+}

@@ -1,0 +1,175 @@
+h5.def {
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.aircancelruleCont .tit1 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.aircancelruleCont .serviceTime {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #f56765;
+    font-weight: bold;
+}
+
+.listDef.d2 li:first-child {
+    margin-top: 0;
+}
+
+.fc_red {
+	color: #F56765;
+}
+
+.fc_blue {
+	color: #1777cb;
+}
+
+.btn.c_rgray, .btn.c_rgray * {
+    background: #72747b;
+    color: #ffffff;
+}
+
+.btn.c_rgray.on, .btn.c_rgray.on * {
+    background-color: #444a5a;
+}
+
+element.style {
+	display: block;
+	overflow: hidden;
+	height: 435px;
+	padding-top: 25px;
+	margin-top: 0px;
+	padding-bottom: 25px;
+	margin-bottom:0px;
+}
+
+.listToggle.sty1 li .tit .bgArr {
+    background: url(images/arrTy01_D.png) no-repeat center center;
+    background-size: auto 9px;
+}
+
+.listToggle.sty1 li.on .tit .bgArr {
+    background: url(images/arrTy01_U.png) no-repeat center center;
+    background-size: auto 9px;
+}
+
+.formWrap.brthMix .wrapGender.tabSty1 ul li {
+    width: 45px;
+}
+
+.formSetTy2.rourndSet li.titIn:first-child .formWrap .wrap {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.listToggle.sty1 .listPolicyForm li .tit .ez-checkbox {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.formSetTy2 .titIn .formWrap .wrap input.trans {
+    line-height: 33px;
+    height: 33px;
+    vertical-align: top;
+    width: 99%;
+}
+
+.formWrap.brthMix .wrapGender.tabSty1 ul li a .wp {
+    background: #fff;
+    height: 39px;
+    line-height: 39px;
+    font-size: 16px;
+    min-height: 39px;
+}
+
+.tabSty1 ul li {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-left: 3px;
+    padding-top: 3px;
+    box-sizing: border-box;
+}
+
+.includeHtml .includeTblWrap {
+    overflow-x: auto;
+}
+
+.ez-checkbox input, .ez-radio input {
+    width: 25px;
+    height: 25px;	
+    margin: 0;
+}
+
+
+input[type=checkbox], input[type=radio], label {
+    cursor: pointer;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=tel], input[type=date], input[type=checkbox], input[type=radio], input[type=image], select, select option, textarea, .fakeInput {
+    font-size: 16px;
+    color: #191919;
+    border: 1px solid #d8d8d8;
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.ez-checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: transparent url(/images/form_checkbox.png) center 0 no-repeat;
+    background-size: 25px 50px;
+    vertical-align: middle;
+}
+
+.ez-checked {
+    background-position: 0 -25px;
+}
+
+.icoSet_req {
+    width: 9px;
+    height: 9px;
+    background: url(/images/dot_f56765_27x27.png) no-repeat center center;
+    background-size: 9px 9px;
+}
+
+.listToggle.sty1 li .tit {
+    padding: 20px 35px 20px 20px;
+}
+
+.listToggle li .cont {
+    border-top: 1px solid #d8d8d8;
+    padding: 25px 20px;
+    background-color: #f2f2f2;
+}
+
+
+.shortCut {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+}
+
+.btn.styD {
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 40px;
+    border-radius: 30px;
+    width: auto;
+    display: inline-block;
+}
+
+.btn.c_rgray.on, .btn.c_rgray.on * {
+    background-color: #444a5a;
+}

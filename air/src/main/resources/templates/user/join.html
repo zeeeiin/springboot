@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">	
 
-<head>
+<!--<th:block th:replace="~{./include/basicLayout1 :: setContent( ~{:: .wrap } ) }">
+<head>-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="/css/join.css">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" th:href="@{/css/join.css}">
+  <link rel="stylesheet" th:href="@{/css/login.css}">
   <script src="../js/jquery-1.12.1.min.js"></script>
 
 </head>
@@ -34,7 +35,7 @@
 
       <div class="formBox">
         <!-- th:action="@{/air/resForm}" -->
-        <form action="/air/joinForm" class="joinForm" method="post">
+        <form th:action="@{/air/joinForm}" class="joinForm" method="post">
           <!-- <fieldset> -->
           <!-- <p class="info_pilsoo pilsoo_item">필수입력</p> -->
 
@@ -76,7 +77,7 @@
               <li class="clear">
                 <label for="pwd_lbl" class="form_item">비밀번호</label>
                 <div class="app_content">
-                  <input type="password" class="w100p" id="pwd_lbl" placeholder="비밀번호를 입력해주세요" name="pw"/>
+                  <input type="password" class="w100p" id="pwd_lbl" placeholder="비밀번호를 입력해주세요" name="password"/>
                   <!-- <span class="valid">메시지영역</span> -->
 
                 </div>
@@ -115,15 +116,15 @@
                 </div>
               </li>
 
-              <li class="clear">
+             <!-- <li class="clear">
                 <span class="form_item">SNS 활용동의</span>
                 <div class="app_content checkbox_area">
-                  <input type="radio" class="css-checkbox" name="####" id="agree_1" checked><label
-                    for="agree_1">동의함(필수)</label>
+                  <input type="radio" class="css-checkbox" name="agree_1" id="agree_1" checked>
+                  <label for="agree_1">동의함(필수)</label>
                   <input type="radio" class="css-checkbox" name="####" id="agree_2"><label for="agree_2">동의하지않음</label>
                 </div>
               </li>
-              <li>
+              <li>-->
                 <!-- <button type="button" class="loginBtn">회원가입</button> -->
 
               </li>
@@ -136,7 +137,7 @@
                     <div class="check">              
                       <span><!--type="button"-->
                         <button type="submit" class="joinBtn">
-                        <a href="@{/user/reserv_result}"></a>
+                        <a th:href="@{/user/reserv_result}"></a>
                           <!-- @{/user/reserv_result} -->
                           회원가입					  
                         </button>
@@ -146,7 +147,7 @@
                     <div class="cancel">              
                       <span><!--type="button"-->
                         <button type="submit" class="cancelBtn">
-                        <a href="@{/user/reserv_result}"></a>
+                        <a th:href="@{/air/}"></a>
                           <!-- @{/user/reserv_result} -->
                           취소					  
                         </button>
@@ -181,255 +182,29 @@
   </div>
   <!-- //wrap -->
 
-  <script>
-    $("#phone_lbl").focusout(function (e) {
-      var result = $("#phone_lbl").val().replaceAll("-", "");
-      $("#phone_lbl").val(result);
-    })
-
-    //회원가입버튼
-    $(".loginBtn").click(function (e) {
-      if ($("#auth").val() != 'true') {
-        return;
-      } else {
-        $(".joinForm").submit();
-      }
-    });
-
-  </script>
-  
-  
-  <script>
-  
-	//* validation 체크하기 위한 함수 *//
-	function ISVALID(args) {
-		switch (args) {
-			case "confirm":
-				var result = true;
-
-				//예약자 정보
-				if ($.trim($('input[name=lastName]').val()) == "") {
-					alert("이름을 입력해 주세요.");
-					$('input[name=lastName]').focus();
-					result = false;
-					return false;
-				}
-				if ($.trim($('input[name=firstName]').val()) == "") {
-					alert("이름을 입력해 주세요.");
-					$('input[name=firstName]').focus();
-					result = false;
-					return false;
-				}
-				if ($.trim($('input[name=phoneNum]').val()) == "") {
-					alert("예약자 휴대폰번호을 입력해 주세요.\n예약정보는 카카오알림톡이나 장문문자로 전송되니 정확히 입력해주세요.");
-					$('input[name=phoneNum]').focus();
-					result = false;
-					return false;
-				} else {
-					if (USR_CHECK_CP($.trim($('input[name=phoneNum]').val())) == false) {
-						$('input[name=phoneNum]').focus();
-						result = false;
-						return false;
-					}
-				}
-				if ($.trim($('input[name=email]').val()) == "") {
-					alert("예약자 이메일주소를 입력해 주세요.");
-					$('input[name=email]').focus();
-					result = false;
-					return false;
-				} else {
-					if (USR_CHECK_EMAIL($.trim($('input[name=email]').val())) == false) {
-						$('input[name=mobile]').focus();
-						result = false;
-						return false;
-					}
-				}
-
-				if ($.trim($('input[name=email]').val()) == "your@nate.com") {
-					alert("해당이메일은 사용불가능한 이메일주소입니다.");
-					result = false;
-					return false;
-				}
-
-				if (result == false) {
-					return false;
-				}
-
-				//탑승객 정보
-				$('#passengerInfo').find('input').each(function () {
-					var self = $(this);
-
-					if (self.attr('name').indexOf('fullName') >= 0 && $.trim(self.val()) == "") {
-						alert("탑승객 성을 입력해 주세요.");
-						self.focus();
-						result = false;
-						return false;
-					}
-					var v_last_name = "";
-					var v_first_name = "";
-					if (self.attr('name').indexOf('fullName') >= 0) {
-						v_last_name = self.val();
-					}
-					var k_name = v_last_name + v_first_name;
-					var pattern4 = /[^\w\sㄱ-힣0-9 ]/g;
-					if (pattern4.test(k_name) == true) {
-						alert("탑승객명에 특수문자를 사용할 수 없습니다.");
-						result = false;
-						return false;
-					}
-
-					if (self.attr('name').indexOf('birthday') >= 0) {
-						if ($.trim(self.val()) == "") {
-							alert("탑승객 생년월일을 입력해 주세요.");
-							self.focus();
-							result = false;
-							return false;
-						} else {
-							var inputY = self.val().substring(0, 4),
-								inputM = self.val().substring(4, 6),
-								inputD = self.val().substring(6);
-
-							var birthday = new Date(Number(inputY), Number(inputM) - 1, Number(inputD));
-							var birthY = birthday.getFullYear(),
-								birthM = birthday.getMonth() + 1,
-								birthD = birthday.getDate();
-
-							if (Number(inputY) != birthY || Number(inputM) != birthM || Number(inputD) != birthD) {
-								alert("탑승객 생년월일을 올바르게 입력해 주세요.\n19801215 와 같은 방법으로 입력하면 됩니다.");
-								self.focus();
-								result = false;
-								return false;
-							}
-							var depDate = document.getElementById("chk_dep_date").value.split('-');
-							var compareDay = new Date(Number(depDate[0]), Number(depDate[1]) - 1, Number(depDate[2]));
-							var years = compareDay.getFullYear() - birthday.getFullYear();
-							birthday.setFullYear(compareDay.getFullYear());
-							if (compareDay < birthday) {
-								years--;
-							}
-
-							if (self.closest('.valid').hasClass('adult')) {
-								if (years < 13) {
-									alert('성인은 만 13세 이상입니다.');
-									self.focus();
-									result = false;
-									return false;
-								}
-
-								if (years > 99) {
-									alert("생년월일을 확인해주세요.");
-									self.focus();
-									result = false;
-									return false;
-								}
-							}
-							else if (self.closest('.valid').hasClass('child')) {
-								if (years >= 13 || years < 2) {
-									alert('소아는 만 2~13세 미만입니다.');
-									self.focus();
-									result = false;
-									return false;
-								}
-							}
-							else if (self.closest('.valid').hasClass('infant')) {
-								if (years >= 2) {
-									alert('유아는 2세 미만입니다.');
-									self.focus();
-									result = false;
-									return false;
-								}
-							}
-						}
-					}
-
-					if (self.attr('name').indexOf('gender') >= 0 && $.trim(self.val()) == "") {
-						alert("탑승객 성별(남/녀구분)을 선택해 주세요.");
-						self.focus();
-						result = false;
-						return false;
-					}
-				});
-
-				if (($('#depAirlineCode').val() == "7C" || $('#arrAirlineCode').val() == "7C") && result == true) {
-					var total_cnt = Number('1') + Number('0') + Number('0');
-					for (var kk = 0; kk < total_cnt; kk++) {
-						var k_name = $('#lastName_' + kk).val() + $('#firstName_' + kk).val();
-						var pattern2 = /[a-zA-Z]/; //영어
-						var pattern3 = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; //한글
-
-						var engInsFlag = pattern2.test(k_name);
-						var korInsFlag = pattern3.test(k_name);
-
-						if (engInsFlag == true && korInsFlag == true) {
-							alert("탑승객명은 영문과 한글을 혼용해서 사용할 수 없습니다.\n한글명을 입력하거나 여권상의 영문명을 입력해 주세요.");
-							$('#lastName_' + kk).focus();
-							result = false;
-							return false;
-						}
-
-						if (korInsFlag == true) {
-							if ($('#lastName_' + kk).val().length > 2) {
-								alert("제주항공의 경우 탑승객 성은 한글로 2자리까지만 입력할 수 있습니다.");
-								$('#lastName_' + kk).focus();
-								result = false;
-								return false;
-							}
-
-							if (k_name.length > 5) {
-								alert("제주항공의 경우 탑승객 성과 이름은 한글로 5자리까지만 입력할 수 있습니다.");
-								$('#lastName_' + kk).focus();
-								result = false;
-								return false;
-							}
-						}
-
-						if (engInsFlag == true) {
-							if ($('#lastName_' + kk).val().length > 32) {
-								alert("제주항공의 경우 탑승객 성은 영문로 32자리까지만 입력할 수 있습니다.");
-								$('#lastName_' + kk).focus();
-								result = false;
-								return false;
-							}
-
-							if (k_name.length > 64) {
-								alert("제주항공의 경우 탑승객 성과 이름은 영문으로 64자리까지만 입력할 수 있습니다.");
-								$('#lastName_' + kk).focus();
-								result = false;
-								return false;
-							}
-						}
-					}
-				}
-
-						if (result == false) {
-							return false;
-						}
-						$('input[name=phone]').val($('input[name=mobile]').val());
-		
-						//이용규정 동의
-						$('#agreementInfo').find('input').each(function () {
-							var self = $(this);
-							if (self.is(':checked') == false) {
-								$('body').animate({scrollTop: self.closest('.wrapDef').position().top - $('#TMv2_header').height() + 5}, function () {
-									alert('이용규정에 동의해 주세요.');
-								});
-								result = false;
-								return false;
-							}
-						});
-						if (result == false) {
-							return false;
-						}
-						return true;
-					default:
-						break;
-				}
-		
-				return true;
-			}
-  
-  </script>
 
 </body>
+</th:block> 
 
+  <!--<script>
+   
+    
+   $(document).ready(function(){
+      $(".joinBtn").click(function(){       
+        $(".joinForm").submit();
+      });
+
+      $(".cancelBtn").click( function() {
+        $("").("");        
+      });
+    });
+
+ 
+  </script>
+  -->
+
+
+
+
+ 
 </html>

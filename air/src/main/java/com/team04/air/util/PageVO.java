@@ -29,9 +29,11 @@ public class PageVO {
 		this.amount = cri.getAmount();
 		this.total = total;
 		
-		this.end = (int)Math.ceil( this.page / (double)this.pnCount ) * this.pnCount;
+		this.end = (int)(Math.ceil( this.page / (double)this.pnCount )) * this.pnCount;
 		
-		this.realEnd = (int)Math.ceil( this.total / (double)this.amount );
+		this.start = this.end - this.pnCount + 1;
+		
+		this.realEnd = (int)(Math.ceil( this.total / (double)this.amount ));
 		
 		if(this.end > this.realEnd) {
 			this.end = this.realEnd;

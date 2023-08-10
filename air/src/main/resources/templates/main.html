@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<!--<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDang Airline Reservation</title>-->
+
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     
-<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
-<th:block th:replace="~{./include/basicLayout :: setContent( ~{:: .wrap } ) }">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/side.css">
+
+    <script src="js/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.js"></script>
+
+    <script>
+      
+      $(document).ready(function(){
+        $(".menuBtn").click(function(){
+          $(".sideBox").toggleClass("open");
+          $(".closeBtn").toggleClass("hidden");
+        });
+
+        $(".closeBtn").click( function() {
+          $(".sideBox").removeClass("open");
+          $(this).addClass("hidden");
+        });
+      });
+  
+    </script> 
+</head>-->
+    
+
+<th:block th:replace="~{./include/layout :: setContent( ~{:: .wrap } ) }">
 
         <div class="wrap">            
             <!-- category -->
@@ -14,6 +50,18 @@
                 
                 <div class="cate">
                     <ul class="cate_ul">
+						<li class="left">
+                            <a href="#" ><!--이동 : a태그말고 onclick 이벤트로 걸어주기-->
+                                <span class="icon_img"><img th:src="@{/image/cate_exair.png}" alt=""></span>
+                                <h4>땡처리 해외항공</h4>
+                            </a> 
+                        </li>
+                        <li class="left">
+                            <a href="#" ><!--이동 : a태그말고 onclick 이벤트로 걸어주기-->
+                                <span class="icon_img"><img th:src="@{/image/cate_exair.png}" alt=""></span>
+                                <h4>땡처리 해외항공</h4>
+                            </a> 
+                        </li>
                         <li class="left">
                             <a href="#" ><!--이동 : a태그말고 onclick 이벤트로 걸어주기-->
                                 <span class="icon_img"><img th:src="@{/image/cate_exair.png}" alt=""></span>
@@ -21,7 +69,7 @@
                             </a> 
                         </li>
                         <li class="right">
-                            <a th:href="@{/user/search}" class="inairBtn"><!-- 확인차 주소적은거.. -->
+                            <a th:href="search" ><!-- 확인차 주소적은거.. -->
                                 <span class="icon_img"><img th:src="@{/image/cate_inair.png}" alt=""></span>                                
                                 <h4>국내항공</h4>
                             </a>
@@ -163,16 +211,6 @@
     
 
 </th:block>
-
-<script>
-	
-	$(document).ready(function() {
-		$(".inairBtn").click(function() {
-			location.href="/air/search";
-		})
-	});
-	
-</script>
 
 </html>
 

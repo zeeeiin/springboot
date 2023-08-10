@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	
+<th:block th:fragment="setContent(content)">
+
+<!--  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약확인</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" th:href="@{/css/home.css}">
+      <link rel="stylesheet" th:href="@{/css/home.css}"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+  
+  <link rel="stylesheet" th:href="@{/css/side.css}">
+
+  <link rel="stylesheet" th:href="@{/css/reserv_check.css}">
+  <script th:src="@{/js/jquery.js}"></script>-->
+
+  
+<th:block th:replace="~{./include/layout :: setContent( ~{:: .wrap } ) }">
+
+  <!-- 예약확인 화면 -->
+  <!-- header -->
+
+  <div class="wrap"> <!-- 큰 박스 -->
+
+    <div class="resBox"> <!-- 감싸는 박스 -->
+        <div class="res_title"> <!-- title -->  
+            <span>예약확인</span>
+        </div>
+
+        <div class="resChBox">        
+          <div class="res_info"> <!-- 설명 -->
+            <div>예약한 내역을 조회합니다.</div>
+            <div>아래의 정보를 정확히 입력해주세요.</div>           
+          </div>
+
+          <div class="res_tb"> <!-- 입력창 -->
+            <form action="resForm" class="resform" method="post">
+
+              <ul class="resforminfo">
+                <li class="resinli">
+                  <h4>상품구분</h4>
+                  <div>
+                    <span class="reserv_inner">
+                      <select name="reservOp" id="res_sel" class="reserv_in" >
+                        <option value="">국내항공권(땡처리국내항공)</option>
+                        <option value="">해외항공권(땡처리해외항공)</option>
+                        <option value="">해외여행(패키지/자유여행)</option>
+                        <option value="">해외호텔/국내숙박</option>
+                        <option value="">제주할인입장권</option>
+                        <option value="">렌터카</option>
+                        <option value="">여행자보험</option>
+                      </select>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              
+              <ul class="resforminfo">
+                <li class="resinli">
+                  <h4>예약번호</h4>
+                  <div class="reserv_inbox">
+                    <span class="reserv_inner">
+                      <input type="text" class="reserv_in" name="reservation_num" placeholder="예약번호를 입력하세요.">
+                    </span>
+                  </div>
+                </li>
+              </ul>
+             
+              <ul class="resforminfo">
+                <li class="resinli">
+                  <h4>이름</h4>
+                  <div class="reserv_inbox">
+                    <span class="reserv_inner">
+                      <input type="text" class="reserv_in" name="bookNum" placeholder="(예:홍길동)">
+                    </span>
+                  </div>
+                </li>
+              </ul>
+             
+            </form>
+            
+            <!-- <table>
+              <tr>
+                <th>상품구분</th>
+                <th><select name="국내 항공권" id=""></select></th>
+              </tr>
+              <tr>
+                <td>예약번호</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>이름</td>
+                <td><input type="text"></td>
+              </tr>             
+            </table> -->
+            
+            <div class="checkBox"> <!-- 확인버튼 -->
+
+              <div class="check">              
+                <span><!--type="button"-->
+                  <button type="button" class="checkBtn">
+					  <a href="@{/user/reserv_result}"></a>
+					 	<!-- @{/user/reserv_result} -->
+					 	확인					  
+				  </button>
+                </span>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+          
+        </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+
+  
+
+
+
+</th:block>
+<script>
+      
+    $(document).ready(function(){
+      $(".menuBtn").click(function(){
+        $(".sideBox").toggleClass("open");
+        $(".closeBtn").toggleClass("hidden");
+      });
+
+      $(".closeBtn").click( function() {
+        $(".sideBox").removeClass("open");
+        $(this).addClass("hidden");
+      });
+    });
+
+  </script>
+
+
+  <script>
+	  $(document).ready(function () {
+		  $(".checkBtn").click( function () {
+			  $(".resform").submit();
+		  });
+	  });
+  </script>
+</html>

@@ -23,7 +23,7 @@
   	<select id="getList" resultType="AirVO">
   		select * from project04.airplane
   		
-  		where 1=1
+  		where seat != 0
   		 
   		<if test="cri.searchAirline != '' and cri.searchAirline != null ">
   		and airlines like concat('%', #{cri.searchAirline}, '%')
@@ -48,11 +48,28 @@
   		</if>
   		air_id desc
   		limit #{cri.pageStart}, #{cri.amount}
-		
   		
   	</select>
   	
   	<select id="getTotal" resultType="int">
   		select count(*) as total from project04.airplane
   	</select>
+  	
+  	<select id="getDetail" resultType="AirVO">
+  		select * from project04.airplane where air_id = #{air_id}
+  	</select>
+  	
+  	<update id="updateSeat">
+    	update project04.airplane set seat = seat - 1 where air_id = #{air_id}
+	</update>
+  	
+  	<insert id="passengerDetail" parameterType="AirVO">
+       insert into project04.passenger (resNum, lastName, firstName, mobile, email)
+       values(CONCAT('R', FLOOR(RAND() * 1000000)), 
+        #{lastName}, 
+        #{firstName}, 
+        #{mobile}, 
+        #{email})
+   </insert>
+  	
   </mapper>

@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="http://www.thymeleaf.org">	
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+
+  <link rel="stylesheet" th:href="@{/css/joinResult.css}">
 </head>
+
 <body>
 
 
-회원 가입을 축하합니다!!
+회원 가입을 축하합니다!! 
+
+
+   
+      <!--
+   성:${vo.lastName}<br/>   
+   아이디:${vo.id}<br/>
+   이름:${vo.firstName}<br/>
+   비밀번호:${vo.password}<br/>
+   휴대폰 번호:${vo.phoneNum}<br/>
+   이메일:${vo.email}<br/>
+   성별 : ${vo.gender}<br/>
+   -->
+   
+   
+   <a href="./">메인페이지로 이동</a>
+
 </body>
 </html>

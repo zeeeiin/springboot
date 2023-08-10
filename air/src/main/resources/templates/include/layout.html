@@ -15,18 +15,16 @@
     
    <!-- <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}" />-->
 	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
-	<!--<link rel="stylesheet" type="text/css" th:href="@{/css/side.css}" />-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/side.css}" />
 	<link rel="stylesheet" type="text/css" th:href="@{/css/swiper.css}" />
-	<link rel="stylesheet" type="text/css" th:href="@{/css/reserv_check.css}" />
-	<link rel="stylesheet" type="text/css" th:href="@{/css/reserv_result.css}" />
+	
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
 		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script th:src="@{/js/jquery-1.12.1.min.js}"></script>
 	<script th:src="@{/js/jquery-ui.min.js}"></script>
 	<script th:src="@{/js/style.js}"></script>
-	
-	<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script th:src="@{/js/jquery.js}"></script>
 	
     <script th:src="@{/js/swiper.js}"></script>
@@ -56,36 +54,36 @@
 	<!-- 큰 박스 -->
 	<div class="wrap">
 	
-		<!-- header  -->
+		<!-- header -->
 	    <div class="header">
 	    	<div class="header_title">
 	             <h3>땡처리닷컴</h3>
 	         </div>
 	
-            <!--<div class="header_menu">
-				                <a href="#">
-				                    <span class="menu"></span>                    
-				                </a>
-				         		 <button class="menu" type="button">메뉴</button>  
+            <div class="header_menu">
+                <!--<a href="#">
+                    <span class="menu"></span>                    
+                </a>-->
+         		<!-- <button class="menu" type="button">메뉴</button>  -->
 		    	<a href="#">
 		    		<span class="menuBtn">버튼</span>
 		   		</a>		   
-           	</div>-->
+           	</div>
 	            
 	    </div>
 	
-		<!--<div class="sideBox">  side 큰 박스  
+		<div class="sideBox"> <!-- side 큰 박스  -->
 		
 			<span class="closeBtn">X</span> 
 		     
-		     side 상단     
+		    <!-- side 상단 -->    
 		    <div class="side_top">         
             	<div class="title">
-              		<span>땡처리닷컴</span>
+              		<h2>땡처리닷컴</h2>
             	</div>
         	</div>  
         	
-        	<div class="side_menuBox">  side 중앙 메뉴 박스 
+        	<div class="side_menuBox"> <!-- side 중앙 메뉴 박스 -->
         	
 	            <div class="side_title">
 	                <h3>메뉴 바로가기</h3>
@@ -157,8 +155,8 @@
 	                </ul>
 	            </div>
 	            
-	         side 하단 박스1	
-	       	<div class="side_board">  side 하단 게시판 
+	        <!-- side 하단 박스1-->	
+	       	<div class="side_board"> <!-- side 하단 게시판 -->
 	              
 	            <div class="board">
 	              <a href="">
@@ -182,17 +180,22 @@
 	            </div>
 			</div>
 	            
-	        	<div class="side_bottom">  side 하단 박스2
+	        	<div class="side_bottom"> <!-- side 하단 박스2-->
 	                <div class="callcenter">땡처리닷컴 상담문의</div>
 	                <div class="callnum">02-3705-8833</div>
 	                <div class="calltime">오전 9시 ~ 오후 6시 (주말/공휴일 휴무)</div>
 	            </div>
 	            
-	        </div>  side_menuBox end 
+	        </div> <!-- side_menuBox end -->
 	
-     	</div> -->  	
+	      
+        
+     	</div>   
 	
-<div th:replace="${content}"></div>
+	
+<div th:replace="${content}">
+		 
+</div>
 		 
 	 <div class="footer">
         <footer>
@@ -209,10 +212,13 @@
                     <li>통신판매업등록번호 제 03283호</li>                           
                     <li>서울시 중구 정동길 35 (두비빌딩 501호)</li>
                     <li>Copyright ⓒ 2005-2019 (주)땡처리닷컴 All rights reserved.</li>
-                </ul>                
+                </ul>
+                
             </div>
         </footer>
-     </div>
+     </div>    
+
+
 </body>
 </th:block>
 </html>

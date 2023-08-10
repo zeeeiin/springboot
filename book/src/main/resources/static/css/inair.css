@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+}
+
+*{ padding: 0; margin: 0; }
+ul, li { list-style: none; } 
+*{ margin: 0 auto; }
+
+body{ font-family: 'Noto Sans KR', sans-serif;}
+
+
+.way {
+    margin-top: 20px;
+    width: 100%;
+    height: 180px;
+    /* background-color: rgb(0, 13, 83); */
+    background-color: rgb(0, 45, 104);
+}
+.way_top{
+    /* padding: 30px; */
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 20px 20px 0 20px;
+}
+
+.way_txt > li { 
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    float: left;
+    text-align: center;
+    height: 30px;
+    width: 50%;
+    /* display: inline-block; */
+}
+
+.way_txt .m.on > a {
+    text-underline-offset: 1px;
+    border-bottom: 3px solid white;
+    box-sizing: border-box;
+}
+.way_txt > li > a {
+    color: white;
+}
+.txt{
+    color: white;
+}
+.way_bottom {
+    width: 100%;
+    height: 300px;
+}
+
+.way_box{
+    position: relative;
+    overflow: hidden;
+    min-height: 57px;
+    padding: 0 0px 25px 0px;
+    text-align: center;
+}
+.way_depart{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    /* padding: 20px 20px 0 20px; */
+}
+.way_arrive{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    /* padding: 20px 20px 0 20px; */
+}
+.way_txt{
+    display: block;
+    overflow: hidden;
+    line-height: 20px;
+}
+.code{
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.ko{
+    color: white;
+    font-weight: 700;
+}
+.return {
+    position: absolute;
+    display: inline-block;
+    margin-left: -400px;
+    width: 40px;
+    height: 100px;
+}
+.inair_way .return{
+    background-image: url(/main/img/cityReturn.png);
+
+}
+.oneway {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+}
+
+.date{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.dateBox{
+    /* margin-top: 20px; */
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.date_btn {
+    display: inline-block;
+    box-sizing: border-box;
+    /* appearance: none; */
+    font-weight: 400;    
+    line-height: 1.5;
+    text-align: center;
+    font-size: 20px; /*1.6rem */
+    font-weight: 500;
+    letter-spacing: initial;
+    width: 100%;
+    color: #767676;
+    min-height: 3rem;
+    padding: 1.3rem 0;
+    border: 0;
+    border-bottom: 1px solid #b3b3b3;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.passengerBox{
+    margin: 10px;
+}
+
+.passenger_label{
+    word-break: break-word;
+    display: block;
+    color: #767676;
+    font-size: 16px; /*1.4rem*/
+    font-weight: 700;
+    line-height: 1.58;
+}
+
+.pass_inner {
+    padding-left: 20px;
+    display: flex;
+    box-sizing: border-box;
+    float: left;
+    width: 33.3.%;
+    /* width: 200px; */
+    height: 50px;
+}
+.pass_count{
+    position: relative;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    width: 33.3.%;
+    display: block;
+    margin-top: 9px;
+    height: 45px;
+    float: left;
+    background: #fff;
+    border-radius: 4px;
+}
+.pass_left_ctrl{
+    display: flex;
+    position: relative;
+    width: 16.4rem;
+    box-sizing: border-box;
+}
+.left_btn {
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    display: block;
+    position: absolute;
+    top: -0.2rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0;
+    color: #555;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    z-index: 1;
+
+    border: 0;
+    
+    width: 32px;
+    height: 32px;
+    
+    top: 0;
+    left: 0px;
+
+    background-color: white;
+    background-image: url(/main/img/passenger__control-sub.svg);
+}
+.pass_right_ctrl {
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(1px,1px,1px,1px);
+    clip-path: inset(50%);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    box-sizing: border-box;
+}
+
+.right_btn {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 100%;
+    display: block;
+    position: absolute;
+    /* top: -0.2rem; */
+    box-sizing: border-box;
+    /* color: #555; */
+    /* font-size: 1.6rem; */
+    line-height: 1.5;
+    z-index: 1;
+    right: 0;
+    width: 32px;
+    height: 32px;
+
+    border: 0;
+    /* display: inline-block; */
+    /* text-align: left; */
+    background-color: white;
+    background-image: url(/main/img/passenger__control-add.svg);
+}
+
+.pass_cnt_ctrl{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.adultcnt{
+    /* background-color: #fff !important; */
+    color: #191919 !important;
+    border-radius: 0;
+    /* -webkit-text-fill-color: #191919; */
+    border: none;
+    /* vertical-align: top; */
+    line-height: 1.5;
+    appearance: none;
+    padding: 0;
+    text-align: center;
+    border: 0;
+    display: block;
+    box-sizing: border-box;    
+    border-bottom: 1px solid #00256c;
+    
+    width: 3.8rem;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+/*************************/
+.modal {
+    display: none;
+}
+
+
+
+/*************************/
+
+.date_inner{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0px;
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.date_depart {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: white;
+    background-size: 30px auto;
+    display: flex;
+    float: left;
+}
+.date_txt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row wrap;
+    white-space: pre-wrap;
+   
+}
+.date_sel{
+    /* display: inline-block; */
+    display: flex;
+    float: left;
+}
+
+.date_sel_txt{
+    display: flex;
+    float: left;
+
+}

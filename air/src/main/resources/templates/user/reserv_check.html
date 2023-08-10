@@ -2,9 +2,27 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	
 <th:block th:fragment="setContent(content)">
-  
-<th:block th:replace="~{./include/basicLayout :: setContent( ~{:: .wrap } ) }">
 
+<!--  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약확인</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" th:href="@{/css/home.css}">
+      <link rel="stylesheet" th:href="@{/css/home.css}"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+  
+  <link rel="stylesheet" th:href="@{/css/side.css}">
+
+  <link rel="stylesheet" th:href="@{/css/reserv_check.css}">
+  <script th:src="@{/js/jquery.js}"></script>-->
+
+  
+<th:block th:replace="~{./include/layout :: setContent( ~{:: .wrap } ) }">
+<link rel="stylesheet" type="text/css" th:href="@{/css/reservation.css}" />
   <!-- 예약확인 화면 -->
   <!-- header -->
 
@@ -18,12 +36,11 @@
         <div class="resChBox">        
           <div class="res_info"> <!-- 설명 -->
             <div>예약한 내역을 조회합니다.</div>
-            <div>아래의 정보를 정확히 입력해주세요.</div>
-            <div class="res_info_q">예약번호가 기억나지 않는 경우 고객센터로 문의해주시기 바랍니다.</div>   
+            <div>아래의 정보를 정확히 입력해주세요.</div>           
           </div>
 
           <div class="res_tb"> <!-- 입력창 -->
-            <form th:action="@{/air/resForm}" class="resform" method="post">
+            <form action="resForm" class="resform" method="post">
 
               <ul class="resforminfo">
                 <li class="resinli">
@@ -49,7 +66,7 @@
                   <h4>예약번호</h4>
                   <div class="reserv_inbox">
                     <span class="reserv_inner">
-                      <input type="text" class="reserv_in" id="reservation_num" name="reservation_num" placeholder="예약번호를 입력하세요.">
+                      <input type="text" class="reserv_in" name="reservation_num" placeholder="예약번호를 입력하세요.">
                     </span>
                   </div>
                 </li>
@@ -60,29 +77,7 @@
                   <h4>이름</h4>
                   <div class="reserv_inbox">
                     <span class="reserv_inner">
-                      <input type="text" class="reserv_in" id="reservation_num" name="reservation_num" placeholder="(예:홍길동)">
-                    </span>
-                  </div>
-                </li>
-              </ul>
-              
-              <ul class="resforminfo">
-                <li class="resinli">
-                  <h4>휴대폰번호</h4>
-                  <div class="reserv_inbox">
-                    <span class="reserv_inner">
-                      <input type="text" class="reserv_in" id="reservation_num" name="reservation_num" placeholder="(예:홍길동)">
-                    </span>
-                  </div>
-                </li>
-              </ul>
-              
-              <ul class="resforminfo">
-                <li class="resinli">
-                  <h4>이메일</h4>
-                  <div class="reserv_inbox">
-                    <span class="reserv_inner">
-                      <input type="text" class="reserv_in" id="reservation_num" name="reservation_num" placeholder="(예:홍길동)">
+                      <input type="text" class="reserv_in" name="firstName" placeholder="(예:홍길동)">
                     </span>
                   </div>
                 </li>
@@ -108,11 +103,13 @@
             <div class="checkBox"> <!-- 확인버튼 -->
 
               <div class="check">              
-                <!--<span>type="button"-->
-                  <button type="submit" class="checkBtn" >
-					확인					  
+                <span><!--type="button"-->
+                  <button type="button" class="checkBtn">
+					  <a href="@{/user/reserv_result}"></a>
+					 	<!-- @{/user/reserv_result} -->
+					 	확인					  
 				  </button>
-                <!--</span>-->
+                </span>
                 
               </div>
 

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.team04.air.command.AirVO;
 import com.team04.air.command.Non_MemberVO;
@@ -29,6 +28,22 @@ public class AirServiceImpl implements AirService {
 		
 		return airMapper.getTotal(cri);
 	}
-	
+
+	@Override
+	public AirVO getDetail(int air_id) {
+		return airMapper.getDetail(air_id);
+	}
+
+	@Override
+	public int passengerDetail(AirVO vo) {
+	   int result = airMapper.passengerDetail(vo);
+	   return result;
+	}
+
+	@Override
+	public int updateSeat(int air_id) {
+		int result = airMapper.updateSeat(air_id);
+		return result;
+	}
 
 }

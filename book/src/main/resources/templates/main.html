@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDang Airline Reservation</title>-->
+
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/side.css">
+
+    <script src="js/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.js"></script>
+
+    <script>
+      
+      $(document).ready(function(){
+        $(".menuBtn").click(function(){
+          $(".sideBox").toggleClass("open");
+          $(".closeBtn").toggleClass("hidden");
+        });
+
+        $(".closeBtn").click( function() {
+          $(".sideBox").removeClass("open");
+          $(this).addClass("hidden");
+        });
+      });
+  
+    </script> 
+</head>-->
+    
+
+<th:block th:replace="~{./include/layout :: setContent( ~{:: .wrap } ) }">
+
+        <div class="wrap">            
+            <!-- category -->
+            <div class="category" >
+
+                <div class="main_img">
+                    <img th:src="@{/img/wing-cloud-sky-atmosphere-flying-airplane-924143-pxhere.com.jpg}" alt="bgImg" class="bg">
+                </div>
+                
+                <div class="cate">
+                    <ul class="cate_ul">
+                        <li class="left">
+                            <a href="#" ><!--이동 : a태그말고 onclick 이벤트로 걸어주기-->
+                                <span class="icon_img"><img th:src="@{/img/cate_exair.png}" alt=""></span>
+                                <h4>땡처리 해외항공</h4>
+                            </a> 
+                        </li>
+                        <li class="right">
+                            <a href="#" ><!-- 확인차 주소적은거.. -->
+                                <span class="icon_img"><img th:src="@{/img/cate_inair.png}" alt=""></span>                                
+                                <h4>국내항공</h4>
+                            </a>
+                        </li>              
+                    </ul>
+                
+                    <ul class="cate_ul">
+                        <li class="left">
+                            <a href="#" >
+                                <span class="icon_img"><img th:src="@{/img/cate_pack.png}" alt=""></span>                                
+                                <h4>땡처리패키지</h4>
+                            </a> 
+                        </li>
+                        <li class="right">
+                            <a href="inair.html" >
+                                <span class="icon_img"><img th:src="@{/img/cate_free.png}" alt=""></span>                                
+                                <h4>자유여행</h4>
+                            </a>
+                        </li>              
+                    </ul>
+                
+                    <ul class="cate_ul">
+                        <li class="left">
+                            <a href="#" >
+                                <span class="icon_img"><img th:src="@{/img/cate_exhotel.png}" alt=""></span>                                                             
+                                <h4>해외호텔</h4>
+                            </a> 
+                        </li>
+                        <li class="right">
+                            <a href="inair.html" >
+                                <span class="icon_img"><img th:src="@{/img/cate_inhotel.png}" alt=""></span>                                
+                               
+                                <h4>국내숙박</h4>
+                            </a>
+                        </li>              
+                    </ul>
+                
+                    <ul class="cate_ul">
+                        <li class="left">
+                            <a href="#" >
+                                <span class="icon_img"><img th:src="@{/img/cate_exrentcar.png}" alt=""></span>                                
+                               
+                                <h4>해외렌트카</h4>
+                            </a> 
+                        </li>
+                        <li class="right">
+                            <a href="inair.html" >
+                                <span class="icon_img"><img th:src="@{/img/cate_inrentcar.png}" alt=""></span>                                
+                               
+                                <h4>제주도 렌트카</h4>
+                            </a>
+                        </li>              
+                    </ul>
+                
+                    <ul class="cate_ul">
+                        <li class="left">
+                            <a href="#" >
+                                <span class="icon_img"><img th:src="@{/img/cate_insu.png}" alt=""></span>                                
+                               
+                                <h4>해외 여행자보험</h4>
+                            </a> 
+                        </li>
+                        <li class="right">
+                            <a href="inair.html" >
+                                <span class="icon_img"><img th:src="@{/img/cate_pass.png}" alt=""></span>                                
+                               
+                                <h4>제주 할인입장권</h4>
+                            </a>
+                        </li>              
+                    </ul>
+                
+                    
+                </div>
+
+            </div> <!-- category end -->
+
+            <div class="notice_box">
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="photo swiper-slide"><img th:src="@{/img/1.jpg}" class="itemImg">
+                            <p>
+                                <span class="notice_txt">보너스 혜택을 누려보세요!</span>
+                            </p>
+                        </div>
+                        <div class="photo swiper-slide"><img th:src="@{/img/2.jpg}" class="itemImg">
+                            <p>
+                                <span class="notice_txt">Wi-Fi로 소중한 순간을 놓치지 마세요.</span>
+                            </p>
+                        </div>
+                        <div class="photo swiper-slide"><img th:src="@{/img/3.jpg}" class="itemImg">
+                            <p>
+                                <span class="notice_txt">여행지별 입국요건을 지도에서 확인하세요.</span>
+                            </p>
+                        </div>                        
+                        <div class="photo swiper-slide"><img th:src="@{/img/4.jpg}" class="itemImg">
+                            <p>
+                                <span class="notice_txt">땡처리닷컴의 매력적인 가이드</span>
+                            </p>
+                        </div> 
+                    </div>
+                             
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>            
+                </div>
+
+
+
+
+                <script>
+                    //스와이퍼
+                    const swiper = new Swiper('.swiper', {
+            
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,                        
+                        autoplay: { //자동재생
+                        delay: 5000,
+                        },                                             
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },  
+                    });            
+                </script>  
+
+            </div> <!-- notice end -->
+            
+            <!--<div class="notice_page">
+				
+				<ul>
+					<li>
+						<a>
+							<p>알리미신청</p>
+						</a>
+						
+					</li>
+					
+					<li>
+						<a>
+							<p></p>
+						</a>
+						
+					</li>
+					
+					<li>
+						<a>
+							<p></p>
+						</a>
+						
+					</li>
+					
+					<li>
+						<a>
+							<p></p>
+						</a>
+						
+					</li>
+				</ul>				
+				
+			</div>-->
+            
+            
+            
+            
+        
+    </div><!-- wrap end -->
+    
+
+</th:block>
+
+</html>
+
+
+<!-- 
+    <div class="notice_box">
+
+        <div class="swiper">
+            <ul>
+                <li>
+                    <a href="">
+                        <div>
+                            <span></span>
+                            <div class="photo swiper-slide"><img src="img/1.jpg" alt=""></div>
+
+                        </div>
+                        <p>
+                            <span class="txt">특별한 보너스 할인 혜택을 확인하세요!</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<script>
+    //스와이퍼
+    const swiper = new Swiper('.swiper', {
+
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,                        
+        autoplay: { //자동재생
+        delay: 5000,
+        },                                             
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },  
+    });            
+</script>  
+                   
+
+            </div>
+
+
+
+
+
+
+ -->

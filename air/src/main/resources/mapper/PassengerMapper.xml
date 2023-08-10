@@ -5,10 +5,10 @@
   
 <mapper namespace="com.team04.air.mapper.PassengerMapper">
 
-	<select id="getInfo" resultType="ReservationVO">
+   <select id="getInfo" resultType="ReservationVO">
 
-		select * from passenger where resNum = #{resNum}
-	
-	</select>
-	
+      select * from passenger where resNum = #{resNum}
+   
+   </select>
+   
 </mapper>

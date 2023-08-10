@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* *************************************************************
+ 땡처리닷컴 > 모바일 > 국내항공 > 컨텐츠 > 국내항공특화(외부전달시 유의사항) | base.css
+************************************************************** */
+
+/* define */
+html {font-size:16px}
+html, body {word-break:break-all;}
+body, button, h1, h2, h3, h4, h5, input, select, table, textarea {font-family:'Nanum Gothic';color:#191919;letter-spacing:-0.1px;}/* ,'DroidSansFallback','Apple Gothic'; */
+html,body,ul,ol,li,form,fieldset,legend,h1,h2,h3,h4,h5,h6,p,dl,dt,dd{margin:0;padding:0;font-weight:normal}
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,mark,meter,nav,output,progress,rp,rt,ruby,section,source,summary,time,video{display:block;margin:0;padding:0}
+fieldset,img{border:0;vertical-align:middle}
+fieldset {display:block;min-width:0;max-width:100%;width:100%;text-overflow:clip;/* 171213 추가 */}
+img,video,embed,object{max-width:100%}
+legend{visibility:hidden;color:#000}
+dl,dt,dd,ul,ol,li{list-style:none}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+table{width:100%;border-collapse:collapse;border:0;border-spacing:0}
+caption,th,td{font-weight:normal;text-align:left;vertical-align:top}
+hr{display:none}
+input,textarea,select{vertical-align:middle}
+a{color:#191919;text-decoration:none}
+a,a:link,a:visited,a:hover{text-decoration:none}
+form{display:inline}
+fieldset{margin:0;padding:0;border:none}
+address{font-style:normal}
+label{cursor:pointer}
+hr,legend,caption{overflow:hidden;position:absolute;left:-500px;width:0;height:0;line-height:0;text-indent:-2000px}
+
+/* favorite class */
+.acc_hid{visibility:hidden;position:absolute}
+.clear{zoom:1}
+.clear:after{display:block;visibility:hidden;clear:both;height:0;content:''}
+.cl{clear:both}
+.blind{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0}
+.hide{display:none !important}
+.hidden{overflow:hidden;position:absolute;left:-500px;width:0;height:0;line-height:0;text-indent:-2000px}
+
+/* form define */
+* {-webkit-text-size-adjust:none;} /* 문자깨짐현상 처리 */
+input::-webkit-outer-spin-button{margin-left:0}
+input[type=text]{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+input[type=image]{vertical-align:middle}
+input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
+button{*overflow:visible;margin:0;padding:0;border:0;background:transparent;cursor:pointer}
+input[type=text],input[type=password],input[type=number],input[type=email],input[type=tel],input[type=date],input[type=checkbox],input[type=radio],input[type=image],select, select option, textarea, .fakeInput {font-size:16px;color:#191919;border:1px solid #d8d8d8;background:#ffffff;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+input.def, select.def , textarea.def, .fakeInput{width:100%;height:45px;line-height:45px;margin:0;padding:0 10px;vertical-align:middle;-webkit-appearance:none;border-radius:3px;cursor:pointer;}
+input.def[type=text],input.def[type=password],input.def[type=number],input.def[type=email],input.def[type=date] {}
+input.trans, textarea.trans{border:none;margin:0;padding:0}
+
+.txtRmv, .addDel {position:relative;}
+.btnDel {position:absolute;top:50%;right:1px;width:30px;height:40px;margin-top:-20px;background:#fff url(/images/contents/searchTy1_delete.png) no-repeat center center; background-size:20px 20px;}
+
+select.def.disBlk {display:block;}
+select.def {background:#fff url(/images/common/form/form_select_bg.png) no-repeat right center;background-size:30px 30px;padding-right:25px;}
+select.def option{padding-left:10px;height:24px;line-height:24px;}
+select.def option:selected{font-weight:bold !important;}
+select.def:invalid {font-weight:normal;color:#bababa;}
+select.def.defTxt {border:none;width:auto;height:auto;line-height:normal;}
+textarea.def {min-height:70px;padding:5px 10px;line-height:24px;vertical-align:top;}
+textarea.def.hMid{min-height:85px}
+textarea.def.hLong{min-height:130px}
+textarea.def.hXLong{min-height:220px}
+.txtCount {margin-top:7px;font-size:14px; text-align:right;} 
+input::-webkit-outer-spin-button{margin-left:0}
+input::-webkit-input-placeholder{color:#bababa;font-weight:normal}
+input:-moz-placeholder{color:#bababa;font-weight:normal}
+input::-moz-placeholder{color:#bababa;font-weight:normal}
+input:-ms-input-placeholder{color:#bababa;font-weight:normal}
+textarea::-webkit-input-placeholder{color:#bababa;font-weight:normal}
+textarea:-moz-placeholder{color:#bababa;font-weight:normal}
+textarea::-moz-placeholder{color:#bababa;font-weight:normal}
+textarea:-ms-input-placeholder{color:#bababa;font-weight:normal}
+.txtplaceholder {color:#bababa !important}
+input[type=checkbox],input[type=radio],label{cursor:pointer}
+input[disabled],input[disabled=disabled],textarea[disabled],textarea[disabled=disabled],select[disabled],select[disabled=disabled]{border:1px solid #d8d8d8;background-color:#d8d8d8 !important;color:#bababa;opacity:1}
+input[readonly],input[readonly=readonly],textarea[readonly],textarea[readonly=readonly],select[readonly],select[readonly=readonly]{border:1px solid #d8d8d8;background-color:#d8d8d8 !important;color:#bababa;}
+input[readonly].disaTy1, input[readonly=readonly].disaTy1, textarea[readonly=readonly].disaTy1, textarea[readonly=readonly].disaTy1 {background-color:#f2f2f2 !important;color:#191919 !important;}
+input[readonly].disaTy2, input[readonly=readonly].disaTy2, textarea[readonly=readonly].disaTy2, textarea[readonly=readonly].disaTy2 {background-color:#ffffff !important;color:#191919 !important;}
+
+.rdonly{color:#6486a1 !important;}
+.nosel select{}
+
+/* [ezMark] checkbox & radio design */
+.ez-hide{opacity:0;filter:alpha(opacity=0)}
+.ez-checkbox{display:inline-block;width:25px;height:25px;background:transparent url(/images/common/form/form_checkbox.png) center 0 no-repeat;background-size:25px 50px;vertical-align:middle}
+.ezformBgty2 .ez-checkbox {background-image:url(/images/common/form/form_checkbox_ty2.png)}
+.ez-radio{display:inline-block;width:25px;height:25px;background:transparent url(/images/common/form/form_radio.png) center 0 no-repeat;background-size:25px 50px;vertical-align:middle}
+.ez-checked{background-position:0 -25px}
+.ez-selected{background-position:0 -25px}
+.ez-checkbox + label{padding-left:4px;vertical-align:middle}
+.ez-radio + label, .ez-checkbox + lable {padding-left:6px;vertical-align:middle;}
+.ez-checkbox + span.txt {padding-left:6px;vertical-align:middle;}
+.ez-checkbox input,.ez-radio input{width:25px;height:25px;margin:0}
+label + .ez-radio{margin-left:25px}
+label + .ez-checkbox{margin-left:25px}
+.ez-checkbox,.ez-radio{*display:inline;_height:25px;zoom:1}
+.wrapDef .ezform > .formLeft.btmAgree {/* margin-top:-3px; */}
+
+/* eztype2 */
+.ezformBox {overflow:hidden;}
+.ezformBox ul {overflow:hidden;margin-left:-3px;margin-top:-3px}
+.ezformBox ul li {float:left;padding-left:3px;padding-top:3px;box-sizing: border-box;width:100%;}
+.ezformBox ul li .empty {background:#eaeaea;min-height:50px;}
+.ezformBox ul.n3 li:nth-child(3n-1) {width:33%;}
+.ezformBox ul.n3 li {width:33%;} 
+.ezformBox ul.n4 li {width:25%;} 
+.ezformBox ul.n5 li {width:20%;}
+.ezformBox ul.nAuto li.nW100px {width:100px;}
+.ezformBox ul.nAuto li.nInputGender {width:45px;font-size:16px;}
+.ezformBox ul.nAuto li.nInputGender .ezBox {min-height:45px;}
+.ezformBox ul.nAuto li.nInputGender .ezBox .ez-radio {min-height:43px;}
+.ezformBox ul.nAuto li.nInputGender .ezBox label {line-height:38px}
+
+/* ezImg */
+.ezformImg .ez-checkbox,
+.ezformImg .ez-checkbox input {width:57px;height:35px;}
+.ezformImg .ez-checkbox {background:transparent url(/images/common/form/form_checkTy2_off.png) center 0 no-repeat;background-size:57px 35px;}
+.ezformImg .ez-checkbox.ez-checked {background-image:url(/images/common/form/form_checkTy2_on.png) }
+.ezformImg label {display:none;}
+
+.ezBox {position:relative;border:1px solid #eaeaea;/* width:100%; */box-sizing:border-box;min-height:50px;text-align:center;}
+.ezBox .ez-radio, .ezBox .ez-checkbox {border: 2px solid #fff;width:100%;min-height:48px;box-sizing:border-box;background:none;}
+.ezBox.ez-selected, .ezBox.ez-checked {border-color:#f56765;}
+.ezBox.ez-selected .ez-radio, .ezBox.ez-checked .ez-checkbox {border-color:#f56765;}
+.ezBox label {position:absolute;top:0;left:0;padding:3px 0;display:block;line-height:44px;text-align:center;height:100%;width:100%;box-sizing:border-box;} 
+.ezBox.ez-selected label, .ezBox.ez-checked label {font-weight:bold;}
+
+.btmAgreeBDwrap {border-top:1px solid #d8d8d8;padding-top:25px;}
+.formLeft.btmAgree {position:relative;}
+.formLeft.btmAgree .ez-checkbox {position:absolute;/* top:3px; */top:0;left:0;}
+.formLeft.btmAgree label {padding-left:34px;display:block;}
+.formLeft.btmAgree label {font-size:17px;line-height:24px;}
+.formLeft.btmAgree.bdline {margin-top:15px;border-top:1px solid #d8d8d8;padding-top:25px;padding-bottom:22px;}
+.formLeft.btmAgree.bdline .ez-checkbox {top:25px;} 
+
+/* base layout setting */
+.shortCut{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}
+.shortCut.h18{/* height:18px; */} /* 컨텐츠에 br이 들어가는 경우 별도의 클래스로 구분 */
+.shortCutLinel2,
+.shortCutLinel3,
+.shortCutLinel4{overflow:hidden;text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.shortCutLinel2{-webkit-line-clamp:2;}
+.shortCutLinel3{-webkit-line-clamp:3;}
+.shortCutLinel4{-webkit-line-clamp:4;}
+span.wrapspan,.wrapspan span{display:inline-block;white-space:nowrap}
+.bren {display:none}
+html.en .bren {display:block}
+.ac{text-align:center !important}
+.al{text-align:left !important}
+.ar{text-align:right !important}
+.aj{text-align:justify !important;word-wrap: break-word; word-break: break-all;}
+.aj2{text-align:justify !important;word-break: break-all;}
+.vc {display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center;word-wrap:break-word;}
+
+.mt-05{margin-top:-5px !important;}
+.mt-08{margin-top:-8px !important;}
+.mt-15{margin-top:-15px !important;}
+.mt0{margin-top:0 !important;}
+.mt05{margin-top:5px !important;}
+.mt08{margin-top:8px !important;}
+.mt10 {margin-top:10px !important}
+.mt12 {margin-top:12px !important}
+.mt15{margin-top:15px !important}
+.mt17{margin-top:17px !important}
+.mt20{margin-top:20px !important}
+.mt22{margin-top:22px !important}
+.mt25{margin-top:25px !important}
+.mt30{margin-top:30px !important}
+.mt35{margin-top:35px !important}
+.mt40{margin-top:40px !important}
+.mt70{margin-top:70px !important}
+.mb10 {margin-bottom:10px !important}
+.mb15 {margin-bottom:15px !important}
+.mb25 {margin-bottom:25px !important}
+.mb40 {margin-bottom:40px !important}
+.mb-10{margin-bottom:-10px !important;}
+.mtb10{margin-top:10px !important;margin-bottom:10px !important;}
+.pd0 {padding:0px !important;}
+.pd15 {padding:15px !important;}
+.ptb07{padding-top:7px !important;padding-bottom:7px !important;}
+.ptb10{/* padding-top:10px !important;padding-bottom:10px !important; */}
+.ptb20{padding-top:20px !important;padding-bottom:20px !important;}
+.ptb25{padding-top:25px !important;padding-bottom:25px !important;}
+.pt0 {padding-top:0px !important}
+.pt05 {padding-top:5px !important}
+.pt10 {padding-top:10px !important}
+.pt20 {padding-top:20px !important}
+.pb05 {padding-bottom:5px !important}
+.pb25 {padding-bottom:25px !important}
+.pb40 {padding-bottom:40px !important;}
+.pl0 {padding-left:0px !important}
+.pr20 {padding-right:20px !important}
+.f14 {font-size:14px !important;}
+.f15 {font-size:15px !important;}
+.f16 {font-size:16px !important;}
+.f17 {font-size:17px !important;}
+.lh16{/* line-height:1.6em */}
+.lh22{line-height:22px;}
+.ls_narrow {letter-spacing:-0.4px;}
+.ls_narrow2 {letter-spacing:-0.6px;}
+.ls_narrow3 {letter-spacing:-0.8px;}
+.ls_wide {/* letter-spacing:0; */}
+.indent_star_d1 {padding-left:14px;text-indent:-16px;}
+.indent_star_d2 {padding-left:10px;text-indent:-15px;}
+.indent_star_d3 {padding-left:17px;text-indent:-17px;}
+.indent_ex_d3 {padding-left:22px;text-indent:-22px;}
+.indent_form {padding-left:22px;text-indent:-22px;}
+.fb{font-weight:bold !important}
+.fn{font-weight:normal !important}
+.fline {text-decoration: underline !important;}
+.fc_blk{color:#000000 !important}
+.fc_def {color:#191919 !important}
+.fc_red{color:#f56765 !important}
+.fc_blue{color:#1777cb !important}
+.fc_blue2{color:#16a0e8 !important}
+.fc_gray{color:#6e6e6e !important}
+.fc_rGray{color:#bababa !important}
+.fc_white{color:#ffffff !important}
+.bg_gray {background-color:#f2f2f2;}
+.fc_rentcar{color:#35a8b1 !important}
+.fc_pass{color:#ff9b26 !important}
+.fc_hotel{color:#d559aa !important}
+.bg_white {background-color:#ffffff;}
+
+.telnocolor a {color:#191919}
+.comment .fc_blue{color:#1578cb !important}
+.telnocolor.fc_red a {color:#f56765 !important}
+.telnocolor.fc_gray a{color:#6e6e6e !important}
+.telnocolor.fc_white a{color:#ffffff !important;}
+
+.keyword {color:#1777cb;}
+.rentcarBody .keyword {/* color:#35a8b1; */color:#00818b;}
+.passBody .keyword {color:#ff9b26;}
+.hotelBody .keyword {/* color:#d559aa; */color:#bf4394;}
+.packBody .keyword {color:#00b348;}
+.freeBody .keyword {color:#77c300;}
+.etcinsuBody .keyword {color:#7260e0;}
+
+.priceWrap {font-size:15px;}
+.priceWrap span {display:inline-block;}
+.priceWrap .price {font-size:17px;}
+.priceWrap.sale {color:#1777cb;}
+.priceWrap.total {color:#f56764;font-weight:bold;}
+.priceWrap.total .price {font-size:19px;}
+.priceWrap.total .unset {font-size:17px;}
+.priceWrap .subTxt {display:inline-block;font-size:14px;font-weight:normal;color:#6e6e6e;}
+.priceBefore {font-size:13px;color:#bababa;text-decoration:line-through;}

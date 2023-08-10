@@ -20,17 +20,19 @@
 }
 .chkselbox {
   background-color: #0d048b;
-  height: 40px;
-  line-height: 40px;
+  height: 80px;
+  line-height:60px;
   
-  font-size: 24px;
   /*margin-top: 30px;*/
   padding: 10px;
   padding-left: 25px;
+   padding-bottom: 10px;
   /* box-sizing: border-box; */
 }
 .chkselbox > a {
    color: white;
+   font-size: 22px;
+   font-weight: 600;
 }
 
 .chk_cate {
@@ -61,7 +63,10 @@
   padding-bottom: 15px;
   border-bottom: 1px solid #bdbdbd;
 }
-
+.reserv_title > h3 {
+	font-weight: 600;
+	font-size: 22px;
+}
 .reserv_list{
   margin: 30px;
   box-sizing: border-box;
@@ -71,6 +76,7 @@
 
 .reserv_detail {
   /* border-bottom: 1px solid #bdbdbd; */
+  font-size: 16px;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -84,6 +90,7 @@
 
 .check{
  /* margin: 70px; */ 
+ padding-left: 760px;
   display: inline-block;
   vertical-align:middle; 
 }
@@ -92,7 +99,7 @@
   
   background-color: #0d048b;
   color: white;
-    border: 0;
+  border: 0;
   
   font-size: large;
   font-weight: 500;

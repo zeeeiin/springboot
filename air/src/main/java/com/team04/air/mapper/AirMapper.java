@@ -13,5 +13,7 @@ public interface AirMapper {
 
 	public ArrayList<AirVO> getList(@Param("cri") Criteria cri);
 	public int getTotal(@Param("cri") Criteria cri);
-	
+	public AirVO getDetail(int air_id);
+	public int passengerDetail(AirVO vo);
+	public int updateSeat(int air_id);
 }

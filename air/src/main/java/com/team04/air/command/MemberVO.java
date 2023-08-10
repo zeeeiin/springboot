@@ -30,11 +30,13 @@ public class MemberVO {
 	
 	@Pattern(regexp="[a-z0-9@!~#$%^&*_+]{8,}")
 	private String password; //비밀번호
+	
 	private String phoneNum; //연락처
 	
 	@Email(message = "이메일 형식이어야 합니다")
 	private String email; //회원이메일
+	
 	private String gender; //성별
 	
-	private LocalDateTime regdate; //가입날짜
+	//private LocalDateTime regdate; //가입날짜
 }

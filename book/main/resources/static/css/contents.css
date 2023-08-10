@@ -1,0 +1,1872 @@
+@charset "utf-8";
+
+/* *************************************************************
+ 땡처리닷컴 > 모바일 > 국내항공 > 컨텐츠 | contents.css
+************************************************************** */
+
+/* 메인  > 검색  (default:항공)*/
+.mainsearch {position:relative;padding-bottom:30px;background:#f2f2f2;}
+.srch_result .mainsearch {/* padding-bottom:20px; 171124 제거 */}
+.mainsearch .tabStyLine1 {box-sizing:border-box;padding:13px 20px 0 20px;/* background:#2475ca; */background:#1777cb;}
+.mainsearch .optAirCityWrap {margin-bottom:10px;padding:13px 20px 0 20px;min-height:55px;background:#1777cb;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 3px 5px #8a8a8a;}
+.mainsearch .optAirCityWrap .innerWrap {position:relative;overflow:hidden; min-height:57px; padding:0 0px 25px 0px;text-align:center;}
+.mainsearch .optAirCity {/* top:67px; */top:0;width:50%;box-sizing:border-box;/* padding:0 30px; */position:absolute;text-align:center;z-index:1999}
+.mainsearch .optAirCity.abL {left:0;}
+.mainsearch .optAirCity.abR {right:0;}
+.mainsearch .optAirCity a {display:block;/* background:#999 */}
+.mainsearch .optAirCity .code {color:#fff;font-family:Arial;font-weight:bold;font-size:/* 30px */2.125em;}
+.mainsearch .optAirCity .txt {color:#fff;line-height:22px;height:22px;padding-left:16px;background:url(/images/contents/ico_srch_cityLocation.png) no-repeat 1px center; background-size:10px auto;}
+
+.mainsearch .optAirCityWrap .icoSet_airCityWay {position:absolute;/* top:65px; */top:4px;left:50%;display:inline-block;margin-left:-18px;width:37px;z-index:2000;}
+.mainsearch .formSet {padding:20px 20px 0px 20px;}
+.mainsearch .btn_area {padding:30px 20px 0px 20px}
+
+/* 메인 > 검색 > 해외항공 */
+.mainsearch.cate_exair .optAirCity.abL {padding-right:30px;}
+.mainsearch.cate_exair .optAirCity.abR {padding-left:30px;}
+.mainsearch.cate_exair .optAirCity .code {font-size:30px;}
+.mainsearch.cate_exair .optAirCity .txt {font-size:15px;}
+.mainsearch.cate_exair .optAirCity .disa .code {color:#6ea0d9;font-size:24px;}
+.mainsearch.cate_exair .optAirCity .disa .txt {color:#6ea0d9;background-image: url(/images/contents/ico_srch_cityLocation_disa.png);}
+
+/* 메인 > 검색 > 해외항공 > 다구간 */
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 {position:relative;padding-bottom:10px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList {position:relative;border-top:1px solid #6ea0d9;padding:15px 0}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList:first-child {border-top:none;padding-top:7px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .dateinfo {text-align:left;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .dateinfo a {display:inline-block;color:#ffffff;line-height:30px;padding-left:36px;background:url(/images/contents/ico_calenderB.png) no-repeat left center; background-size:30px 30px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .dateinfo a .txt{font-size:14px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .dateinfo a .date{font-size:16px;font-weight:bold;display:inline-block;margin-left:6px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .dateinfo a.disa {color:#6ea0d9;background-image: url(/images/contents/ico_calenderB_disa.png);}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .innerWrap {padding-bottom:0px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .multiList .innerWrap .optAirCity a {padding-top:5px;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .removeBtn {position:absolute;top:10px;right:-10px;width:37px;height:37px;background:url(/images/contents/ico_close_ty1.png) no-repeat center center; background-size:17px auto;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .addListBtn {position:absolute;left:50%;margin-left:-30px;bottom:-25px;width:60px;text-align:center;}
+.mainsearch.cate_exair .optAirCityWrap .tabcase3 .addListBtn span.bg {width:40px;height:40px;border-radius:40px;background:#ffffff url(/images/contents/ico_mathTy1_plus.png) no-repeat center center; background-size:17px auto;box-shadow: 0 1px 10px #c3c3c3;}
+			
+/* 메인 > 검색 > 렌터카  */
+.mainsearch.cate_rentcar .tabStyLine1 {background-color:#35a8b1;}
+.mainsearch.cate_rentcar .tabStyLine1 ul li a {color:#a5d7dc;;background-image: url(/images/common/colorchip/c_a5d7dc_6x6.png);}
+.mainsearch.cate_rentcar .tabStyLine1 ul li a.on {color: #ffffff; background-image: url(/images/common/colorchip/c_ffffff_6x6.png);}
+.mainsearch.cate_rentcar .optReturnplaceWrap {margin-bottom:10px;padding:4px 20px 10px 20px;min-height:55px;background:#35a8b1;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 3px 5px #8a8a8a;}
+.mainsearch.cate_rentcar .optReturnplaceWrap .tabCont {position:relative;}
+.mainsearch.cate_rentcar .optReturnplaceWrap .tabCont li a {display:block;padding:15px 0 15px 27px;border-top:1px solid #6bb8be;background:url(/images/contents/ico_rocation_ty1.png) no-repeat left center; background-size:17px 22px;}
+.mainsearch.cate_rentcar .optReturnplaceWrap .tabCont li:first-child a {border-top:none;}
+.mainsearch.cate_rentcar .optReturnplaceWrap .tabCont .txt {font-size:16px;color:#fff;font-weight:bold;line-height:22px;}
+.mainsearch.cate_rentcar .optReturnplaceWrap .tabCont .txt.disa {color:#96ccd1;font-weight:normal;}
+.mainsearch.cate_rentcar .optReturnplaceWrap .tabCont .icoSet_optionchange {position:absolute;/* bottom:37px;right:0; */bottom:27px;right:-10px;z-index:3000;display:block;}
+
+/* 메인 > 검색 > 패스투어  */
+.mainsearch.cate_pass .optSearchWrap {margin-bottom:10px;padding:10px 20px 10px 20px;min-height:52px;background:#ff9b26;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 2px 5px #8a8a8a;}
+.mainsearch.cate_pass .optSearchWrap .srchLink {position:relative;padding:15px 0 15px 33px;background:url(/images/contents/ico_search_ty1.png) no-repeat left center; background-size:23px auto;}
+.mainsearch.cate_pass .optSearchWrap a {display:block;}
+.mainsearch.cate_pass .optSearchWrap input.trans {display:block;background:transparent !important;width:100%;border:none;line-height:22px;color:#fff;font-weight:bold;cursor: pointer;}
+.mainsearch.cate_pass .optSearchWrap input::-webkit-input-placeholder{color:#ffe1be;}
+.mainsearch.cate_pass .optSearchWrap input:-moz-placeholder{color:#ffe1be;}
+.mainsearch.cate_pass .optSearchWrap input::-moz-placeholder{color:#ffe1be;}
+.mainsearch.cate_pass .optSearchWrap input:-ms-input-placeholder{color:#ffe1be;}
+.mainsearch.cate_pass .optSearchWrap .txt {font-size:16px;color:#fff;font-weight:bold;line-height:22px;}
+.mainsearch.cate_pass .optSearchWrap .txt.disa {color:#ffe1be;font-weight:normal;}
+.mainsearch.cate_pass .optSearchWrap .icoSet_optionchange {position:absolute;/* bottom:37px;right:0; */bottom:27px;right:-10px;z-index:3000;display:block;}
+.mainsearch.cate_pass .quickTheme {padding :17px 20px 0px 20px;text-align:center;}
+.mainsearch.cate_pass .quickTheme .list {overflow:hidden;}
+.mainsearch.cate_pass .quickTheme .list li {float:left;}
+.mainsearch.cate_pass .quickTheme .list.n4 li {width:25%;}
+.mainsearch.cate_pass .quickTheme a {display:block;padding:60px 5px 0 5px;font-size:15px;color:#191919;background:url(/images/contents/icon_pass_guickTheme01.png) no-repeat center 3px; background-size:50px 50px;} 
+.mainsearch.cate_pass .quickTheme a.passTheme01 {background-image:url(/images/contents/icon_pass_guickTheme01.png)}
+.mainsearch.cate_pass .quickTheme a.passTheme02 {background-image:url(/images/contents/icon_pass_guickTheme02.png)}
+.mainsearch.cate_pass .quickTheme a.passTheme03 {background-image:url(/images/contents/icon_pass_guickTheme03.png)}
+.mainsearch.cate_pass .quickTheme a.passTheme04 {background-image:url(/images/contents/icon_pass_guickTheme04.png)}
+			
+.srch_result.mv2New .mainsearch.cate_pass .optSearchWrap {/* margin-bottom:18px; */padding:0 20px ;border-bottom-left-radius:0px;border-bottom-right-radius:0px;box-shadow:none;}	
+.srch_result.mv2New .mainsearch.cate_pass .optSearchWrap .srchLink {padding:18px 0 18px 33px}	
+.srch_result.mv2New .listCount {/* padding:25px 0; */}
+			
+/* 패스 > 메인 */			
+.quickHashtag {padding :17px 20px 0px 20px;}
+.quickHashtag .tit {font-size:16px; font-weight:bold;}
+.quickHashtag .list {margin-top:6px;text-align:left;margin-left:-6px;overflow:hidden;}
+.quickHashtag .list a {display:inline-block; background:#ffffff;border:1px solid #ff9b26;font-size:15px;color:#191919;padding:0 14px 0 13px;margin-left:6px;line-height:28px;margin-top:10px;border-radius:14px;letter-spacing:-0.08em;}
+.passBody .quickHashtag {background:#f3f3f3;padding:25px 20px;}
+
+/* 180829 기존스타일, 차후사용안함  .mainsearch.cate_pass .quickLink */
+.mainsearch.cate_pass .quickLink {padding :17px 20px 0px 20px;text-align:center;}
+.mainsearch.cate_pass .quickLink .tit {color:#ff9b26; font-size:19px; font-weight:bold;}
+.mainsearch.cate_pass .quickLink .list {margin-top:4px;}
+.mainsearch.cate_pass .quickLink .list a {display:inline-block; background:#ffffff;border:1px solid #ff9b26;font-size:15px;color:#191919;padding:0 14px 0 13px;margin-left:1px;line-height:28px;margin-top:10px;border-radius:14px;} 
+
+/*  메인  > 공지사항, 링크, 배너 등  */
+.rentcar_main.listToggle {margin-top:10px}
+.rentcar_main.listToggle.sty1 li .tit {font-size:17px;line-height:20px;}
+.noticeBox1 li {margin-top:3px;background:#f2f2f2;}
+.noticeBox1 li:first-child {margin-top:0}
+.noticeBox1 li a {line-height:55px; padding:0 38px 0 15px;background:url(/images/contents/arrTy01_R2.png) no-repeat right center; background-size:23px 11px;}
+.noticeBox1 li a {display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal;}
+.noticeBox1.line2 a{line-height:normal;padding:18px 35px 18px 20px}
+.noticeBox1.line2 a .tit {font-size:16px;color:#191919;font-weight:bold;}
+.noticeBox1.line2 a .txt {font-size:14px;color:#6e6e6e;margin-top:4px;}
+.noticeBox1.snslogin li a {min-height:25px;padding-left:50px;background: url(/images/contents/ico_sns_facebook.png) no-repeat 15px center;background-size:25px 25px;}
+.noticeBox1.snslogin li a.sns_facebook {background-image: url(/images/contents/ico_sns_facebook.png)}
+.noticeBox1.snslogin li a.sns_gooble {background-image: url(/images/contents/ico_sns_google.png)}
+/* 메인 > 해외항공 > 인기도시별리스트  */
+.air_main.cityList {padding:0 20px 20px 20px;}
+.air_main.cityList h3.def {margin-top:27px;}
+.air_main.cityList .tabMenu {margin-top:20px;}
+.air_main.cityList .tabMenu ul li a {padding-top:5px;}
+.air_main.cityList + .air_main.noticeBox1 {padding-top:20px;}
+/* 메인 > 해외항공 > 공지사항  */
+.noticeBox1.air_main {background:#f2f2f2;padding:/* 10px 20px 20px; */0px 20px 20px;}
+.noticeBox1.air_main li {background:#fff;}
+.noticeBox1.rentcar_main  {border-top:10px solid #eaeaea;margin-top:10px;}
+.noticeBox1.rentcar_main  li {background:#fff;}
+.rollingBnrimg.air_main {padding:10px 0;background:#fff;}
+.rollingBnrimg.rentcar_main {padding:0 0 10px 0;background:#fff;}
+
+/* snsLogin */
+.wrapDef.snsLoginTy2 ul {margin-top:-15px;}
+.snsLoginTy2 ul {overflow:hidden;}
+.snsLoginTy2 ul.n2 li {width:50%;float:left;margin-top:15px;}
+.snsLoginTy2 ul.n2 li a {display:block;line-height:30px;font-size:15px;}
+.snsLoginTy2 ul.n2 li a span {width:30px;height:30px;vertical-align:middle;margin-right:10px;}
+.snsLoginTy2 ul.n2 li a .ico_noTxt {background:url(/images/contents/ico_snsTy2.png) no-repeat 0 center; background-size:30px auto;}
+.snsLoginTy2 ul.n2 li a .ico_noTxt.facebook {background-position:0 0}
+.snsLoginTy2 ul.n2 li a .ico_noTxt.tweeter {background-position:0 -40px}
+.snsLoginTy2 ul.n2 li a .ico_noTxt.instagram {background-position:0 -80px}
+.snsLoginTy2 ul.n2 li a .ico_noTxt.blog {background-position:0 -120px}
+.snsLoginTy2 ul.n2 li a .ico_noTxt.kakaostory {background-position:0 -160px}
+.snsLoginTy2 ul.n2 li a .ico_noTxt.kakaotalk {background-position:0 -200px}
+
+/* faq > 링크 */
+.noticeBox2 {/* padding-top:10px;background:#eaeaea; */}
+.noticeBox2 li {background:#fff;}
+.noticeBox2 li.styDef  {font-size:15px; line-height:22px;}
+.noticeBox2 li.styDef a {display:block;padding:16px 40px 17px 20px;background:#fff url(/images/contents/arrTy01_R3.png) no-repeat right center; background-size:30px 12px;}
+
+/* 항공 > 레이어 > 운임규정 등 */
+.listToggle {border-bottom:1px solid #d8d8d8;}
+.listToggle.sectionBdr {border-top:10px solid #eaeaea}
+.listToggle li .tit {border-top:1px solid #d8d8d8;}
+.listToggle li .cont {border-top:1px solid #d8d8d8;padding:25px 20px;background-color:#f2f2f2;}
+.listToggle li .cont.fit {padding:0}
+.listToggle li .cont.fit .fitInner {padding:18px 20px;}
+.listToggle li .cont h4.def:first-child {margin-top:0;}
+
+/* sty1 : 전체 링크  */
+.listToggle.sty1 li .tit {position:relative;line-height:24px;/* 171127 수정 font-size:16px; */font-size:17px;font-weight:bold;}
+.listToggle.sty1 li .tit {font-size:17px;}
+.listToggle.sty1 li .tit {padding:20px /* 30px 60px 40px */35px 20px 20px;}
+.listToggle.sty1 li .crossEvent {display:block;border-top: 1px solid #d8d8d8;padding:10px 0}
+.listToggle.sty1.titDef4 li .tit {font-size:17px;padding-top:18px;padding-bottom:18px;}
+.listToggle.sty1 li a.link {display:block;}
+.listToggle.sty1 li .tit .bgArr {position:absolute;top:50%;right:0;width:51px;height:60px;margin-top:-30px}
+.listToggle.sty1 li .tit .bgArr {background:url(/images/contents/arrTy01_D.png) no-repeat center center; background-size:auto 9px;}
+.listToggle.sty1 li.on .tit .bgArr {background:url(/images/contents/arrTy01_U.png) no-repeat center center; background-size:auto 9px;}
+
+.listToggle.sty1 li .tit .bgLink {position:absolute;top:50%;right:0;width:51px;height:60px;margin-top:-30px;background:url(/images/contents/arrTy01_R.png) no-repeat center center; background-size:9px 11px;}
+.listToggle.sty1 .tit span.fn {margin-left:-4px;}
+.listToggle.sty1 .tit strong {font-size:17px;}
+
+/* 결제수단 > 카드선택 */
+.pay_card_sel .innerW {position:relative;padding-top:10px;min-height:45px;}
+.pay_card_sel .innerW.pr1 .sbtit {padding-top:6px;}
+.pay_card_sel .innerW .abR {position:absolute;top:0;right:0;}
+
+/* sty : 부분링크 및 체크박스  */
+.listToggle.sty1 .listPolicyForm li .tit {padding-left:54px;line-height:25px;}
+.listToggle.sty1 .listPolicyForm li .tit .ez-checkbox {position:absolute; top:20px;left:20px;}
+.listToggle.sty1 .listPolicyForm li .tit .ez-checkbox + label {padding-left:0}
+
+/*  */
+.airCancelRule .tit a{line-height:20px;font-size:16px;font-weight:bold;}
+.airCancelRule .tit img {display:inline-block;vertical-align:top;height:20px; margin-right:5px;}
+.airCancelRule .cont {padding:25px 20px;background-color:#f2f2f2;}
+.listToggle.sty1 .airCancelRule .tit {/* padding:20px 30px 20px 20px; */}
+.listToggle.sty1 .airCancelRule .tit span {font-size:17px; font-weight:bold;line-height:20px;vertical-align:middle;}
+.listToggle.sty1 .airCancelRule img {vertical-align:middle;}
+
+/* faq */
+.faqtabSelect {margin-top:15px;padding:20px;background:#1777cb;}
+.faqtabSelect select {font-size:18px;font-weight:bold;}
+.listToggle.sty1.styFaq {/* margin-bottom:23px; */}
+.listToggle.sty1.styFaq .noresult{border-top:1px solid #d8d8d8;text-align:center;min-height:70px;line-height:70px;}
+.listToggle.sty1.styFaq .loading {border-top:1px solid #d8d8d8;text-align:center;min-height:100px !important;}
+.listToggle.sty1.styFaq li .tit {padding:16px 50px 16px 20px;}
+.listToggle.sty1.styFaq .tit .cate {margin-right:5px;}
+.listToggle.sty1.styFaq .tit span.fn {margin-left:0}
+.listToggle.sty1.styFaq .cont {padding:22px 18px}
+.listToggle.sty1.styFaq .cont p {font-size:15px;line-height:22px;margin-top:8px;}
+.listToggle.sty1.styFaq .cont p:first-child {margin-top:0}
+
+.listToggle.sty1.styNotice .noresult{border-top:1px solid #d8d8d8;text-align:center;min-height:70px;line-height:70px;}
+.listToggle.sty1.styNotice .loading {border-top:1px solid #d8d8d8;text-align:center;min-height:100px !important;}
+.listToggle.sty1.styNotice li:first-child .tit{border-top:none;}
+.listToggle.sty1.styNotice li .tit {padding:16px 50px 16px 20px;}
+.listToggle.sty1.styNotice .tit .cate {margin-right:5px;}
+.listToggle.sty1.styNotice .tit .date {font-size:14px;color:#6e6e6e;}
+/* .listToggle.sty1.styNotice .tit span.fn {margin-left:0} */
+.listToggle.sty1.styNotice .cont {padding:22px 18px}
+.listToggle.sty1.styNotice .cont p {font-size:15px;line-height:22px;margin-top:8px;}
+.listToggle.sty1.styNotice .cont p:first-child {margin-top:0}
+
+/* listToggle > qna */
+.listToggleQna {border-top:1px solid #d8d8d8;margin-top:15px;}
+.listToggleQna .noresult {padding-top:153px;text-align:center; background:url(/images/contents/noresult_rsvlist_all.png) no-repeat center 40px; background-size:auto 90px;}
+.listToggleQna .noresult.txt {font-size:16px;background-image:url(/images/contents/noresult_qnalist.png)}
+.listToggleQna li {position:relative;border-bottom:1px solid #d8d8d8;padding:20px 20px 15px 20px;}
+.listToggleQna li {background:#fff;}
+.listToggleQna li.open {/* background:#f2f2f2; */}
+.listToggleQna li .wrap1 {overflow:hidden;}
+.listToggleQna li a.link {display:block;position:absolute;top:20px;right:5px;width:41px;height:50px;/* margin-top:-30px */z-index:2000;}
+.listToggleQna li a.link {background:url(/images/contents/arrTy01_D.png) no-repeat center center; background-size:auto 9px;}
+.listToggleQna li.open a.link {background:url(/images/contents/arrTy01_U.png) no-repeat center center; background-size:auto 9px;}
+.listToggleQna li .Qus .info {position:relative;padding-right:100px;}
+.listToggleQna li .Qus .info .date {font-size:15px;line-height:23px;display:inline-block;margin-left:5px;}
+.listToggleQna li .Qus .info .btn.styE {position:absolute;top:0;right:26px;}
+.listToggleQna li .Qus .txtWrap {margin-top:6px;}
+.listToggleQna li .Qus .txtWrap p {line-height:24px;}
+.listToggleQna li .Ans .txtWrap {margin-top:10px;}
+.listToggleQna li .Ans .txtWrap p {line-height:22px;}
+.listToggleQna li .Ans {border-top:1px solid #d8d8d8;margin-top:16px;padding-top:18px;font-size:15px;}
+.listToggleQna li .Ans .info .stit {display:inline-block;padding-right:5px;}
+
+/* 옵션 리스트 */
+.listOption {border-top:2px solid #6e6e6e;border-bottom:1px solid #6e6e6e;}
+.listOption li.item {position:relative;border-top:1px solid #d8d8d8;padding:13px 0 14px 0;}
+.listOption li.item:first-child {border-top:none;}
+.listOption li.item.nobdr {border-top:none;margin-top:-11px}
+.listOption li.item .tit {font-weight:bold;}
+.listOption li.item .subTxt {margin-top:4px;}
+.listOption li.item .comment {font-size:14px;color:#6e6e6e;}
+.listOption li.item .abR {position:absolute;top:50%;right:0;}
+.listOption li.item.check .abR {height:25px;margin-top:-13px;}
+.listOption li.item.check label {display:block}
+.listOption li.item.number .abR {height:45px;margin-top:-23px;}
+.listOption li.item.number.line2 {padding:18px 0 18px 0}
+.listOption li.item.number.line2 .abRPrice {margin-top:0px;position:absolute;top:26px;right:114px;font-weight:bold;}
+.listOption li.item.number.line1.nobdr {margin-top:-12px;}
+.listOption li.item.number.line1:first-child {margin-top:-6px;}
+.listOption li.item.number.line1 .tit {line-height:45px;}
+.listOption li.item.sel {min-height:45px;}
+.listOption li.item.sel.ty_Pr1 p {margin-top:13px;}
+.listOption li.item.sel .abR {height:45px;top:13px;}
+.listOption li.item .abR .countnum {width:100px;border:1px solid #d8d8d8;margin-top:0}
+.listOption li.item .abR .countnum input, 
+.listOption li.item .abR .countnum .txtNum {height:43px;}
+
+
+/* 레이어 > 인원 단일선택 */
+.lyContWrap .listOption.singleMemeber {margin-top:15px;}
+.listOption.singleMemeber {padding-top:10px;border-bottom:none;}
+.listOption.singleMemeber li.item.nobdr {margin-top:-6px}
+.listOption.singleMemeber li.item.number {/* min-height:45px; */}
+
+/* 이용후기 > 렌터카 */
+.reviewList .tit {position:relative;margin-top:10px;padding:0 20px;border-bottom:2px solid #6e6e6e;}
+.reviewList .tit h3 {font-size:19px;padding:13px 0;}
+.reviewList .tit .abR {position:absolute;right:20px;top:17px;font-size:16px;}
+.reviewList .list {border-bottom:1px solid #d8d8d8;/* margin-bottom:23px */}
+.reviewList .list li {padding:18px 20px 15px 20px;border-top:1px solid #d8d8d8;}
+.reviewList .list li:first-child {border-top:none;}
+.reviewList .list li.noresult {text-align:center}
+.reviewList .list li .btnDelWrap {position:relative;height:6px;}
+.reviewList .list li .btnDelWrap .abR {position:absolute;right:0px;top:-3px;}
+.reviewList .list li .wrtInfo {font-size:15px;font-weight:bold;color:#6e6e6e;}
+.reviewList .list li .wrtInfo span {display:inline-block; margin-left:13px;}
+.reviewList .list li .wrtInfo span:first-child {margin-left:0px;}
+.reviewList .list li .carInfo {margin-top:3px;font-weight:bold;font-size:15px;}
+.reviewList .list li .reviewCont {margin-top:10px;line-height:23px;font-size:16px;}
+.reviewList .list li .reviewCont p {word-wrap: break-word; word-break: break-all;}
+
+/* 온라인 상담 > 해외항공 > 리스트 */
+.qnaExairList {margin-top:22px;border-top: 1px dotted #e0e0e0;padding-top: 15px;}
+h4.def + .qnaExairList {border-top:none;padding-top:0px;}
+.qnaExairList .info {font-size:14px;}
+.qnaExairList .info .date {margin-left:5px;}
+.qnaExairList .txt {font-size:15px;line-height:22px;}
+.qnaExairList .qust .txt {margin-top:15px;}
+.qnaExairList .reply .txt {margin-top:10px;}
+.qnaExairList .reply {background:#f2f2f2;margin-top:20px;padding:15px;}
+
+/* 리뷰 */
+.reviewWrap .rvListA {padding-top:18px;padding-bottom:15px;}
+.reviewWrap .rvListA ul {overflow:hidden;}
+.reviewWrap .rvListA li {float:left;}
+.reviewWrap .rvListA ul.n4 li {width:25%;}
+.reviewWrap .rvListB {padding-top:10px;border-top:1px solid #eaeaea;line-height:18px;padding-bottom:10px;}
+.reviewWrap .rvListB li {padding-top:10px;text-align:center;}
+.reviewWrap .rvListB .line1 li {/* text-align:center; */padding:20px 0}
+.reviewWrap .rvListB li .stit {min-width:90px;padding-right:15px;display:inline-block;vertical-align:middle;text-align:left;}
+.reviewWrap .rvListB .listWrap {display:inline-block;height:18px;vertical-align:middle;}
+.reviewWrap .rvListB .listWrap .icon_diamond {margin-left:5px;}
+.reviewWrap .rvListB .listWrap .icon_diamond:first-child {margin-left:0px;}
+.reviewWrap .rvPhotoW {/* margin-top:25px; */margin-top:0}
+.reviewWrap .rvPhotoW .photoList {/* margin-top:15px; */margin-top:10px;overflow:hidden;}
+.reviewWrap .rvPhotoW .photoList li {position:relative;float:left;padding-left:10px;width:33.3%;box-sizing:border-box;}
+.reviewWrap .rvPhotoW .photoList li:first-child {padding-left:0px;width:33.4%;}
+.reviewWrap .rvPhotoW .photoList li .photoWrap {height:80px;}
+.reviewWrap .rvPhotoW .photoList li img {width:100%;height:100%;}
+.reviewWrap .rvPhotoW .photoList li .removeBtn {position:absolute;top:7px;right:6px;width:25px;height:25px;background:url(/images/contents/ico_close_ty2.png) no-repeat center center; background-size:25px 25px;}
+
+.reviewWrap .rvPhotoW .photoList li .photoWrap {background:#f2f2f2;}
+.reviewWrap .rvPhotoW .photoList li .photoWrap.fileAdd {border:1px solid #d8d8d8;box-sizing:border-box;}
+.reviewWrap .rvPhotoW .photoList li .photoWrap.fileAdd .btnFileAdd {display:block;width:100%;height:100%;background:url(/images/contents/icon_plus_ty1.png) no-repeat center center; background-size:35px 35px;text-indent:-9999;overflow:hidden;}
+.reviewWrap .rvPhotoW .photoList li .photoWrap.fileAdd .btnFileAdd .bg {display:none;}
+.reviewWrap .rvPhotoW .photoList li .photoWrap.fileAdd input[type="file"].file {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;}
+
+.reviewWrap .rvPhotoW .comment {margin-top:10px;}
+.reviewWrap .rvPhotoW .btnWrap {position:relative;display:block;}
+.reviewWrap .rvPhotoW .btnWrap input[type="file"].file {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;}
+.reviewWrap .rvTxtW {margin-top:15px;}
+
+.rvList .rvListAView {position:relative;padding-left:70px;height:100px;margin-top:-7px;}
+.rvList .rvListAView .abL {position:absolute;top:20px;left:0;width:60px;}
+.rvList .rvListAView ul {overflow:hidden;}
+.rvList .rvListAView ul li {width:25%;float:left;position:relative;padding-top:75px;}
+.rvList .rvListAView ul li .opNum {position:absolute;top:0;left:0;width:100%;text-align:center;font-weight:bold;font-size:14px;}
+.rvList .rvListAView ul li .opBar {position:absolute;display:inline-block;top:23px;left:50%;margin-left:-5px;width:10px;height:50px;border-radius:10px;background:#d8d8d8 url(/images/common/colorchip/cate_hotel.png) repeat-x 0 bottom; background-size:100% 100%;}
+.rvList .rvListAView ul li .opTxt {display:block;text-align:center;font-size:14px;line-height:22px;}
+.rvList .TxtNotice1 {margin-top:2px;font-size:14px;color:#794fbd}
+.rvList .btn_area {margin-top:10px;}
+.rvList .TxtlistCnt {margin-top:21px;font-size:15px;}
+.rvList .listResult {margin-top:20px;}
+
+/* 리스트 > 리뷰 */
+.rvTgWrap .rvTgItem {position:relative;margin-top: 10px;border-radius: 3px;background: #ffffff;border: 1px solid #d8d8d8;padding:20px;}
+.rvTgWrap .rvTgItem:first-child {margin-top:0;}
+.rvTgWrap .btn.rvToggle {position:absolute;top:0;right:0;width:45px;height:45px;z-index:2000;background:#ffffff url(/images/contents/cont_colorbox_close2_02.png) no-repeat center center; background-size:25px 25px;}
+.rvTgWrap .rvTgItem.on .btn.rvToggle {background-image:url(/images/contents/cont_colorbox_close2_01.png);}
+
+.rvList .rvListBView {position:relative;padding-left:74px;min-height:90px;border-bottom:1px solid #d8d8d8;padding-bottom:6px;margin-top:-7px;}
+.rvList .rvListBView .abL {position:absolute;top:50%;margin-top:-39px;left:0;width:60px;height:78px;}
+.rvList .rvListBView .listValign {min-height:90px;display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center;}
+.rvList .rvListBView .listValign li {margin-top:5px;line-height:16px;}
+.rvList .rvListBView .listValign li:first-child {margin-top:0px;}
+.rvList .rvListBView .listValign .stit {display:inline-block;font-size:14px;vertical-align:middle;}
+.rvList .rvListBView .listValign .word3 .stit {width:46px} 
+.rvList .rvListBView .listValign .icon_diaS {display:inline-block;vertical-align:middle;}
+.rvList .toggleFix {}
+.rvList .toggleFix .opWriter {padding-top:10px;font-weight:bold;font-size:14px;color:#6e6e6e;}
+.rvList .toggleFix .opWriter span {display:inline-block;margin-right:10px;}
+.rvList .toggleFix .opTit {font-weight:bold;font-size:15px;}
+.rvList .toggleView .rvPhoto p {margin-top:10px;text-align:center;}
+.rvList .toggleView .rvPhoto p:first-child {margin-top:15px;}
+.rvList .toggleView .rvVod .wrap {margin-top:10px;text-align:center;position:relative;}
+.rvList .toggleView .rvVod .wrap:first-child {margin-top:15px;}
+.rvList .toggleView .rvVod .wrap a {display:block;min-height:100px;background:#eaeaea url(/images/common/loading/noimg50x50_full.png) no-repeat center center;background-size:100px 100px;}
+.rvList .toggleView .rvVod .wrap .bg {position:absolute;width:50px;height:50px;top:50%;left:50%;margin-top:-25px;margin-left:-25px;background: url(/images/contents/ico_vod_sty1.png) no-repeat center center; background-size:50px 50px;}
+
+.rvList .toggleView .rvTxt {margin-top:5px;line-height:22px;}
+.rvList .toggleView .btn_area {margin-top:15px;}
+.rvView .rvPhoto {margin-top:25px;}
+.rvView .rvPhoto p {margin-top:10px;text-align:center;}
+.rvView .rvPhoto p:first-child {margin-top:0px;}
+.rvView .rvTxt {margin-top:15px;line-height:22px;}
+.reviewWrap.cRentcar 	.rvList .TxtNotice1 {color:#794fbd;}
+.reviewWrap.cPass 		.rvListAView ul li .opNum {color:#ff8a00}
+.reviewWrap.cHotel 		.rvListAView ul li .opNum {color:#d559aa}
+.reviewWrap.cRentcar 	.rvListAView ul li .opNum {color:#00818b}
+.reviewWrap.cPass 		.rvListAView ul li .opBar {background-image:url(/images/common/colorchip/cate_pass.png)}
+.reviewWrap.cHotel 		.rvListAView ul li .opBar {background-image:url(/images/common/colorchip/cate_hotel.png)}
+.reviewWrap.cRentcar 	.rvListAView ul li .opBar {background-image:url(/images/common/colorchip/cate_rentcar.png)}
+
+/* 검색결과 > 상단 > default:항공 */
+.srch_result {padding-bottom:20px;}
+.lyContWrap .srch_result {padding-bottom:0px;}
+.bgC .wrapBgWt {background-color:#FFF}
+.srch_result .mainsearch .srchContTop{position:relative;height:40px;padding:0 20px;color:#fff;background:#1777cb url(/images/common/colorchip/c_000000_45p_3x3.png) repeat 0 0; background-size:1px 1px;}
+.srch_result .mainsearch .srchContTop p {padding-right:35px;line-height:40px;}
+.srch_result .mainsearch .srchContTop .date {padding-left:24px;background:url(/images/contents/ico_srchContTop_calender.png) no-repeat left center; background-size:18px 18px;}
+.srch_result .mainsearch .srchContTop span.member {position:absolute;top:0;right:20px;;width:auto;height:40px;line-height:40px;}
+.srch_result .mainsearch .srchContTop span.member {padding-left:26px;text-align:right;background:url(/images/contents/ico_srchContTop_member.png) no-repeat left center; background-size:21px 21px;}
+
+/* 리스트 개수 count */
+.srch_result .listCount {padding:18px 0;text-align:center;font-size:16px;}
+.srch_result .listCount strong {color:#f56765;font-weight:bold;}
+.srch_result .listCount + .sortWrap {border-top:1px solid #d8d8d8;}
+.srch_result .mainsearch + .wrapDef.fit.mt0 .listCount {/* margin-top:-10px; */}
+.wrapDef.fit .srch_result  .sortWrap{padding:0 20px;}
+
+/* 검색결과 > 패스 */  
+.passBody .srch_result {padding-bottom:0}
+.passBody .srch_result .mainsearch.cate_pass {background:#ffffff;padding-bottom:0}
+  
+/* 메인페이지 탭  */
+.mainTabLink .swiper-slide {display: inline-block;width: auto;}
+.mainTabLink .swiper-slide:first-child {padding-left:10px;}	
+.mainTabLink .swiper-slide:last-child {padding-right:10px;}	
+.mainTabLink .swiper-slide a {display:block;padding:17px 10px 13px 10px;font-size:16px;}
+.mainTabLink .swiper-slide a.on {background:url(/images/common/colorchip/c_f56765_9x9.png) repeat-x center bottom; background-size:3px 3px;}
+.mainTabLink .swiper-slide a.on2 {color:#f56765;font-weight:bold;background:url(/images/common/colorchip/c_f56765_9x9.png) repeat-x center bottom; background-size:3px 3px;}
+.mainTabLink .swiper-slide a.ttang {color:#f56765;font-weight:bold;}		
+		    
+/* 해외항공 > 메인리스트 (차후 mainTabLink으로 변경) */
+.exairBody .airlistpageLink .swiper-slide {display: inline-block;width: auto;}
+.exairBody .airlistpageLink .swiper-slide:first-child {padding-left:10px;}	
+.exairBody .airlistpageLink .swiper-slide:last-child {padding-right:10px;}	
+.exairBody .airlistpageLink .swiper-slide a {display:block;padding:17px 10px 13px 10px;font-size:16px;}
+.exairBody .airlistpageLink .swiper-slide a.on {background:url(/images/common/colorchip/c_f56765_9x9.png) repeat-x center bottom; background-size:3px 3px;}
+.exairBody .airlistpageLink .swiper-slide a.ttang {color:#f56765;font-weight:bold;}		
+  
+/* 검색결과 > 상단 > 국내항공 */
+.airdoBody .srch_result {position:relative;padding-top:59px;}
+.airdoBody .srch_result .srchContTop {/* position:absolute; */ position:fixed;top:49px;left:0;width:100%;height:59px;background:#1465ad;z-index:4999;}
+.airdoBody .srch_result .srchContTop .inner {position:relative;padding:8px 105px 8px 20px}
+.airdoBody .srch_result .srchContTop .inner p {color:#fff;font-size:16px;font-weight:bold;}
+.airdoBody .srch_result .srchContTop .inner p.date {margin-top:5px;}
+.airdoBody .srch_result .srchContTop .inner .abR {display:block;position:absolute;top:0;right:0;height:59px;width:45px;background:#00214b;}
+.airdoBody .srch_result .srchContTop .inner .abR a {display:block;}
+.airdoBody .srch_result .srchContTop .inner .abR a {width:45px;height:59px;background:#10518a url(/images/contents/cont_result_rentcarInfo_search.png) no-repeat center center; background-size:45px 59px;}
+.airdoBody .srch_result .srchContTop .inner .abR a .closeImg {display:block;margin-top:16px;margin-left:9px;width:26px;height:26px;background:url(/images/contents/cont_result_airdoInfo_close.png) no-repeat center center; background-size:24px 24px;}
+.airdoBody .srch_result .srchContTop span.member {position:absolute;top:18px;right:60px;;width:auto;height:23px;font-size:19px;line-height:23px;color:#fff}
+.airdoBody .srch_result .srchContTop span.member {padding-left:28px;text-align:right;background:url(/images/contents/ico_srchContTop_member.png) no-repeat left center; background-size:auto 23px;}
+.airdoBody .srch_result .mainsearch {position:fixed;top:0px;left:0;width:100%;height:100%;z-index:3002;padding-bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;}
+.airdoBody .srch_result .mainsearch {padding-top:108px;}
+.airdoBody .srch_result .mainsearch .btn_area {padding-bottom:30px;}
+.airdoBody .srch_result.topSrchcontFix  .srchContTop{position:fixed;top:49px;}
+
+/* 검색결과 > 상단 > 국내항공(NO_TOP) */
+.airdoBody .srch_result_notop {position:relative;padding-top:0px;}
+.airdoBody .srch_result_notop .srchContTop {/* position:absolute; */ position:fixed;top:0px;left:0;width:100%;height:59px;background:#1465ad;z-index:4999;}
+.airdoBody .srch_result_notop .srchContTop .inner {position:relative;padding:8px 105px 8px 20px}
+.airdoBody .srch_result_notop .srchContTop .inner p {color:#fff;font-size:16px;font-weight:bold;}
+.airdoBody .srch_result_notop .srchContTop .inner p.date {margin-top:5px;}
+.airdoBody .srch_result_notop .srchContTop .inner .abR {display:block;position:absolute;top:0;right:0;height:59px;width:45px;background:#00214b;}
+.airdoBody .srch_result_notop .srchContTop .inner .abR a {display:block;}
+.airdoBody .srch_result_notop .srchContTop .inner .abR a {width:45px;height:59px;background:#10518a url(/images/contents/cont_result_rentcarInfo_search.png) no-repeat center center; background-size:45px 59px;}
+.airdoBody .srch_result_notop .srchContTop .inner .abR a .closeImg {display:block;margin-top:16px;margin-left:9px;width:26px;height:26px;background:url(/images/contents/cont_result_airdoInfo_close.png) no-repeat center center; background-size:24px 24px;}
+.airdoBody .srch_result_notop .srchContTop span.member {position:absolute;top:18px;right:60px;;width:auto;height:23px;font-size:19px;line-height:23px;color:#fff}
+.airdoBody .srch_result_notop .srchContTop span.member {padding-left:28px;text-align:right;background:url(/images/contents/ico_srchContTop_member.png) no-repeat left center; background-size:auto 23px;}
+.airdoBody .srch_result_notop .mainsearch {position:fixed;top:0px;left:0;width:100%;height:100%;z-index:3002;padding-bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;}
+.airdoBody .srch_result_notop .mainsearch {padding-top:108px;}
+.airdoBody .srch_result_notop .mainsearch .btn_area {padding-bottom:30px;}
+.airdoBody .srch_result_notop.topSrchcontFix  .srchContTop{position:fixed;top:49px;}
+
+/* 검색결과 > 상단 > 해외항공 */
+.exairBody .srch_result {position:relative;padding-top:59px;}
+.exairBody .srch_result .srchContTop {/* position:absolute; */ position:fixed;top:49px;left:0;width:100%;height:59px;background:#1465ad;z-index:4999;}
+.exairBody .srch_result .srchContTop .inner {position:relative;/* padding:8px 105px 8px 20px */padding:10px 65px 10px 20px}
+.exairBody .srch_result .srchContTop .inner.line1 {padding:20px 60px 20px 20px}
+.exairBody .srch_result .srchContTop .inner .infowrap.cheapCity p.city {font-size:16px;font-weight:normal;}
+.exairBody .srch_result .srchContTop .inner p.city {color:#fff;font-size:15px;font-weight:bold;padding-right:40px;}
+.exairBody .srch_result .srchContTop .inner p.date {color:#fff;font-size:14px;margin-top:5px;padding-right:40px;}
+.exairBody .srch_result .srchContTop .inner .abR {display:block;position:absolute;top:0;right:0;height:59px;width:45px;background:#00214b;}
+.exairBody .srch_result .srchContTop .inner .abR a {display:block;}
+.exairBody .srch_result .srchContTop .inner .abR a {width:45px;height:59px;background:#10518a url(/images/contents/cont_result_rentcarInfo_search.png) no-repeat center center; background-size:45px 59px;}
+.exairBody .srch_result .srchContTop .inner .abR a .closeImg {display:block;margin-top:16px;margin-left:9px;width:26px;height:26px;background:url(/images/contents/cont_result_airdoInfo_close.png) no-repeat center center; background-size:24px 24px;}
+.exairBody .srch_result .srchContTop span.member {position:absolute;top:18px;right:60px;;width:auto;height:23px;font-size:19px;line-height:23px;color:#fff}
+.exairBody .srch_result .srchContTop span.member {padding-left:28px;text-align:right;background:url(/images/contents/ico_srchContTop_member.png) no-repeat left center; background-size:auto 23px;}
+
+/* 해외항공 > 다구간 포함된 검색결과용 (다구간 때문에 전체적으로 변경사항 있음 ) */
+.exairBody .srch_result.srchResponse .srchContTop {height:auto}
+.exairBody .srch_result.srchResponse.multiWay1 {padding-top:64px;}
+.exairBody .srch_result.srchResponse.multiWay1 .srchContTop {min-height:64px;}
+.exairBody .srch_result.srchResponse.multiWay1 .srchContTop .infowrap.multi {min-height:44px;}
+.exairBody .srch_result.srchResponse.multiWay2 {padding-top:90px;}
+.exairBody .srch_result.srchResponse.multiWay2 .srchContTop {min-height:90px;}
+.exairBody .srch_result.srchResponse.multiWay2 .srchContTop .infowrap.multi {min-height:70px;}
+.exairBody .srch_result.srchResponse.multiWay3 {padding-top:116px;}
+.exairBody .srch_result.srchResponse.multiWay3 .srchContTop {min-height:116px;}
+.exairBody .srch_result.srchResponse.multiWay3 .srchContTop .infowrap.multi {min-height:96px;}
+.exairBody .srch_result.srchResponse.multiWay4 {padding-top:142px;}
+.exairBody .srch_result.srchResponse.multiWay4 .srchContTop {min-height:142px;}
+.exairBody .srch_result.srchResponse.multiWay4 .srchContTop .infowrap.multi {min-height:122px;}
+.exairBody .srch_result.srchResponse .srchContTop .inner .abR {height:100%;}
+.exairBody .srch_result.srchResponse .srchContTop .inner .abR a {height:100%;}
+.exairBody .srch_result.srchResponse  .srchContTop .inner .abR a .closeImg {margin-top:0;height:100%;}
+.exairBody .srch_result .srchContTop .inner .infowrap.multi .abR a .closeImg {}
+.exairBody .srch_result .srchContTop .inner .infowrap.multi p.city {margin-top:5px;padding-right:0;font-weight:normal;line-height:20px;}
+.exairBody .srch_result .srchContTop .inner .infowrap.multi p.city:first-child {margin-top:0px;}
+.exairBody .srch_result .srchContTop .inner .infowrap.multi p.city .btn {}
+.exairBody .srch_result .srchContTop .inner .infowrap.multi p.date {margin-top:7px;}
+.exairBody .srch_result .srchContTop .inner .infowrap.multi span.member {top:auto;bottom:6px;}
+/* 해외항공 > 다구간 box */
+.exairBody .srch_result .mainsearch {position:fixed;top:0px;left:0;width:100%;height:100%;z-index:3002;padding-bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;}
+.exairBody .srch_result .mainsearch {padding-top:108px;}
+.exairBody .srch_result .mainsearch .btn_area {padding-bottom:30px;}
+.exairBody .srch_result.topSrchcontFix  .srchContTop{position:fixed;top:49px;}
+
+/* 검색결과 > 해외항공 > type2 */ 
+.exair2 .exairScdStep2 {display:block;padding:12px 15px 15px 15px;}
+.exair2 .exairScdStep2 .noresult {margin-top:10px;padding-top:50px;background: url(/images/contents/cont_result_listbg.png) no-repeat center 0; background-size:40px 40px;}
+.exair2 .exairScdStep2 .noresult p {padding-top:5px;text-align:center;font-size:15px;color:#6e6e6e;line-height:21px;}
+.srch_result .listResult li .innerBg {border:1px solid #fff;} 
+.srch_result .listResult li.on,
+.srch_result .listResult li.on .innerBg {border-color:#f56764;} 
+.exair2 .exairScdStep2 .wrapTop {text-align:right;font-size:15px;}
+.exair2 .exairScdStep2 .wrapMid {position:relative;margin-top:10px;text-align:center;padding:0 62px;}
+.exair2 .exairScdStep2 .wrapMid .groupA {position:absolute;top:-3px;font-size:15px;}
+.exair2 .exairScdStep2 .wrapMid .groupA .optTime {font-size:17px;font-weight:bold;}
+.exair2 .exairScdStep2 .wrapMid .groupA .optDate {font-size:13px;color:#6e6e6e;}
+.exair2 .exairScdStep2 .wrapMid .groupB {position:relative;color:#6e6e6e;font-size:13px;margin:0 auto;max-width:600px;background: url(/images/contents/exair_exairScdStep2_bg1.png) no-repeat right center; background-size:auto 12px;}
+.exair2 .exairScdStep2 .wrapMid .groupB .last {padding-top:18px;}
+.exair2 .exairScdStep2 .wrapMid .groupB .bgStop {position:absolute;top:50%;left:50%;margin-top:-5px;margin-left:-5px;width:10px;height:10px;background: url(/images/contents/exair_exairScdStep2_bg2.png) no-repeat right center; background-size:10px 10px;}
+.exair2 .exairScdStep2 .wrapMid .absL {left:0;text-align:left;}
+.exair2 .exairScdStep2 .wrapMid .absR {right:0;text-align:right;}
+.srch_result .listResult li.exair2 {position:relative;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;}
+.srch_result .listResult li.exair2 .wrapMore {border-top:1px solid #eaeaea;}
+.srch_result .listResult li.exair2 .wrapMoreTop {position:relative;padding:10px 15px;text-align:right; font-size:13px;color:#6e6e6e;}
+.srch_result .listResult li.exair2 .wrapMoreTop .shareInfo {position:absolute;top:10px;left:15px;}
+.srch_result .listResult li.exair2 .wrapMoreTop .priceInfo {position:absolute;top:7px;left:15px;color:#191919;font-size:14px;font-weight:bold;}
+.srch_result .listResult li.exair2 .wrapMore .moreBtnTxt {display:inline-block;padding-right:16px; background: url(/images/contents/arrTy01_D.png) no-repeat right center; background-size:11px 9px;}
+.srch_result .listResult li.exair2 .wrapMore.on .moreBtnTxt {background-image: url(/images/contents/arrTy01_U.png);}
+/* 검색결과 > 해외항공 > type2 > 상세일정 */ 
+li.exair2 .wrapMore .wrapMoreCont {padding:10px 15px 0 15px;/* border-top:1px solid #6e6e6e; */border-top:1px solid #ffffff;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet {position:relative;min-height:80px; padding-top:13px;padding-bottom:10px;border-top:1px solid #eaeaea;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet:first-child {border-top:none;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .absTL {display:block;padding-right:60px;font-size:14px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .absTR {position:absolute;top:13px;right:0;font-size:14px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupWrap {position:relative;margin-top:12px;min-height:55px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupA {position:absolute;/* top:40px; */top:0px;font-size:14px;z-index:100}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupA .optDate {color:#6e6e6e;font-size:13px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupA .optTime {margin-top:2px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupA .optCity {margin-top:2px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupA.absL {left:0;text-align:left;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupA.absR {right:0;text-align:right;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupB {position:relative;text-align:center;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupB p {color:#6e6e6e;font-size:13px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupB p:first-child {padding-top:8px;padding-bottom:10px;background: url(/images/contents/exair_exairScdStep3_bg1.png) no-repeat center bottom; background-size:auto 8px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupB p:last-child {}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupB p.optPCode {font-size:14px;color:#191919;font-weight:bold;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .subComment {margin-top:10px;font-size:14px;}
+li.exair2 .wrapMore .wrapMoreCont .scdSet .groupB .last {padding-top:18px;}
+li.exair2 .wrapMore .wrapMoreCont .stopover {text-align:center;background:url(/images/common/colorchip/c_35a8b1_3x3.png) repeat-x left center; background-size:1px 1px;}
+li.exair2 .wrapMore .wrapMoreCont .stopover span {display:inline-block;padding:0 10px;font-size:13px;color:#fff;border-radius:10px;line-height:20px;background:#35a8b1;}
+
+/* 해외항공 > 예약상세 > 선택항공 일정 */
+.exairScdSetTy1 {margin-top:10px;}
+.exairScdSetTy1 .groupTit {padding:0 15px;background:#d8d8d8;line-height:30px;overflow:hidden;border-top-left-radius:5px;border-top-right-radius:5px;}
+.exairScdSetTy1 .groupTit .code {float:left;font-size:16px;font-wegiht:bold;}
+.exairScdSetTy1 .groupTit .seat {float:right;font-size:15px;font-wegiht:bold;}
+.exairScdSetTy1 .groupCont {position:relative;background:#ffffff;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.exairScdSetTy1 .groupA {position:absolute;top:13px;font-size:14px;}
+.exairScdSetTy1 .groupA .optDate {color:#6e6e6e;font-size:13px;}
+.exairScdSetTy1 .groupA .optTime {margin-top:2px;}
+.exairScdSetTy1 .groupA .optCity {margin-top:2px;}
+.exairScdSetTy1 .groupA.absL {left:15px;text-align:left;}
+.exairScdSetTy1 .groupA.absR {right:15px;text-align:right;}
+.exairScdSetTy1 .groupB {position:relative;padding-top:20px;padding-bottom:35px;text-align:center;}
+.exairScdSetTy1 .groupB p {color:#6e6e6e;font-size:13px;padding-bottom:10px;background: url(/images/contents/exair_exairScdStep3_bg1.png) no-repeat center bottom; background-size:auto 8px;}
+.exairScdSetTy1 .groupB .last {padding-top:18px;}
+
+/* 해외항공 > 선택내용확인 버튼관련 box */
+.exairRstStep2BtnBox {/* position:relative; */position:sticky;position:-webkit-sticky;top:48px;z-index:30000;}
+.exairRstStep2BtnBox .innerWrap {overflow:hidden;border-top:10px solid #eaeaea;border-bottom:1px solid #d8d8d8;padding:10px 20px;background:#fff;}
+.exairRstStep2BtnBox .txt p {font-size:15px;line-height:21px;text-align:center;}
+.exairRstStep2BtnBox .txt {padding-bottom:15px;}
+.exairRstStep2BtnBox .btnWrap {box-sizing:border-box;}
+.exairRstStep2BtnBox .btnWrap:first-child {padding-right:5px;width:35%}
+.exairRstStep2BtnBox .btnWrap:last-child {padding-left:5px;width:65%;}
+.exairRstStep2BtnBox .btnWrap .btn.styB {font-size:16px;line-height:50px;}
+.exairRstStep2BtnBox .btnWrap .btn.styB.c_rblue {background:#444a5a}
+.exairRstStep2BtnBox .btnWrap .btn.styB {font-size:16px;line-height:40px;}
+
+/* 국내호텔 */
+.srch_result .listResult li.hotelA {position:relative;border-bottom:1px solid #eaeaea;}
+.srch_result .listResult li.hotelA:first-child {border-top:1px solid #eaeaea;}
+.srch_result .listResult li.hotelA a {display:block;padding-left:120px;min-height:120px;}
+.srch_result .listResult li.hotelA .photo {position:absolute;top:50%;left:0;margin-top:-60px;width:120px;height:120px;text-align:center;}
+.srch_result .listResult li.hotelA .photo {background:#eaeaea url(/images/common/loading/noimg50x50.png) no-repeat center center;background-size:100% 100%;color:#eaeaea}
+.srch_result .listResult li.hotelA .photo img {width:100%;height:100%;}
+.srch_result .listResult li.hotelA .photo.vc img {width:auto;height:auto;max-width:100%;max-height:100%;}
+.srch_result .listResult li.hotelA a .btn.styF {position:absolute;z-index:100;top:5px;left:5px;border-radius:0;font-size:11px;line-height:18px;}
+.srch_result .listResult li.hotelA .txtWrap {/* padding:18px 18px 15px 18px; *//* padding:16px 18px 13px 18px; */padding:16px 18px 0px 18px;}
+.srch_result .listResult li.hotelA .wrap1 {font-size:14px;color:#6e6e6e;}
+.srch_result .listResult li.hotelA .wrap2 {margin-top:5px;}
+.srch_result .listResult li.hotelA .wrap2.tit  {/* line-height:23px;min-height:46px; */}
+.srch_result .listResult li.hotelA .wrap2 + .wrap1 {padding-top:2px;padding-bottom:4px;}
+.srch_result .listResult li.hotelA .wrap3 {margin-top:8px;position:relative;}
+.srch_result .listResult li.hotelA .wrap3 .abR{position:absolute;/* top:-5px; */top:-3px;right:0;}
+.srch_result .listResult li.hotelA .wrap3 .priceWrap {font-weight:bold;}
+.srch_result .listResult li.hotelA .wrap4 {padding-top:9px;text-align:right;font-size:/* 14px */13px;color:#6e6e6e;}
+.srch_result .listResult li.hotelA .wrap4.adLoca {position:relative;padding-left:40px;}
+.srch_result .listResult li.hotelA .wrap4.adLoca .abtDistance {position:absolute;bottom:0;left:0;font-size:13px;color:#0186c4;}
+.srch_result .listResult li.hotelA .wrap4.adLoca p {font-size:11px;letter-spacing: -0.05em;}
+/* 리뷰추가용 */
+.srch_result .listResult li.hotelA.tyReviewAdd a .btn.styF {top:50%;margin-top:-55px;}
+.srch_result .listResult li.hotelA.tyReviewAdd .txtWrap {min-height:120px;padding-top:10px;padding-bottom:10px;}
+.srch_result .listResult li.hotelA.tyReviewAdd .wrapReview + .wrap1 {margin-top:7px;}
+.srch_result .listResult li.hotelA.tyReviewAdd .wrapReview .reviewList  {display:inline-block;vertical-align:top;}
+.srch_result .listResult li.hotelA.tyReviewAdd .wrap2.tit  {font-weight:bold;}
+.srch_result.srch_detail .listResult li.hotelA.tyReviewAdd .wrapReview .btn.tailR + .reviewList {vertical-align:middle;margin-left:5px;}
+.srch_result.srch_detail .listResult li.hotelA.tyReviewAdd .wrapReview {position:relative;}
+.srch_result.srch_detail .listResult li.hotelA.tyReviewAdd .wrapReview .abR {position:absolute;top:-2px;right:0;}
+/* .srch_result.srch_detail .listResult li.hotelA.tyReviewAdd .wrapReview .optRecomm {color:#bf4394;font-size:14px;padding-top:18px;background: url(/images/contents/ico_heart_ty1_hotel.png) no-repeat center 0; background-size:20px auto;} */
+.srch_result.srch_detail .listResult li.hotelA.tyReviewAdd .wrapReview .optRecomm {color:#bf4394;font-size:14px;padding-top:18px;background: url(/images/contents/ico_cmtCnt_ty2_hotel.png) no-repeat center 0; background-size:20px auto;}
+
+/* 국내호텔 > 상세페이지  */
+.srch_result.srch_detail .rollingBnrimg {background:#000;/* background:#f2f2f2; *//* height:210px; */height:240px;}
+.srch_result.srch_detail .rollingBnrimg .swiper-pagination {bottom:15px;}
+.srch_result.srch_detail .rollingBnrimg img {/* max-height:210px; */max-height:240px;}
+.srch_result.srch_detail .listResult li.hotelA:first-child,
+.srch_result.srch_detail .listResult li.hotelA:last-child {border-top:none;border-bottom:none;}
+.srch_result.srch_detail .listResult li.hotelA .txtWrap {padding-bottom:13px;}
+.srch_result.srch_detail .listResult li.hotelA .wrap2.tit {font-size:17px;font-weight:bold;}
+.srch_result.srch_detail .listResult li.hotelA .wrap3 {margin-top:5px;}
+.srch_result.srch_detail .listResult li.hotelA .wrap3 .icon_star {display:inline-block;vertical-align:middle;}
+.srch_result.srch_detail .listResult li.hotelA .wrap3 .icon_star.starO,
+.srch_result.srch_detail .listResult li.hotelA .wrap3 .icon_star.starP,
+.srch_result.srch_detail .listResult li.hotelA .wrap3 .icon_star.starM {width:13px;}
+.srch_result.srch_detail .listResult li.hotelA .wrap3 .subtxt {font-size: 14px;color: #6e6e6e;font-weight:normal;padding-left:5px}
+.srch_result.srch_detail .listResult li.hotelA .wrap3 .abR {top:5px}
+.srch_result.srch_detail .listResult li.hotelA .wrap4 {margin-top:3px;}
+
+/* 국내호텔 > 검색결과 > 상단  */
+.hotelBody .srch_result {position:relative;padding-top:59px;}
+.hotelBody .srch_result.nosrhContTop {padding-top:0px;}
+.hotelBody .srch_result .srchContTop {/* position:absolute; */ position:fixed;top:49px;left:0;width:100%;height:59px;background:#bf4394;z-index:4999;}
+.hotelBody .srch_result .srchContTop .inner {position:relative;padding:8px 45px 8px 20px}
+.hotelBody .srch_result .srchContTop .inner .wMap {padding-right:50px}
+.hotelBody .srch_result .srchContTop .inner .wMap .date{font-size:14px;}
+.hotelBody .srch_result .srchContTop .inner p {color:#fff;font-size:16px;}
+.hotelBody .srch_result .srchContTop .inner p.city {font-size:14px;}
+@media only screen and (max-width : 359px){	
+.hotelBody .srch_result .srchContTop .inner p.date .smHide{display:none;}
+}
+
+/* ▼ 호텔 > 기획전리스트 > 연관되어있는곳이 많습니다. 신중하게 변경해주세요. ▼ */
+.srch_result .listResult li.hotelB {margin-top:25px;}
+.srch_result .listResult li.hotelB .innerWrap {position:relative;padding:10px;background:#fff;}
+.srch_result .listResult li.hotelB .innerWrap .tag {position:absolute;top:0;right:10px;}
+.srch_result .listResult li.hotelB .txtWrap {position:relative;line-height:20px;}
+.srch_result .listResult li.hotelB .optEng {margin-top:10px;font-size:14px;color:#6e6e6e;}
+.srch_result .listResult li.hotelB .optTit {margin-top:2px;font-size:16px;}
+.srch_result .listResult li.hotelB .icon_star {margin-top:6px;display:block;}
+.srch_result .listResult li.hotelB .optList {margin-top:15px;}
+.srch_result .listResult li.hotelB .optList li{font-size:14px;color:#6e6e6e;padding-left:9px;background: url(/images/common/colorchip/c_6e6e6e_12x3.png) no-repeat left 8px; background-size:4px 1px;}
+.srch_result .listResult li.hotelB .optPriceComment {font-size:10px;color:#6e6e6e;line-height:14px;}
+.srch_result .listResult li.hotelB .priceWrap  {font-weight:bold;}
+.srch_result .listResult li.hotelB .btn_area {margin-top:10px;}
+.srch_result .listResult li.hotelB .btn {line-height:35px;font-size:13px;font-weight:normal;}
+/* ▲연관되어있는곳이 많습니다. 신중하게 변경해주세요. ▲ */
+
+/* hotelB.subTypeA : 리스트있음, 여백없음 */
+.srch_result .listResult li.hotelB.subTypeA .innerWrap {padding:0}
+.srch_result .listResult li.hotelB.subTypeA .txtWrap {padding:0 30px 10px 30px}
+.srch_result .listResult li.hotelB.subTypeA .optPriceWrap {text-align:right;}
+/* hotelB.subTypeB : 이미지 full, 오른쪽 정렬  */
+.srch_result .listResult li.hotelB.subTypeB {}
+.srch_result .listResult li.hotelB.subTypeB .icon_star {}
+.srch_result .listResult li.hotelB.subTypeB .optPriceWrap {position:relative;}
+.srch_result .listResult li.hotelB.subTypeB .optPriceWrap .priceWrap {position:absolute;top:-17px;right:0}
+.srch_result .listResult li.hotelB.subTypeB .optPriceWrap .optPriceComment {position:absolute;top:3px;right:0}
+.srch_result .listResult li.hotelB.subTypeB .btn_area {margin-top:30px;}
+/* hotelB.subTypeC : 이미지 full, 가운데 정렬  */
+.srch_result .listResult li.hotelB.subTypeC {text-align:center;}
+.srch_result .listResult li.hotelB.subTypeC .icon_star {display:inline-block;margin-left:auto;margin-right:auto;}
+.srch_result .listResult li.hotelB.subTypeC .priceWrap  {margin-top:4px;}
+/* hotelB.subTypeD: 타이틀 상단, 이미지 half  */
+.srch_result .listResult li.hotelB.subTypeD .optEng {text-align:center;margin-top:8px;}
+.srch_result .listResult li.hotelB.subTypeD .optTit {text-align:center;margin-top:4px;}
+.srch_result .listResult li.hotelB.subTypeD .txtWrap {margin-top:20px;padding-left:150px;padding-bottom:35px;min-height:70px;}
+.srch_result .listResult li.hotelB.subTypeD .photo {position:absolute;top:0;left:0;width:140px;height:105px;}
+.srch_result .listResult li.hotelB.subTypeD .photo img {width:100%;height:100%;}
+.srch_result .listResult li.hotelB.subTypeD .priceWrap {margin-top:6px;}
+.srch_result .listResult li.hotelB.subTypeD .btn_area {position:absolute;bottom:0;right:0;width:100%;padding-left:150px;box-sizing:border-box;}
+.srch_result .listResult li.hotelB.subTypeD .btn {line-height:30px;font-size:13px;font-weight:normal;}
+/* hotelB.subTypeE: 이미지 half, 2개씩 정렬  */
+.srch_result .listResult .floatN2 {overflow:hidden;margin-left:-3px;}
+.srch_result .listResult .floatN2 li.subTypeE {float:left;width:50%;box-sizing:border-box;padding-left:3px;}
+.srch_result .listResult .floatN2 li.subTypeE:nth-child(2n-1) {clear:both;}
+.srch_result .listResult li.subTypeE,
+.srch_result .listResult li.subTypeE:first-child {margin-top:3px;}
+.srch_result .listResult li.hotelB.subTypeE .photo img {height:105px;}
+.srch_result .listResult li.hotelB.subTypeE .txtWrap {/* min-height:70px;padding-bottom:35px; */}
+.srch_result .listResult li.hotelB.subTypeE .optTit {margin-top:10px;font-size:14px;height:40px;}
+.srch_result .listResult li.hotelB.subTypeE .btn_area {/* position:absolute;bottom:0;left:0;width:100%; */}
+.srch_result .listResult li.hotelB.subTypeE .priceWrap {margin-top:5px;}
+.srch_result .listResult li.hotelB.subTypeE .optPriceComment {margin-top:2px;}
+.srch_result .listResult li.hotelB.subTypeE .btn {line-height:30px;font-size:13px;font-weight:normal;}
+
+.hotelBody .srch_result .srchContTop .maplink {position:absolute;top:0px;right:45px;;width:60px;height:60px;background:url(/images/contents/cont_result_inhotelInfo_map.png) no-repeat center center; background-size:60px 60px;}
+.hotelBody .srch_result .srchContTop .maplink {/* padding-left:28px;text-align:right;background:url(/images/contents/ico_srchContTop_member.png) no-repeat left center; background-size:auto 23px; */}
+.hotelBody .srch_result .srchContTop .inner .abR {display:block;position:absolute;top:0;right:0;height:59px;width:45px;background:#993676;}
+.hotelBody .srch_result .srchContTop .inner .abR a {display:block;}
+.hotelBody .srch_result .srchContTop .inner .abR a {width:45px;height:59px;background:#993676 url(/images/contents/cont_result_rentcarInfo_search.png) no-repeat center center; background-size:45px 59px;}
+.hotelBody .srch_result .srchContTop .inner .abR a .closeImg {display:block;margin-top:16px;margin-left:9px;width:26px;height:26px;background:url(/images/contents/cont_result_inhotelInfo_close.png) no-repeat center center; background-size:24px 24px;}
+.hotelBody .srch_result .mainsearch {position:fixed;top:0px;left:0;width:100%;height:100%;z-index:3002;padding-bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;}
+.hotelBody .srch_result .mainsearch {padding-top:108px;}
+.hotelBody .srch_result .mainsearch .btn_area {padding-bottom:30px;}
+.hotelBody .srch_result.topSrchcontFix  .srchContTop{position:fixed;top:49px;}
+.hotelBody .mainsearch .rsvNotice {display:none;}	
+.hotelBody .srch_result.srch_detail .mainsearch .rsvNotice {display:block;}	
+.hotelBody .mainsearch .rsvNotice {padding:0 20px 20px 20px;}
+.hotelBody .mainsearch .rsvNotice .tit {font-size:16px;font-weight:bold;}	
+.hotelBody .mainsearch .rsvNotice .listDef {margin-top:10px;}	
+.hotelBody .srch_result .srchContTop .inner p.date {margin-top:5px;}
+/* 오늘밤 */
+.tonightTopInfo {position:relative;background:#bf4394;color:#fff;line-height:50px;}
+.tonightTopInfo .infoBox {padding:0px 130px 0 20px;}
+.tonightTopInfo .infoBox .stit {font-size:14px;}
+.tonightTopInfo .infoBox .currentTime {font-size:18px;font-weight:bold;}
+.tonightTopInfo .abR {position:absolute;top:0;right:0;}
+.tonightTopInfo .abR .ico_gps {display:inline-block;color:#fff;padding:0 20px 0 28px;font-size:15px;background:url(/images/contents/ico_gps.png) no-repeat left center; background-size:22px 22px;}
+@media only screen and (max-width : 359px){
+.tonightTopInfo {padding:10px;line-height:30px;}
+.tonightTopInfo .infoBox {padding-right:0;text-align:center;}
+.tonightTopInfo .abR {display:block;position:relative;text-align:center;}
+}
+.hotelMTonight  {margin-top:30px;}
+.hotelMTonight a {display:block;position:relative;padding:0 210px 0 20px;min-height:215px;}
+.hotelMTonight a .stit {padding-top:10px;font-size:16px;background:url(/images/common/colorchip/c_191919_20x1.png) no-repeat left top; background-size:20px 1px;}
+.hotelMTonight a .tit {padding-top:15px;font-size:21px;font-weight:bold;line-height:30px;/* 이미지()디자인폰트)로 디자인 되어 있으나 퍼블리싱에서 텍스트로 변경함 */}
+.hotelMTonight a .more {display:inline-block;margin-top:15px;padding-right:30px;font-size:15px;background: url(/images/contents/arrTy07_R.png) no-repeat right center; background-size:20px auto;}
+.hotelMTonight img{position:absolute;top:0;right:0;width:200px;}
+@media only screen and (max-width : 359px){
+.hotelMTonight a {padding-right:180px;}
+.hotelMTonight img{width:160px;}
+}
+
+/* 국내호텔 > 예약하기 > 상단  */
+.rsvHhotelInfo {padding: 25px 20px;background: #f2f2f2;}
+.rsvHhotelInfo .wrap1 {font-size:14px;color:#6e6e6e;}
+.rsvHhotelInfo .wrap2 {font-size:17px;padding-top:5px;font-weight:bold;}
+.rsvHhotelInfo .wrap3 {font-size:15px;padding-top:16px;line-height:19px;}
+.rsvHhotelInfo .tblAWrap {margin-top:13px;}
+.rsvHhotelInfo .wrap4 {font-size:14px;padding-top:16px;}
+.rsvHhotelInfo.ty2 {padding:0 20px;margin-top:0;background:#fff;}
+
+/* 토글 팁2 */
+.noticeBoxTg {position:relative;padding-top:30px;}
+.noticeBoxTg .tit {font-size:15px;font-weight:bold;}
+.noticeBoxTg .cont {font-size:14px;color:#6e6e6e;line-height:20px;padding-top:13px;overflow:hidden;}
+.noticeBoxTg .btnClose {position:absolute;right:10px;top:25px;width:30px;height:30px;background:url(/images/contents/cont_colorbox_close_01.png) no-repeat center center; background-size:30px 30px;}
+.noticeBoxTg.on .btnClose {background-image:url(/images/contents/cont_colorbox_close_02.png);}
+.noticeBoxTg.trimGray.on .cont::before,
+.noticeBoxTg.trimGray.on .cont:before {content:'';position:absolute;left:0px;bottom:0px;width:100%;height:21px;z-index:1000;background:transparent url(/images/contents/bg_noticeBoxTg_gray.png) repeat-x 0 bottom;background-size:15px 21px;}
+.noticeBoxTg.trimWht.on .cont::before,
+.noticeBoxTg.trimWht.on .cont:before {content:'';position:absolute;left:0px;bottom:0px;width:100%;height:21px;z-index:1000;background:transparent url(/images/contents/bg_noticeBoxTg_white.png) repeat-x 0 bottom;background-size:15px 21px;}
+
+/* 패키지 >  Atype */
+.listResult .packA {margin-top:15px !important;position:relative;border:1px solid #d8d8d8;border-radius:3px;padding:15px 15px 8px 15px;;}
+.listResult .packA .photo {position:absolute;top:15px;left:15px;width:110px;height:110px;}
+.listResult .packA .photo {background: #eaeaea url(/images/common/loading/noimg50x50.png) no-repeat center center;background-size: 100% 100%;color: #eaeaea;}
+.listResult .packA .photo img{width:110px;height:110px;}
+.listResult .packA .txtWrap {padding-left:125px;min-height:110px;padding-bottom:12px;}
+.listResult .packA .obt_date {margin-top:-4px;font-weight:bold;color:#00b348; font-size:15px;line-height:21px;}
+.freeBody .listResult .packA .obt_date {color:#77c300;}
+.listResult .packA .wrap2 {overflow:hidden;margin-top:5px;font-size:14px;font-weight:bold;line-height:21px;}
+.listResult .packA .wrap2 .opt_city {float:left;}
+.listResult .packA .wrap2 .opt_airline {float:right;margin-left:5px;}
+.listResult .packA .wrap2 .opt_airline .logo {height:13px;}
+.listResult .packA .txt {margin-top:7px;font-size:15px;line-height:21px;}
+.listResult .packA .btMWrap {overflow:hidden;padding-top:7px;border-top:1px solid #eaeaea;line-height:21px;}
+.listResult .packA .btMWrap .opt_code {float:left;font-size:13px;}
+.listResult .packA .btMWrap .opt_price {float:right;font-size:15px;color:#f56765;font-weight:bold;}
+.listResult .packA .btMWrap .opt_price .price {font-size:17px;}
+
+/* 패키지 >  Btype */
+.listResult .packB {position:relative;border-bottom:1px solid #d8d8d8;padding:10px 20px 13px 20px;}
+.listResult li.packB:first-child {border-top:1px solid #d8d8d8}
+.listResult li.packB a .btn.styF {position:absolute;z-index:100;top:20px;left:25px;border-radius:0;font-size:11px;line-height:18px;}
+.listResult .packB .photo {position:absolute;top:15px;left:20px;width:110px;height:110px;}
+.listResult .packB .photo {background: #eaeaea url(/images/common/loading/noimg50x50.png) no-repeat center center;background-size: 100% 100%;color: #eaeaea;}
+.listResult .packB .photo img{width:110px;height:110px;}
+.listResult .packB .txtWrap {min-height:110px;padding-left:125px;line-height:21px;}
+.listResult .packB .txt {font-size:14px;}
+.listResult .packB .subtxt {font-size:13px;color:#6e6e6e;}
+.listResult .packB .obt_date {font-weight:bold;color:#00b348; font-size:15px;margin-top:2px;}
+.freeBody .listResult .packB .obt_date {color:#77c300;}
+.listResult .packB .wrap1 {overflow:hidden;font-size:14px;font-weight:bold;}
+.listResult .packB .wrap1 .opt_city {float:left;}
+.listResult .packB .wrap1 .opt_airline {float:right;}
+.listResult .packB .wrap1 .opt_airline .logo {height:13px;}
+.listResult .packB .opt_code {font-size:13px;}
+.listResult .packB .opt_price {text-align:right;margin-top:3px;font-size:15px;color:#f56765;font-weight:bold;}
+.listResult .packB .opt_price .price {font-size:17px;}
+.listResult .packB .obt_date + .txt {margin-top:5px;}
+.listResult .packB .wrap1 + .txt {margin-top:6px;}
+.listResult .packB .wrap0 + .txt {margin-top:4px;}
+.listResult .packB .txt + .subtxt {margin-top:2px;}
+.listResult .packB.packMaster {padding-bottom:47px;}
+.listResult .packB.packMaster.topList {border:none;background:#f2f2f2;border-top:5px solid #f2f2f2;border-bottom:10px solid #f2f2f2;}
+.listResult .packB.packMaster .opt_code {position:absolute;bottom:13px;left:20px;}
+.listResult .packB.packMaster .opt_price {position:absolute;bottom:13px;right:20px;}
+/* .packBody .srch_result.rstMasterSub .listResult .packB.packMaster {border:none;background:#f2f2f2;border-top:5px solid #f2f2f2;border-bottom:10px solid #f2f2f2;} */
+.listResult .packB.packMasterSub {}
+
+.listResult .packB.packMasterSub .txtWrap {position:relative;padding-left:0;min-height:auto;}
+.listResult .packB.packMasterSub .wrap0 {overflow:hidden;}
+.listResult .packB.packMasterSub .obt_date {float:left;margin-top:0}
+.listResult .packB.packMasterSub .wrap1 {float:right;}
+.listResult .packB.packMasterSub .wrap1 .opt_city {display:inline-block;float:none;}
+.listResult .packB.packMasterSub .wrap1 .opt_airline {display:inline-block;float:none;margin-left:4px;padding-left:8px;background: url(/images/common/colorchip/c_a1a1a1_3x33.png) no-repeat left center; background-size:1px 11px;}
+.listResult .packB.packMasterSub .opt_code {margin-top:5px;}
+.listResult .packB.packMasterSub .opt_price {position:absolute;bottom:0px;right:0px;}
+
+/* 패키지 메인  */
+.packmainCont{padding-bottom:40px;}
+
+/* 패키지 > 예약확인 > 상단정보 */
+.packProdInfo.wrapDef {margin-top:15px;}
+.packProdInfo .wrapInfo1 {position:relative;}
+.packProdInfo .wrapInfo1.abRbtn {/* 일정표보기 버튼 추가 후  */padding-right:100px;}
+.packProdInfo .wrapInfo1 .logo {height:20px;display:inline-block;vertical-align:middle;margin-right:5px;}
+.packProdInfo .wrapInfo1 .opt_airline {display:inline-block;vertical-align:middle;margin-right:12px;}
+.packProdInfo .wrapInfo1 .opt_date {display:inline-block;vertical-align:middle;}
+.packProdInfo .wrapInfo1 .btnR {position:absolute;top:-5px;right:0px;}
+.packProdInfo .wrapInfo2 {margin-top:12px;}
+.packProdInfo .wrapInfo2 li {font-size:14px;margin-top:5px;}
+.packProdInfo .wrapInfo2 li:first-chlid {margin-top:0px;}
+.packProdInfo .wrapInfo3 {position:relative;margin-top:15px;background:#f2f2f2;padding:12px 15px;font-size:15px;}
+.packProdInfo .wrapInfo3 .abR {position:absolute;top:12px;right:15px;font-size:14px;}
+.packProdInfo .wrapInfo4 {}
+.packProdInfo .wrapInfo4 li {position:relative;padding:14px 0 13px 0;border-bottom:1px solid #d8d8d8}
+.packProdInfo .wrapInfo4 li .opt_tit {font-size:15px;}
+.packProdInfo .wrapInfo4 li .abR {position:absolute;top:12px;right:0;}
+.packProdInfo .wrapInfo4 li .opt_comment {margin-top:3px;font-size:13px;text-align:right;}
+.packProdInfo .wrapInfo4 .subTxt {font-size:14px;margin-top:10px;}
+
+/* 패키지 > 상품상세 > 중단 */
+.packDetailNotice {margin-top:20px;padding-bottom:15px;font-size:13px;line-height:21px;}
+.packDetailSeller {padding:15px 0 7px 0;border-top:1px solid #d8d8d8;font-size:13px;line-height:21px;}
+.packDetailSNS {position:relative;padding:10px 155px 15px 0;border-top:1px solid #eaeaea;}
+.packDetailSNS ul {overflow:hidden;margin-top:5px;}
+.packDetailSNS li {float:left;min-height:40px;margin-left:10px;}
+.packDetailSNS li:first-child {margin-left:0px;}
+.packDetailSNS .btn.abR {position:absolute;top:10px;right:0;padding:0 15px;}
+
+/* 패키지 > 상품상세  */
+.wrapDef.packMenuFixed {position:relative;position:sticky;position:-webkit-sticky;top:49px;left:0;width:100%;margin-top:0;padding-top:25px;box-sizing:border-box;;background:#fff;z-index:20000}
+.packDetailCont .innerWrap {padding:15px 0}
+.packDetailCont .dayWrapMore {padding-bottom:25px;}	
+.packDetailCont .dayWrap {margin-top:15px;}	
+.packDetailCont .dayWrap .dayTit {background:#00b348;line-height:40px;padding:0 15px;color:#ffffff;font-size:14px;}
+.packDetailCont .dayWrap .dayTit strong{font-size:15px;}
+.packDetailCont .dayWrap .dayCont {margin-top:15px;font-size:14px;line-height:21px;} 
+.packDetailCont .dayWrap .daySummary {margin-top:15px;font-size:14px;border-top:2px solid #6e6e6e;border-bottom:1px solid #6e6e6e;padding:8px 0;} 
+.packDetailCont .dayWrap .daySummary li {position:relative;padding:6px 0 6px 80px;}
+.packDetailCont .dayWrap .daySummary li .stit {position:absolute;top:6px;left:0;font-weight:bold;}
+.freeBody .packDetailCont .dayWrap .dayTit {background-color:#77c300;}
+
+/* 패키지 > 예약완료 */
+.packCompleteDiv {position:relative;margin-top:50px;padding-top:185px;background: url(/images/contents/pack_complete_bg.png) no-repeat center 0;background-size:170px auto;}
+.freeBody .packCompleteDiv {background-image: url(/images/contents/pack_complete_bg_free.png)}
+.exairBody .packCompleteDiv {background-image: url(/images/contents/pack_complete_bg_exair.png)}
+.packCompleteDiv h3 {position:absolute;top:100px;left:0;width:100%;text-align:center;font-size:19px;font-weight:bold;color:#fff;}
+.packCompleteDiv p {text-align:center;font-size:16px;line-height:24px;padding:0 20px;}
+
+/* 검색결과 > 상단 > 렌터카 */
+.srch_result .mainsearch.cate_rentcar .srchContTop {/* background:#00818b; */}
+.rentcarBody .srch_result {position:relative;padding-top:59px;}
+.rentcarBody .srch_result .srchContTop {/* position:absolute; */ position:fixed;top:49px;left:0;width:100%;height:59px;background:#00818b;z-index:4999;}
+.rentcarBody .srch_result .srchContTop .inner {position:relative;padding:8px 65px 8px 20px}
+.rentcarBody .srch_result .srchContTop .inner p {color:#fff;font-size:16px;font-weight:bold;}
+.rentcarBody .srch_result .srchContTop .inner p.date {margin-top:5px;}
+.rentcarBody .srch_result .srchContTop .inner .abR {display:block;position:absolute;top:0;right:0;height:59px;width:45px;background:#00676f;}
+.rentcarBody .srch_result .srchContTop .inner .abR a {display:block;}
+.rentcarBody .srch_result .srchContTop .inner .abR a {width:45px;height:59px;background:#00676f url(/images/contents/cont_result_rentcarInfo_search.png) no-repeat center center; background-size:45px 59px;}
+.rentcarBody .srch_result .srchContTop .inner .abR a .closeImg {display:block;margin-top:16px;margin-left:9px;width:26px;height:26px;background:url(/images/contents/cont_result_rentcarInfo_close.png) no-repeat center center; background-size:24px 24px;}
+/* .rentcarBody .srch_result .mainsearch {position:absolute;top:59px;left:0;width:100%;height:auto;padding-bottom:0;z-index:3002} */
+.rentcarBody .srch_result .mainsearch {position:fixed;top:0px;left:0;width:100%;height:100%;z-index:3002;padding-bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;}
+.rentcarBody .srch_result .mainsearch {padding-top:108px;}
+.rentcarBody .srch_result .mainsearch .btn_area {padding-bottom:30px;}
+.rentcarBody .srch_result.topSrchcontFix  .srchContTop{position:fixed;top:49px;}
+
+/* 패키지 */
+
+/* 국내호텔 > 검색결과 > 상단  */
+.packBody .mainTabLink {position:fixed;top:49px;left:0;width:100%;background-color:#fff;background:#fff;z-index:3003;}
+.packBody .srch_result {position:relative;padding-top:/* 59px */108px;}
+.packBody .srch_result.longTop {padding-top:137px;}
+.packBody .srch_result.nosrhContTop {padding-top:0px;}
+.packBody .srch_result .srchContTop {/* position:absolute; */ position:fixed;top:98px;left:0;width:100%;height:59px;background:#00a445;z-index:4999;}
+.packBody .srch_result .srchContTop .inner {position:relative;padding:8px 45px 8px 20px}
+.packBody .srch_result .srchContTop .inner p {color:#fff;font-size:16px;}
+.packBody .srch_result .srchContTop.ty1 .inner .date {font-size:14px;margin-top:7px;}
+.packBody .srch_result .srchContTop.ty2 .inner .startCity {font-size:14px;}
+.packBody .srch_result .srchContTop.ty2 .inner .city {margin-top:7px;}
+.packBody .srch_result .srchContTop .inner .abR {display:block;position:absolute;top:0;right:0;height:59px;width:45px;background:#008f3a;}
+.packBody .srch_result .srchContTop .inner .abR a {display:block;}
+.packBody .srch_result .srchContTop .inner .abR a {width:45px;height:59px;background:#008f3a url(/images/contents/cont_result_rentcarInfo_search.png) no-repeat center center; background-size:45px 59px;}
+.packBody .srch_result .srchContTop .inner .abR a .closeImg {display:block;margin-top:16px;margin-left:9px;width:26px;height:26px;background:url(/images/contents/cont_result_packlInfo_close.png) no-repeat center center; background-size:24px 24px;}
+.packBody .srch_result .mainsearch {position:fixed;top:0px;left:0;width:100%;height:100%;z-index:3002;padding-bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;}
+.packBody .srch_result .mainsearch {padding-top:108px;}
+.packBody .srch_result .mainsearch .btn_area {padding-bottom:30px;}
+.packBody .srch_result.topSrchcontFix .srchContTop{position:fixed;top:49px;}
+.packBody .scrContWrap .srch_result {padding-top:0}
+/* .packBody .srch_result.rstMasterSub {padding-top:0px;} */
+
+/* 자유여행 */
+.freeBody .srch_result .srchContTop {background-color:#6db101;}
+.freeBody .srch_result .srchContTop .inner .abR a {background-color:#5e9901;}
+.freeBody .srch_result .srchContTop .inner .abR a .closeImg {background-image:url(/images/contents/cont_result_freeInfo_close.png);}
+
+/* 국내항공 > 메인 > 인벤토리 리스트  */
+.air_main.inairInventory {position:relative;padding:15px 0 25px 0 ;margin:10px 0;background:#6a7487;}
+.air_main.inairInventory h4 {padding:8px 20px 15px 20px;font-size:19px;font-weight:bold;color:#fff;}
+.air_main.inairInventory .link {position:absolute;top:15px;right:20px;}
+.air_main.inairInventory .pageLink {position:absolute;top:8px;right:0;width:50px;height:50px;background:url(/images/contents/arrTy01_R_white.png) no-repeat center center; background-size:9px 11px;z-index:1000}
+.air_main.inairInventory .swiper-slide {width:265px;}
+.air_main.inairInventory .swiper-slide:last-child {padding-right:20px;}
+.ticketSty2 {width:245px;padding-left:20px;display:block;position:relative;}
+.ticketSty2::before, .ticketSty2:before {content:'';position:absolute;top:42px;width:15px;height:15px;background:#6a7487;border-radius:15px;z-index:1000;left:12px;}
+.ticketSty2::after, .ticketSty2:after {content:'';position:absolute;top:42px;width:15px;height:15px;background:#6a7487;border-radius:15px;z-index:1000;right:-8px;}
+.ticketSty2 .tit {position:relative;background:#f2f2f2;font-size:17px;padding:13px 20px 15px 20px;}
+.ticketSty2 .tit img, 
+.ticketSty2 .tit span {vertical-align:middle;line-height:20px;display:inline-block;}
+.ticketSty2 .tit img {height:20px;width:20px;margin-right:5px;}
+.ticketSty2 .tit .seat {position:absolute;top:15px;right:20px;color:#f56765;font-weight:bold;}
+.ticketSty2 .cont {background:#ffffff;padding:20px 20px 15px 20px;}
+.ticketSty2 .cont .wayWrap {text-align:center;}
+.ticketSty2 .cont .wayWrap .way {display:inline-block;border-bottom:1px solid #191919;padding-bottom:10px;}
+.ticketSty2 .cont .wayWrap .way span {display:inline-block;line-height:20px;vertical-align:middle;}
+.ticketSty2 .cont .wayWrap .way .city {font-size:18px;font-weight:bold;}
+.ticketSty2 .cont .wayWrap .way .icon {width:20px;height:20px;margin:0 5px;background:url(/images/contents/ico_planeA.png) no-repeat center center; background-size:20px 20px;}
+.ticketSty2 .cont .wayWrap .cate {font-weight:bold;margin-top:7px;font-size:15px;color:#1777cb;text-align:center;}
+.ticketSty2 .cont .startWrap {margin-top:18px;}
+.ticketSty2 .cont .startWrap li {padding-left:25px;margin-top:9px;}
+.ticketSty2 .cont .startWrap li:first-child {margin-top:0}
+.ticketSty2 .cont .startWrap li strong {font-size:14px;margin-right:15px;}
+.ticketSty2 .cont .startWrap li.date {background:url(/images/contents/ico_calenderA.png) no-repeat left center; background-size:18px 18px;}
+.ticketSty2 .cont .startWrap li.time {background:url(/images/contents/ico_TimeA.png) no-repeat left center; background-size:18px 18px;}
+.ticketSty2 .cont .price {color:#f56765;font-size:15px;font-weight:bold;text-align:right;margin-top:11px;}
+.ticketSty2 .cont .price strong {font-size:19px;}
+.ticketSty2 .btnReserve {display:block;background:#f56765;font-size:17px;color:#fff;font-weight:bold;text-align:center;line-height:45px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+html.en .ticketSty2 .cont .startWrap li strong {display:block;}
+html.en .ticketSty2 .cont .startWrap li.date, 
+html.en .ticketSty2 .cont .startWrap li.time {background-position:left 0px !important;}
+
+/* 국내항공 > 인벤토리 리스트  */
+.list_airdoInven {margin-top:10px;}
+.list_airdoInven > li {margin-top:15px;}
+.list_airdoInven > li:first-child {margin-top:0;}
+.ticketSty3 {position:relative;} 
+.ticketSty3 .bg {position:absolute;top:32px;width:15px;height:15px;background:#f2f2f2;border-radius:15px;z-index:1000;}
+.ticketSty3 .bg.L {left:-8px;display:none;}
+.ticketSty3 .bg.R {right:-8px;display:none;}
+.ticketSty3::before, .ticketSty3:before {content:'';position:absolute;top:32px;width:15px;height:15px;background:#f2f2f2;border-radius:15px;z-index:1000;left:-8px;}
+.ticketSty3::after, .ticketSty3:after {content:'';position:absolute;top:32px;width:15px;height:15px;background:#f2f2f2;border-radius:15px;z-index:1000;right:-8px;}
+.ticketSty3 .tit {position:relative;padding:0 20px;background:#6a7487;height:40px;font-size:17px;color:#fff;line-height:40px;}
+.ticketSty3 .tit .cate {font-size:15px;margin-right:5px;padding-right:11px;background: url(/images/common/colorchip/c_ffffff_3x45.png) no-repeat right center; background-size:1px 15px;}
+.ticketSty3 .tit .way {font-weight:bold;}
+.ticketSty3 .tit .absR{position:absolute;top:0;right:20px;font-size:15px;font-weight:bold;}
+.ticketSty3 .tit .absR strong{font-size:19px;}
+.ticketSty3 .cont {position:relative;padding:18px 20px 18px 20px;background:#fff;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+.ticketSty3 .cont .btnReserve {position:absolute;top:25px;right:20px;border-radius:27px;background:#f56765;font-size:18px;color:#fff;font-weight:bold;width:55px;height:55px;text-align:center;line-height:55px;z-index:1000;}
+.ticketSty3 .cont .airInfo {font-size:16px;}
+.ticketSty3 .cont .airInfo img, 
+.ticketSty3 .cont .airInfo span {vertical-align:middle;line-height:18px;display:inline-block;}
+.ticketSty3 .cont .airInfo img {height:18px;width:18px;}
+.ticketSty3 .cont .airInfo .txt {min-width:110px;padding-right:10px;}
+.ticketSty3 .cont .airInfo .seat {position:absolute;top:20px;right:95px;color:#f56765;font-weight:bold;}
+.ticketSty3 .cont ul {margin-top:8px;}
+.ticketSty3 .cont ul li {margin-top:3px;padding-left:10px;background: url(/images/common/colorchip/dot_191919_9x9.png) no-repeat left center; background-size:3px 3px;}
+.ticketSty3 .cont ul li:first-child {margin-top:0;}
+.ticketSty3 .cont ul li strong {display:inline-block;font-size:14px;min-width:56px;padding-right:10px;}
+
+/* 항공 > 검색결과 > 날짜 롤링 */
+.airRstDate {background:#fff;border-radius:4px;}
+.airRstDate .rollingAirRstDate {padding:0px 30px;}
+.airRstDate .swiper-slide {display:inline-block;width:auto;}
+.airRstDate .swiper-slide:first-child {margin-left:-55%;}
+.airRstDate .swiper-slide:last-child {margin-right:-55%;}
+.airRstDate .swiper-slide a {display:inline-block;font-size:16px;padding:0 10px;color:#191919;line-height:30px;}
+.airRstDate .swiper-slide a.on {color:#1777cb;font-weight:bold;}
+.airRstDate .swiper-slide a.disa {color:#bababa;}
+.airRstDate .swiper-button-prev,
+.airRstDate .swiper-button-next {width:30px;height:30px;margin-top:0px;}
+.airRstDate .swiper-button-prev,
+.airRstDate .swiper-container-rtl .swiper-button-next,
+.airRstDate .swiper-button-next.swiper-button-white,
+.airRstDate .swiper-container-rtl .swiper-button-prev.swiper-button-white {top:0;left:auto;right:0;background:url(/images/contents/arrTy05_R_blue.png) no-repeat center center; background-size:30px 40px;}
+.airRstDate .swiper-button-next,
+.airRstDate .swiper-container-rtl .swiper-button-prev,
+.airRstDate .swiper-button-prev.swiper-button-white,
+.airRstDate .swiper-container-rtl .swiper-button-next.swiper-button-white {top:0;right:auto;left:0;background:url(/images/contents/arrTy05_L_blue.png) no-repeat center center; background-size:30px 40px;}
+.airRstDate .swiper-container-horizontal > .swiper-scrollbar {bottom:0;display:none;}
+.airRstDate .swiper-button-prev.swiper-button-disabled {opacity:1; background-image:url(/images/contents/arrTy05_L_rgray.png)}
+.airRstDate .swiper-button-next.swiper-button-disabled {opacity:1; background-image:url(/images/contents/arrTy05_R_rgray.png)}
+
+/* 항공 > 검색결과 > 소팅 */
+.srch_result .sortWrap {position:relative;}
+.srch_result .sortWrap .subtxtWrap {}
+.srch_result .sortWrap .subtxtWrap p {font-size:14px;line-height:18px;margin-top:3px;}
+.srch_result .sortWrap .subtxtWrap p:first-child {margin-top:0}
+.srch_result .sortWrap .subtxtWrap + .copytxt {margin-top:20px;}
+.srch_result .sortWrap .btnSort {margin-top:4px;padding:13px 22px 13px 0;display:inline-block;font-size:15px;background:url(/images/contents/arrTy02_D.png) no-repeat right center; background-size:12px 8px;}
+.srch_result .sortWrap .copytxt {padding:18px 22px 15px 0;font-size:15px;}
+.srch_result .sortWrap .absR {position:absolute;top:0;right:0}
+.srch_result .wrapDef.fit .sortWrap .btnSort {padding-left:20px;margin-top:0;}
+.srch_result .wrapDef.fit .sortWrap .absR {right:20px;}
+
+/* 항공 > 검색결과 > 소팅(NO TOP) */
+.srch_result_notop .sortWrap {position:relative;}
+.srch_result_notop .sortWrap .subtxtWrap {}
+.srch_result_notop .sortWrap .subtxtWrap p {font-size:14px;line-height:18px;margin-top:3px;}
+.srch_result_notop .sortWrap .subtxtWrap p:first-child {margin-top:0}
+.srch_result_notop .sortWrap .subtxtWrap + .copytxt {margin-top:20px;}
+.srch_result_notop .sortWrap .btnSort {margin-top:4px;padding:13px 22px 13px 0;display:inline-block;font-size:15px;background:url(/images/contents/arrTy02_D.png) no-repeat right center; background-size:12px 8px;}
+.srch_result_notop .sortWrap .copytxt {padding:18px 22px 15px 0;font-size:15px;}
+.srch_result_notop .sortWrap .absR {position:absolute;top:0;right:0}
+.srch_result_notop .wrapDef.fit .sortWrap .btnSort {padding-left:20px;margin-top:0;}
+.srch_result_notop .wrapDef.fit .sortWrap .absR {right:20px;}
+
+/* 항공 > 초기화 이후 스크립트로 제어  */
+.srch_result .sortWrap .btnResrchOption {position:absolute;top:0px;margin-top:15px;right:0;width:40px;height:40px;background:url(/images/contents/cont_result_resrchBtn.png) no-repeat center center; background-size:40px 40px;z-index:3000}
+.srch_result .sortWrap.tyBoth .copytxt {padding-right:105px;}
+.srch_result .sortWrap.tyBoth .btnResrchOption{top:50px;}
+.srch_result .sortWrap.tyBoth .btnSort {margin-top:0;padding-top:18px;background-position: right 23px;}
+
+/* 항공 > 초기화 이후 스크립트로 제어(NO_TOP)  */
+.srch_result_notop .sortWrap .btnResrchOption {position:absolute;top:0px;margin-top:15px;right:0;width:40px;height:40px;background:url(/images/contents/cont_result_resrchBtn.png) no-repeat center center; background-size:40px 40px;z-index:3000}
+.srch_result_notop .sortWrap.tyBoth .copytxt {padding-right:105px;}
+.srch_result_notop .sortWrap.tyBoth .btnResrchOption{top:50px;}
+.srch_result_notop .sortWrap.tyBoth .btnSort {margin-top:0;padding-top:18px;background-position: right 23px;}
+
+/* 렌터카 > 초기화 셋팅 완료 */
+.rentcarBody .srch_result .sortWrap .btnResrchOption {position:fixed;top:108px;right:20px;}
+
+.srch_inven_result .sortWrap .btnResrchOption {position:absolute;top:0px;margin-top:15px;right:0;width:40px;height:40px;background:url(/images/contents/cont_result_resrchBtn.png) no-repeat center center; background-size:40px 40px;z-index:3000}
+.srch_inven_result .sortWrap .btnResrchOption {position:fixed;top:45px;right:15px;}
+
+/* 렌터카 > 기본정보 */
+.rentcarInfo2 {overflow:hidden;border-top:1px solid #d8d8d8;}
+.rentcarInfo2 ul li {display:inline-block;margin-top:7px;}
+.rentcarInfo2 ul.n3 li {min-width:30%;padding-right:3%;margin-right:-4px;} 
+.rentcarInfo2 ul .bg {padding-left:21px;font-size:14px;color:#6e6e6e;display:inline-block;line-height:15px;background:url(/images/contents/detail_option_rentercar.png) no-repeat 0 0; background-size:15px auto;}
+.rentcarInfo2 ul .opt_member {background-position:0px 0px;}
+.rentcarInfo2 ul .opt_door {background-position:0px -30px;}
+.rentcarInfo2 ul .opt_pack {background-position: 0px -60px;}
+.rentcarInfo2 ul .opt_gear {background-position: 0px -90px;}
+.rentcarInfo2 ul .opt_fuels {background-position:0px -120px;}
+.rentcarInfo2 ul .opt_airconditioner {background-position:0px -150px;}
+.rentcarInfo2 div.optList {text-align:center;margin-top:10px;}
+.rentcarInfo2 div.optList span {display:inline-block;padding:0 2px 0 7px;color:#6e6e6e;font-size:14px;background:url(/images/common/colorchip/c_6e6e6e_1x1.png) no-repeat 0 center; background-size:2px 2px;}
+.rentcarInfo2 div.optList span:first-child {background:none;padding-left:0;}
+.rentcarInfo2 div.optList span:last-child {padding-right:0;}
+.rentcarInfo3 .flwrap {overflow:hidden;}
+.rentcarInfo3 .fl {float:left}
+.rentcarInfo3 .fr {float:right}
+.rentcarInfo3 span {line-height:20px;} 
+.rentcarInfo3 .info_date {font-size:16px;}
+.rentcarInfo3 .info_date strong {/* color:#35a8b1; */color:#00818b}
+.rentcarInfo3 .info_price {color:#f56764;font-size:15px;font-weight:bold;}
+.rentcarInfo3 .info_price strong {font-size:17px;}
+.rentcarInfo3 .info_insu {font-size:14px;}
+.rentcarInfo3 .info_guide {font-size:14px;color:#6e6e6e;}
+.rentcarInfo4 li {margin-top:10px;line-height:25px;font-size:16px;}
+.rentcarInfo4 li:first-child {margin-top:0}
+.rentcarInfo4 li.opt1 {padding-left:31px;background:url(/images/contents/ico_rentcarInfo4_01.png) no-repeat left 0; background-size:25px 25px;} 
+.rentcarInfo4 li.opt2 {padding-left:31px;background:url(/images/contents/ico_rentcarInfo4_02.png) no-repeat left 0; background-size:25px 25px;}
+.rentcarInfo5 {border-top:1px solid #d8d8d8; margin-top:15px;}
+.rentcarInfo5 .def {margin-top:12px;}
+.rentcarInfo5 .listDef {margin-top:8px;}
+.rentcarInfo6 {border-top:1px solid #d8d8d8;}
+.rentcarInfo6 ul {overflow:hidden;margin-top:10px;padding-bottom:12px;}
+.rentcarInfo6 ul li {float:left;border-left:1px solid #eaeaea;box-sizing:border-box;text-align:center;}
+.rentcarInfo6 ul li:first-child {border-left:none;}
+.rentcarInfo6 ul.n2 li {width:50%;}
+.rentcarInfo6 ul li span {display:inline-block;font-size:15px;line-height:20px;}
+.rentcarInfo6 ul li.recode span {padding-left:27px;background:url(/images/contents/ico_cmtCnt_ty1_rentcar.png) no-repeat left center; background-size:auto 20px;}
+.rentcarInfo6 ul li.review span {padding-left:27px;background:url(/images/contents/ico_cmtCnt_ty3_rentcar.png) no-repeat left center; background-size:auto 20px;}
+
+/* 패스투어 > 상세화면 */
+.photo.passDetailPhoto {text-align:center;}
+.photo.passDetailPhoto img {max-height:300px;}
+.passInfoDetail {position:relative;}
+.passInfoDetail .passInfo1 {padding-bottom:10px;} 
+.mv2New .passInfoDetail .passInfo1 {padding-bottom:15px;}
+.passInfoDetail .tagWrap {/* position:absolute;top:-37px;left:20px; */}
+.passInfoDetail .tit {margin-top:-3px;font-weight:bold;font-size:19px;line-height:27px;}
+.passInfoDetail .passInfo2 {position:relative;}
+.passInfoDetail .passInfo2 .city {font-size:15px;color:#6e6e6e;padding:7px 0 17px 0}
+.passInfoDetail .passInfo2 .absR {position:absolute;top:5px;right:0}
+.passInfoDetail .passInfo2 .absR.priceSaleGroup.catePassA {top:auto;bottom:15px;text-align:right;}
+.passInfoDetail .passInfo2 .absR .subTxt {font-size:14px;color:#6e6e6e;}
+.passInfoDetail .passInfo2 .comment {padding:12px 0 12px 0;font-size:14px;color:#6e6e6e;border-top:1px solid #eaeaea;text-align:right;}
+.passInfo3 {overflow:hidden;background:#f2f2f2;padding:5px 0 13px 0;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;}
+.passInfo3 li {float:left;margin-top:7px;padding-left:15px;box-sizing:border-box;}
+.passInfo3 .n3 li {width:50%}
+.passInfo3 .n2 li {width:50%}
+.passInfo3 .n2 li:nth-child(2n-1) {clear:both;}
+.passInfo3 .bg {padding-left:24px;font-size:14px;color:#6e6e6e;display:inline-block;line-height:15px;background:url(/images/contents/detail_option_pass.png) no-repeat 0 0; background-size:18px auto;}
+.passInfo3 .opt_time {background-position:0px 0px;}
+.passInfo3 .opt_number {background-position:0px -30px;}
+.passInfo3 .opt_language {background-position: 0px -60px;}
+.passInfo3 .opt_evoucher {background-position: 0px -90px;}
+.passInfo3 .opt_today {background-position: 0px -90px;}
+.passInfo5 ul {overflow:hidden;margin-top:10px;padding-bottom:20px;}
+.passInfo5 ul li {float:left;border-left:1px solid #eaeaea;box-sizing:border-box;text-align:center;}
+.passInfo5 ul li:first-child {border-left:none;}
+.passInfo5 ul.n3 li {width:33%;}
+.passInfo5 ul.n3 li.recode {width:34%;}
+.passInfo5 ul.n3 li.review {width:38%;}
+.passInfo5 ul.n3 li.buy {width:28%;}
+.passInfo5 ul li span {display:inline-block;font-size:15px;line-height:20px;}
+.passInfo5 ul li.recode span {padding-left:27px;background:url(/images/contents/ico_cmtCnt_ty2_pass.png) no-repeat left center; background-size:auto 20px;}
+.passInfo5 ul li.review span {padding-left:27px;background:url(/images/contents/ico_cmtCnt_ty4_pass.png) no-repeat left center; background-size:auto 20px;}
+.passInfo4 {margin-top:20px;margin-bottom:-4px;}
+
+/* 더보기 > ty1*/
+.listmoreTy1 {position:relative;text-align:center;/* margin-bottom:5px; */}
+.lyWrap .listmoreTy1 {/* margin-bottom:-60px;border:1px solid blue */}
+.listmoreTy1 a {display:block;background:url(/images/common/colorchip/c_d8d8d8_3x3.png) repeat-x 0 bottom; background-size:auto 1px;}
+.listmoreTy1 a span {display:inline-block;font-size:15px; color:#6e6e6e;padding:30px 10px 10px 10px;border-bottom:1px solid #444a5a;}
+.wrapDef .listmoreTy1 a::before, .wrapDef .listmoreTy1 a:before {content:'';position:absolute;bottom:-1px;width:20px;height:1px;border-top:1px solid #d8d8d8;z-index:1000;left:-20px;}
+.wrapDef .listmoreTy1 a::after, .wrapDef .listmoreTy1 a:after {content:'';position:absolute;bottom:-1px;width:20px;height:1px;border-top:1px solid #d8d8d8;z-index:1000;right:-20px;}
+.TMv2_contents.bgC .listmoreTy1 {/* margin-bottom:15px; */}
+.TMv2_contents.bgC .listmoreTy1::after,
+.TMv2_contents.bgC .listmoreTy1:after {/* content:'';position:absolute;display:block;width:100%;height:35px;left:-20px;bottom:-35px;padding-right:40px;background:#eaeaea; */}
+.srch_result .wrapDef.bgC .listResult .listmoreTy1 {margin-bottom:-1px;margin-top:-20px;z-index:100;}
+
+/* 더보기 > 패키지 상품상세 */
+.listmoreTy2 {position:relative;text-align:center;margin-bottom:25px;}
+.listmoreTy2 a {display:block;background:url(/images/common/colorchip/c_d8d8d8_3x3.png) repeat-x 0 bottom; background-size:auto 1px;}
+.listmoreTy2 a span {display:inline-block;font-size:15px; color:#6e6e6e;padding:25px 10px 10px 10px;border-bottom:1px solid #444a5a;}
+
+/* 항공 > 검색결과 > 리스트 */
+.srch_result .listResult > ul > li:first-child {margin-top:0px;}
+.srch_result .wrapDef.bgC .listResult > ul {padding-top:20px;padding-bottom:20px;}
+.srch_result .listResult li {}
+.srch_result .listResult li a.airScdInfo {display:block;padding:13px;border:1px solid #fff;}
+.srch_result .listResult li.on,
+.srch_result .listResult li.on a.airScdInfo {border-color:#f56764 !important;}
+.srch_result .listResult li.noresult {font-size:14px;line-height:18px;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;padding:35px 10px;text-align:center;line-height:22px;/* font-size:16px;color:#191919; */}
+.srch_result .listResult li.noresult p {margin-top:5px;}
+.srch_result .listResult li.noresult p:first-child {margin-top:0px;}
+.srch_result .listResult li.loading {margin-top:10px;border-radius:3px;padding:35px 0 !important;}
+.srch_result .listResult li.event {margin-top:10px;}
+.srch_result .listResult li.event a{display:block;padding:0;text-align:center;}
+.srch_result .listResult li.event a img {max-width:100%;}
+.srch_result .listResult li.airdo {position:relative;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;}
+.srch_result .listResult li.airdo .tagAbR {position:absolute;z-index:100;top:-10px;left:13px;} 
+.srch_result .listResult li.airdo a.airScdInfo {padding-top:10px;padding-bottom:7px;}
+.srch_result .listResult li.airdo .btn_airfare {position:absolute;display:block;left:15px;bottom:10px;padding:0 15px 0 0;font-size:14px;color:#6e6e6e;background:url(/images/contents/arrTy03_R.png) no-repeat right center; background-size:6px 9px;}
+/* .airScdInfo .btn_airfare {position:absolute;display:block;left:15px;bottom:10px;padding:0 15px 0 0;font-size:14px;color:#191919;background:url(/images/contents/arrTy03_R.png) no-repeat right center; background-size:6px 9px;} */
+.airdo .airScdInfo .wrapBtm {position:relative;}
+.airdo .airScdInfo .wrapBtm .btn_airfare {position:absolute;display:block;left:0px;top:8px;padding:0 15px 0 0;font-size:16px;color:#191919;background:url(/images/contents/arrTy06_R.png) no-repeat right center; background-size:6px 9px;}
+/* background:url(/images/contents/arrTy03_R.png) no-repeat right center; background-size:6px 9px; */ 
+.airdo .airScdInfo .wrapBtm .subtxt {color:#6e6e6e;font-size:14px;display:inline-block;padding-right:3px} 
+.colorboxGraySq .airdo .airScdInfo .wrapBtm {margin-top:10px;} 
+
+/* 항공 > 검색결과 > 리스트(NO_TOP) */
+.srch_result_notop .listResult > ul > li:first-child {margin-top:0px;}
+.srch_result_notop .wrapDef.bgC .listResult > ul {padding-top:20px;padding-bottom:20px;}
+.srch_result_notop .listResult li {}
+.srch_result_notop .listResult li a.airScdInfo {display:block;padding:13px;border:1px solid #fff;}
+.srch_result_notop .listResult li.on,
+.srch_result_notop .listResult li.on a.airScdInfo {border-color:#f56764 !important;}
+.srch_result_notop .listResult li.noresult {font-size:14px;line-height:18px;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;padding:35px 10px;text-align:center;line-height:22px;/* font-size:16px;color:#191919; */}
+.srch_result_notop .listResult li.noresult p {margin-top:5px;}
+.srch_result_notop .listResult li.noresult p:first-child {margin-top:0px;}
+.srch_result_notop .listResult li.loading {margin-top:10px;border-radius:3px;padding:35px 0 !important;}
+.srch_result_notop .listResult li.event {margin-top:10px;}
+.srch_result_notop .listResult li.event a{display:block;padding:0;text-align:center;}
+.srch_result_notop .listResult li.event a img {max-width:100%;}
+.srch_result_notop .listResult li.airdo {position:relative;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;}
+.srch_result_notop .listResult li.airdo .tagAbR {position:absolute;z-index:100;top:-10px;left:13px;} 
+.srch_result_notop .listResult li.airdo a.airScdInfo {padding-top:10px;padding-bottom:7px;}
+.srch_result_notop .listResult li.airdo .btn_airfare {position:absolute;display:block;left:15px;bottom:10px;padding:0 15px 0 0;font-size:14px;color:#6e6e6e;background:url(/images/contents/arrTy03_R.png) no-repeat right center; background-size:6px 9px;}
+ 
+
+/* 검색결과 > 해외항공 ty1 */
+.exair1 .airScdInfo .abtLogo {padding-right:75px;}
+.exair1 .airScdInfo .abtLogo img {/*max-width:20px; */max-height:17px;}
+.exair1 .airScdInfo .abtLogo span {font-size:16px;line-height:17px;font-weight:bold;display:inline-block;vertical-align:middle;}
+.exair1 .airScdInfo .abtLogo span.txt2 {font-size:14px;}
+.exair1 .airScdInfo .abtLogo .aptShare {font-size:13px; color:#6e6e6e;margin-top:2px;padding-left:20px;}
+.exair1 .airScdInfo .posRT.aptStatus {top:12px;}
+.exair1 .airScdInfo .posRT.aptPeriod {font-size:16px;}
+.exair1 .airScdInfo .wrapMid .apt_option {overflow:hidden;}
+.exair1 .airScdInfo .wrapMid .apt_option li {float:left; min-width:50%; padding-right:5px; box-sizing:border-box; line-height:18px;font-size:14px;margin-top:7px; padding-left:10px;background: url(/images/common/colorchip/dot_191919_9x9.png) no-repeat left 7px; background-size:3px 3px;}
+.exair1 .airScdInfo .wrapMid .optWay li.list {border-top:1px solid #eaeaea;padding:10px 0;}
+.exair1 .airScdInfo .wrapMid .optWay .list:first-child {border-top:none;}
+.exair1 .airScdInfo .wrapMid .optWay .list:last-child {padding-bottom:5px;}
+.exair1 .airScdInfo .wrapMid .optWay .list .optWayinfo {font-size:14px;/* margin-top:3px; */padding-left:10px;background: url(/images/common/colorchip/dot_191919_9x9.png) no-repeat left 7px; background-size:3px 3px;}
+.exair1 .airScdInfo .wrapMid .optWay .list li {position:relative;font-size:15px;margin-top:3px;padding-left:10px}
+.exair1 .airScdInfo .wrapMid .optWay .list li p {padding-right:70px;}
+.exair1 .airScdInfo .wrapMid .optWay .list li .aptTime {position:absolute;top:3px;right:0;font-size:12px;color:#6e6e6e;}
+.exair1 .airScdInfo .wrapBtm {padding-top:7px;border-top:1px solid #d8d8d8;}
+.exair1 .airScdInfo .wrapBtm.btmBodr {position:relative;border-top:1px solid #d8d8d8;}
+.exair1 .airScdInfo .wrapBtm.btmBodr::before,
+.exair1 .airScdInfo .wrapBtm.btmBodr:before {content:'';position:absolute;top:-1px;width:15px;height:1px;background:#d8d8d8;z-index:1000;left:-15px;}
+.exair1 .airScdInfo .wrapBtm.btmBodr::after,
+.exair1 .airScdInfo .wrapBtm.btmBodr:after {content:'';position:absolute;top:-1px;width:15px;height:1px;background:#d8d8d8;z-index:1000;right:-15px;}
+.exair1 .airScdInfo .wrapBtm .optPrice {font-weight:bold;font-size:14px;}
+.exair1 .airScdInfo .posRT {display:block;position:absolute;top:11px;right:15px;}
+.exair1 .airScdInfo + .posLB {display:block;position:absolute;left:15px;bottom:12px;}
+.exair1 .airScdInfo + .posRB {display:block;position:absolute;right:15px;bottom:8px;}
+.exair1 .airScdInfo + a.btn_airfare {font-size:14px;color:#6e6e6e;}
+.exair1 .airScdInfo + a.aptRsv {color:#f56764;font-weight:bold;}
+.exair1 .airScdInfo .vtc {vertical-align:middle;display:inline-block;}
+.srch_result .listResult li.exair1 {position:relative;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;}
+.srch_result .listResult li.exair1 .airScdInfo {padding:10px 15px 8px 15px;}
+.srch_result .listResult li.exair1 .wrapMid {padding-top:5px;padding-bottom:10px;}
+.srch_result .listResult li.exair1.bgWt {border:none;margin-top:0}
+.srch_result .listResult li.exair1.bgWt .airScdInfo {padding:25px 20px 22px 20px}
+.srch_result .listResult li.exair1.bgWt .airScdInfo .posRT.aptStatus {top:25px;}					
+.exair1.bgWt .airScdInfo + .posLB {bottom:22px !important; left:20px !important;}
+
+/* 해외항공 > 다구간 > 신규 190121 */
+.exair1 .airScdInfo .list2 {border-top:1px solid #eaeaea;padding:10px 0;}
+.exair1 .airScdInfo .list2:first-child {border-top:none;padding-top:0}
+.exair1 .airScdInfo .list2:last-child {padding-bottom:5px;}
+.exair1 .airScdInfo .list2 {font-size:14px;}
+.exair1 .airScdInfo .list2 .abtLogo.rSeat {position:relative;padding-right:35px;}
+.exair1 .airScdInfo .list2 .abtLogo.rSeat .aptStatus {top:0; right:0}
+.exair1 .airScdInfo .list2 ul {padding-left:25px;}
+.exair1 .airScdInfo .list2 li {margin-top:3px;}
+
+/* 해외항공 > 도시별 > step2 New */
+.airScdInfo2 {position:relative;padding-bottom:5px;}
+.airScdInfo2 .abtLogo {padding-right:100px;}
+.airScdInfo2 .abtLogo img {max-height:17px;}
+.airScdInfo2 .abtLogo span {font-size:16px;line-height:17px;font-weight:bold;display:inline-block;vertical-align:middle;}
+.airScdInfo2 .posRT.aptStatus {position:absolute;top:0px;right:0;}
+.airScdInfo2 .optWay {margin-top:15px;font-size:17px;color:#1777cb;}
+.airScdInfo2 .optWay span {margin-right:5px;line-height:22px;vertical-align:middle;}
+
+/* 해외항공 > 도시별 > step2 New */
+.airScdInfo3  {position:relative;padding:10px 15px;color:#191919;}
+.airScdInfo3 .optList li {line-height:20px;font-size:14px;padding-left: 9px; background: url(/images/common/colorchip/dot_6e6e6e_9x9.png) no-repeat left 7px; background-size: 3px 3px;}
+.airScdInfo3 .optSeat {position:absolute;top:10px;right:15px;}
+.airScdInfo3 .btn {position:absolute;bottom:13px;right:15px;}
+
+/* 검색결과 > 렌터카  */
+.srch_result .listResult li.rentcar {margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;}
+.srch_result .listResult li.rentcar a {display:block;}
+.srch_result .listResult li.rentcar .rentcarInfo3 {padding:12px 15px 8px 15px;}
+.srch_result .listResult li.rentcar .rentcarInfoLine {padding:0px 15px 0px 15px;border-top:1px solid #d8d8d8;}
+.srch_result .listResult li.rentcar .rentcarInfo2 {padding-bottom:9px;} 
+/* 검색결과 > 패스투어  */
+.srch_result .listResult li.pass {position:relative;border-top:1px solid #eaeaea;}
+.srch_result .listResult li.pass:last-child {border-bottom:1px solid #eaeaea;}
+.srch_result .listResult li.pass a {display:block;padding-left:137px;min-height:137px;}
+.srch_result .listResult li.pass .photo {position:absolute;top:0;left:0;width:137px;height:137px;}
+.srch_result .listResult li.pass .photo img {width:100%;height:100%;}
+.srch_result .listResult li.pass .txtWrap {padding:19px 18px 15px 18px;}
+.srch_result .listResult li.pass .wrap1 {font-size:14px;color:#6e6e6e;}
+.srch_result .listResult li.pass .wrap2 {margin-top:5px;}
+.srch_result .listResult li.pass .wrap2.tit  {line-height:23px;min-height:46px;}
+.srch_result .listResult li.pass .wrap3 {margin-top:12px;text-align:right;}
+.srch_result .listResult li.pass .wrap3 .subTxt {/* color:#6e6e6e;font-size:14px;font-weight:normal; */}
+.srch_result .listResult li.pass .wrap3 span {display:inline-block;vertical-align:middle;}
+.srch_result .listResult li.pass .wrap3 .price {font-size:17px;}
+/* 검색결과 > 패스투어 NEW  */
+.srch_result .listResult li.passB:first-child {margin-top:15px;}
+.srch_result .listResult li.passB:last-child {margin-bottom:45px;}
+.srch_result .listResult li.passB {position:relative;margin:22px 20px 0 20px;}
+.srch_result .listResult li.passB a {display:block;border:1px solid #d8d8d8;}
+.srch_result .listResult li.passB .photo {/* height:172px; */}
+.srch_result .listResult li.passB .photo img {}
+.srch_result .listResult li.passB .txtWrap {position:relative;padding:10px 15px 13px 15px;}
+.srch_result .listResult li.passB .wrap1 {font-size:13px;}
+.srch_result .listResult li.passB .wrap2 {margin-top:5px;}
+.srch_result .listResult li.passB .wrap2.tit  {font-size:15px;line-height:23px;}
+.srch_result .listResult li.passB .wrap3 {margin-top:7px;text-align:left;}
+.priceSaleGroup.catePassA span {display:inline-block;vertical-align:middle;}
+.priceSaleGroup.catePassA .saleInfo {font-size:13px;}
+.priceSaleGroup.catePassA .saleInfo .percent {color:#f25b7a;}
+.priceSaleGroup.catePassA .saleInfo .original {margin-left:2px;color:#cccccc;text-decoration:line-through;}
+.priceSaleGroup.catePassA .priceWrap {margin-top:2px;}
+.priceSaleGroup.catePassA .priceWrap .subTxt {color:#6e6e6e;font-size:14px;font-weight:normal;}
+.priceSaleGroup.catePassA .priceWrap .price {font-size:17px;}
+.srch_result .listResult li.passB .wrap4.abR {position:absolute;bottom:12px;right:7px;width:100px;}
+.srch_result .listResult li.passB .wrap4.abR .innerW {display:inline-block;width:42px;height:42px;border:1px solid #d8d8d8;border-radius:21px;font-size:10px;text-align:center;}
+.srch_result .listResult li.passB .wrap4.abR .innerW span {display:block;text-align:center;line-height:12px;}
+.srch_result .listResult li.passB .wrap4.abR .innerW span:first-child {margin-top:9px;}
+
+/* 검색결과 > 국내호텔  */
+.hotelSubA .airScdInfo .tit {font-size:16px;line-height:23px;font-weight:bold;}
+.hotelSubA .airScdInfo .wrapMid .apt_option li {line-height:18px;font-size:14px;margin-top:5px; padding-left:10px;background: url(/images/common/colorchip/dot_191919_9x9.png) no-repeat left 7px; background-size:3px 3px;}
+.hotelSubA .airScdInfo .wrapBtm {padding-top:7px;border-top:1px solid #d8d8d8;}
+.hotelSubA .airScdInfo .wrapBtm .optPrice {font-weight:bold;font-size:14px;line-height:18px;}
+.hotelSubA .airScdInfo .wrapBtm .optPrice .priceBefore {padding-right:7px;}
+.hotelSubA .airScdInfo + .posLB {display:block;position:absolute;left:15px;bottom:12px;}
+.hotelSubA .airScdInfo + .posRB {display:block;position:absolute;right:15px;bottom:8px;}
+.hotelSubA .airScdInfo + a.btn_airfare {font-size:14px;color:#6e6e6e;}
+.hotelSubA .airScdInfo + a.aptRsv {color:#f56764;font-weight:bold;}
+.srch_result .listResult li.hotelSubA {position:relative;margin-top:10px;border-radius:3px;background:#ffffff;border:1px solid #d8d8d8;}
+.srch_result .listResult li.hotelSubA .airScdInfo {padding:10px 15px 8px 15px;}
+.srch_result .listResult li.hotelSubA .wrapMid {padding-top:5px;padding-bottom:10px;}
+.srch_result .listResult li.hotelSubA .subPromo .btn.styF {border-radius:0;font-size:11px;line-height:18px;}					
+.srch_result .listResult li.hotelSubA .subPromo .btn.styF + .txt {displaly:inline-block;/* margin-left:4px; */line-height:18px;font-size:12px;}		
+  
+/* 렌터카 정보 */
+.rentcarInfo1 .carName {margin-top:7px;line-height:22px;font-size:14px;color:#191919;}
+.rentcarInfo1 .carName strong {font-size:16px;}
+.rentcarInfo1 .carImg {text-align:center; background:url(/images/contents/photoRentcar/default.jpg) no-repeat center center;background-size:202px 109px;}
+.rentcarInfo1 .carImg.nobg {background:none;}
+.rentcarInfo1 .carCompany {margin-top:7px;}
+.rentcarInfo1 .carCompany + .carName {margin-top:2px;}
+.srch_result .listResult li.rentcar .rentcarInfo1 {position:relative;padding:15px 0 12px 148px;}
+.srch_result .listResult li.rentcar .rentcarInfo1 .carImg {position:absolute;left:0px;top:50%;margin-top:-34px;width:124px;height:67px;/* background-size:124px 67px; */background-size:80px 43px;}
+.srch_result .listResult li.rentcar .rentcarInfo1 .carImg img {display:inline-block;max-width:100%;height:100%;}
+.srch_result .listResult li.rentcar .rentcarInfo1 .carBtn .btn.styF {padding:0 8px;letter-spacing: -0.5px;}
+@media only screen and (max-width : 359px){
+.srch_result .listResult li.rentcar div.rentcarInfo1 {padding-left:0}
+.srch_result .listResult li.rentcar .rentcarInfo1 .carName {text-align:center;min-height:auto;}
+.srch_result .listResult li.rentcar div.rentcarInfo1 .carImg {position:relative;top:0;margin-top:10px;width:100%;}
+}
+
+/* 렌터카 > 상세정보 */
+.listResult .rentcarInfo1 .carName {min-height:44px;}
+/* 렌터카 > 상세정보 */
+.rentcarInfoDetail .rentcarInfo1 .carImg {margin-top:20px;text-align:center;height:109px;}
+.rentcarInfoDetail .rentcarInfo1 .carImg img {height:109px;max-width:100%;}
+.rentcarInfoDetail .rentcarInfo1 .carCompany {margin-top:17px;text-align:center;font-size:18px;}
+.rentcarInfoDetail .rentcarInfo1 .carName {margin-top:15px;text-align:center;font-size:16px;line-height:25px;}
+.rentcarInfoDetail .rentcarInfo1 .carCompany + .carName {margin-top:5px;margin-bottom:35px;}
+.rentcarInfoDetail .rentcarInfo1 .carName strong {font-size:18px;}
+.rentcarInfoDetail .rentcarInfo2 {margin-top:12px;}
+.rentcarInfoDetail .rentcarInfo3 {margin-top:8px;background:#f2f2f2;padding:13px 15px;}
+.rentcarInfoDetail .rentcarInfo4 {margin-top:24px;}
+.rentcarInfoDetail .rentcarInfo6 ul {padding-bottom:0}
+.rentcarInfoDetail .rentcarInfo6 ul li.recode span {background-image:url(/images/contents/ico_cmtCnt_ty2_rentcar.png) }
+.rentcarInfoDetail .rentcarInfo6 ul li.review span {background-image:url(/images/contents/ico_cmtCnt_ty4_rentcar.png) }
+.rentcarInfoDetail .rentcarInfo7 p.def {margin-top:27px;}
+.rentcarInfoDetail .rentcarInfo7 p.def:first-child {margin-top:18px;}
+.rentcarInfoDetail .rentcarInfo7 .listDef.d3{margin-top:15px;}
+
+/* 메인 > 검색 > 국내호텔  */
+.mainsearch.cate_hotel .optSearchWrap {margin-bottom:10px;padding:10px 20px 10px 20px;min-height:52px;background:#d559aa;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 2px 5px #8a8a8a;}
+.mainsearch.cate_hotel .optSearchWrap .srchLink {position:relative;padding:15px 0 15px 33px;background:url(/images/contents/ico_search_ty1.png) no-repeat left center; background-size:23px auto;}
+.mainsearch.cate_hotel .optSearchWrap a {display:block;}
+.mainsearch.cate_hotel .optSearchWrap input.trans {display:block;background:transparent !important;width:100%;border:none;line-height:22px;color:#fff;font-weight:bold;cursor: pointer;}
+.mainsearch.cate_hotel .optSearchWrap input::-webkit-input-placeholder{color:#f1a3d6;}
+.mainsearch.cate_hotel .optSearchWrap input:-moz-placeholder{color:#f1a3d6;}
+.mainsearch.cate_hotel .optSearchWrap input::-moz-placeholder{color:#f1a3d6;}
+.mainsearch.cate_hotel .optSearchWrap input:-ms-input-placeholder{color:#f1a3d6;}
+.mainsearch.cate_hotel .optSearchWrap .txt {font-size:16px;color:#fff;font-weight:bold;line-height:22px;}
+.mainsearch.cate_hotel .optSearchWrap .txt.disa {color:#f1a3d6;font-weight:normal;}
+.mainsearch.cate_hotel .optSearchWrap .icoSet_optionchange {position:absolute;/* bottom:37px;right:0; */bottom:27px;right:-10px;z-index:3000;display:block;}
+.mainsearch.cate_hotel .quickLink {padding :17px 20px 0px 20px;text-align:center;}
+.mainsearch.cate_hotel .quickLink .tit {color:#ff9b26; font-size:19px; font-weight:bold;}
+.mainsearch.cate_hotel .quickLink .list {margin-top:4px;}
+.mainsearch.cate_hotel .quickLink .list a {display:inline-block; background:#ffffff;border:1px solid #ff9b26;font-size:15px;color:#191919;padding:0 14px 0 13px;margin-left:1px;line-height:28px;margin-top:10px;border-radius:14px;} 
+
+/* 메인 > 검색 > 패키지  */
+.mainsearch.cate_pack .optSearchWrap {margin-bottom:10px;padding:4px 20px 10px 20px;min-height:55px;background:#00b348;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 3px 5px #8a8a8a;}
+.mainsearch.cate_pack .optSearchWrap {position:relative;}
+.mainsearch.cate_pack .optSearchWrap li a {display:block;border-bottom:1px solid #72ce91;/* padding:15px 0 15px 27px;background:url(/images/contents/ico_rocation_ty1.png) no-repeat left center; background-size:17px 22px; */}
+.mainsearch.cate_pack .optSearchWrap li:last-child a {border-bottom:none;}
+.mainsearch.cate_pack .optSearchWrap  .txt {font-size:16px;color:#fff;font-weight:bold;line-height:22px;}
+.mainsearch.cate_pack .optSearchWrap .txt.disa {color:#98d7aa;font-weight:normal;}
+.mainsearch.cate_pack .optSearchWrap .chkOption {position:absolute;top:15px;right:10px;z-index:3000;display:block;font-size:15px;}
+ 
+.mainsearch.cate_pack .quickLink {padding :17px 20px 0px 20px;text-align:center;}
+.mainsearch.cate_pack .quickLink .tit {color:#ff9b26; font-size:19px; font-weight:bold;}
+.mainsearch.cate_pack .quickLink .list {margin-top:4px;}
+.mainsearch.cate_pack .quickLink .list a {display:inline-block; background:#ffffff;border:1px solid #ff9b26;font-size:15px;color:#191919;padding:0 14px 0 13px;margin-left:1px;line-height:28px;margin-top:10px;border-radius:14px;} 
+
+/* 메인 > 여행자보험 */
+.mainsearch.cate_insu .optSearchWrap {margin-bottom:10px;padding:4px 20px 25px 20px;min-height:55px;background:#7260e0;border-bottom-left-radius:20px;border-bottom-right-radius:20px;color:#fff;box-shadow:0 3px 5px #8a8a8a;}
+.mainsearch.cate_insu .optSearchWrap {position:relative;}
+.mainsearch.cate_insu .optSearchWrap li a {display:block;border-bottom:1px solid #b3a6ff;/* padding:22px 0 15px 27px; *//* background:url(/images/contents/ico_rocation_ty1.png) no-repeat left center; background-size:17px 22px; */}
+.mainsearch.cate_insu .optSearchWrap .txt {font-size:16px;color:#fff;font-weight:bold;line-height:22px;}
+.mainsearch.cate_insu .optSearchWrap .txt.disa {color:#b3a6ff;font-weight:normal;}
+.mainsearch.cate_insu .optSearchWrap .chkOption {position:absolute;top:15px;right:10px;z-index:3000;display:block;font-size:15px;}
+.mainsearch.cate_insu .optSearchWrap li.bgLocation a {margin-top:13px;padding:10px 0 10px 27px;}
+.mainsearch.cate_insu .optSearchWrap li.rigOptionSel {position:relative;padding-right:167px;padding-top:13px;}
+.mainsearch.cate_insu .optSearchWrap li.rigOptionSel a {padding-top:0;padding-bottom:0;}
+.mainsearch.cate_insu .optSearchWrap li.rigOptionSel a .txt {line-height:45px;}
+.mainsearch.cate_insu .optSearchWrap li.rigOptionSel .abR {position:absolute;bottom:0;right:0;width:153px;}
+@media only screen and (max-width : 359px){
+.mainsearch.cate_insu .optSearchWrap li.rigOptionSel {padding-right:137px;}
+.mainsearch.cate_insu .optSearchWrap li.rigOptionSel .abR {width:133px;}
+}
+.mainsearch .optSearchWrap li.bgLocation a {padding:15px 0 15px 27px;background:url(/images/contents/ico_location_wht.png) no-repeat left center; background-size:17px 22px;}
+.mainsearch .optSearchWrap li.bgLocation.rigOption a {padding-right:125px}
+.mainsearch .optSearchWrap li.bgDate a {padding:15px 0 15px 27px;background:url(/images/contents/ly_calender_titbg_01.png) no-repeat left center; background-size:18px 18px;}
+.mainsearch .optSearchWrap li.bgDate a .txt {display:inline-block;padding-right:5px;}
+
+/* 패키지 + 자유여행 */
+.mainsearch.cate_pack.cate_free .optSearchWrap {background-color:#77c300;}
+.mainsearch.cate_pack.cate_free .optSearchWrap li a {border-last-color:#a7eb3c;}
+.mainsearch.cate_pack.cate_free .optSearchWrap .txt.disa {color:#a7eb3c;}
+
+/* 국내호텔 > 최근본상품 */
+.recentList_hotel {/* margin-top:23px;padding-bottom:15px; 180603 수정 */}
+.recentList_hotel {margin-top:30px;/* padding-bottom:15px; */}
+.recentList_hotel .tit {padding:0 20px 13px 20px;; font-weight:bold;}
+.recentList_hotel .tit .num {font-weight:normal;}
+
+.recentList_hotel .swiper-wrapper {padding-left:5px;}
+.recentList_hotel .swiper-slide {width:135px;padding-left:15px;}
+.recentList_hotel .swiper-slide:last-child {padding-right:20px;}
+.recentList_hotel .swiper-slide a {display:block;}
+.recentList_hotel .swiper-slide a {-webkit-appearance:none;/* freeMode:true일때만 해당 */}
+.recentList_hotel .swiper-slide .photo {text-align:center;}
+.recentList_hotel .swiper-slide .photo img {height:101px;}
+.recentList_hotel .swiper-slide .txtBox {margin-top:8px;}
+.recentList_hotel .swiper-slide .txt {font-size:14px;line-height:19px;height:38px;}
+.recentList_hotel .swiper-slide .priceWrap {margin-top:3px;}
+.recentList_hotel .swiper-slide .priceWrap .price {font-size:17px;}
+
+/* 항공 비행정보 */
+.airdo .airScdInfo .price {/* padding-top:7px;border-top:1px solid #eaeaea; */text-align:right;font-weight:bold;font-size:17px;color:#f56764;}
+.airdo .airScdInfo .wrapBtm {position:relative;padding-top:7px;border-top:1px solid #eaeaea;text-align:right;}
+.airdo .airScdInfo .wrapBtm .priceTit {display:inline-block;padding-right:4px;font-size:14px;color:#6e6e6e;}
+.airdo .airScdInfo .wrap1,
+.airdo .airScdInfo .wrap2{position:relative;zoom:1;text-align:center;overflow:hidden;}
+.airdo .airScdInfo .wrap1::after,
+.airdo .airScdInfo .wrap1:after,
+.airdo .airScdInfo .wrap2::after
+.airdo .airScdInfo .wrap2:after{display:block;visibility:hidden;clear:both;height:0;content:''}
+.airdo .airScdInfo .wrap1 .aptTit {float:left;/* 171130 추가 */text-align:left;}
+.airdo .airScdInfo .wrap1 .aptTit img {height:20px;margin-right:2px;}
+.airdo .airScdInfo .wrap1 .aptTit .txt {font-size:16px;font-weight:bold;line-height:20px;}
+.airdo .airScdInfo .wrap1 .aptSeat {float:right;}
+.airdo .airScdInfo .wrap1 .aptSeat span.txt {font-weight:bold;font-size:14px;line-height:20px;}
+.airdo .airScdInfo .wrap1 .aptSeat span:last-child {/* margin-left:3px;padding-left:8px;background:url(/images/common/colorchip/c_a1a1a1_3x33.png) no-repeat left center; background-size:1px 11px; */}
+.airdo .airScdInfo .wrap1 .aptSeat span {margin-left:3px;padding-left:8px;background:url(/images/common/colorchip/c_a1a1a1_3x33.png) no-repeat left center; background-size:1px 11px;}
+.airdo .airScdInfo .wrap1 .aptSeat span:first-child {margin-left:0;padding-left:0;background:none;}
+.airdo .airScdInfo .wrap1 .aptSeat span strong {color:#f56764;}
+/* .airdo .airScdInfo .wrap1 .aptSeat span fcBlue {color:#0186c4;} 180209 : css 문법오류있어서 주석처리함/ 재확인요망 */
+.airdo .airScdInfo .wrap1 .aptSeat span fcBlue {color:#0186c4;}
+.airdo .airScdInfo .wrap1 .aptDate {float:right;}
+/* lang.css > contents_en01 */
+.airdo .airScdInfo .wrap1 .aptDate span.txt {font-weight:bold;font-size:16px;}
+.airdo .airScdInfo .wrap2 {/* margin-top:10px; */margin-bottom:3px;padding:7px 0;background:url(/images/contents/cont_result_airArr.png) no-repeat center center; background-size:auto 25px;}
+.airdo.ticketSty .airScdInfo .wrap2 {margin-bottom:8px;}
+.airdo .airScdInfo .wrap2 span {line-height:25px;font-size:15px;}
+.airdo .airScdInfo .wrap2 .abtPos1 {float:left;padding-right:10px;background:#fff;}
+.airdo .airScdInfo .wrap2 .abtPos2 {float:right;padding-left:15px;background: url(/images/contents/cont_result_airArr2.png) no-repeat left center;background-size:auto 11px;}
+/* lang.css > contents_en02 */
+.airdo .airScdInfo .aptShare {/* 공동운항 : 171124추가 */text-align:right;/* margin-top:-2px; */margin-top:0px;font-size:12px;padding-left:25px;color:#6e6e6e;}
+.airdo .airScdInfo .wrap2.blueTag {margin-top:5px;margin-bottom:0;background-image:url(/images/contents/cont_result_airArr_blue.png);}
+.airdo .airScdInfo .wrap2.blueTag .abtPos2 {background-image:url(/images/contents/cont_result_airArr2_blue.png);}
+.airdo .airScdInfo .wrap2.blueTag span {line-height:30px;}
+.airdo .airScdInfo .wrap2.blueTag .wayTag {display:inline-block;padding-left:15px;padding-right:40px;font-size:14px;font-weight:bold;color:#fff;border-radius:15px;}
+.airdo .airScdInfo .wrap2.blueTag .wayTag {background:#1777cb url(/images/contents/cont_result_blueTag_depart.png) no-repeat right center; background-size:30px 17px;}
+.airdo .airScdInfo .wrap2.blueTag .wayTag.return {background-image:url(/images/contents/cont_result_blueTag_return.png)}
+/* lang.css > contents_en03 */
+@media only screen and (max-width : 340px){
+.airdo .airScdInfo div.wrap2.blueTag span.wayTag {background:#1777cb !important;padding:0 7px;}
+}
+
+/* 결제상단 > 리스트만 */
+.airdo.airScdInfoBox li{background:#fff;border:1px solid #d8d8d8; padding:12px 15px 10px 15px;margin-top:10px;border-radius:3px;}
+.airdo.airScdInfoBox li:first-child {margin-top:0;}
+
+/* 항공 비행정보 > 티켓스타일 */
+.ticketSty {position:relative;}
+.ticketSty.ty2 {padding:25px 20px 0px 20px;}
+.ticketSty .innerWrap {padding:13px 15px 8px 15px;background:#fff;border-bottom-left-radius:6px;border-bottom-right-radius:6px;}
+.ticketSty.ty1 .innerWrap {padding-bottom:10px;}
+.ticketSty.ty2 .innerWrap {border:none;}
+.ticketSty .bgicon {position:absolute;bottom:28px;width:10px;height:17px;z-index:1000}
+.ticketSty .innerWrap {border:1px solid #d8d8d8;border-top:none;border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
+.ticketSty .bgicon.bg1 {left:0px;background:url(/images/contents/cont_result_ticketbg1.png) no-repeat 0 0 ; background-size:10px 17px;}
+.ticketSty .bgicon.bg2 {right:0px;background:url(/images/contents/cont_result_ticketbg2.png) no-repeat right 0; background-size:10px 17px;}
+.ticketSty.ty2 .bgicon.bg1 {background-image:url(/images/contents/cont_result_ticketbg1_gray.png);}
+.ticketSty.ty2 .bgicon.bg2 {background-image:url(/images/contents/cont_result_ticketbg2_gray.png);}
+.ticketSty .airScdInfo {margin-top:15px;position:relative;max-width:600px;}
+.ticketSty .airScdInfo:first-child {margin-top:0;}
+h3.def + .ticketSty.exair2 {margin-top:12px;}
+.ticketSty.exair2 .innerWrap2 {margin-top: 15px;max-width:600px;margin-left:auto;margin-right:auto;}
+.ticketSty.exair2 .innerWrap2:first-child {margin-top: 0;}
+.ticketSty.exair2 .ticketHead {padding-right:120px}
+
+.ticketSty .ticketHead {position:relative;background:#1777cb;padding:0 15px;border-top-left-radius:4px;border-top-right-radius:4px;line-height:40px;color:#fff;}
+.ticketSty .ticketHead.cGray {background:#72757c;}
+.ticketSty .ticketHead .abR {position:absolute;top:0;right:15px}
+.ticketSty .ticketHead .optWay {display:inline-block;font-size:16px;font-weight:bold;}
+.ticketSty.ty1 .ticketHead .optWay {font-size:17px;} 
+.ticketSty .ticketHead .optDate {display:inline-block;font-size:16px;}
+.ticketSty.ty1 .ticketHead .optDate {margin-left:6px;padding-left:10px;background:url(/images/common/colorchip/c_ffffff_3x48.png) no-repeat left center; background-size:1px 16px;}
+.ticketSty .ticketHead span.member {display:inline-block;text-align:right;height:40px;}
+.ticketSty .ticketHead span.member {padding-left:26px;background:url(/images/contents/ico_srchContTop_member.png) no-repeat left center; background-size:21px 21px;}
+.ticketSty .ticketHead span.flightnumber {display:inline-block;text-align:right;}
+.ticketSty .ticketHead .tit {font-size:17px;font-weight:bold;}
+.ticketSty .ticketHead .optComment {font-size:14px;}
+
+.ticketSty.ty1 .btn_priceDetail {position:absolute;bottom:10px;left:15px;z-index:1999;}
+/* lang.css > contents_en04 */
+.ticketSty.ty1 .airScdInfo .wrap1 .aptSeat span.txt {font-size:16px;}
+
+/* 항공 > 검색결과 > 버튼클릭시 오픈되는 레이어 */
+.rsltFootBtn.page {position:fixed;bottom:0;left:0;width:100%;z-index:3001;/* background:#f2f2f2 */}
+.resultFooterWrap {width:100%;height:100%;}
+.resultFooterWrap .innerWrapPo {position:relative;box-sizing:border-box;height:100%;background:url(/images/common/colorchip/c_f2f2f2_3x3.png) repeat 0 50px;}
+.resultFooterWrap .rsltFootBtn  {position:absolute;top:0px;left:0;width:100%;}
+.resultFooterWrap .rsltFootBtn.layer {z-index:5000}
+.resultFooterWrap .scr {overflow-y:auto;}
+.resultFooterWrap .scr .menuCont {padding-top:50px;/*min-height:100%;padding-top:50px; position:relative;height:100%; */}
+.resultFooterWrap .btn.styA {font-size:16px;}
+.resultFooterWrap .scrContWrap,
+.resultFooterWrap.scrContWrap {overflow-y:auto}
+.resultFooterWrap .scrContWrap .btn_area {/* padding-bottom:40px; */}
+.resultFooterWrap .ticketSty.airdo,
+.resultFooterWrap .iscrContInner2 {background:#f2f2f2}
+/* .rsltFootBtn .btn.styB {font-size:18px;font-weight:normal;line-height:50px;} 171204 수정 */
+.rsltFootBtn .btn.styB {font-size:18px;/* font-weight:normal; */line-height:60px;}
+.rsltFootBtn .btn.styB .bg {line-height:60px;}
+
+/* 설정페이지 */
+.setLayout {margin-top:0}
+.setLayout ul {margin-top:10px;}
+.setLayout ul:first-child {margin-top:0px;}
+.setLayout ul li {position:relative;background:#fff;border-top:1px solid #f2f2f2;padding:13px 15px;}
+.setLayout ul li:first-child {border-top:none;}
+.setLayout ul li .tit {font-size:16px;color:#191919;font-weight:bold;}
+.setLayout ul li .subtxt {font-size:14px;color:#6e6e6e;line-height:19px;}
+.setLayout ul li .tit + .subtxt {margin-top:5px;}
+.setLayout ul li .abR{position:absolute;top:50%;right:15px;margin-top:-15px;height:30px;}
+
+.setLayout ul li.btn {padding-right:110px;}
+.setLayout ul li.link {padding:0}
+.setLayout ul li.link a {display:block;padding:15px;background:url(/images/contents/arrTy01_R2.png) no-repeat right center; background-size:23px 11px;}
+.setLayout ul li.btnCheck {padding-right:75px;}
+.setLayout ul li.btnCheck .tit{display:inline-block;}
+.setLayout ul li.btnCheck.onlyTit {padding-top:15px;padding-bottom:15px;}
+.setLayout ul li.btnCheck.onlyTit .tit {line-height:30px;}
+
+/* 예약결과 */
+/* 나의여행 > 예약목록 */
+.rsvList .noresult {margin-top:15px;border-top:2px solid #6e6e6e;padding-top:153px;text-align:center;background:url(/images/contents/noresult_rsvlist_all.png) no-repeat center 40px; background-size:auto 90px;}
+.rsvList .noresult.txt {font-size:19px;}
+.rsvList .noresult.txt {background-image:url(/images/contents/noresult_rsvlist_all.png)}
+.rsvList .cate_air .noresult {background-image:url(/images/contents/noresult_rsvlist_air.png)}
+.rsvList .cate_hotel .noresult {background-image:url(/images/contents/noresult_rsvlist_hotel.png)}
+.rsvList .cate_rentcar .noresult {background-image:url(/images/contents/noresult_rsvlist_rentcar.png)}
+.rsvList .cate_ticket .noresult {background-image:url(/images/contents/noresult_rsvlist_ticket.png)}
+
+/* 나의여행 > 모바일개편  */
+.rsvListNew {padding-bottom:40px;}
+.rsvListNewTit {padding:20px;background:#5587cb;color:#fff;line-height:23px;}
+.rsvNew {padding-bottom:40px;}
+.rsvNewTit {position:relative;min-height:46px;}
+.rsvNewTit a.cateTit {display:block;background-color:#5587cb;padding:13px 18px 13px 20px;font-size:16px;font-weight:bold;color:#fff;line-height:20px;}
+.rsvNewTit a.cateTit .bg {display:block;background:url(/images/contents/arrTy04_D.png) no-repeat right center; background-size:auto 11px;}
+.rsvNewTit.on a.cateTit {position:absolute;top:0;left:0;width:100%;box-sizing:border-box;z-index:2000;} 
+.rsvNewTit.on a.cateTit .bg {background-image:url(/images/contents/arrTy04_U.png)}
+.rsvNewTit .cateWrap {position:absolute;top:46px;left:0;width:100%;}
+.rsvNewTit .cateWrap {/* background-color:#f2f2f2;z */background-color:#f7f7f7;z-index:2000;/* border-bottom:2px solid #d8d8d8 *//* border-bottom:2px solid #1777cb */}
+.rsvNewTit .cateWrap li {border-top:1px solid #d8d8d8} 
+.rsvNewTit .cateWrap li:first-child {border-top:none;}
+.rsvNewTit .cateWrap li a {display:block;padding:0 20px;line-height:48px;font-size:16px;}
+.rsvNewTit .cateWrap li a.on {color:#5587cb;font-weight:bold;}
+.rsvNewTit .cateWrap li a.on span {padding-right:35px;background: url(/images/common/header/lnbmenu_on.png) no-repeat right center;background-size: 21px 13px;}
+/* .rsvNewTit .cateWrap .btn_close {display:block;background:#444a5a;text-align:center;color:#fff;padding:5px} */
+.rsvNewTit .btn_close {display:none;position:fixed;top:48px;left:0;width:100%;height:100%;background:#000;opacity:0.65;z-index:1999}
+.rsvNewInfo {position:relative;/* margin-top:-15px; */margin-top:-5px;line-height:20px;font-size:15px;}
+.rsvNewInfo .sel select.def {padding-left:0;padding-right:30px;}
+.rsvNewInfo .abR {position:absolute;top:0;/* right:0px */right:-12px}
+
+.rsvNewListWrap {}
+.rsvNewListWrap .rsvNewListBox  {margin-top:25px;} 
+.rsvNewListBox {border:1px solid #d8d8d8;border-radius:5px;}
+.rsvNewListBox .tit {position:relative;background:#f2f2f2;padding:10px 15px;padding-right:110px;}
+.rsvNewListBox .tit h4 {font-weight:bold;line-height:30px;}
+.rsvNewListBox .tit .btnR {position:absolute;top:10px;right:15px;}
+.rsvNewListBox .txtWrap {padding:20px 15px;}
+.rsvNewListBox .txtWrap .tit2 {/* font-weight:bold; */}
+.rsvNewListBox .txtWrap .tit2 .apWay {color:#6e6e6e;/* padding:0 5px; */}
+.rsvNewListBox .txtWrap .btn_area {margin-top:15px;}
+.rsvNewListBox .txtWrap ul li {position:relative;padding-left:85px;font-size:15px;margin-top:7px;line-height:20px;min-height:22px;}
+.rsvNewListBox .txtWrap ul li:first-child {margin-top:12px;}
+.rsvNewListBox .txtWrap ul li .stit{position:absolute;width:85px;top:0;left:0;}
+.rsvNewListBox .txtWrap ul li .txt {}
+.rsvNewListBox .txtWrap ul.word3 li {padding-left:70px;}
+.rsvNewListBox .txtWrap ul.word3 .stit {width:70px;}
+.rsvNewListBox .txtWrap ul.word4 li {padding-left:85px;}
+.rsvNewListBox .txtWrap ul.word4 .stit {width:85px;}
+.rsvNewListBox .txtWrap ul.word5 li {padding-left:100px;}
+.rsvNewListBox .txtWrap ul.word5 .stit {width:100px;}
+.rsvNewListWrap .noresult {margin-top:15px;border-top:1px solid #ececec;padding-top:183px;padding-bottom:50px;text-align:center;background:url(/images/contents/noresult_rsvlist_all.png) no-repeat center 70px; background-size:auto 90px;}
+.rsvNewListWrap .noresult.txt {font-size:19px;}
+
+
+/* 나의 여행 > 예약상세 > 약관 */
+.rsvDetailRule {margin-top:15px;padding-bottom:40px;}
+.rsvDetailRule .tabContWrap .tabCont {padding:20px 20px 0px 20px;font-size:15px; line-height:22px;}
+
+/* error */
+.TMv2_contents .errorPage {padding-top:50px;}
+.errorPage {margin: auto;padding:80px 20px 50px 20px;}
+.errorPage .tit {font-size:19px;padding:90px 0 0 0 ;text-align:center;background:url(/images/contents/noresult_rsvlist_all.png) no-repeat center top;background-size:auto 90px;}
+.errorPage .tit p {padding-top:5px;}
+.errorPage .tit p:first-child {padding-top:20px;}
+.errorPage .cont {margin-top:20px;padding:20px 0px 0 0px;border-top:1px solid #6e6e6e;font-size:14px;line-height:22px;}
+.errorPage .cont .txt p {margin-top:5px;}
+.errorPage .cont ul {margin-top:13px;background:#f2f2f2;padding:10px 5px 10px 10px;}
+.errorPage .cont li {margin-top:5px;padding-left:9px;background:url(/images/common/colorchip/dot_6e6e6e_9x9.png) no-repeat left 10px;background-size: 3px 3px;}
+.errorPage .cont li:first-child {margin-top:0}
+.errorPage .cont li .sm {font-size:13px}
+
+/* 교차상품 */
+.crossPromWrap .swiper-pagination-bullet {width:6px;height:6px;opacity:1;background-color:transparent;border:1px solid #000;}
+.crossPromWrap .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {margin:0 4px;}
+.crossPromWrap .swiper-pagination-bullet-active {background-color:#000;}
+
+/* 교차상품 > 이미지 1 (full) */
+.crossPromWrap .cImgN1 {text-align:center;} 
+.crossPromWrap .cIcImgN1mg1 {margin-top:25px;}
+.wrapDef.fit + .crossPromWrap .cImgN1 {margin-top:40px;}
+
+
+/* 교차상품 > 이미지 2 (에어머니) */
+.crossPromWrap .cImgN2 {text-align:left;} 
+.crossPromWrap .cIcImgN1mg2 {margin-top:25px;}
+.wrapDef.fit + .crossPromWrap .cImgN2 {margin-top:40px;}
+
+/* 교차상품 > 국내호텔 */
+.crossPromWrap .cInhotel {background:#f2f2f2;}
+.crossPromWrap .cInhotel .swiper-pagination {/* bottom:78px; */bottom:auto;top:244px;}
+.crossPromWrap .cInhotel .tit {padding-top:17px;font-size:19px;text-align:center;color:#191919;font-weight:bold;}
+.crossPromWrap .cInhotel a {display:block;width:100%;}
+.crossPromWrap .cInhotel .place {line-height:18px;padding:7px 10px 20px;text-align:center;font-size:15px;color:#9746c1;font-weight:bold;z-index:3000}
+.crossPromWrap .cInhotel .photo {width:100%;height:210px;text-align:center;}
+.crossPromWrap .cInhotel .photo img {max-width:600px;width:100%;height:100%;}
+.crossPromWrap .cInhotel .txtBox {position:relative;padding:20px;background:#fff;}
+.crossPromWrap .cInhotel .txtBox .txt {padding-top:2px;padding-right:120px;color:#191919;font-size:17px;font-weight:bold;}
+.crossPromWrap .cInhotel .txtBox .priceWrap {position:absolute;top:22px;right:16px;}
+.crossPromWrap .cInhotel .txtBox .subTxt {margin-top:7px;font-size:15px;color:#6e6e6e;}
+/* 교차상품 > 렌터카 */
+.crossPromWrap .cRentcar {background:#fff;border-top:1px solid #eaeaea;padding-top:30px;}
+.crossPromWrap .cRentcar .swiper-pagination {bottom:auto;top:199px;}
+.crossPromWrap .cRentcar .tit {padding-top:60px;padding-bottom:15px;font-size:19px;line-height:27px;text-align:center;color:#191919;font-weight:bold;}
+.crossPromWrap .cRentcar .tit {background:url(/images/contents/crossProm_rentcarBg.png) no-repeat center 0px; background-size:40px auto;}
+.crossPromWrap .cRentcar .photo .noimg {width:80%;}
+.crossPromWrap .cRentcar a {display:block;width:100%;}
+.crossPromWrap .cRentcar .photo {background:#f5eae7;height:210px;text-align:center;}
+.crossPromWrap .cRentcar .photo img {max-width:600px;width:100%;height:100%;}
+.crossPromWrap .cRentcar .txtBox {position:relative;padding:20px 20px 40px 20px;background:#f2f2f2;}
+.crossPromWrap .cRentcar .txtBox .txt {padding:2px 100px 6px 0;color:#191919;font-size:19px;font-weight:bold;}
+.crossPromWrap .cRentcar .txtBox .priceWrap {position:absolute;top:22px;right:16px;}
+.crossPromWrap .cRentcar .txtBox .subTxt {margin-top:7px;font-size:15px;color:#6e6e6e;margin-top:5px;}
+/* 교차상품 > 티켓A(테마상품) */
+.crossPromWrap .cPassA {background:#fff;padding-top:30px}
+.crossPromWrap .cPassA .swiper-pagination {bottom:auto;top:175px;}
+.crossPromWrap .cPassA .tit {padding-top:60px;font-size:19px;text-align:center;color:#191919;font-weight:bold;height:45px;background:url(/images/contents/crossProm_cPassABg.png) no-repeat center 0; background-size:40px auto;}
+.crossPromWrap .cPassA .photo .noimg {width:80%;}
+.crossPromWrap .cPassA a {display:block;width:100%;}
+.crossPromWrap .cPassA .photo {height:215px;text-align:center;}
+.crossPromWrap .cPassA .photo img {max-width:600px;width:100%;height:100%;}
+.crossPromWrap .cPassA .txtBox {position:relative;padding:12px 20px 40px 20px;text-align:center;}
+.crossPromWrap .cPassA .txtBox .txt {color:#191919;font-size:17px;}
+.crossPromWrap .cPassA .txtBox .priceWrap {margin-top:6px;}
+ /* 교차상품 > 티켓B(테마상품) */
+.crossPromWrap .cPassB {background:#fff3e3;padding-top:25px;}
+.crossPromWrap .cPassB .swiper-pagination {bottom:25px;}
+.crossPromWrap .cPassB .tit {padding-bottom:8px;font-size:19px;line-height:27px;text-align:center;color:#191919;font-weight:bold;}
+.crossPromWrap .cPassB .tit span {display:inline-block;min-width:130px;border-bottom:1px solid #191919;padding-bottom:6px;}
+.crossPromWrap .cPassB .cate {text-align:center;font-size:15px;}
+.crossPromWrap .cPassB .swiper-slide {}
+.crossPromWrap .cPassB a {display:block;width:100%;}
+.crossPromWrap .cPassB .txtBox {margin:20px auto 53px auto;width:250px;padding:15px;background:#ffffff;}
+.crossPromWrap .cPassB .photo .noimg {width:80%;}
+.crossPromWrap .cPassB .photo {background:#f5eae7;height:175px;text-align:center;}
+.crossPromWrap .cPassB .photo img {width:100%;height:100%;}
+.crossPromWrap .cPassB .txtBox .txt {margin-top:10px;color:#191919;height:48px;font-size:17px;line-height:24px;text-align:center;}
+.crossPromWrap .cPassB .txtBox .priceWrap {margin-top:12px;text-align:center;}
+.crossPromWrap .cPassB .txtBox .priceWrap .subTxt {/* display:inline-block;font-weight:normal;padding-right:5px;font-size:14px;color:#6e6e6e; */}
+
+/* 티켓 > 메인 > Best 인기 관광지 */
+.crossPromWrap .cPassC  {padding-top:28px;padding-bottom:45px;}
+.crossPromWrap .cPassC .tit {padding:0 20px 13px 20px; font-weight:bold;}
+.crossPromWrap .cPassC .swiper-wrapper {}
+.crossPromWrap .cPassC .swiper-slide {width:135px;padding-left:20px;}
+.crossPromWrap .cPassC .swiper-slide:last-child {padding-right:20px;}
+.crossPromWrap .cPassC .swiper-slide a {display:block;width:135px;}
+.crossPromWrap .cPassC .swiper-slide a {-webkit-appearance:none;/* freeMode:true일때만 해당 */}
+.crossPromWrap .cPassC .swiper-slide .photo {text-align:center;}
+.crossPromWrap .cPassC .swiper-slide .photo img {width:135px;height:101px;}
+.crossPromWrap .cPassC .swiper-slide .txtBox {margin-top:8px;position:relative;}
+.crossPromWrap .cPassC .swiper-slide .aptSubtxt {line-height:18px;height:18px;font-size:13px;color:#f56765;}
+.crossPromWrap .cPassC .swiper-slide .aptTit {font-size:16px;font-weight:bold;}
+.crossPromWrap .cPassC .swiper-slide .abtSubtxt + .aptTit {margin-top:5px;}
+.crossPromWrap .cPassC .swiper-slide .starWrap .icon_star {display:inline-block;vertical-align:middle;}
+.crossPromWrap .cPassC .swiper-slide .starWrap .starNum {display:inline-block;vertical-align:middle;font-size:14px;padding-left:7px;}
+.crossPromWrap .cPassC .swiper-slide .priceWrap {overflow:hideen;margin-top:5px;line-height:18px;}
+.crossPromWrap .cPassC .swiper-slide .priceWrap .optSalenum {float:left;display:inline-block;font-size:10px;color:#6e6e6e;letter-spacing: -0.07em;}
+.crossPromWrap .cPassC .swiper-slide .priceWrap .price {float:right;display:inline-block;font-size:16px;font-weight:bold;}
+
+/* 티켓 > 메인 > 추천 입장권 세트 */
+.crossPromWrap .cPassD {background:#fff;}
+.crossPromWrap .cPassD .swiper-pagination {bottom:15px;right:20px;left:auto;margin-left:0;}
+.crossPromWrap .cPassD a {display:block;width:100%;position:relative;}
+.crossPromWrap .cPassD .photo {/* height:215px; */text-align:center;}
+.crossPromWrap .cPassD .photo img {/* max-width:460px; */width:100%;height:100%;}
+
+/* 교차상품 > 렌터카 */
+.crossPromWrap .cPassE {background:#fff;padding:30px 0px 25px 0px;}
+.crossPromWrap .cPassE .swiper-pagination {position:relative;bottom:0;margin-top:13px;}
+.crossPromWrap .cPassE .tit {padding:0 20px;font-size:19px;color:#191919;font-weight:bold;}
+.crossPromWrap .cPassE li {margin-top:15px;padding:0 20px;}
+.crossPromWrap .cPassE a {display:block;position:relative;padding-left:105px;min-height:70px;}
+.crossPromWrap .cPassE .photo {position:absolute;top:0;left:0;width:90px;height:70px;}
+.crossPromWrap .cPassE .photo img {height:100%;width:100%;}
+.crossPromWrap .cPassE .txtBox {line-height:20px;min-height:70px;line-hgith:23px;display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center;}
+.crossPromWrap .cPassE .txtBox p.optTxt {margin-top:2px;}
+
+/* 교차상품 > 호텔B > 알쓸특가 */
+.crossPromWrap .cInhotelB {background:#ffeff7;padding-top:30px}
+.crossPromWrap .cInhotelB .swiper-pagination {bottom:26px;}
+.crossPromWrap .cInhotelB .tit {padding-top:60px;font-size:19px;text-align:center;color:#191919;font-weight:bold;background:url(/images/contents/crossProm_cPassABg.png) no-repeat center 0; background-size:40px auto;}
+.crossPromWrap .cInhotelB .copy {margin-top:6px;text-align:center;}
+.crossPromWrap .cInhotelB .cate {text-align:center;font-size:15px;}
+.crossPromWrap .cInhotelB .swiper-slide {}
+.crossPromWrap .cInhotelB a {display:block;width:100%;}
+.crossPromWrap .cInhotelB .txtBox {margin:20px auto 53px auto;width:250px;padding:15px;background:#ffffff;}
+.crossPromWrap .cInhotelB .photo {background:#f5eae7;height:175px;text-align:center;}
+.crossPromWrap .cInhotelB .photo .btn.styF.tailR {left:15px;}
+.crossPromWrap .cInhotelB .photo img {width:100%;height:100%;}
+.crossPromWrap .cInhotelB .txtBox .txt {padding-top:23px;height:72px;overflow:hidden;font-size:14px;}
+.crossPromWrap .cInhotelB .txtBox .name_en {padding-top:23px;font-size:14px;color:#6e6e6e;line-height:22px;}
+.crossPromWrap .cInhotelB .txtBox .name {font-size:17px;color:#191919;font-weight:bold;line-height:25px;}
+.crossPromWrap .cInhotelB .txtBox .date {font-size:15px;font-weight:bold;line-height:25px;padding-top:2px;}
+.crossPromWrap .cInhotelB .txtBox .opt {font-size:14px;color:#6e6e6e;line-height:22px;}
+.crossPromWrap .cInhotelB .txtBox .priceWrap {margin-top:12px;text-align:right;}
+.crossPromWrap .cInhotelB .txtBox .date + .priceWrap {margin-top:7px}
+
+/* 교차상품 > 호텔C > MD 추천 */
+.crossPromWrap .cInhotelC {background:#fff;}
+/* .crossPromWrap .cInhotelC .tit2 {font-size:19px;color:#191919;font-weight:bold;padding:0 0 10px 20px;} */
+.crossPromWrap .cInhotelC .swiper-pagination {bottom:auto;top:175px;}
+.crossPromWrap .cInhotelC a {display:block;width:100%;}
+.crossPromWrap .cInhotelC .photo {height:215px;text-align:center;}
+.crossPromWrap .cInhotelC .photo img {max-width:460px;width:100%;height:100%;}
+.crossPromWrap .cInhotelC .txtBox {position:relative;padding:18px 20px 30px 20px;}
+.crossPromWrap .cInhotelC .txtBox .tit {font-size:19px;color:#191919;font-weight:bold;}
+.crossPromWrap .cInhotelC .txtBox .txt {margin-top:7px;font-size:15px;color:#6e6e6e;}
+
+/* 교차상품 > 호텔D > 땡처리 판매 베스트 */
+.crossPromWrap .cInhotelD {/* background:#ffeff7;padding-top:30px */}
+.crossPromWrap .cInhotelD .swiper-pagination {top:175px;bottom:auto;}
+.crossPromWrap .cInhotelD .cate {text-align:center;font-size:15px;}
+.crossPromWrap .cInhotelD .swiper-slide {}
+.crossPromWrap .cInhotelD a {display:block;width:100%;}
+.crossPromWrap .cInhotelD .photo {/* background:#f5eae7;height:175px; */height:auto;text-align:center;}
+.crossPromWrap .cInhotelD .photo .btn.styF.tailR {left:15px;}
+.crossPromWrap .cInhotelD .photo img {width:100%;height:220px;max-width:460px;}
+.crossPromWrap .cInhotelD .txtBox {padding:0 20px;}
+.crossPromWrap .cInhotelD .txt {padding-top:18px;/* height:72px; */overflow:hidden;font-size:14px;}
+.crossPromWrap .cInhotelD  .name_en {padding-top:23px;font-size:14px;color:#6e6e6e;line-height:22px;}
+.crossPromWrap .cInhotelD  .name {font-size:17px;color:#191919;font-weight:bold;line-height:25px;}
+.crossPromWrap .cInhotelD  .date {font-size:15px;font-weight:bold;line-height:25px;padding-top:2px;}
+.crossPromWrap .cInhotelD  .opt {font-size:14px;color:#6e6e6e;line-height:22px;}
+.crossPromWrap .cInhotelD  .date + .priceWrap {margin-top:7px}
+.crossPromWrap .cInhotelD .abR{position:absolute;bottom:5px;left:20px;}
+.crossPromWrap .cInhotelD .info {padding-top:6px;text-align:right;}
+
+/* 이벤트 > 패키지 > 타임세일 */
+.promoWrap .timesale {position:relative;/*기본 padding:15px 20px 0 20px;*//*디자인*/ padding:5px 5px 0 5px}
+.promoWrap .timesale a {position:relative;display:block;}
+.promoWrap .timesale .counnt {display:inline-block;overflow:hidden;background:#fff200;padding:0 12px;border-radius:13px;}
+.promoWrap .timesale .counnt h4.tit {float:left;font-size:17px;line-height:26px;color:#000000;font-weight:bold;}
+.promoWrap .timesale .counnt .num {float:right;padding-left:20px;font-size:12px;line-height:26px;color:#000000;font-weight:bold;}
+.promoWrap .timesale .txtWrap {margin-top:10px;color:#fff;}
+.promoWrap .timesale .txtWrap .txt {font-size:17px;line-height:20px;font-weight:bold;}
+.promoWrap .timesale .txtWrap .subTxt {margin-top:5px;}
+.promoWrap .timesale .txtWrap .hashtags span{font-size:12px;margin-left:20px;}
+.promoWrap .timesale .txtWrap .hashtags span:first-child {margin-left:0}
+.promoWrap .timesale.tyA a {background:#f25b7a;padding:15px 120px 15px 18px ;border-radius:6px;}
+.promoWrap .timesale.tyA.img a {padding:0;}
+.promoWrap .timesale.tyA.img .counnt {position:absolute;top:20px;left:20px;}
+.promoWrap .timesale.tyA.img .photo img {border-radius:6px;}
+.promoWrap .timesale.tyA.txt a {background:#f25b7a;}
+.promoWrap .timesale.tyA.txt .photo {position:absolute;top:50%;right:10px;width:100px;height:100px;margin-top:-50px;}
+.promoWrap .timesale.tyA.txt .photo img {width:100px;height:100px;border-radius:50px;}
+.promoWrap .timesale.tyB a{background:#fff;padding:15px 10px;border-radius:8px 8px 0 0;border:1px solid #eee;border-bottom:0}
+.promoWrap .timesale.tyB .bClose {position:absolute;top:7px;right:6px;z-index:501;border:none;width:25px;height:25px;border:none;background:url(/images/contents/ico_close_ty3.png) no-repeat center center; background-size:25px 25px;}
+.promoWrap .timesale.tyB .counnt {background: #f84545;margin-left:10px;}
+.promoWrap .timesale.tyB .counnt h4, .promoWrap .timesale.tyB .counnt .num {color:#fff;}
+.promoWrap .timesale.tyB .txtWrap {color:#000;padding-left:10px;}
+.promoWrap .timesale.tyB .txtWrap .subTxt {margin-top:0;}
+.promoWrap .timesale.tyB .photo {margin-top:15px;color:#000;}
+.promoWrap .timesale.tyB.img img {max-height:auto;}
+.promoWrap .timesale.tyB.txt img {max-height:160px;border-radius:6px;}
+
+/* popupBtm > 이미지 */
+.popupBtm .imgOnly {padding:5px 5px 0px 5px;}
+.popupBtm .imgOnly .bgWrap {background:#fff;padding:7px 7px 10px 7px;border-radius:8px 8px 0 0;border:1px solid #eee;border-bottom:0}
+.popupBtm .imgOnly a.link {display:block;border-radius:8px 8px 0 0;}
+.popupBtm .imgOnly .photo {text-align:center;}
+.popupBtm .imgOnly .photo img {max-height:300px;border-radius:8px;}
+.popupBtm .imgOnly .btmClose {background:#fff;overflow:hidden; margin-top:5px;}
+.popupBtm .imgOnly .btmClose a {color:#000;font-size:13px;font-weight:bold;line-height:25px;padding:5px 5px 5px 5px;}
+.popupBtm .imgOnly .btmClose .tl {float:left;}
+.popupBtm .imgOnly .btmClose .tr {float:right;}
+
+
+/* 쿠폰 */
+.couponStyle {position:relative;max-width:600px;margin:0 auto;padding:13px 117px 14px 20px;border:2px solid #444a5a;border-right:0px solid transparent;border-radius:8px;box-sizing:border-box;}
+.couponStyle {background:url(/images/contents/couponStyle_bg1.png) repeat-y right center; background-size:auto 16px;}
+.couponStyle .innerWrap {background:#fff;}
+.couponStyle .bgTag {position:absolute;right:0px;width:105px;height:10px;background:url(/images/contents/couponStyle_bg_top.png) no-repeat left 0; background-size:105px 10px;}
+.couponStyle .bgTag.top {top:-2px;background-image:url(/images/contents/couponStyle_bg_top.png)}
+.couponStyle .bgTag.btm {bottom:-2px;background-image:url(/images/contents/couponStyle_bg_bottom.png)}
+.couponStyle .cTit {font-size:17px;font-weight:bold;}
+.couponStyle .cOption {color:#6e6e6e;font-size:13px;line-height:20px;margin-top:6px}
+.couponStyle .cList {margin-top:12px;padding-top:8px;padding-bottom:4px;border-top:1px solid #eaeaea;}
+.couponStyle .cList li {margin-top:1px;font-size:11px;padding-left:10px;background:url(/images/common/colorchip/c_6e6e6e_1x1.png) no-repeat 4px 6px; background-size:1px 1px;}
+.couponStyle .cList li.txtInd2 {padding-left:40px;text-indent:-30px;}
+.couponStyle .cSale {position:absolute;height:55px;width:95px;top:50%;right:2px;margin-top:-25px;}
+.couponStyle .cSale strong {color:#f56764;font-size:19px;display:block;text-align:center;padding-top:18px;background:#fff;background:url(/images/contents/couponStyle_bg2.png) no-repeat center 0; background-size:15px 16px;}
+.couponStyle2 {position:relative;max-width:600px;margin:0 auto;padding:13px 95px 14px 20px;border:2px solid #444a5a;border-right:0px solid transparent;border-radius:8px;box-sizing:border-box;}
+.couponStyle2 {background:url(/images/contents/couponStyle2_bg1.png) repeat-y right center; background-size:auto 8px;}
+.couponStyle2 .innerWrap {background:#fff;}
+.couponStyle2 .bgTag {position:absolute;right:0px;width:90px;height:10px;background:url(/images/contents/couponStyle2_bg_top.png) no-repeat left 0; background-size:90px 10px;}
+.couponStyle2 .bgTag.top {top:-2px;background-image:url(/images/contents/couponStyle2_bg_top.png)}
+.couponStyle2 .bgTag.btm {bottom:-2px;background-image:url(/images/contents/couponStyle2_bg_bottom.png)}
+.couponStyle2 .cTit {font-size:17px;font-weight:bold;}
+.couponStyle2 .cOption {color:#6e6e6e;font-size:15px;line-height:20px;margin-top:5px}
+.couponStyle2 .cExpiry {font-size:14px;border-top:1px solid #eaeaea;margin-top:13px;padding-top:8px;}
+.couponStyle2 .cSale {position:absolute;height:55px;width:55px;top:50%;right:11px;margin-top:-27px;border-radius:30px;background:#fff;}
+.couponStyle2 .cSale strong {color:#f56764;font-size:19px;display:block;text-align:center;margin-top:10px;padding-top:15px;background:#fff;background:url(/images/contents/couponStyle_bg2.png) no-repeat center 0; background-size:15px 16px;}
+
+/* 다음지도 api */
+.zipcodeWrap {display:none;border:1px solid #d7d7d7;width:100%;height:400px;margin:5px 0;position:relative;box-sizing:border-box;margin-top:30px;}
+.zipcodeWrap .zipcodeWrapClose {cursor:pointer;position:absolute;right:-1px;top:-20px;z-index:1;width:20px;height:20px;}
+.zipcodeWrap .bgline {position:absolute;top:46px;left:0;width:100%;height:1px;background:#d7d7d7;z-index:1;background:red}
+
+/* 푸터 > 회사소개 */
+.ttangHead {position:relative;text-align:center;padding-top:30px;}
+.ttangHead .logo{width:150px;}
+.ttangHead .subTxt{font-weight:bold;margin-top:10px;}
+.ttangAbout {}
+.ttangInfo {}
+.ttangHistory h4.def.last {font-size:18px;}
+.ttangHistory .listDef.d2.bgDot.last li {background:none;padding-left:0;margin-top:10px;font-size:18px;color:#1578cb;font-weight:bold;}
+.ttangWay h4 {border-top:1px dotted #999;;padding-top:15px;}
+.ttangWay h4:first-child {border-top:none;padding-top:0;}
+.ttangWay .mapWrap {margin-top:15px;border:5px solid #bababa;background:#eee;}
+.ttangWay .listDef {margin-top:10px;}
+
+/* 영문을 위해 테이블 width class로 분리  */
+
+/* 국내항공 > 예약리스트  */
+#IDlangW_tbl_inair_01 .colA {width:85px}
+html.en #IDlangW_tbl_inair_01 .colA {width:125px;}
+html.en #IDlangW_tbl_inair_01 th, 
+html.en #IDlangW_tbl_inair_01 td {padding-left:10px;}
+html.en #IDlangW_tbl_inair_01 td.btnR .txtL1 {padding-right:0px;}
+html.en #IDlangW_tbl_inair_01 td.btnR .btnR {position:relative;display:inline-block;margin-left:15px;}
+/* 국내항공 > 예약상세  */
+#IDlangW_tbl_inair_02 .colA {width:100px}
+#IDlangW_tbl_inair_02 .colA.cancel {width:120px}
+html.en #IDlangW_tbl_inair_02 .colA {width:140px;}
+html.en #IDlangW_tbl_inair_02 th, 
+html.en #IDlangW_tbl_inair_02 td {padding-left:10px;}
+/* 국내항공 > 예약상세 > 여행자및탑승객정보탭  */
+#IDlangW_tbl_inair_03 .colA {width:100px}
+html.en #IDlangW_tbl_inair_03 .colA {width:110px;}
+/* 국내항공 > 예약상세 > 여행자정보  */
+#IDlangW_tbl_inair_04 .colA {width:70px}
+#IDlangW_tbl_inair_04 .colB{width:auto}
+#IDlangW_tbl_inair_04 .colC{width:80px}
+html.en #IDlangW_tbl_inair_04 .colA {width:auto;}
+html.en #IDlangW_tbl_inair_04 .colB {width:80px;}
+html.en #IDlangW_tbl_inair_04 .colC {width:90px;}
+/* 국내항공 > 예약상세 > 결제정보  */
+#IDlangW_tbl_inair_05 .colA {width:85px}
+html.en #IDlangW_tbl_inair_05 .colA {width:140px;}
+
+/* 국내항공 > 예약상세 > 환불정보  */
+#IDlangW_tbl_inair_08 .colA {width:120px}
+html.en #IDlangW_tbl_inair_08 .colA {width:160px;}
+
+/* 국내항공 > 예약완료 > 가는편,오는편 : 차후 영문 실데이터 입력후 다시 확인   */
+#IDlangW_tbl_inair_06 .colA {width:100px}
+html.en #IDlangW_tbl_inair_06 .colA {width:120px;}
+
+/* 국내항공 > 결제정보 : 차후 영문 실데이터 입력후 다시 확인 */
+#IDlangW_tbl_inair_07 .colA {width:100px}
+html.en #IDlangW_tbl_inair_07 .colA {width:155px;}
+
+/* 예약완료 하단버튼 */
+html.en #IDlangW_btn_inair_01.btn_area.n2 .btnWrap:first-child {width:32%;}
+html.en #IDlangW_btn_inair_01.btn_area.n2 .btnWrap:last-child {width:68%;}
+
