@@ -49,11 +49,11 @@ public class SecurityConfig {
 //		
 		
 		//all페이지는 인증만 되면 됨, user페이지는 셋 중 하나만 권한이 있어도 접속이 가능. (셋 중 하나만 권한을 가지면 된다)
-		http.authorizeHttpRequests( authorize -> authorize.antMatchers("/all").authenticated()
-															.antMatchers("/user/**").hasAnyRole("USER", "ADMIN", "TESTER")
-															.antMatchers("/admin/**").hasRole("ADMIN")
-															.anyRequest().permitAll() );
-		
+//		http.authorizeHttpRequests( authorize -> authorize.antMatchers("/all").authenticated()
+//															.antMatchers("/user/**").hasAnyRole("USER", "ADMIN", "TESTER")
+//															.antMatchers("/admin/**").hasRole("ADMIN")
+//															.anyRequest().permitAll() );
+//		
 		
 		//시큐리티 설정파일을 만들면, 시큐리티가 제공하는 기본 로그인페이지가 보이지 않게 된다.
 		//시큐리티가 사용하는 기본 로그인 페이지를 사용하겠다는 설정
@@ -61,11 +61,40 @@ public class SecurityConfig {
 		//http.formLogin( Customizer.withDefaults()); //기본로그인페이지에서 사용
 		
 		//사용자가 제공하는 폼기반 로그인 기능을 사용할 수 있게 된다.
-		http.formLogin().loginPage("/login");
+		//http.formLogin().loginPage("/login");
 		
 		
+		//사용자가 제공하는 폼기반 로그인 기능을 사용할 수 있게 된다.
+		http.formLogin()
+			.loginPage("/login") //로그인화면
+			.loginProcessingUrl("/loginForm") //로그인시도 요청경로 -> 스프링이 로그인 시도를 낚아채서 UserDatailService로
+			.defaultSuccessUrl("/all") //로그인 성공시 페이지
+			.failureUrl("/login?err=true") //로그인 실패시 이동할 url
+			.and()
+			.exceptionHandling().accessDeniedPage("/deny") //권한이 없을 때 이동할 리다이렉트 경로
+			.and()
+			.logout().logoutUrl("/logout").logoutSuccessUrl("/hello"); //default 로그아웃 경로 /logout, /logout 주소를 직접 작성할 수 있고, 로그아웃 성공시 리다이렉트할 경로 
 		
 		
-		return http.build();
+		//rememberMe 나를 기억해 설정
+//		http.rememberMe()
+//			.key("coding404") //토큰(쿠키)을 만들 비밀키 - 이걸 이용해 알 수 없는 형식의 토큰을 만들어준다.
+//			.rememberMeParameter("remember-me") //화면에서 전달받는 checked name 명
+//			.tokenValiditySeconds(60) //쿠키(토큰)의 유효시간
+//			.userDetailsService(myUserDetailService) //리멤버미토큰이 있을 때 실행시킬 userDetailsService 객체
+//			.authenticationSuccessHandler( customRememberMe() ); //나를 기억해가 동작할 때, 실행할 핸들러 객체를 넣는다.
+//		
+//		return http.build();
 	}
+	
+	
+	//customRemeberMe
+//	@Bean
+//	public CustomRememberMe customRememberMe() {
+//		 CustomRememberMe me = new CustomRememberMe("/all");//리멤버미 성공시 실행시킬 리다이렉트 주소
+//		 return me;
+//	}
+//		
+//		return http.build();
+//	}
 }
