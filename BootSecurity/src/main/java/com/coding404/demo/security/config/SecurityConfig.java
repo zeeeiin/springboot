@@ -1,15 +1,31 @@
 package com.coding404.demo.security.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+
+import com.coding404.demo.user.MyUserDetailService;
 
 @Configuration //설정파일 어노테이션
 @EnableWebSecurity //이 설정파일을 시큐리티 필터에 추가 
+@EnableGlobalMethodSecurity(prePostEnabled = true) //어노테이션으로 권한을 지정할 수 있게 함
 public class SecurityConfig {
+	
+	//나를기억해 에서 사용할 UserDetailService
+	@Autowired
+	private MyUserDetailService myUserDetailService;
+	
+	//비밀번호 암호화 객체
+	@Bean
+	public BCryptPasswordEncoder bCryptPasswordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
 	
 	@Bean
 	public SecurityFilterChain securityFilter(HttpSecurity http) throws Exception {
@@ -85,7 +101,7 @@ public class SecurityConfig {
 //			.authenticationSuccessHandler( customRememberMe() ); //나를 기억해가 동작할 때, 실행할 핸들러 객체를 넣는다.
 //		
 //		return http.build();
-	}
+//	}
 	
 	
 	//customRemeberMe
@@ -95,6 +111,7 @@ public class SecurityConfig {
 //		 return me;
 //	}
 //		
-//		return http.build();
+		return http.build();
 //	}
+}
 }

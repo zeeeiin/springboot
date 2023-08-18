@@ -16,6 +16,7 @@ import com.coding404.demo.command.UserVO;
 import com.coding404.demo.user.MyUserDetails;
 import com.coding404.demo.user.UserMapper;
 
+
 @Controller
 public class HomeController {
 
@@ -33,7 +34,7 @@ public class HomeController {
 		if(auth != null) { //auth가 null 이 아닐때만 써야한다
 			System.out.println(auth);
 			
-			MyUserDetails details =  (MyUserDetails)auth.getPrincipal();
+			MyUserDetails details = (MyUserDetails)auth.getPrincipal();
 			
 			System.out.println(details.getUsername());
 			System.out.println(details.getPassword());
